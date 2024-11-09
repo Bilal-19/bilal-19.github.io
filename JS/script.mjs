@@ -10,21 +10,20 @@ const frontEndSkillEl = document.getElementById("frontend-skills")
 projectData.map((data) => {
     addPortfolio.innerHTML +=
         `
-        <div class="col-md-5 mt-5">
-            <div class="project-card shadow" id="${data.id}">
-                <img src="${data.projectmageSrc}" alt="" class="card-img" />
-            </div>
-        </div>
-        <div class="col-md-5">
-            <h4 class="text-center mb-0">${data.projectName}</h4>
-            <p class="mb-0">FEATURES: </p>
-            <ul>
-                ${data.features.map(val => `<li>${val}</li>`).join("")}
-            </ul>
-        </div>    
+         <div class="carousel-item ${data.id == 1 ? "active": " "}">
+            <img src="${data.projectmageSrc}" class="d-block w-100" alt="...">
+        </div>  
 `
 })
 
+addPortfolio.innerHTML += 
+`
+<div class="carousel-indicators">
+    ${projectData.map(item => `
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${item.id - 1}" class="${item.id == 1 ? "active" : ""}" aria-current="${item.id == 1 ? "true" : ''}" aria-label="Slide ${item.id}"></button>
+    `).join('')}
+</div>
+`;
 
 
 frontendSkillsIcons.map((val) => {

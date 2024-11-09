@@ -3,76 +3,36 @@ const projectData = [
     id: 1,
     projectmageSrc: "./media/images/landing_page.png",
     projectName: "Product Landing Page",
-    features: [
-        "View latest new Apple company product.",
-        "View product features"
-    ]
   },
   {
     id: 2,
     projectmageSrc: "./media/images/real-estate-web.png",
     projectName: "Real Estate Web Application",
-    features: [
-      "View Commercial & Residential Plot",
-      "View property consultant",
-      "Calculate EMI",
-      "Convert Area from One Unit to Another",
-      "Calculate Construction Cost",
-      "Contact Us form",
-    ],
   },
   {
     id: 3,
     projectmageSrc: "./media/images/dashboard.png",
     projectName: "Visa Web Application",
-    features: [
-        "Authentication",
-        "Apply for Visa",
-        "Contact through Inquiry Form",
-        "Dashboard with analytics",
-        "Manage registered users and visa applicants",
-        "Approve or reject visa applications",
-        "Trash and recover records",
-      ],
   },
   {
     id: 4,
     projectmageSrc: "./media/images/food_catering_website.png",
     projectName: "Food Catering Website",
-    features: [
-        "View Commercial & Residential Plot",
-        "View property consultant",
-        "Calculate EMI",
-        "Convert Area from One Unit to Another",
-        "Calculate Construction Cost",
-        "Contact Us form",
-      ],
   },
   {
     id: 5,
     projectmageSrc: "./media/images/digital_vibe_technology.png",
     projectName: "Tech Company Portfolio Website",
-    features: [
-        "View Commercial & Residential Plot",
-        "View property consultant",
-        "Calculate EMI",
-        "Convert Area from One Unit to Another",
-        "Calculate Construction Cost",
-        "Contact Us form",
-      ],
   },
   {
     id: 6,
     projectmageSrc: "./media/images/rehnuma_portfolio.png",
     projectName: "Portfolio Website for NGO",
-    features: [
-        "View Commercial & Residential Plot",
-        "View property consultant",
-        "Calculate EMI",
-        "Convert Area from One Unit to Another",
-        "Calculate Construction Cost",
-        "Contact Us form",
-      ],
+  },
+  {
+    id: 7,
+    projectmageSrc: "./media/images/royal_jewellers.png",
+    projectName: "Royal Jewellers Portfolio Website",
   },
 ];
 
