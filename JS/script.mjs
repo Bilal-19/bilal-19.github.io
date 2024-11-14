@@ -10,9 +10,10 @@ const frontEndSkillEl = document.getElementById("frontend-skills")
 projectData.map((data) => {
     addPortfolio.innerHTML +=
         `
-         <div class="carousel-item ${data.id == 1 ? "active": " "} border border-dark shadow">
-            <img src="${data.projectmageSrc}" class="d-block w-100" alt="...">
-        </div>  
+         <div class="carousel-item ${data.id == 1 ? "active": " "} ">
+            <img src="${data.projectmageSrc}" class="d-block w-100" alt="${data.projectName}"> 
+        </div>
+        
 `
 })
 

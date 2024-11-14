@@ -34,6 +34,16 @@ const projectData = [
     projectmageSrc: "./media/images/royal_jewellers.png",
     projectName: "Royal Jewellers Portfolio Website",
   },
+  {
+    id: 8,
+    projectmageSrc: "./media/images/EcommerceLandingPage.png",
+    projectName: "E Commerce",
+  },
+  {
+    id: 9,
+    projectmageSrc: "./media/images/Ridehub.png",
+    projectName: "Ride Hub",
+  },
 ];
 
 const frontendSkillsIcons = [
