@@ -91,9 +91,58 @@ const professionalConnectionIcons = [
   },
 ];
 
+const achievmentsData = [
+  {
+    id: 1,
+    imagePath: "../media/achievments/freelancing.jpg",
+    altDesc: "Freelancing"
+  },
+  {
+    id: 2,
+    imagePath: "../media/achievments/AgileSoftwareDevelopment.jpeg",
+    altDesc: "Agile Software Development"
+  },
+  {
+    id: 3,
+    imagePath: "../media/achievments/LearningMindset.jpeg",
+    altDesc: "Learning Mindset"
+  },
+  {
+    id: 4,
+    imagePath: "../media/achievments/PeakPerformance.jpeg",
+    altDesc: "Nano Tips for Peak Performance with Shade Zahrai"
+  },
+  {
+    id: 5,
+    imagePath: "../media/achievments/PersonalBranding.jpeg",
+    altDesc: "Accelerating Your Career with Personal Branding"
+  },
+  {
+    id: 6,
+    imagePath: "../media/achievments/FullStackWebDeveloper.jpeg",
+    altDesc: "Become a Full-Stack Web Developer"
+  },
+  {
+    id: 7,
+    imagePath: "../media/achievments/MLSA.jpg",
+    altDesc: "GitHub Universe 2022 Warch Party"
+  },
+  {
+    id: 8,
+    imagePath: "../media/achievments/GDSC_Web3.jpeg",
+    altDesc: "User Experience Web 3.0 Design Workshop"
+  },
+  {
+    id: 9,
+    imagePath: "../media/achievments/MLSA_Azure_Session.jpeg",
+    altDesc: "Microsoft Azure Fundamental Workshop"
+  },
+];
+
 export {
   projectData,
   frontendSkillsIcons,
   backendSkillsIcons,
   professionalConnectionIcons,
+  achievmentsData,
 };
