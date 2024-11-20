@@ -95,47 +95,74 @@ const achievmentsData = [
   {
     id: 1,
     imagePath: "../media/achievments/freelancing.jpg",
+<<<<<<< HEAD
     altDesc: "Freelancing"
+=======
+>>>>>>> 2e934e7e012d1277a932581686ff73d077cefea9
   },
   {
     id: 2,
     imagePath: "../media/achievments/AgileSoftwareDevelopment.jpeg",
+<<<<<<< HEAD
     altDesc: "Agile Software Development"
+=======
+>>>>>>> 2e934e7e012d1277a932581686ff73d077cefea9
   },
   {
     id: 3,
     imagePath: "../media/achievments/LearningMindset.jpeg",
+<<<<<<< HEAD
     altDesc: "Learning Mindset"
+=======
+>>>>>>> 2e934e7e012d1277a932581686ff73d077cefea9
   },
   {
     id: 4,
     imagePath: "../media/achievments/PeakPerformance.jpeg",
+<<<<<<< HEAD
     altDesc: "Nano Tips for Peak Performance with Shade Zahrai"
+=======
+>>>>>>> 2e934e7e012d1277a932581686ff73d077cefea9
   },
   {
     id: 5,
     imagePath: "../media/achievments/PersonalBranding.jpeg",
+<<<<<<< HEAD
     altDesc: "Accelerating Your Career with Personal Branding"
+=======
+>>>>>>> 2e934e7e012d1277a932581686ff73d077cefea9
   },
   {
     id: 6,
     imagePath: "../media/achievments/FullStackWebDeveloper.jpeg",
+<<<<<<< HEAD
     altDesc: "Become a Full-Stack Web Developer"
+=======
+>>>>>>> 2e934e7e012d1277a932581686ff73d077cefea9
   },
   {
     id: 7,
     imagePath: "../media/achievments/MLSA.jpg",
+<<<<<<< HEAD
     altDesc: "GitHub Universe 2022 Warch Party"
+=======
+>>>>>>> 2e934e7e012d1277a932581686ff73d077cefea9
   },
   {
     id: 8,
     imagePath: "../media/achievments/GDSC_Web3.jpeg",
+<<<<<<< HEAD
     altDesc: "User Experience Web 3.0 Design Workshop"
+=======
+>>>>>>> 2e934e7e012d1277a932581686ff73d077cefea9
   },
   {
     id: 9,
     imagePath: "../media/achievments/MLSA_Azure_Session.jpeg",
+<<<<<<< HEAD
     altDesc: "Microsoft Azure Fundamental Workshop"
+=======
+>>>>>>> 2e934e7e012d1277a932581686ff73d077cefea9
   },
 ];
 

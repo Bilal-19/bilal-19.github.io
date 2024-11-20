@@ -55,7 +55,11 @@ achievmentsData.map((data) => {
     addAchievments.innerHTML +=
         `
          <div class="carousel-item ${data.id == 1 ? "active": " "} ">
+<<<<<<< HEAD
             <img src="${data.imagePath}" class="d-block w-100" alt="${data.altDesc}"> 
+=======
+            <img src="${data.imagePath}" class="d-block w-100" alt="#"> 
+>>>>>>> 2e934e7e012d1277a932581686ff73d077cefea9
         </div>
         
 `
