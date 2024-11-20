@@ -91,9 +91,49 @@ const professionalConnectionIcons = [
   },
 ];
 
+const achievmentsData = [
+  {
+    id: 1,
+    imagePath: "../media/achievments/freelancing.jpg",
+  },
+  {
+    id: 2,
+    imagePath: "../media/achievments/AgileSoftwareDevelopment.jpeg",
+  },
+  {
+    id: 3,
+    imagePath: "../media/achievments/LearningMindset.jpeg",
+  },
+  {
+    id: 4,
+    imagePath: "../media/achievments/PeakPerformance.jpeg",
+  },
+  {
+    id: 5,
+    imagePath: "../media/achievments/PersonalBranding.jpeg",
+  },
+  {
+    id: 6,
+    imagePath: "../media/achievments/FullStackWebDeveloper.jpeg",
+  },
+  {
+    id: 7,
+    imagePath: "../media/achievments/MLSA.jpg",
+  },
+  {
+    id: 8,
+    imagePath: "../media/achievments/GDSC_Web3.jpeg",
+  },
+  {
+    id: 9,
+    imagePath: "../media/achievments/MLSA_Azure_Session.jpeg",
+  },
+];
+
 export {
   projectData,
   frontendSkillsIcons,
   backendSkillsIcons,
   professionalConnectionIcons,
+  achievmentsData,
 };
