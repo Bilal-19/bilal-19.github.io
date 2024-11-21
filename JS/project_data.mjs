@@ -99,47 +99,47 @@ const professionalConnectionIcons = [
 const achievmentsData = [
   {
     id: 1,
-    imagePath: "../media/images/freelancing.jpg",
+    imagePath: "./media/images/freelancing.jpg",
     altDesc: "Freelancing"
   },
   {
     id: 2,
-    imagePath: "../media/images/AgileSoftwareDevelopment.jpeg",
+    imagePath: "./media/images/AgileSoftwareDevelopment.jpeg",
     altDesc: "Agile Software Development"
   },
   {
     id: 3,
-    imagePath: "../media/images/LearningMindset.jpeg",
+    imagePath: "./media/images/LearningMindset.jpeg",
     altDesc: "Learning Mindset"
   },
   {
     id: 4,
-    imagePath: "../media/images/PeakPerformance.jpeg",
+    imagePath: "./media/images/PeakPerformance.jpeg",
     altDesc: "Nano Tips for Peak Performance with Shade Zahrai"
   },
   {
     id: 5,
-    imagePath: "../media/images/PersonalBranding.jpeg",
+    imagePath: "./media/images/PersonalBranding.jpeg",
     altDesc: "Accelerating Your Career with Personal Branding"
   },
   {
     id: 6,
-    imagePath: "../media/images/FullStackWebDeveloper.jpeg",
+    imagePath: "./media/images/FullStackWebDeveloper.jpeg",
     altDesc: "Become a Full-Stack Web Developer"
   },
   {
     id: 7,
-    imagePath: "../media/images/MLSA.jpg",
+    imagePath: "./media/images/MLSA.jpg",
     altDesc: "GitHub Universe 2022 Warch Party"
   },
   {
     id: 8,
-    imagePath: "../media/images/GDSC_Web3.jpeg",
+    imagePath: "./media/images/GDSC_Web3.jpeg",
     altDesc: "User Experience Web 3.0 Design Workshop"
   },
   {
     id: 9,
-    imagePath: "../media/images/MLSA_Azure_Session.jpeg",
+    imagePath: "./media/images/MLSA_Azure_Session.jpeg",
     altDesc: "Microsoft Azure Fundamental Workshop"
   }
 ];
