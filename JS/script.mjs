@@ -10,7 +10,10 @@ projectData.map((data) => {
     addPortfolio.innerHTML +=
         `
          <div class="carousel-item ${data.id == 1 ? "active": " "} ">
-            <img src="${data.projectmageSrc}" class="d-block w-100" alt="${data.projectName}"> 
+            <img src="${data.projectmageSrc}" class="d-block w-100" alt="${data.projectName}">
+            <div class="carousel-caption d-none d-md-block">
+        <h5 class="text-dark bg-light rounded d-inline p-2">${data.projectName}</h5>
+      </div>
         </div>
         
 `
