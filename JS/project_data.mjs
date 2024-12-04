@@ -99,46 +99,51 @@ const professionalConnectionIcons = [
 const achievmentsData = [
   {
     id: 1,
+    imagePath: "./media/images/SEO.jpeg",
+    altDesc: "Search Engine Optimization - Innovista"
+  },
+  {
+    id: 2,
     imagePath: "./media/images/freelancing.jpg",
     altDesc: "Freelancing"
   },
   {
-    id: 2,
+    id: 3,
     imagePath: "./media/images/AgileSoftwareDevelopment.jpeg",
     altDesc: "Agile Software Development"
   },
   {
-    id: 3,
+    id: 4,
     imagePath: "./media/images/LearningMindset.jpeg",
     altDesc: "Learning Mindset"
   },
   {
-    id: 4,
+    id: 5,
     imagePath: "./media/images/PeakPerformance.jpeg",
     altDesc: "Nano Tips for Peak Performance with Shade Zahrai"
   },
   {
-    id: 5,
+    id: 6,
     imagePath: "./media/images/PersonalBranding.jpeg",
     altDesc: "Accelerating Your Career with Personal Branding"
   },
   {
-    id: 6,
+    id: 7,
     imagePath: "./media/images/FullStackWebDeveloper.jpeg",
     altDesc: "Become a Full-Stack Web Developer"
   },
   {
-    id: 7,
+    id: 8,
     imagePath: "./media/images/MLSA.jpg",
     altDesc: "GitHub Universe 2022 Warch Party"
   },
   {
-    id: 8,
+    id: 9,
     imagePath: "./media/images/GDSC_Web3.jpeg",
     altDesc: "User Experience Web 3.0 Design Workshop"
   },
   {
-    id: 9,
+    id: 10,
     imagePath: "./media/images/MLSA_Azure_Session.jpeg",
     altDesc: "Microsoft Azure Fundamental Workshop"
   }
