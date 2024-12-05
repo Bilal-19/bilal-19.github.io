@@ -51,19 +51,6 @@ const projectData = [
   },
 ];
 
-const frontendSkillsIcons = [
-  { id: 1, ImageSrc: "html-5.png", altDesc: "HTML" },
-  { id: 2, ImageSrc: "css.png", altDesc: "CSS" },
-  { id: 3, ImageSrc: "bootstrap.png", altDesc: "Bootstrap 5" },
-  { id: 4, ImageSrc: "js.png", altDesc: "JavaScript" },
-  { id: 5, ImageSrc: "react_js.png", altDesc: "React JS" },
-];
-
-const backendSkillsIcons = [
-  { id: 1, ImageSrc: "php.png", altDesc: "PHP" },
-  { id: 2, ImageSrc: "laravel.png", altDesc: "Laravel" },
-  { id: 3, ImageSrc: "mysql.png", altDesc: "MySQL" },
-];
 
 const professionalConnectionIcons = [
   {
@@ -151,8 +138,6 @@ const achievmentsData = [
 
 export {
   projectData,
-  frontendSkillsIcons,
-  backendSkillsIcons,
   professionalConnectionIcons,
   achievmentsData,
 };

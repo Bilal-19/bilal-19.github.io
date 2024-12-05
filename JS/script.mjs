@@ -1,4 +1,4 @@
-import { projectData, frontendSkillsIcons, backendSkillsIcons, professionalConnectionIcons, achievmentsData } from "./project_data.mjs"
+import { projectData, professionalConnectionIcons, achievmentsData } from "./project_data.mjs"
 
 const addPortfolio = document.getElementById("add-projects")
 const addAchievments = document.getElementById("add-achievments")
@@ -28,15 +28,15 @@ addPortfolio.innerHTML +=
 `;
 
 
-frontendSkillsIcons.map((val) => {
-    frontEndSkillEl.innerHTML += `<img src="./media/Icons/${val.ImageSrc}" alt="${val.altDesc}" class="skill-icon mx-2">`
-})
+// frontendSkillsIcons.map((val) => {
+//     frontEndSkillEl.innerHTML += `<img src="./media/Icons/${val.ImageSrc}" alt="${val.altDesc}" class="skill-icon mx-2">`
+// })
 
 
-const backEndSkillEl = document.getElementById("backend-skills")
-backendSkillsIcons.map(
-    (val) => backEndSkillEl.innerHTML += `<img src="./media/Icons/${val.ImageSrc}" alt="${val.altDesc}" class="skill-icon mx-2">`
-)
+// const backEndSkillEl = document.getElementById("backend-skills")
+// backendSkillsIcons.map(
+//     (val) => backEndSkillEl.innerHTML += `<img src="./media/Icons/${val.ImageSrc}" alt="${val.altDesc}" class="skill-icon mx-2">`
+// )
 const professionalConnectionEl = document.getElementById("professional-connection")
 
 professionalConnectionIcons.map(item => {
