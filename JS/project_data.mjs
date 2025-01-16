@@ -49,6 +49,16 @@ const projectData = [
     projectmageSrc: "./media/images/ProfitPathWay.png",
     projectName: "Profit Pathway Landing Page",
   },
+  {
+    id: 11,
+    projectmageSrc: "./media/images/SER.png",
+    projectName: "Sterling Executive Residential",
+  },
+  {
+    id: 12,
+    projectmageSrc: "./media/images/GreenKey.png",
+    projectName: "Green Key ~ Social Housing Letting Agency",
+  },
 ];
 
 
