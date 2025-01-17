@@ -40,3 +40,21 @@ p,a,button{
 #add-projects, #add-achievments{
     border-radius: 6px;
 }
+
+#banner-bg-img{
+    background-image: url('./media/images/workspace.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    height: 250px;
+}
+
+.educational-card{
+    border-top: 3px solid #051527;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin: auto;
+}
