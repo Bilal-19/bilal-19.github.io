@@ -83,14 +83,7 @@ const professionalConnectionIcons = [
     imagePath: "./media/Icons/contact_no.png",
     iconHeight: "25px",
     iconWidth: "25px",
-  },
-  {
-    id: 4,
-    hrefPath: "https://github.com/Bilal-19",
-    imagePath: "./media/Icons/github.png",
-    iconHeight: "25px",
-    iconWidth: "25px",
-  },
+  }
 ];
 
 const achievmentsData = [

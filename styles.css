@@ -9,7 +9,7 @@
 .social {
     text-decoration: none;
     color: white;
-    /* display: block; */
+    display: inline;
 }
 
 .social:hover {
@@ -57,4 +57,10 @@ p,a,button{
     padding: 10px 12px;
     border-radius: 6px;
     margin: auto;
+}
+
+@media screen and (max-width:768px) {
+    .educational-card{
+        margin-bottom: 10px;
+    }
 }
