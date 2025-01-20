@@ -1,66 +1,105 @@
 * {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .card-img {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .social {
-    text-decoration: none;
-    color: white;
-    display: inline;
+  text-decoration: none;
+  color: white;
+  display: inline;
 }
 
 .social:hover {
-    color: grey;
+  color: grey;
 }
 
 .skill-icon {
-    height: 60px;
-    width: 60px;
+  height: 60px;
+  width: 60px;
 }
 
 .card-img:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .bg-charcoal-blue {
-    background-color: #051527;
+  background-color: #051527;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: "Poppins", serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", serif;
 }
 
-p,a,button{
-    font-family: "Roboto", serif;
+p,
+a,
+button {
+  font-family: "Roboto", serif;
 }
 
-#add-projects, #add-achievments{
-    border-radius: 6px;
+#add-projects,
+#add-achievments {
+  border-radius: 6px;
 }
 
-#banner-bg-img{
-    background-image: url('./media/images/workspace.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: aliceblue;
-    height: 250px;
+#banner-bg-img {
+  background-image: url("./media/images/workspace.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+  height: 250px;
 }
 
-.educational-card{
-    border-top: 3px solid #051527;
-    border-bottom: 1px solid grey;
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
-    padding: 10px 12px;
-    border-radius: 6px;
-    margin: auto;
+.educational-card {
+  border-top: 3px solid #051527;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: auto;
 }
 
-@media screen and (max-width:768px) {
-    .educational-card{
-        margin-bottom: 10px;
-    }
+/* Animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideInRight{
+    animation-name: slideInRight;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+
+@media screen and (max-width: 768px) {
+  .educational-card {
+    margin-bottom: 10px;
+  }
 }
