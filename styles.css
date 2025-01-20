@@ -92,12 +92,41 @@ button {
   }
 }
 
-.slideInRight{
-    animation-name: slideInRight;
-    animation-timing-function: ease-in;
-    animation-duration: 3s;
+.slideInRight {
+  animation-name: slideInRight;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
 }
 
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.slideFromBottom {
+  animation-name: slideFromBottom;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+}
+
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.slideFromTop {
+  animation-name: slideFromTop;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+}
 @media screen and (max-width: 768px) {
   .educational-card {
     margin-bottom: 10px;
