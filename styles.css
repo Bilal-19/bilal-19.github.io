@@ -60,7 +60,7 @@ button {
 .educational-card {
   border-top: 3px solid #051527;
   border-bottom: 1px solid grey;
-  border-left: 1px solid grey;
+  border-left: 3px solid #051527;
   border-right: 1px solid grey;
   padding: 10px 12px;
   border-radius: 6px;
