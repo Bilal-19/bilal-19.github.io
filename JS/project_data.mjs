@@ -59,6 +59,11 @@ const projectData = [
     projectmageSrc: "./media/images/GreenKey.png",
     projectName: "Green Key ~ Social Housing Letting Agency",
   },
+  {
+    id: 13,
+    projectmageSrc: "./media/images/aquaVenture.png",
+    projectName: "Aqua Venture ~ Swimming Academy"
+  }
 ];
 
 

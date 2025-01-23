@@ -10,11 +10,7 @@ const addAchievments = document.getElementById("add-achievments");
 projectData.map((data) => {
   addPortfolio.innerHTML += `
          <div class="carousel-item ${data.id == 1 ? "active" : " "} ">
-            <img src="${data.projectmageSrc}" class="d-block w-100" alt="${
-    data.projectName
-  }">
-            <div class="carousel-caption d-none d-md-block">
-      </div>
+            <img src="${data.projectmageSrc}" class="d-block w-100" alt="${data.projectName}">
         </div>
         
 `;
