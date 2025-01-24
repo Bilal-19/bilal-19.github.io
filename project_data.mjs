@@ -1,67 +1,67 @@
 const projectData = [
   {
     id: 1,
-    projectmageSrc: "/media/images/landing_page.png",
+    projectmageSrc: "./media/images/landing_page.png",
     projectName: "Product Landing Page",
   },
   {
     id: 2,
-    projectmageSrc: "/media/images/real-estate-web.png",
+    projectmageSrc: "./media/images/real-estate-web.png",
     projectName: "Real Estate Web Application",
   },
   {
     id: 3,
-    projectmageSrc: "/media/images/dashboard.png",
+    projectmageSrc: "./media/images/dashboard.png",
     projectName: "Visa Web Application",
   },
   {
     id: 4,
-    projectmageSrc: "/media/images/food_catering_website.png",
+    projectmageSrc: "./media/images/food_catering_website.png",
     projectName: "Food Catering Website",
   },
   {
     id: 5,
-    projectmageSrc: "/media/images/digital_vibe_technology.png",
+    projectmageSrc: "./media/images/digital_vibe_technology.png",
     projectName: "Tech Company Portfolio Website",
   },
   {
     id: 6,
-    projectmageSrc: "/media/images/rehnuma_portfolio.png",
+    projectmageSrc: "./media/images/rehnuma_portfolio.png",
     projectName: "Portfolio Website for NGO",
   },
   {
     id: 7,
-    projectmageSrc: "/media/images/royal_jewellers.png",
+    projectmageSrc: "./media/images/royal_jewellers.png",
     projectName: "Royal Jewellers Portfolio Website",
   },
   {
     id: 8,
-    projectmageSrc: "/media/images/EcommerceLandingPage.png",
+    projectmageSrc: "./media/images/EcommerceLandingPage.png",
     projectName: "E Commerce",
   },
   {
     id: 9,
-    projectmageSrc: "/media/images/Ridehub.png",
+    projectmageSrc: "./media/images/Ridehub.png",
     projectName: "Ride Hub",
   },
   {
     id: 10,
-    projectmageSrc: "/media/images/ProfitPathWay.png",
+    projectmageSrc: "./media/images/ProfitPathWay.png",
     projectName: "Profit Pathway Landing Page",
   },
   {
     id: 11,
-    projectmageSrc: "/media/images/SER.png",
+    projectmageSrc: "./media/images/SER.png",
     projectName: "Sterling Executive Residential",
   },
   {
     id: 12,
-    projectmageSrc: "/media/images/GreenKey.png",
+    projectmageSrc: "./media/images/GreenKey.png",
     projectName: "Green Key ~ Social Housing Letting Agency",
   },
   {
     id: 13,
-    projectmageSrc: "/media/images/aquaVenture.png",
+    projectmageSrc: "./media/images/aquaVenture.png",
     projectName: "Aqua Venture ~ Swimming Academy"
   }
 ];
