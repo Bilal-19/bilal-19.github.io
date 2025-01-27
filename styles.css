@@ -54,7 +54,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   color: aliceblue;
-  height: 250px;
+  height: 300px;
 }
 
 .educational-card {
@@ -65,6 +65,21 @@ button {
   padding: 10px 12px;
   border-radius: 6px;
   margin: auto;
+}
+
+#portfolio-btn{
+  color: #051527;
+  background-color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+#portfolio-btn:hover{
+  background-color: #051527;
+  color: white;
+  border: 1px solid white;
 }
 
 /* Animation */
