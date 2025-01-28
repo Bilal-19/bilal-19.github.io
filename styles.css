@@ -143,7 +143,7 @@ button {
   animation-duration: 3s;
 }
 
-#preloader{
+/* #preloader{
   background-color: #ECECEC;
   background-image: url('/media/images/loading_logo.png');
   background-repeat: no-repeat;
@@ -152,7 +152,7 @@ button {
   width: 100%;
   position: fixed;
   z-index: 100;
-}
+} */
 @media screen and (max-width: 768px) {
   .educational-card {
     margin-bottom: 10px;
