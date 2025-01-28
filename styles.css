@@ -142,6 +142,17 @@ button {
   animation-timing-function: ease-in-out;
   animation-duration: 3s;
 }
+
+#preloader{
+  background-color: #ECECEC;
+  background-image: url('/media/images/loading_logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
 @media screen and (max-width: 768px) {
   .educational-card {
     margin-bottom: 10px;
