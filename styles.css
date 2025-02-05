@@ -2,6 +2,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  background-color: #F2F8FC;
+}
+
 .card-img {
   object-fit: cover;
 }
@@ -80,6 +84,11 @@ button {
   background-color: #051527;
   color: white;
   border: 1px solid white;
+}
+
+.form-control::placeholder{
+  color: #051527;
+  font-size: 18px;
 }
 
 /* Animation */

@@ -72,24 +72,29 @@ const professionalConnectionIcons = [
     id: 1,
     hrefPath: "https://www.linkedin.com/in/bilalmuhammadyousuf/",
     imagePath: "./media/Icons/linkedin.png",
-    iconHeight: "25px",
-    iconWidth: "25px",
   },
   {
     id: 2,
-    hrefPath: "mailto:bilalmuhammadyousuf543@gmail.com",
-    imagePath: "./media/Icons/gmail.png",
-    iconHeight: "25px",
-    iconWidth: "25px",
+    hrefPath: "https://www.facebook.com/profile.php?id=100013114033412",
+    imagePath: "./media/Icons/facebook.png",
   },
   {
     id: 3,
+    hrefPath: "https://www.instagram.com/bilal_8939/",
+    imagePath: "./media/Icons/instagram.png",
+  },
+  {
+    id: 4,
+    hrefPath: "mailto:bilalmuhammadyousuf543@gmail.com",
+    imagePath: "./media/Icons/gmail.png",
+  },
+  {
+    id: 5,
     hrefPath: "tel:+923427634247",
     imagePath: "./media/Icons/contact_no.png",
-    iconHeight: "25px",
-    iconWidth: "25px",
   }
 ];
+
 
 const achievmentsData = [
   {
@@ -147,5 +152,5 @@ const achievmentsData = [
 export {
   projectData,
   professionalConnectionIcons,
-  achievmentsData,
+  achievmentsData
 };
