@@ -71,27 +71,32 @@ const professionalConnectionIcons = [
   {
     id: 1,
     hrefPath: "https://www.linkedin.com/in/bilalmuhammadyousuf/",
-    imagePath: "./media/Icons/linkedin.png",
+    iconClass: "fa-brands fa-linkedin",
   },
   {
     id: 2,
     hrefPath: "https://www.facebook.com/profile.php?id=100013114033412",
-    imagePath: "./media/Icons/facebook.png",
+    iconClass: "fa-brands fa-facebook",
   },
   {
     id: 3,
     hrefPath: "https://www.instagram.com/bilal_8939/",
-    imagePath: "./media/Icons/instagram.png",
+    iconClass: "fa-brands fa-instagram",
   },
   {
     id: 4,
     hrefPath: "mailto:bilalmuhammadyousuf543@gmail.com",
-    imagePath: "./media/Icons/gmail.png",
+    iconClass: "fa-regular fa-envelope",
   },
   {
     id: 5,
     hrefPath: "tel:+923427634247",
-    imagePath: "./media/Icons/contact_no.png",
+    iconClass: "fa-brands fa-whatsapp",
+  },
+  {
+    id: 6,
+    hrefPath: "https://github.com/Bilal-19",
+    iconClass: "fa-brands fa-github",
   }
 ];
 

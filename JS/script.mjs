@@ -40,7 +40,7 @@ professionalConnectionIcons.map((item) => {
   professionalConnectionEl.innerHTML += `
      <li>
         <a href="${item.hrefPath}" class="mt-5 mx-2 social" target="_blank">
-            <img src="${item.imagePath}" alt="" style="height: ${item.iconHeight}; width: ${item.iconWidth};">
+            <i class="${item.iconClass} fa-xl" style="color: #ffffff;"></i>
         </a>
     </li>
     `;

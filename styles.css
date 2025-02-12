@@ -186,4 +186,10 @@ button {
   .fs-sm-25{
     font-size: 25px;
   }
+
+  #banner-bg-img{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0 100%), url("./media/images/workspace.jpg");
+    width: 90%;
+    height: 400px;
+  }
 }
