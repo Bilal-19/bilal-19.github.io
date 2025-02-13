@@ -104,7 +104,7 @@ const professionalConnectionIcons = [
 const achievmentsData = [
   {
     id: 1,
-    imagePath: "./media/images/SEO.jpeg",
+    imagePath: "./media/images/SEO.webp",
     altDesc: "Search Engine Optimization - Innovista"
   },
   {
@@ -114,27 +114,27 @@ const achievmentsData = [
   },
   {
     id: 3,
-    imagePath: "./media/images/AgileSoftwareDevelopment.jpeg",
+    imagePath: "./media/images/AgileSoftwareDevelopment.webp",
     altDesc: "Agile Software Development"
   },
   {
     id: 4,
-    imagePath: "./media/images/LearningMindset.jpeg",
+    imagePath: "./media/images/LearningMindset.webp",
     altDesc: "Learning Mindset"
   },
   {
     id: 5,
-    imagePath: "./media/images/PeakPerformance.jpeg",
+    imagePath: "./media/images/PeakPerformance.webp",
     altDesc: "Nano Tips for Peak Performance with Shade Zahrai"
   },
   {
     id: 6,
-    imagePath: "./media/images/PersonalBranding.jpeg",
+    imagePath: "./media/images/PersonalBranding.webp",
     altDesc: "Accelerating Your Career with Personal Branding"
   },
   {
     id: 7,
-    imagePath: "./media/images/FullStackWebDeveloper.jpeg",
+    imagePath: "./media/images/FullStackWebDeveloper.webp",
     altDesc: "Become a Full-Stack Web Developer"
   },
   {
@@ -144,12 +144,12 @@ const achievmentsData = [
   },
   {
     id: 9,
-    imagePath: "./media/images/GDSC_Web3.jpeg",
+    imagePath: "./media/images/GDSC_Web3.webp",
     altDesc: "User Experience Web 3.0 Design Workshop"
   },
   {
     id: 10,
-    imagePath: "./media/images/MLSA_Azure_Session.jpeg",
+    imagePath: "./media/images/MLSA_Azure_Session.webp",
     altDesc: "Microsoft Azure Fundamental Workshop"
   }
 ];

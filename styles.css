@@ -54,7 +54,7 @@ button {
 }
 
 #banner-bg-img {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0 100%), url("./media/images/workspace.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0 100%), url("./media/images/workspace.webp");
   background-repeat: no-repeat;
   background-size: cover;
   color: aliceblue;
@@ -188,7 +188,7 @@ button {
   }
 
   #banner-bg-img{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0 100%), url("./media/images/workspace.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0 100%), url("./media/images/workspace.webp");
     width: 90%;
     height: 400px;
   }
