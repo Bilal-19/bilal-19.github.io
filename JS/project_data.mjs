@@ -1,12 +1,12 @@
 const projectData = [
   {
     id: 1,
-    projectmageSrc: "./media/images/landing_page.png",
+    projectmageSrc: "./media/images/landing_page.webp",
     projectName: "Product Landing Page",
   },
   {
     id: 2,
-    projectmageSrc: "./media/images/real-estate-web.png",
+    projectmageSrc: "./media/images/real-estate-web.webp",
     projectName: "Real Estate Web Application",
   },
   {
@@ -16,7 +16,7 @@ const projectData = [
   },
   {
     id: 4,
-    projectmageSrc: "./media/images/food_catering_website.png",
+    projectmageSrc: "./media/images/food_catering_website.webp",
     projectName: "Food Catering Website",
   },
   {
@@ -31,7 +31,7 @@ const projectData = [
   },
   {
     id: 7,
-    projectmageSrc: "./media/images/royal_jewellers.png",
+    projectmageSrc: "./media/images/royal_jewellers.webp",
     projectName: "Royal Jewellers Portfolio Website",
   },
   {
@@ -61,7 +61,7 @@ const projectData = [
   },
   {
     id: 13,
-    projectmageSrc: "./media/images/aquaVenture.png",
+    projectmageSrc: "./media/images/aquaVenture.webp",
     projectName: "Aqua Venture ~ Swimming Academy"
   }
 ];
@@ -109,7 +109,7 @@ const achievmentsData = [
   },
   {
     id: 2,
-    imagePath: "./media/images/freelancing.jpg",
+    imagePath: "./media/images/freelancing.webp",
     altDesc: "Freelancing"
   },
   {
