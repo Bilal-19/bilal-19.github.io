@@ -11,7 +11,7 @@ const projectData = [
   },
   {
     id: 3,
-    projectmageSrc: "./media/images/dashboard.png",
+    projectmageSrc: "./media/images/dashboard.webp",
     projectName: "Visa Web Application",
   },
   {
@@ -21,12 +21,12 @@ const projectData = [
   },
   {
     id: 5,
-    projectmageSrc: "./media/images/digital_vibe_technology.png",
+    projectmageSrc: "./media/images/digital_vibe_technology.webp",
     projectName: "Tech Company Portfolio Website",
   },
   {
     id: 6,
-    projectmageSrc: "./media/images/rehnuma_portfolio.png",
+    projectmageSrc: "./media/images/rehnuma_portfolio.webp",
     projectName: "Portfolio Website for NGO",
   },
   {
@@ -36,27 +36,27 @@ const projectData = [
   },
   {
     id: 8,
-    projectmageSrc: "./media/images/EcommerceLandingPage.png",
+    projectmageSrc: "./media/images/EcommerceLandingPage.webp",
     projectName: "E Commerce",
   },
   {
     id: 9,
-    projectmageSrc: "./media/images/Ridehub.png",
+    projectmageSrc: "./media/images/Ridehub.webp",
     projectName: "Ride Hub",
   },
   {
     id: 10,
-    projectmageSrc: "./media/images/ProfitPathWay.png",
+    projectmageSrc: "./media/images/ProfitPathWay.webp",
     projectName: "Profit Pathway Landing Page",
   },
   {
     id: 11,
-    projectmageSrc: "./media/images/SER.png",
+    projectmageSrc: "./media/images/SER.webp",
     projectName: "Sterling Executive Residential",
   },
   {
     id: 12,
-    projectmageSrc: "./media/images/GreenKey.png",
+    projectmageSrc: "./media/images/GreenKey.webp",
     projectName: "Green Key ~ Social Housing Letting Agency",
   },
   {
@@ -139,7 +139,7 @@ const achievmentsData = [
   },
   {
     id: 8,
-    imagePath: "./media/images/MLSA.jpg",
+    imagePath: "./media/images/MLSA.webp",
     altDesc: "GitHub Universe 2022 Warch Party"
   },
   {
