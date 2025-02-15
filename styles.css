@@ -113,11 +113,6 @@ button {
   font-weight: 350;
 }
 
-.portfolio-logo-img{
-  height: fit-content;
-  width: fit-content;
-  object-fit: cover;
-}
 
 /* Animation */
 @keyframes slideInLeft {
