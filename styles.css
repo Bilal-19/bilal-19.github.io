@@ -112,6 +112,13 @@ button {
 .fw-light{
   font-weight: 350;
 }
+
+.portfolio-logo-img{
+  height: fit-content;
+  width: fit-content;
+  object-fit: cover;
+}
+
 /* Animation */
 @keyframes slideInLeft {
   from {
@@ -183,8 +190,8 @@ button {
     width: 50px;
   }
 
-  .fs-sm-25{
-    font-size: 25px;
+  .fs-sm-20{
+    font-size: 20px;
   }
 
   #banner-bg-img{
