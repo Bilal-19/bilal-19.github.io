@@ -29,7 +29,8 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-charcoal-blue text-light shadow">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="./index.html">
-                        <img src="./media/images/bilal_logo.png" alt="portfolio-logo" class="img-fluid portfolio-logo-img">
+                        <img src="./media/images/bilal_logo.png" alt="portfolio-logo"
+                            class="img-fluid portfolio-logo-img">
                     </a>
                     <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -37,23 +38,28 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-
-                            <li class="nav-item">
-                                <a class="nav-link text-light text-uppercase" href="#portfolio">Portfolio</a>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item mx-3">
+                                <a class="nav-link text-light" href="#portfolio">Portfolio</a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link text-light text-uppercase" href="#education">Education</a>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link text-light" href="#education">Education</a>
+                            </li>
+
+                            <li class="nav-item mx-3">
+                                <a class="nav-link text-light" href="#experience">Experience</a>
+                            </li>
+
+
+                            <li class="nav-item mx-3">
+                                <a class="nav-link text-light" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link text-light" href="#achievements">Achievements</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light text-uppercase" href="#skills">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light text-uppercase" href="#achievements">Achievements</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light text-uppercase" href="#contact">Contact</a>
+                                <a class="nav-link text-light" href="#contact">Contact</a>
                             </li>
                         </ul>
 
@@ -71,7 +77,7 @@
                         <div class="col-md-12 mx-auto text-center">
                             <p>Hello, I'm</p>
                             <h1 class="slideInLeft fs-40 fs-sm-20">Bilal Muhammad Yousuf</h1>
-                            <p class="slideFromBottom">I am a Full Stack Software Developer.</p>
+                            <p class="slideFromBottom">Full Stack Software Developer</p>
                             <p class="slideInRight">Hire Me for Your Next Project.</p>
                             <a href="./media/Bilal - Portfolio.pdf" download id="portfolio-btn">
                                 <i class="fa-solid fa-download"></i>
@@ -84,67 +90,98 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <main class="mt-5">
+
+
+    <div class="container-fluid mt-100">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-5">
                 <h2 class="text-center slideFromTop" id="portfolio">Featured Portfolio</h2>
-                <div class="container-fluid">
-                    <div class="row d-flex justify-content-center align-items-center">
-                        <div class="col-md-10">
-                            <div id="carouselExample" class="carousel slide">
-                                <div class="carousel-inner shadow" id="add-projects">
+                <p>
+                    I am a Full Stack Software Developer with a strong focus on React JS & Laravel.
+                </p>
+                <p>
+                    With over a year of experience, I've assisted organizations in enhancing their digital presence by
+                    building dynamic websites. My expertise includes creating product landing pages, company portfolio
+                    sites, and full fledged eCommerce applications.
+                </p>
+            </div>
 
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                        aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                        aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
+            <div class="col-md-6">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner shadow" id="add-projects">
+
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </main>
+            </div>
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <section id="education" class="mt-5">
+
+    <div class="container-fluid mt-100" id="education">
+        <div class="row d-flex justify-content-around align-items-center flex-sm-col-rev">
+            <div class="col-md-5">
+                <img src="./media/images/education.jpg" alt="education" class="img-fluid" id="educational-img">
+            </div>
+
+            <div class="col-md-5">
                 <h2 class="text-center slideFromTop">Educational Background</h2>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-5 educational-card slideInLeft">
-                            <h5 class="mb-0">NED University of Engineering &
-                                Technology
-                            </h5>
-                            <p class="mb-0 fw-normal">Bacehlor of Science, Software Engineering</p>
-                            <small class="mt-0 fw-light">Oct 2019 - Aug 2023</small>
-                        </div>
-
-
-                        <div class="col-md-5 educational-card slideInRight">
-                            <h5 class="mb-0">Islamia Government Science College</h5>
-                            <p class="mb-0 fw-normal">Engineering, Pre Engineering</p>
-                            <small class="mt-0 fw-light">Sept 2017 - May 2019</small>
-                        </div>
-                    </div>
-
-
+                <div class="educational-card">
+                    <h5 class="mb-0">NED University of Engineering &
+                        Technology
+                    </h5>
+                    <p class="mb-0 fw-normal">Bachelor of Science, Software Engineering</p>
+                    <small class="mt-0 fw-light">Oct 2019 - Aug 2023</small>
                 </div>
-            </section>
+                <div class="educational-card">
+                    <h5 class="mb-0">Islamia Government Science College</h5>
+                    <p class="mb-0 fw-normal">Engineering, Pre Engineering</p>
+                    <small class="mt-0 fw-light">Sept 2017 - May 2019</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-100" id="experience">
+        <div class="row d-flex justify-content-around align-items-center">
+            <div class="col-md-5">
+                <h2 class="text-center slideFromTop">Professional Experience</h2>
+                <div class="experience-card">
+                    <h5 class="mb-0">Upwork</h5>
+                    <p class="mb-0 fw-normal">Freelance Software Developer</p>
+                    <small class="mt-0 fw-light">Sept 2024 - Present</small>
+                </div>
+
+                <div class="experience-card">
+                    <h5 class="mb-0">ZH Tech</h5>
+                    <p class="mb-0 fw-normal">Software Developer</p>
+                    <small class="mt-0 fw-light">Sept 2024 - Present</small>
+                </div>
+
+                <div class="experience-card">
+                    <h5 class="mb-0">The Algorithm PK</h5>
+                    <p class="mb-0 fw-normal">Web Developer</p>
+                    <small class="mt-0 fw-light">Jan 2024 - July 2024</small>
+                </div>
+            </div>
+            <div class="col-md-5 mt-sm-10">
+                <img src="./media/images/experience.jpg" alt="professional-experience" class="img-fluid"
+                    id="professional-experience">
+            </div>
         </div>
     </div>
 
 
-    <div class="container-fluid" id="skills">
+    <div class="container-fluid mt-100" id="skills">
         <div class="row">
             <h2 class="text-center mt-5 slideFromTop">Technical Expertise</h2>
             <div class="col-md-8 mx-auto mb-4 d-flex flex-sm-row justify-content-around slideInRight">
@@ -164,9 +201,9 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid mt-100" id="achievements">
         <div class="row">
-            <section id="achievements">
+            <section>
                 <h2 class="text-center slideFromTop">Achievements</h2>
                 <div class="container-fluid">
                     <div class="row d-flex justify-content-center align-items-center">
@@ -197,34 +234,36 @@
 
 
 
-    <div class="container-fluid shadow mt-5 bg-charcoal-blue text-light border-top" id="contact">
+    <div class="container-fluid shadow mt-100 bg-charcoal-blue text-light border-top" id="contact">
         <div class="row d-flex justify-content-around mt-3">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <a href="./index.html">
-                    <img src="./media/images/bilal_logo.png" alt="logo" class="img-fluid d-block mx-auto portfolio-logo-img">
+                    <img src="./media/images/bilal_logo.png" alt="logo"
+                        class="img-fluid d-block mx-auto portfolio-logo-img">
                 </a>
                 <h3 class="text-center mt-5">Let's Connect With Me</h3>
                 <ul class="mt-3 d-flex justify-content-center align-items-center list-unstyled"
                     id="professional-connection">
                 </ul>
-            </ul>
             </div>
             <div class="col-md-5">
                 <form class="form" id="contact-form" action="https://formsubmit.co/bilalmuhammadyousuf543@gmail.com"
                     method="post" autocomplete="off">
                     <h3 class="text-center">Contact Us</h3>
                     <label for="username" class="form-label mb-0">Name:</label>
-                    <input type="text" name="username" id="username" class="form-control" required placeholder="Enter your name">
+                    <input type="text" name="username" id="username" class="form-control" required
+                        placeholder="Enter your name">
 
                     <label for="email" class="form-label mb-0 mt-3">Email:</label>
-                    <input type="email" name="email" id="email" class="form-control" required placeholder="Enter your email">
+                    <input type="email" name="email" id="email" class="form-control" required
+                        placeholder="Enter your email">
 
                     <label for="any-message" class="form-label d-block mt-3 mb-0">Message:
                     </label>
-                    <textarea name="any-message" id="any-message" class="form-control"
-                        placeholder="Enter your message" rows="5" required style="resize: none;"></textarea>
+                    <textarea name="any-message" id="any-message" class="form-control" placeholder="Enter your message"
+                        rows="5" required style="resize: none;"></textarea>
 
-                    <button type="submit" class="btn btn-outline-light mt-3 mb-2">
+                    <button type="submit" class="btn btn-outline-light mt-3 mb-2 w-100">
                         <i class="fas fa-paper-plane"></i>
                         Submit
                     </button>
