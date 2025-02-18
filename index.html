@@ -32,10 +32,10 @@
                         <img src="./media/images/bilal_logo.png" alt="portfolio-logo"
                             class="img-fluid portfolio-logo-img">
                     </a>
-                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <i class="fas fa-bars text-light"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -43,22 +43,20 @@
                                 <a class="nav-link text-light" href="#portfolio">Portfolio</a>
                             </li>
 
-                            <li class="nav-item mx-3">
-                                <a class="nav-link text-light" href="#education">Education</a>
+                            <li class="nav-item dropdown mx-3">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="aboutDropdown" role="button"
+                                    data-bs-toggle="dropdown">
+                                    About Me
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#education">Education</a></li>
+                                    <li><a class="dropdown-item" href="#experience">Experience</a></li>
+                                    <li><a class="dropdown-item" href="#achievements">Achievements</a></li>
+                                    <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                                </ul>
                             </li>
 
                             <li class="nav-item mx-3">
-                                <a class="nav-link text-light" href="#experience">Experience</a>
-                            </li>
-
-
-                            <li class="nav-item mx-3">
-                                <a class="nav-link text-light" href="#skills">Skills</a>
-                            </li>
-                            <li class="nav-item mx-3">
-                                <a class="nav-link text-light" href="#achievements">Achievements</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link text-light" href="#contact">Contact</a>
                             </li>
                         </ul>
@@ -71,22 +69,16 @@
 
     <div class="container-fluid" id="banner-bg-img">
         <div class="row">
-            <section id="welcome-section">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12 mx-auto text-center">
-                            <p>Hello, I'm</p>
-                            <h1 class="slideInLeft fs-40 fs-sm-20">Bilal Muhammad Yousuf</h1>
-                            <p class="slideFromBottom">Full Stack Software Developer</p>
-                            <p class="slideInRight">Hire Me for Your Next Project.</p>
-                            <a href="./media/Bilal - Portfolio.pdf" download id="portfolio-btn">
-                                <i class="fa-solid fa-download"></i>
-                                Download Portfolio
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div class="col-md-12 mx-auto text-center">
+                <p>Hello, I'm</p>
+                <h1 class="slideInLeft fs-40 fs-sm-20">Bilal Muhammad Yousuf</h1>
+                <p class="slideFromBottom">Full Stack Software Developer</p>
+                <p class="slideInRight">Hire Me for Your Next Project.</p>
+                <a href="./media/Bilal - Portfolio.pdf" download id="portfolio-btn">
+                    <i class="fa-solid fa-download"></i>
+                    Download Portfolio
+                </a>
+            </div>
         </div>
     </div>
 

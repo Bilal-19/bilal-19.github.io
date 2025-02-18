@@ -6,6 +6,18 @@ body{
   background-color: #F2F8FC;
 }
 
+.navbar-toggler {
+  border: 1px solid white !important;  /* Change border color */
+  padding: 8px 10px;  /* Adjust padding */
+  border-radius: 5px;
+}
+
+.navbar-toggler i {
+  font-size: 24px; /* Increase icon size */
+  color: white; /* Change icon color */
+}
+
+
 .card-img {
   object-fit: cover;
 }
@@ -54,12 +66,12 @@ button {
 }
 
 #banner-bg-img {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0 100%), url("./media/images/workspace.webp");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0 100%), url("./media/images/workspace.webp");
   background-repeat: no-repeat;
   background-size: cover;
   color: aliceblue;
-  height: 500px;
-  width: 98%;
+  height: 550px;
+  width: 95%;
   margin: 10px auto;
   border-radius: 12px;
   display: flex;
