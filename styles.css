@@ -152,6 +152,11 @@ button {
   font-weight: 350;
 }
 
+#contact{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0 100%), url("./media/images/contact-us.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* Animation */
 @keyframes slideInLeft {
