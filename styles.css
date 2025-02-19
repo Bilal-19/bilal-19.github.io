@@ -18,27 +18,15 @@ body{
 }
 
 
-.card-img {
-  object-fit: cover;
-}
-
 .social {
   text-decoration: none;
   color: white;
   display: inline;
 }
 
-.social:hover {
-  color: grey;
-}
-
 .skill-icon {
   height: 60px;
   width: 60px;
-}
-
-.card-img:hover {
-  opacity: 0.9;
 }
 
 .bg-charcoal-blue {
