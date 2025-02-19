@@ -17,6 +17,14 @@ body{
   color: white; /* Change icon color */
 }
 
+.dropdown-item:hover{
+background-color: #051527;
+color: #F2F8FC;
+}
+
+.text-justify{
+  text-align: justify;
+}
 
 .social {
   text-decoration: none;
@@ -107,6 +115,14 @@ button {
   background-color: #051527;
   color: white;
   border: 1px solid white;
+}
+
+.resume-experience-points li {
+  list-style: none;
+}
+.resume-experience-points li:before {
+  content: "✓";
+  margin-right: 10px;
 }
 
 .form-control::placeholder{
@@ -218,5 +234,9 @@ button {
 
   .mt-sm-10{
     margin-top: 10px;
+  }
+
+  .mt-sm-50{
+    margin-top: 50px;
   }
 }
