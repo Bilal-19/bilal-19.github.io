@@ -6,6 +6,7 @@ import {
 
 const addPortfolio = document.getElementById("add-projects");
 const addAchievments = document.getElementById("add-achievments");
+const portfolioSectionEl = document.getElementById("portfolio-section")
 
 projectData.map((data) => {
   addPortfolio.innerHTML += `
@@ -19,16 +20,14 @@ projectData.map((data) => {
 addPortfolio.innerHTML += `
 <div class="carousel-indicators">
     ${projectData
-      .map(
-        (item) => `
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${
-          item.id - 1
-        }" class="${item.id == 1 ? "active" : ""}" aria-current="${
-          item.id == 1 ? "true" : ""
+    .map(
+      (item) => `
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${item.id - 1
+        }" class="${item.id == 1 ? "active" : ""}" aria-current="${item.id == 1 ? "true" : ""
         }" aria-label="Slide ${item.id}"></button>
     `
-      )
-      .join("")}
+    )
+    .join("")}
 </div>
 `;
 
@@ -49,9 +48,8 @@ professionalConnectionIcons.map((item) => {
 achievmentsData.map((data) => {
   addAchievments.innerHTML += `
          <div class="carousel-item ${data.id == 1 ? "active" : " "} ">
-            <img src="${data.imagePath}" class="d-block w-100" alt="${
-    data.altDesc
-  }"> 
+            <img src="${data.imagePath}" class="d-block w-100" alt="${data.altDesc
+    }"> 
         </div>
         
 `;
@@ -60,16 +58,14 @@ achievmentsData.map((data) => {
 addAchievments.innerHTML += `
 <div class="carousel-indicators">
     ${achievmentsData
-      .map(
-        (item) => `
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${
-          item.id - 1
-        }" class="${item.id == 1 ? "active" : ""}" aria-current="${
-          item.id == 1 ? "true" : ""
+    .map(
+      (item) => `
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${item.id - 1
+        }" class="${item.id == 1 ? "active" : ""}" aria-current="${item.id == 1 ? "true" : ""
         }" aria-label="Slide ${item.id}"></button>
     `
-      )
-      .join("")}
+    )
+    .join("")}
 </div>
 `;
 

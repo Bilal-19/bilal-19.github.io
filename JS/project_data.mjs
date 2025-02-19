@@ -1,66 +1,46 @@
 const projectData = [
   {
     id: 1,
-    projectmageSrc: "./media/images/landing_page.webp",
-    projectName: "Product Landing Page",
-  },
-  {
-    id: 2,
-    projectmageSrc: "./media/images/real-estate-web.webp",
-    projectName: "Real Estate Web Application",
-  },
-  {
-    id: 3,
-    projectmageSrc: "./media/images/dashboard.webp",
+    projectmageSrc: "./media/images/visa-application.png",
     projectName: "Visa Web Application",
   },
   {
-    id: 4,
-    projectmageSrc: "./media/images/food_catering_website.webp",
+    id: 2,
+    projectmageSrc: "./media/images/food_catering_website.png",
     projectName: "Food Catering Website",
   },
   {
-    id: 5,
-    projectmageSrc: "./media/images/digital_vibe_technology.webp",
-    projectName: "Tech Company Portfolio Website",
-  },
-  {
-    id: 6,
-    projectmageSrc: "./media/images/rehnuma_portfolio.webp",
+    id: 3,
+    projectmageSrc: "./media/images/rehnuma_portfolio.png",
     projectName: "Portfolio Website for NGO",
   },
   {
-    id: 7,
-    projectmageSrc: "./media/images/royal_jewellers.webp",
+    id: 4,
+    projectmageSrc: "./media/images/royal_jewellers.png",
     projectName: "Royal Jewellers Portfolio Website",
   },
   {
-    id: 8,
+    id: 5,
     projectmageSrc: "./media/images/EcommerceLandingPage.webp",
     projectName: "E Commerce",
   },
   {
-    id: 9,
-    projectmageSrc: "./media/images/Ridehub.webp",
+    id: 6,
+    projectmageSrc: "./media/images/Ridehub.png",
     projectName: "Ride Hub",
   },
   {
-    id: 10,
-    projectmageSrc: "./media/images/ProfitPathWay.webp",
-    projectName: "Profit Pathway Landing Page",
-  },
-  {
-    id: 11,
-    projectmageSrc: "./media/images/SER.webp",
+    id: 7,
+    projectmageSrc: "./media/images/SER.png",
     projectName: "Sterling Executive Residential",
   },
   {
-    id: 12,
+    id: 8,
     projectmageSrc: "./media/images/GreenKey.webp",
     projectName: "Green Key ~ Social Housing Letting Agency",
   },
   {
-    id: 13,
+    id: 9,
     projectmageSrc: "./media/images/aquaVenture.webp",
     projectName: "Aqua Venture ~ Swimming Academy"
   }

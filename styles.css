@@ -22,6 +22,12 @@ background-color: #051527;
 color: #F2F8FC;
 }
 
+#portfolio-section img{
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #F2F8FC;
+  border: 1px solid #d7d9da;
+}
+
 .text-justify{
   text-align: justify;
 }
