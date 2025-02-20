@@ -2,6 +2,10 @@
   scroll-behavior: smooth;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f2f8fc;
 }
@@ -116,7 +120,7 @@ button {
 #portfolio-btn:hover {
   background-color: #051527;
   color: white;
-  border: 1px solid white;
+  border: 1px solid #f1f1f1;
 }
 
 .resume-experience-points li {
