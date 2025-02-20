@@ -2,13 +2,13 @@
   scroll-behavior: smooth;
 }
 
-body{
-  background-color: #F2F8FC;
+body {
+  background-color: #f2f8fc;
 }
 
 .navbar-toggler {
-  border: 1px solid white !important;  /* Change border color */
-  padding: 8px 10px;  /* Adjust padding */
+  border: 1px solid white !important; /* Change border color */
+  padding: 8px 10px; /* Adjust padding */
   border-radius: 5px;
 }
 
@@ -17,12 +17,12 @@ body{
   color: white; /* Change icon color */
 }
 
-.dropdown-item:hover{
-background-color: #051527;
-color: #F2F8FC;
+.dropdown-item:hover {
+  background-color: #051527;
+  color: #f2f8fc;
 }
 
-.text-justify{
+.text-justify {
   text-align: justify;
 }
 
@@ -62,7 +62,8 @@ button {
 }
 
 #banner-bg-img {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0 100%), url("./media/images/workspace.webp");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0 100%),
+    url("./media/images/workspace.webp");
   background-repeat: no-repeat;
   background-size: cover;
   color: aliceblue;
@@ -95,14 +96,15 @@ button {
   margin-top: 15px;
 }
 
-#professional-experience, #educational-img{
+#professional-experience,
+#educational-img {
   border-radius: 6px;
 }
 
-.mt-100{
+.mt-100 {
   margin-top: 100px;
 }
-#portfolio-btn{
+#portfolio-btn {
   color: #051527;
   background-color: white;
   text-decoration: none;
@@ -111,7 +113,7 @@ button {
   border-radius: 6px;
 }
 
-#portfolio-btn:hover{
+#portfolio-btn:hover {
   background-color: #051527;
   color: white;
   border: 1px solid white;
@@ -125,32 +127,33 @@ button {
   margin-right: 10px;
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
   color: #051527;
   font-size: 18px;
 }
 
-.form-control:focus{
+.form-control:focus {
   outline: 1px solid #051527;
 }
 
-.fs-40{
+.fs-40 {
   font-size: 40px;
 }
 
-.fw-normal{
+.fw-normal {
   font-weight: 400;
 }
 
-.fw-light{
+.fw-light {
   font-weight: 350;
 }
 
-#contact{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0 100%), url("./media/images/contact-us.jpg");
+#contact {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0 100%),
+    url("./media/images/contact-us.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 90%;
+  width: 95%;
   height: 500px;
   border-radius: 6px;
 }
@@ -215,6 +218,21 @@ button {
   animation-timing-function: ease-in-out;
   animation-duration: 3s;
 }
+/* Create Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #051527;
+}
 
 @media screen and (max-width: 768px) {
   .educational-card {
@@ -226,25 +244,30 @@ button {
     width: 50px;
   }
 
-  .fs-sm-20{
+  .fs-sm-14{
+    font-size: 14px;
+  }
+
+  .fs-sm-20 {
     font-size: 20px;
   }
 
-  #banner-bg-img{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0 100%), url("./media/images/workspace.webp");
+  #banner-bg-img {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0 100%),
+      url("./media/images/workspace.webp");
     width: 90%;
     height: 400px;
   }
 
-  .flex-sm-col-rev{
+  .flex-sm-col-rev {
     flex-direction: column-reverse;
   }
 
-  .mt-sm-10{
+  .mt-sm-10 {
     margin-top: 10px;
   }
 
-  .mt-sm-50{
+  .mt-sm-50 {
     margin-top: 50px;
   }
 }
