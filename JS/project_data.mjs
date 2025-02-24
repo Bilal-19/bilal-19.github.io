@@ -1,50 +1,60 @@
 const projectData = [
   {
     id: 1,
-    projectmageSrc: "./media/images/visa-application.png",
+    projectmageSrc: "./media/images/visa_application.png",
     projectName: "Visa Web Application",
+    desc: "Developed a Visa Web Application where applicants can create accounts, apply for visas, read FAQs, and submit inquiries. Admins have access to an analytics dashboard, manage users and visa applications, approve or reject requests, and handle customer inquiries with recovery options for trashed records."
   },
   {
     id: 2,
     projectmageSrc: "./media/images/food_catering_website.png",
-    projectName: "Food Catering Website",
+    projectName: "Food Catering Platform",
+    desc: "Developed a food catering platform for both customers and administrators. Customers can place event-based orders (e.g., weddings, birthdays), access customer support, read FAQs, and view order history. Admins can manage menu items, orders, inventory, customer inquiries, user roles, and generate reports via a centralized dashboard."
   },
   {
     id: 3,
     projectmageSrc: "./media/images/rehnuma_portfolio.png",
-    projectName: "Portfolio Website for NGO",
+    projectName: "Rehnuma Portfolio",
+    desc: "Designed and developed a portfolio website to establish a strong digital presence for an NGO. The website highlights the organization's mission, showcases team members, displays progress through a gallery, and integrates social media links for seamless engagement."
   },
   {
     id: 4,
     projectmageSrc: "./media/images/royal_jewellers.png",
-    projectName: "Royal Jewellers Portfolio Website",
+    projectName: "Royal Jewellers Portfolio",
+    desc: "Developed a jewelry portfolio website showcasing jewelry materials and providing cost estimation. Features include a landing page, material options, an estimate cost calculator, a request quotation page, and a contact inquiry section. The website enhances digital presence and improves customer engagement."
   },
   {
     id: 5,
-    projectmageSrc: "./media/images/EcommerceLandingPage.webp",
-    projectName: "E Commerce",
+    projectmageSrc: "./media/images/E-commerce.png",
+    projectName: "E-Commerce Web Application",
+    desc: "Built an eCommerce platform where admins can manage categories, products, and orders from a centralized dashboard. Customers can create accounts, add or remove products from their cart, and choose between Stripe payment or cash on delivery."
   },
   {
     id: 6,
     projectmageSrc: "./media/images/Ridehub.png",
-    projectName: "Ride Hub",
+    projectName: "Ride-Hub Portfolio",
+    desc: "Developed a static website using React JS to showcase premium cars and professional drivers. The website features a sleek design with sections for available cars, driver profiles, and contact inquiries."
   },
   {
     id: 7,
     projectmageSrc: "./media/images/SER.png",
-    projectName: "Sterling Executive Residential",
+    projectName: "Sterling Executive Residential ~ Real Estate",
+    desc: "Developed a seamless property booking platform where users can browse listings, check availability, and book properties. Admins have control over property listings, user inquiries, and overall management."
   },
   {
     id: 8,
-    projectmageSrc: "./media/images/GreenKey.webp",
-    projectName: "Green Key ~ Social Housing Letting Agency",
+    projectmageSrc: "./media/images/Green-Key.png",
+    projectName: "Green Key ~ Real Estate",
+    desc: "Developed a real estate management platform to streamline property management for admins, landlords, and tenants in the UK housing sector. Features include property listings, tenancy management, and inquiry handling."
   },
   {
     id: 9,
-    projectmageSrc: "./media/images/aquaVenture.webp",
-    projectName: "Aqua Venture ~ Swimming Academy"
+    projectmageSrc: "./media/images/aquaVenture.png",
+    projectName: "Aqua Venture ~ Swimming Academy",
+    desc: "Designed and developed a website for a swimming academy, featuring class schedules, trainer profiles, membership options, and contact inquiries."
   }
 ];
+
 
 
 const professionalConnectionIcons = [

@@ -69,10 +69,37 @@ addAchievments.innerHTML += `
 </div>
 `;
 
+const portfolioProjectEl = document.getElementById("portfolio-projects")
 
-// Loader Animation
-// var loader = document.getElementById("preloader")
-
-// window.addEventListener("load", function(){
-//   loader.style.display = "none"
-// })
+projectData.map(item => {
+  if (item.id % 2 == 0) {
+    portfolioProjectEl.innerHTML +=
+      `
+    <div class="row d-flex justify-content-between align-items-center mt-100 mt-sm-50 flex-sm-col-rev">
+      <div class="col-md-5">
+        <h4 class="mt-2">${item.projectName}</h4>
+        <p>
+          ${item.desc}
+        </p>
+      </div>
+    <div class="col-md-6">
+      <img src="${item.projectmageSrc}" alt="" class="img-fluid">
+      </div>
+    </div>
+    `
+  }
+  else {
+    portfolioProjectEl.innerHTML +=
+      `
+  <div class="row d-flex justify-content-between align-items-center mt-100 mt-sm-50">
+      <div class="col-md-6">
+      <img src="${item.projectmageSrc}" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-5">
+        <h4 class="mt-2">${item.projectName}</h4>
+        <p>${item.desc}</p>
+      </div>
+    </div>
+  `
+  }
+})
