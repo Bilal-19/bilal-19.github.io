@@ -80,10 +80,26 @@ button {
   align-items: center;
 }
 
+#education{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0 100%), url("./media/images/education.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 95%;
+  border-radius: 6px;
+}
+
+#experience{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0 100%), url("./media/images/experience.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 95%;
+  border-radius: 6px;
+  color: white;
+}
 .educational-card {
-  border-top: 3px solid #051527;
+  border-top: 3px solid white;
   border-bottom: 1px solid grey;
-  border-left: 3px solid #051527;
+  border-left: 3px solid white;
   border-right: 1px solid grey;
   padding: 10px 12px;
   border-radius: 6px;
@@ -91,9 +107,9 @@ button {
 }
 
 .experience-card {
-  border-bottom: 3px solid #051527;
+  border-bottom: 3px solid white;
   border-top: 1px solid grey;
-  border-right: 3px solid #051527;
+  border-right: 3px solid white;
   border-left: 1px solid grey;
   padding: 10px 12px;
   border-radius: 6px;
@@ -273,5 +289,9 @@ button {
 
   .mt-sm-50 {
     margin-top: 50px;
+  }
+
+  #education, #experience{
+    height: 450px;
   }
 }

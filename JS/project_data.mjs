@@ -52,6 +52,12 @@ const projectData = [
     projectmageSrc: "./media/images/aquaVenture.png",
     projectName: "Aqua Venture ~ Swimming Academy",
     desc: "Designed and developed a website for a swimming academy, featuring class schedules, trainer profiles, membership options, and contact inquiries."
+  },
+  {
+    id: 10,
+    projectmageSrc: "./media/images/iron-pulse-portfolio.png",
+    projectName: "Iron Pulse",
+    desc: "Designed and developed a website for a swimming academy, featuring class schedules, trainer profiles, membership options, and contact inquiries."
   }
 ];
 
