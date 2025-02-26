@@ -291,7 +291,11 @@ button {
     margin-top: 50px;
   }
 
-  #education, #experience{
+  #education{
     height: 450px;
+  }
+
+  #experience{
+    height: 500px;
   }
 }
