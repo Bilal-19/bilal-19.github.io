@@ -83,18 +83,24 @@ button {
 #education{
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0 100%), url("./media/images/education.jpg");
   background-size: cover;
-  height: 300px;
+  height: 500px;
   width: 95%;
   border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #experience{
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0 100%), url("./media/images/experience.jpg");
   background-size: cover;
-  height: 300px;
+  height: 500px;
   width: 95%;
   border-radius: 6px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .educational-card {
   border-top: 3px solid white;
@@ -291,11 +297,4 @@ button {
     margin-top: 50px;
   }
 
-  #education{
-    height: 450px;
-  }
-
-  #experience{
-    height: 550px;
-  }
 }
