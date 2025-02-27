@@ -6,6 +6,22 @@ body {
   background-color: #f2f8fc;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", serif;
+}
+
+p,
+a,
+button {
+  font-family: "Roboto", serif;
+}
+
+/* Navigation */
 .navbar-toggler {
   border: 1px solid white !important; /* Change border color */
   padding: 8px 10px; /* Adjust padding */
@@ -22,28 +38,15 @@ body {
   color: #f2f8fc;
 }
 
+/* Skils Section */
 .skill-icon {
   height: 60px;
   width: 60px;
 }
 
+/* Footer & Header */
 .bg-charcoal-blue {
   background-color: #051527;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Poppins", serif;
-}
-
-p,
-a,
-button {
-  font-family: "Roboto", serif;
 }
 
 #add-projects,
@@ -172,6 +175,10 @@ button {
   width: 95%;
   height: 500px;
   border-radius: 6px;
+}
+
+.text-justify{
+  text-align: justify;
 }
 
 /* Animation */
