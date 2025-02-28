@@ -111,6 +111,11 @@ button {
   margin-top: 15px;
 }
 
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .mt-100 {
   margin-top: 100px;
 }
@@ -292,6 +297,10 @@ button {
 
   #experience{
     height: 600px;
+  }
+
+  .flex-container{
+    flex-direction: column;
   }
 
 }
