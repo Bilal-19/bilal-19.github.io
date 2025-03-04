@@ -88,7 +88,7 @@ button {
 }
 
 #banner-bg-img {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0 100%),
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0 100%),
     url("./media/images/workspace.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -296,6 +296,27 @@ button {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #051527;
+}
+
+/* Carousel Indicator Color */
+.carousel .carousel-indicators {
+  background-color: black;
+  border-radius: 6px;
+}
+.carousel .carousel-indicators .active {
+  background-color: #1a6cca;
+}
+
+/* Customize carousel arrow buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 40px;
+  width: 40px;
+  outline: #051527;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid #051527;
+  background-color: #051527;
 }
 
 @media screen and (max-width: 768px) {
