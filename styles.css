@@ -2,11 +2,24 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "Amsterdam One";
+  src: url("/fonts/AmsterdamOne-eZ12l.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Amsterdam One Slant";
+  src: url("/fonts/AmsterdamOneSlant-0WglP.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
 body {
   background-color: #f2f8fc;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -15,6 +28,20 @@ h6 {
   font-family: "Poppins", serif;
 }
 
+h1{
+  font-family: "Amsterdam One";
+}
+
+.navbar-brand {
+  font-family: "Amsterdam One";
+  color: #f1f1f1 !important;
+  font-size: 15px;
+}
+
+
+.ff-amsterdam-one-slant{
+  font-family: "Amsterdam One Slant";
+}
 p,
 a,
 button {
