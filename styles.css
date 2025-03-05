@@ -298,25 +298,26 @@ button {
   background: #051527;
 }
 
-/* Carousel Indicator Color */
-.carousel .carousel-indicators {
-  background-color: black;
-  border-radius: 6px;
+.carousel .carousel-indicators button {
+  background-color: #555555;
+  height: 5px;
 }
+
 .carousel .carousel-indicators .active {
-  background-color: #1a6cca;
+  background-color: #051527;
 }
 
 /* Customize carousel arrow buttons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  height: 40px;
-  width: 40px;
+  height: 28px;
+  width: 28px;
   outline: #051527;
   background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid #051527;
+  border: 3px solid #051527;
   background-color: #051527;
+  border-radius: 50%;
+  padding: 15px;
 }
 
 @media screen and (max-width: 768px) {
