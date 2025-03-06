@@ -78,7 +78,8 @@ pricingPackages.map((val, key) => {
   <div class="col-10 col-md-3 mt-sm-20 pricing-card">
     <img src="${val.imgPath}" class="img-fluid"/>
     <h4 class="text-center">${val.packageName}</h4>
-    <p class="text-center">US <span class="h5">$${val.price}</span></p>
+    <p class="d-flex justify-content-between">USD <span class="fw-bolder">$${val.newPrice}</span></p>
+    <p>${val.description}</p>
     <div class="d-flex justify-content-between">
       <p><i class="fa-solid fa-calendar-days"></i> ${val.timeFrame}-days delivery</p>
       <p><i class="fa-solid fa-repeat"></i> ${val.revisions} revisions</p>
@@ -87,7 +88,7 @@ pricingPackages.map((val, key) => {
     <ul class="list-group pb-3">
     ${val.keyFeatures.map(value =>
       `
-      <li class="list-group-item"><i class="fa-solid fa-circle-check" style="color: #06bc1b;"></i> ${value}</li>
+      <li class="list-group-item"><i class="fa-solid fa-circle-check" style="color:rgb(25, 151, 16);"></i> ${value}</li>
       `
     ).join("")}
     </ul>

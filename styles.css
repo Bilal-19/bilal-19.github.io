@@ -340,6 +340,7 @@ button {
   background-color: transparent;
   color: #051527;
   border: none;
+  padding: 1px 10px;
 }
 
 @media screen and (max-width: 768px) {

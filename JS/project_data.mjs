@@ -154,7 +154,9 @@ const pricingPackages = [
   {
     id: 1,
     packageName: "Basic",
-    price: "50",
+    description: "A sleek and functional website to establish your online presence quickly.",
+    oldPrice: "70",
+    newPrice: "50",
     keyFeatures: ["Functional", "3 Pages", "Speed Optimization", "Social Media Icons"],
     revisions: 4,
     timeFrame: 7,
@@ -163,7 +165,9 @@ const pricingPackages = [
   {
     id: 2,
     packageName: "Standard",
-    price: "100",
+    description: "A feature-packed website designed for growth and engagement.",
+    oldPrice: "120",
+    newPrice: "100",
     keyFeatures: ["Functional", "6 Pages", "Speed Optimization", "Social Media Icons", "Hosting Setup", "Opt-in form"],
     revisions: 7,
     timeFrame: 14,
@@ -172,7 +176,9 @@ const pricingPackages = [
   {
     id: 3,
     packageName: "Premium",
-    price: "150",
+    description: "A high-quality, optimized website to maximize your online impact.",
+    oldPrice: "185",
+    newPrice: "150",
     keyFeatures: ["Functional", "10 Pages", "Speed Optimization", "Social Media Icons", "Hosting Setup", "Opt-in form", "Basic SEO"],
     revisions: 10,
     timeFrame: 21,
