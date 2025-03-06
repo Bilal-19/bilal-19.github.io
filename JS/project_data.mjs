@@ -150,8 +150,39 @@ const achievmentsData = [
   }
 ];
 
+const pricingPackages = [
+  {
+    id: 1,
+    packageName: "Basic",
+    price: "50",
+    keyFeatures: ["Functional", "3 Pages", "Speed Optimization", "Social Media Icons"],
+    revisions: 4,
+    timeFrame: 7,
+    imgPath: "./media/Icons/basic.png"
+  },
+  {
+    id: 2,
+    packageName: "Standard",
+    price: "100",
+    keyFeatures: ["Functional", "6 Pages", "Speed Optimization", "Social Media Icons", "Hosting Setup", "Opt-in form"],
+    revisions: 7,
+    timeFrame: 14,
+    imgPath: "./media/Icons/elite.png"
+  },
+  {
+    id: 3,
+    packageName: "Premium",
+    price: "150",
+    keyFeatures: ["Functional", "10 Pages", "Speed Optimization", "Social Media Icons", "Hosting Setup", "Opt-in form", "Basic SEO"],
+    revisions: 10,
+    timeFrame: 21,
+    imgPath: "./media/Icons/premium.png"
+  }
+]
+
 export {
   projectData,
   professionalConnectionIcons,
-  achievmentsData
+  achievmentsData,
+  pricingPackages
 };

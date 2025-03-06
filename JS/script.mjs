@@ -2,6 +2,7 @@ import {
   projectData,
   professionalConnectionIcons,
   achievmentsData,
+  pricingPackages,
 } from "./project_data.mjs";
 
 const addPortfolio = document.getElementById("add-projects");
@@ -68,3 +69,28 @@ addAchievments.innerHTML += `
     .join("")}
 </div>
 `;
+
+const priceEl = document.getElementById("pricingPackages")
+
+pricingPackages.map((val, key) => {
+  priceEl.innerHTML +=
+    `
+  <div class="col-10 col-md-3 mt-sm-20 pricing-card">
+    <img src="${val.imgPath}" class="img-fluid"/>
+    <h4 class="text-center">${val.packageName}</h4>
+    <p class="text-center">US <span class="h5">$${val.price}</span></p>
+    <div class="d-flex justify-content-between">
+      <p><i class="fa-solid fa-calendar-days"></i> ${val.timeFrame}-days delivery</p>
+      <p><i class="fa-solid fa-repeat"></i> ${val.revisions} revisions</p>
+    </div>
+    <h6>What's included?</h6>
+    <ul class="list-group pb-3">
+    ${val.keyFeatures.map(value =>
+      `
+      <li class="list-group-item"><i class="fa-solid fa-circle-check" style="color: #06bc1b;"></i> ${value}</li>
+      `
+    ).join("")}
+    </ul>
+  </div>
+  `
+})
