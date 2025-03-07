@@ -3,6 +3,7 @@ import {
   professionalConnectionIcons,
   achievmentsData,
   pricingPackages,
+  blogs,
 } from "./project_data.mjs";
 
 const addPortfolio = document.getElementById("add-projects");
@@ -84,14 +85,28 @@ pricingPackages.map((val, key) => {
       <p><i class="fa-solid fa-calendar-days"></i> ${val.timeFrame}-days delivery</p>
       <p><i class="fa-solid fa-repeat"></i> ${val.revisions} revisions</p>
     </div>
-    <h6>What's included?</h6>
+    <h6>Key Features:</h6>
     <ul class="list-group pb-3">
     ${val.keyFeatures.map(value =>
       `
-      <li class="list-group-item"><i class="fa-solid fa-circle-check" style="color:rgb(25, 151, 16);"></i> ${value}</li>
+      <li class="list-group-item"><i class="fa-solid fa-circle-check" style="color: #051527;"></i> ${value}</li>
       `
     ).join("")}
     </ul>
+  </div>
+  `
+})
+
+
+const blogEl = document.getElementById("blog-section")
+blogs.map((val, key) => {
+  blogEl.innerHTML +=
+    `
+   <div class="col-10 col-md-3 blog-card shadow pb-3 pt-3 mx-auto">
+    <img src="./media/images/${val.thumbnailImg}" alt="${val.blogTitle}" class="img-fluid mb-3 d-block" />
+      <a href="https://medium.com/@bilalmuhammadyousuf543/${val.mediumURL}" target="_blank">
+      <i class="fa-brands fa-medium"></i> View Blog
+      </a>
   </div>
   `
 })

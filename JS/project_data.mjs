@@ -153,36 +153,80 @@ const achievmentsData = [
 const pricingPackages = [
   {
     id: 1,
-    packageName: "Basic",
-    description: "A sleek and functional website to establish your online presence quickly.",
-    oldPrice: "70",
-    newPrice: "50",
-    keyFeatures: ["Functional", "3 Pages", "Speed Optimization", "Social Media Icons"],
-    revisions: 4,
-    timeFrame: 7,
+    packageName: "Starter Website",
+    description: "A simple yet professional website for small businesses, personal brands, or startups needing an online presence.",
+    newPrice: 100,
+    keyFeatures: [
+      "1 to 5 pages (Home, About, Services)",
+      "Responsive & Mobile-Friendly Design",
+      "Basic SEO Optimization",
+      "Contact Form Integration",
+      "Social Media Links",
+      "Fast Loading Speed",
+      "Hosting Setup"
+    ],
+    revisions: 7,
+    timeFrame: 10,
     imgPath: "./media/Icons/basic.png"
   },
   {
     id: 2,
-    packageName: "Standard",
-    description: "A feature-packed website designed for growth and engagement.",
-    oldPrice: "120",
-    newPrice: "100",
-    keyFeatures: ["Functional", "6 Pages", "Speed Optimization", "Social Media Icons", "Hosting Setup", "Opt-in form"],
-    revisions: 7,
-    timeFrame: 14,
+    packageName: "Business Website",
+    description: "A more advanced website with additional functionalities suitable for businesses looking to expand their online reach.",
+    newPrice: "199",
+    keyFeatures: [
+      "5 to 10 Pages", 
+      "Google Maps Integration",
+      "Contact Forms Integration",
+      "Performance Optimization",
+      "Basic E-commerce (Up to 10 Products)",
+      "Social Media Icons", 
+      "Hosting Setup"
+    ],
+    revisions: 15,
+    timeFrame: 21,
     imgPath: "./media/Icons/elite.png"
   },
   {
     id: 3,
-    packageName: "Premium",
-    description: "A high-quality, optimized website to maximize your online impact.",
-    oldPrice: "185",
-    newPrice: "150",
-    keyFeatures: ["Functional", "10 Pages", "Speed Optimization", "Social Media Icons", "Hosting Setup", "Opt-in form", "Basic SEO"],
-    revisions: 10,
-    timeFrame: 21,
+    packageName: "Advanced Web Solution",
+    description: "A full-featured, high-performance website with custom development tailored to business needs. Ideal for startups, e-commerce stores, or large enterprises.",
+    newPrice: "499",
+    keyFeatures: [
+      "More than 10 Pages",
+      "Fully Dynamic CMS (Admin Panel)",
+      "API Integration (Third-Party Services)",
+      "Ongoing Maintenance & Support",
+      "Performance Optimization",
+      "Advanced E-commerce Features",
+      "Hosting Setup"
+    ],
+    revisions: 20,
+    timeFrame: 45,
     imgPath: "./media/Icons/premium.png"
+  }
+]
+
+const blogs = [
+  {
+    id: 1,
+    blogTitle: "Embracing Growth ~ The Art of Developing a Learning Mindset",
+    thumbnailImg: "growth-mindset.png",
+    mediumURL: "embracing-growth-the-art-of-developing-a-learning-mindset-12084f950a0d"
+  },
+
+  {
+    id: 2,
+    blogTitle: "Amal Career Prep Fellowship Experience ~ Batch 291",
+    thumbnailImg: "amal-fellowship-experience.png",
+    mediumURL: "amal-career-prep-fellowship-experience-batch-291-87c681c2c966"
+  },
+
+  {
+    id: 3,
+    blogTitle: "Transformative Journey at Amal Academy",
+    thumbnailImg: "amal-transformative-journey.png",
+    mediumURL: "my-transformative-journey-at-amal-academy-a-three-month-reflection-12b05bc5f771"
   }
 ]
 
@@ -190,5 +234,6 @@ export {
   projectData,
   professionalConnectionIcons,
   achievmentsData,
-  pricingPackages
+  pricingPackages,
+  blogs
 };

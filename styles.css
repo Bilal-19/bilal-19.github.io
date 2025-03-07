@@ -36,6 +36,8 @@ h1{
   font-family: "Amsterdam One";
   color: #f1f1f1 !important;
   font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -327,8 +329,8 @@ button {
   border-left: 2px solid #051527;
   border-right: 1px solid #051527;
   border-radius: 6px;
-  background-color: #f2f8fc;
   color: #051527;
+  background-color: #f2f8fc;
 }
 
 .pricing-card img {
@@ -341,6 +343,24 @@ button {
   color: #051527;
   border: none;
   padding: 1px 10px;
+}
+
+.blog-card img{
+  border-radius: 6px;
+  border: 1px solid #f2f8fc;
+}
+.blog-card a{
+  color: #051527;
+  text-decoration: none;
+  border: 1px solid #051527;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-top: 10px;
+}
+
+.blog-card a:hover{
+  background-color: #051527;
+  color: #f2f8fc;
 }
 
 @media screen and (max-width: 768px) {
