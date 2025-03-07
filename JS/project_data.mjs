@@ -155,7 +155,7 @@ const pricingPackages = [
     id: 1,
     packageName: "Starter Website",
     description: "A simple yet professional website for small businesses, personal brands, or startups needing an online presence.",
-    newPrice: 100,
+    newPrice: 99,
     keyFeatures: [
       "1 to 5 pages (Home, About, Services)",
       "Responsive & Mobile-Friendly Design",
@@ -173,7 +173,7 @@ const pricingPackages = [
     id: 2,
     packageName: "Business Website",
     description: "A more advanced website with additional functionalities suitable for businesses looking to expand their online reach.",
-    newPrice: "199",
+    newPrice: 199,
     keyFeatures: [
       "5 to 10 Pages", 
       "Google Maps Integration",
@@ -191,7 +191,7 @@ const pricingPackages = [
     id: 3,
     packageName: "Advanced Web Solution",
     description: "A full-featured, high-performance website with custom development tailored to business needs. Ideal for startups, e-commerce stores, or large enterprises.",
-    newPrice: "499",
+    newPrice: 499,
     keyFeatures: [
       "More than 10 Pages",
       "Fully Dynamic CMS (Admin Panel)",

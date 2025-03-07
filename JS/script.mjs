@@ -104,9 +104,10 @@ blogs.map((val, key) => {
     `
    <div class="col-10 col-md-3 blog-card shadow pb-3 pt-3 mx-auto mt-sm-20">
     <img src="./media/images/${val.thumbnailImg}" alt="${val.blogTitle}" class="img-fluid mb-3 d-block" />
-      <a href="https://medium.com/@bilalmuhammadyousuf543/${val.mediumURL}" target="_blank">
-      <i class="fa-brands fa-medium"></i> View Blog
-      </a>
+    <h6 class="mb-3">${val.blogTitle}</h6>
+    <a href="https://medium.com/@bilalmuhammadyousuf543/${val.mediumURL}" target="_blank">
+    <i class="fa-brands fa-medium"></i> View Blog
+    </a>
   </div>
   `
 })
