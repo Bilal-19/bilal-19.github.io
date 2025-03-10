@@ -157,52 +157,55 @@ const pricingPackages = [
     description: "A simple yet professional website for small businesses, personal brands, or startups needing an online presence.",
     newPrice: 99,
     keyFeatures: [
-      "1 to 5 pages (Home, About, Services)",
+      "5 pages",
       "Responsive & Mobile-Friendly Design",
-      "Basic SEO Optimization",
       "Contact Form Integration",
       "Social Media Links",
       "Fast Loading Speed",
       "Hosting Setup"
     ],
-    revisions: 7,
-    timeFrame: 10,
+    revisions: 4,
+    timeFrame: 7,
     imgPath: "./media/Icons/basic.png"
   },
   {
     id: 2,
     packageName: "Business Website",
     description: "A more advanced website with additional functionalities suitable for businesses looking to expand their online reach.",
-    newPrice: 199,
+    newPrice: 149,
     keyFeatures: [
       "5 to 10 Pages", 
       "Google Maps Integration",
+      "Responsive & Mobile-Friendly Design",
       "Contact Forms Integration",
       "Performance Optimization",
+      "Basic SEO Optimization",
       "Basic E-commerce (Up to 10 Products)",
       "Social Media Icons", 
       "Hosting Setup"
     ],
-    revisions: 15,
-    timeFrame: 21,
+    revisions: 7,
+    timeFrame: 15,
     imgPath: "./media/Icons/elite.png"
   },
   {
     id: 3,
     packageName: "Advanced Web Solution",
     description: "A full-featured, high-performance website with custom development tailored to business needs. Ideal for startups, e-commerce stores, or large enterprises.",
-    newPrice: 499,
+    newPrice: 249,
     keyFeatures: [
       "More than 10 Pages",
-      "Fully Dynamic CMS (Admin Panel)",
+      "Responsive & Mobile-Friendly Design",
+      "Admin Dashboard",
       "API Integration (Third-Party Services)",
       "Ongoing Maintenance & Support",
       "Performance Optimization",
+      "Basic SEO Optimization",
       "Advanced E-commerce Features",
       "Hosting Setup"
     ],
-    revisions: 20,
-    timeFrame: 45,
+    revisions: 14,
+    timeFrame: 30,
     imgPath: "./media/Icons/premium.png"
   }
 ]

@@ -1,3 +1,7 @@
+:root {
+  --charcoal-blue: #051527;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -28,7 +32,7 @@ h6 {
   font-family: "Poppins", serif;
 }
 
-h1{
+h1 {
   font-family: "Amsterdam One";
 }
 
@@ -40,8 +44,7 @@ h1{
   margin-bottom: 10px;
 }
 
-
-.ff-amsterdam-one-slant{
+.ff-amsterdam-one-slant {
   font-family: "Amsterdam One Slant";
 }
 p,
@@ -63,7 +66,7 @@ button {
 }
 
 .dropdown-item:hover {
-  background-color: #051527;
+  background-color: var(--charcoal-blue);
   color: #f2f8fc;
 }
 
@@ -75,7 +78,7 @@ button {
 
 /* Footer & Header */
 .bg-charcoal-blue {
-  background-color: #051527;
+  background-color: var(--charcoal-blue);
 }
 
 .my-profile {
@@ -105,7 +108,7 @@ button {
 }
 
 #education {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0 100%),
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0 100%),
     url("./media/images/education.jpg");
   background-size: cover;
   height: 500px;
@@ -117,7 +120,7 @@ button {
 }
 
 #experience {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0 100%),
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0 100%),
     url("./media/images/experience.jpg");
   background-size: cover;
   height: 500px;
@@ -157,7 +160,7 @@ button {
   margin-top: 100px;
 }
 #portfolio-btn {
-  background-color: #051527;
+  background-color: var(--charcoal-blue);
   color: white;
   text-decoration: none;
   padding: 8px 10px;
@@ -167,13 +170,13 @@ button {
 
 #portfolio-btn:hover,
 #cta-btn:hover {
-  color: #051527;
+  color: var(--charcoal-blue);
   background-color: white;
-  border: 1px solid #051527;
+  border: 1px solid var(--charcoal-blue);
 }
 
 #cta-btn {
-  color: #051527;
+  color: var(--charcoal-blue);
   background-color: white;
   text-decoration: none;
   padding: 8px 10px;
@@ -190,12 +193,12 @@ button {
 }
 
 .form-control::placeholder {
-  color: #051527;
-  font-size: 18px;
+  color: var(--charcoal-blue);
+  font-size: 15px;
 }
 
 .form-control:focus {
-  border: 1px solid #051527;
+  border: 1px solid var(--charcoal-blue);
 }
 
 .fs-40 {
@@ -206,12 +209,8 @@ button {
   font-weight: 400;
 }
 
-.fw-light {
-  font-weight: 350;
-}
-
 #contact {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0 100%),
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0 100%),
     url("./media/images/contact-us.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -228,6 +227,7 @@ button {
 @keyframes slideInLeft {
   from {
     transform: translateX(-300px);
+    animation-duration: 2s;
   }
   to {
     transform: translateX(0);
@@ -237,7 +237,7 @@ button {
 .slideInLeft {
   animation-name: slideInLeft;
   animation-timing-function: ease-in;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 @keyframes slideInRight {
@@ -252,7 +252,7 @@ button {
 .slideInRight {
   animation-name: slideInRight;
   animation-timing-function: ease-in;
-  animation-duration: 3s;
+  animation-duration: 5s;
 }
 
 @keyframes slideFromBottom {
@@ -284,6 +284,7 @@ button {
   animation-timing-function: ease-in-out;
   animation-duration: 3s;
 }
+
 /* Create Custom Scrollbar */
 /* width */
 ::-webkit-scrollbar {
@@ -297,7 +298,7 @@ button {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #051527;
+  background: var(--charcoal-blue);
 }
 
 .carousel .carousel-indicators button {
@@ -306,7 +307,7 @@ button {
 }
 
 .carousel .carousel-indicators .active {
-  background-color: #051527;
+  background-color: var(--charcoal-blue);
 }
 
 /* Customize carousel arrow buttons */
@@ -314,23 +315,24 @@ button {
 .carousel-control-next-icon {
   height: 28px;
   width: 28px;
-  outline: #051527;
+  outline: var(--charcoal-blue);
   background-size: 100%, 100%;
-  border: 3px solid #051527;
-  background-color: #051527;
+  border: 3px solid var(--charcoal-blue);
+  background-color: var(--charcoal-blue);
   border-radius: 50%;
   padding: 15px;
 }
 
 /* Pricing Section */
-.pricing-card{
-  border-top: 2px solid #051527;
-  border-bottom: 1px solid #051527;
-  border-left: 2px solid #051527;
-  border-right: 1px solid #051527;
+.pricing-card {
+  border-top: 2px solid var(--charcoal-blue);
+  border-bottom: 1px solid var(--charcoal-blue);
+  border-left: 2px solid var(--charcoal-blue);
+  border-right: 1px solid var(--charcoal-blue);
   border-radius: 6px;
-  color: #051527;
+  color: var(--charcoal-blue);
   background-color: #f2f8fc;
+  transition: transform 0.2s;
 }
 
 .pricing-card img {
@@ -338,29 +340,39 @@ button {
   display: block;
   margin: 10px auto;
 }
-.pricing-card .list-group-item{
+.pricing-card .list-group-item {
   background-color: transparent;
-  color: #051527;
+  color: var(--charcoal-blue);
   border: none;
   padding: 1px 10px;
 }
 
-.blog-card img{
+.pricing-card:hover {
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
+}
+
+.blog-card img {
   border-radius: 6px;
   border: 1px solid #f2f8fc;
 }
-.blog-card a{
-  color: #051527;
+.blog-card a {
+  color: var(--charcoal-blue);
   text-decoration: none;
-  border: 1px solid #051527;
+  border: 1px solid var(--charcoal-blue);
   border-radius: 6px;
   padding: 8px 10px;
   margin-top: 10px;
 }
 
-.blog-card a:hover{
-  background-color: #051527;
+.blog-card a:hover {
+  background-color: var(--charcoal-blue);
   color: #f2f8fc;
+}
+
+.drop-shadow {
+  box-shadow: 1px 1px 4px 1px rgba(66, 22, 22, 0.15) !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -396,7 +408,7 @@ button {
     margin-top: 120px;
   }
 
-  .mt-sm-20{
+  .mt-sm-20 {
     margin-top: 20px;
   }
 
@@ -413,4 +425,5 @@ button {
     display: block;
     margin: 25px auto;
   }
+
 }
