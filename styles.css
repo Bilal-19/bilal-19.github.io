@@ -223,6 +223,28 @@ button {
   text-align: justify;
 }
 
+/* FAQs */
+.accordion-header > .accordion-button{
+  color: var(--charcoal-blue) !important;
+  background-color: #f2f8fc;
+  border-top: none;
+  font-weight: 400;
+}
+
+.accordion-header > .accordion-button:focus{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.accordion-body{
+  font-weight: 350;
+}
+
+.accordion-button::after{
+  display: none;
+}
+
 /* Animation */
 @keyframes slideInLeft {
   from {
@@ -348,9 +370,9 @@ button {
 }
 
 .pricing-card:hover {
-  -ms-transform: scale(1.05); /* IE 9 */
-  -webkit-transform: scale(1.05); /* Safari 3-8 */
-  transform: scale(1.05);
+  -ms-transform: scale(1.01); /* IE 9 */
+  -webkit-transform: scale(1.01); /* Safari 3-8 */
+  transform: scale(1.01);
 }
 
 .blog-card img {

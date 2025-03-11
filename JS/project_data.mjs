@@ -174,14 +174,14 @@ const pricingPackages = [
     description: "A more advanced website with additional functionalities suitable for businesses looking to expand their online reach.",
     newPrice: 149,
     keyFeatures: [
-      "5 to 10 Pages", 
+      "5 to 10 Pages",
       "Google Maps Integration",
       "Responsive & Mobile-Friendly Design",
       "Contact Forms Integration",
       "Performance Optimization",
       "Basic SEO Optimization",
       "Basic E-commerce (Up to 10 Products)",
-      "Social Media Icons", 
+      "Social Media Icons",
       "Hosting Setup"
     ],
     revisions: 7,
@@ -233,10 +233,39 @@ const blogs = [
   }
 ]
 
+const FAQs = [
+  {
+    id: 1,
+    ques: "What services do you offer?",
+    answer: "I specialize in Full Stack Web Development, creating responsive websites and web applications using React JS, Laravel, PHP, JavaScript, and MySQL. I also offer SEO and website optimization services."
+  },
+  {
+    id: 2,
+    ques: "What technologies do you specialize in?",
+    answer: "I work with the latest web technologies, including HTML, CSS, JavaScript, Bootstrap 5, Tailwind & React JS for frontend development. On the backend, I specialize in PHP and Laravel. For databases, I work with MySQL."
+  },
+  {
+    id: 3,
+    ques: "How can I contact you for a project?",
+    answer: "You can reach out to me via the contact form on my website or email me at bilalmuhammadyousuf543@gmail.com. I’ll respond as soon as possible!"
+  },
+  {
+    id: 4,
+    ques: "Do you offer freelance or full-time work?",
+    answer: "I am available for freelance projects, contract-based work, and full-time opportunities depending on the project scope and timeline."
+  },
+  {
+    id: 5,
+    ques: "What is your typical project turnaround time?",
+    answer: "The project turnaround time depends on its complexity. A simple website typically takes 5-7 days, while a business website may take 10-15 days. For custom web applications, the timeline extends to 20+ days. I always focus on delivering high-quality work while meeting deadlines efficiently."
+  }
+]
+
 export {
   projectData,
   professionalConnectionIcons,
   achievmentsData,
   pricingPackages,
-  blogs
+  blogs,
+  FAQs
 };

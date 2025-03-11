@@ -4,6 +4,7 @@ import {
   achievmentsData,
   pricingPackages,
   blogs,
+  FAQs,
 } from "./project_data.mjs";
 
 const addPortfolio = document.getElementById("add-projects");
@@ -108,6 +109,25 @@ blogs.map((val, key) => {
     <a href="https://medium.com/@bilalmuhammadyousuf543/${val.mediumURL}" target="_blank">
     <i class="fa-brands fa-medium"></i> View Blog
     </a>
+  </div>
+  `
+})
+
+const faqEl = document.getElementById("faq-section")
+FAQs.map((val, key) => {
+  faqEl.innerHTML +=
+    `
+   <div class="col-11 col-md-10 mx-auto">
+    <div class="accordion-item mb-4 shadow">
+      <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${key}" aria-expanded="true" aria-controls="collapse${key}">
+        ${val.id}. ${val.ques}
+      </button>
+      </h2>
+    <div id="collapse${key}" class="accordion-collapse collapse" data-bs-parent="#faq-section">
+      <div class="accordion-body">${val.answer}</div>
+    </div>
+    </div>
   </div>
   `
 })
