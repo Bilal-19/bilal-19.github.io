@@ -198,7 +198,8 @@ button {
 }
 
 .form-control:focus {
-  border: 1px solid var(--charcoal-blue);
+  box-shadow: none !important;
+  outline: none;
 }
 
 .fs-40 {
