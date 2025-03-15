@@ -56,12 +56,12 @@ button {
 /* Navigation */
 .navbar-toggler {
   border: 1px solid white !important; /* Change border color */
-  padding: 8px 10px; /* Adjust padding */
-  border-radius: 5px;
+  padding: 5px 7px; /* Adjust padding */
+  border-radius: 3px;
 }
 
 .navbar-toggler i {
-  font-size: 24px; /* Increase icon size */
+  font-size: 17px; /* Increase icon size */
   color: white; /* Change icon color */
 }
 
@@ -168,11 +168,9 @@ button {
   border-radius: 6px;
 }
 
-#portfolio-btn:hover,
-#cta-btn:hover {
-  color: var(--charcoal-blue);
-  background-color: white;
-  border: 1px solid var(--charcoal-blue);
+#portfolio-btn:hover{
+  background-color: #102C4A;
+  transition: background-color 0.2s ease;
 }
 
 #cta-btn {
@@ -182,6 +180,10 @@ button {
   padding: 8px 10px;
   margin-bottom: 10px;
   border-radius: 6px;
+}
+
+b{
+  font-weight: 500;
 }
 
 .resume-experience-points li {
@@ -250,10 +252,11 @@ button {
 @keyframes slideInLeft {
   from {
     transform: translateX(-300px);
-    animation-duration: 2s;
+    opacity: 0;
   }
   to {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -379,9 +382,13 @@ button {
 .blog-card img {
   border-radius: 6px;
   border: 1px solid #f2f8fc;
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
 }
 .blog-card a {
-  color: var(--charcoal-blue);
+  background-color: var(--charcoal-blue);
+  color: white;
   text-decoration: none;
   border: 1px solid var(--charcoal-blue);
   border-radius: 6px;
@@ -390,8 +397,8 @@ button {
 }
 
 .blog-card a:hover {
-  background-color: var(--charcoal-blue);
-  color: #f2f8fc;
+  background-color: #102C4A;
+  transition: background-color 0.2s ease;  
 }
 
 .drop-shadow {

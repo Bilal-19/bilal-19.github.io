@@ -84,7 +84,7 @@ pricingPackages.map((val, key) => {
     <p>${val.description}</p>
     <div class="d-flex justify-content-between">
       <p><i class="fa-solid fa-calendar-days"></i> ${val.timeFrame}-days delivery</p>
-      <p><i class="fa-solid fa-repeat"></i> ${val.revisions} revisions</p>
+      <p><i class="fa-solid fa-repeat"></i> ${val.revisions} free revisions</p>
     </div>
     <h6>Key Features:</h6>
     <ul class="list-group pb-3">
@@ -103,11 +103,11 @@ const blogEl = document.getElementById("blog-section")
 blogs.map((val, key) => {
   blogEl.innerHTML +=
     `
-   <div class="col-10 col-md-3 blog-card drop-shadow pb-3 pt-3 mx-auto mt-sm-20">
+   <div class="col-10 col-md-5 blog-card drop-shadow pb-3 pt-3 mx-auto mt-5 mt-sm-20">
     <img src="./media/images/${val.thumbnailImg}" alt="${val.blogTitle}" class="img-fluid mb-3 d-block" />
     <h6 class="mb-3">${val.blogTitle}</h6>
     <a href="https://medium.com/@bilalmuhammadyousuf543/${val.mediumURL}" target="_blank">
-    <i class="fa-brands fa-medium"></i> View Blog
+    <i class="fa-brands fa-medium"></i> View on Medium
     </a>
   </div>
   `

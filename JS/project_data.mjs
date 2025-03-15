@@ -158,14 +158,14 @@ const pricingPackages = [
     newPrice: 99,
     keyFeatures: [
       "5 pages",
-      "Responsive & Mobile-Friendly Design",
-      "Contact Form Integration",
-      "Social Media Links",
-      "Fast Loading Speed",
+      "Responsive Design",
+      "Mobile-Friendly",
+      "Social Media Icons",
+      "Speed Optimization",
       "Hosting Setup"
     ],
-    revisions: 4,
-    timeFrame: 7,
+    revisions: 2,
+    timeFrame: 10,
     imgPath: "./media/Icons/basic.png"
   },
   {
@@ -175,17 +175,16 @@ const pricingPackages = [
     newPrice: 149,
     keyFeatures: [
       "5 to 10 Pages",
-      "Google Maps Integration",
-      "Responsive & Mobile-Friendly Design",
-      "Contact Forms Integration",
-      "Performance Optimization",
-      "Basic SEO Optimization",
-      "Basic E-commerce (Up to 10 Products)",
+      "Responsive Design",
+      "Mobile-Friendly",
       "Social Media Icons",
-      "Hosting Setup"
+      "Speed Optimization",
+      "On-Page SEO",
+      "Basic E-commerce (Up to 10 Products)",
+      "Hosting Setup & Domain",
     ],
-    revisions: 7,
-    timeFrame: 15,
+    revisions: 3,
+    timeFrame: 18,
     imgPath: "./media/Icons/elite.png"
   },
   {
@@ -195,16 +194,17 @@ const pricingPackages = [
     newPrice: 249,
     keyFeatures: [
       "More than 10 Pages",
-      "Responsive & Mobile-Friendly Design",
-      "Admin Dashboard",
-      "API Integration (Third-Party Services)",
+      "Responsive Design",
+      "Mobile-Friendly",
+      "Social Media Icons",
+      "Speed Optimization",
+      "On-Page & Technical SEO",
+      "Admin Dashboard", 
       "Ongoing Maintenance & Support",
-      "Performance Optimization",
-      "Basic SEO Optimization",
       "Advanced E-commerce Features",
-      "Hosting Setup"
+      "Hosting Setup & Domain"
     ],
-    revisions: 14,
+    revisions: 4,
     timeFrame: 30,
     imgPath: "./media/Icons/premium.png"
   }
@@ -214,19 +214,25 @@ const blogs = [
   {
     id: 1,
     blogTitle: "Embracing Growth ~ The Art of Developing a Learning Mindset",
+    thumbnailImg: "host-react-github.png",
+    mediumURL: "embracing-growth-the-art-of-developing-a-learning-mindset-12084f950a0d"
+  },
+  {
+    id: 2,
+    blogTitle: "Embracing Growth ~ The Art of Developing a Learning Mindset",
     thumbnailImg: "growth-mindset.png",
     mediumURL: "embracing-growth-the-art-of-developing-a-learning-mindset-12084f950a0d"
   },
 
   {
-    id: 2,
+    id: 3,
     blogTitle: "Amal Career Prep Fellowship Experience ~ Batch 291",
     thumbnailImg: "amal-fellowship-experience.png",
     mediumURL: "amal-career-prep-fellowship-experience-batch-291-87c681c2c966"
   },
 
   {
-    id: 3,
+    id: 4,
     blogTitle: "Transformative Journey at Amal Academy",
     thumbnailImg: "amal-transformative-journey.png",
     mediumURL: "my-transformative-journey-at-amal-academy-a-three-month-reflection-12b05bc5f771"
@@ -236,30 +242,31 @@ const blogs = [
 const FAQs = [
   {
     id: 1,
-    ques: "What services do you offer?",
-    answer: "I specialize in Full Stack Web Development, creating responsive websites and web applications using React JS, Laravel, PHP, JavaScript, and MySQL. I also offer SEO and website optimization services."
+    ques: "What services do I offer?",
+    answer: "I build custom websites and web applications using React JS, Laravel, PHP, JavaScript, and MySQL. My services include website development, SEO optimization, and performance enhancements."
   },
   {
     id: 2,
-    ques: "What technologies do you specialize in?",
-    answer: "I work with the latest web technologies, including HTML, CSS, JavaScript, Bootstrap 5, Tailwind & React JS for frontend development. On the backend, I specialize in PHP and Laravel. For databases, I work with MySQL."
+    ques: "What technologies do I specialize in?",
+    answer: "I work with HTML, CSS, JavaScript, Bootstrap 5, Tailwind CSS, and React JS for frontend development. For backend development, I use PHP and Laravel, with MySQL as the database."
   },
   {
     id: 3,
-    ques: "How can I contact you for a project?",
-    answer: "You can reach out to me via the contact form on my website or email me at bilalmuhammadyousuf543@gmail.com. I’ll respond as soon as possible!"
+    ques: "How can you contact me for a project?",
+    answer: "You can email me at <b>bilalmuhammadyousuf543@gmail.com</b> or use the contact form on my website. I usually respond within 24 hours."
   },
   {
     id: 4,
-    ques: "Do you offer freelance or full-time work?",
-    answer: "I am available for freelance projects, contract-based work, and full-time opportunities depending on the project scope and timeline."
+    ques: "Am I available for freelance work?",
+    answer: "Yes! I am available for freelance projects, contract-based work, and long-term collaborations based on your requirements."
   },
   {
     id: 5,
-    ques: "What is your typical project turnaround time?",
-    answer: "The project turnaround time depends on its complexity. A simple website typically takes 5-7 days, while a business website may take 10-15 days. For custom web applications, the timeline extends to 20+ days. I always focus on delivering high-quality work while meeting deadlines efficiently."
+    ques: "How long does it take to complete a project?",
+    answer: "Project timelines depend on complexity. A basic website takes 5-7 days, while business websites require 10-15 days. Custom web applications may take 20+ days. I always focus on delivering high-quality work within the agreed timeframe."
   }
-]
+];
+
 
 export {
   projectData,
