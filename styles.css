@@ -57,13 +57,14 @@ button {
 .navbar-toggler {
   border: 1px solid white !important; /* Change border color */
   padding: 5px 7px; /* Adjust padding */
-  border-radius: 3px;
+  border-radius: 6px;
 }
 
 .navbar-toggler i {
   font-size: 18px; /* Increase icon size */
   color: white; /* Change icon color */
 }
+
 
 .dropdown-item:hover {
   background-color: var(--charcoal-blue);
@@ -444,6 +445,7 @@ b{
       url("./media/images/workspace.webp");
     width: 90%;
     height: 400px;
+    margin: 80px auto;
   }
 
   .flex-sm-col-rev {
