@@ -61,7 +61,7 @@ button {
 }
 
 .navbar-toggler i {
-  font-size: 17px; /* Increase icon size */
+  font-size: 23px; /* Increase icon size */
   color: white; /* Change icon color */
 }
 
@@ -248,6 +248,21 @@ b{
   display: none;
 }
 
+/* Contact Us */
+#submit-btn{
+  padding: 8px 10px;
+  width: 100%;
+  border-radius: 6px;
+  background-color: var(--charcoal-blue);
+  color: #f2f8fc;
+  border: none;
+  margin-top: 10px;
+}
+
+#submit-btn:hover{
+  background-color: #102C4A;
+}
+
 /* Animation */
 @keyframes slideInLeft {
   from {
@@ -379,13 +394,14 @@ b{
   transform: scale(1.01);
 }
 
+
 .blog-card img {
   border-radius: 6px;
   border: 1px solid #f2f8fc;
   height: 300px;
   object-fit: cover;
-  width: 100%;
 }
+
 .blog-card a {
   background-color: var(--charcoal-blue);
   color: white;

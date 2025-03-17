@@ -213,29 +213,9 @@ const pricingPackages = [
 const blogs = [
   {
     id: 1,
-    blogTitle: "Embracing Growth ~ The Art of Developing a Learning Mindset",
-    thumbnailImg: "host-react-github.png",
-    mediumURL: "embracing-growth-the-art-of-developing-a-learning-mindset-12084f950a0d"
-  },
-  {
-    id: 2,
-    blogTitle: "Embracing Growth ~ The Art of Developing a Learning Mindset",
-    thumbnailImg: "growth-mindset.png",
-    mediumURL: "embracing-growth-the-art-of-developing-a-learning-mindset-12084f950a0d"
-  },
-
-  {
-    id: 3,
-    blogTitle: "Amal Career Prep Fellowship Experience ~ Batch 291",
-    thumbnailImg: "amal-fellowship-experience.png",
-    mediumURL: "amal-career-prep-fellowship-experience-batch-291-87c681c2c966"
-  },
-
-  {
-    id: 4,
-    blogTitle: "Transformative Journey at Amal Academy",
-    thumbnailImg: "amal-transformative-journey.png",
-    mediumURL: "my-transformative-journey-at-amal-academy-a-three-month-reflection-12b05bc5f771"
+    blogTitle: "How To Host A React JS Website On Github Pages",
+    thumbnailImg: "host-react-github.jpg",
+    mediumURL: "how-to-host-a-react-js-website-on-github-pages-678a714cdc2a"
   }
 ]
 
@@ -263,7 +243,7 @@ const FAQs = [
   {
     id: 5,
     ques: "How long does it take to complete a project?",
-    answer: "Project timelines depend on complexity. A basic website takes 5-7 days, while business websites require 10-15 days. Custom web applications may take 20+ days. I always focus on delivering high-quality work within the agreed timeframe."
+    answer: "Project timelines depend on complexity. A basic website takes 8-10 days, while business websites require 15-18 days. Custom web applications may take 25+ days. I always focus on delivering high-quality work within the agreed timeframe."
   }
 ];
 

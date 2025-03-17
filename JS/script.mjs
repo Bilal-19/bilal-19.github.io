@@ -103,7 +103,7 @@ const blogEl = document.getElementById("blog-section")
 blogs.map((val, key) => {
   blogEl.innerHTML +=
     `
-   <div class="col-10 col-md-5 blog-card drop-shadow pb-3 pt-3 mx-auto mt-5 mt-sm-20">
+   <div class="col-10 col-md-4 blog-card drop-shadow pb-3 pt-3">
     <img src="./media/images/${val.thumbnailImg}" alt="${val.blogTitle}" class="img-fluid mb-3 d-block" />
     <h6 class="mb-3">${val.blogTitle}</h6>
     <a href="https://medium.com/@bilalmuhammadyousuf543/${val.mediumURL}" target="_blank">
