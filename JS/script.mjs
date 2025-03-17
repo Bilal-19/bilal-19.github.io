@@ -7,37 +7,37 @@ import {
   FAQs,
 } from "./project_data.mjs";
 
-const addPortfolio = document.getElementById("add-projects");
+// const addPortfolio = document.getElementById("add-projects");
 const addAchievments = document.getElementById("add-achievments");
 const portfolioSectionEl = document.getElementById("portfolio-projects")
 
-projectData.map((data) => {
-  addPortfolio.innerHTML += `
-         <div class="carousel-item ${data.id == 1 ? "active" : " "} ">
-            <img src="${data.projectmageSrc}" class="d-block w-100" alt="${data.projectName}">
-        </div>
+// projectData.map((data) => {
+//   addPortfolio.innerHTML += `
+//          <div class="carousel-item ${data.id == 1 ? "active" : " "} ">
+//             <img src="${data.projectmageSrc}" class="d-block w-100" alt="${data.projectName}">
+//         </div>
         
-`;
-});
+// `;
+// });
 
-addPortfolio.innerHTML += `
-<div class="carousel-indicators">
-    ${projectData
-    .map(
-      (item) => `
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${item.id - 1
-        }" class="${item.id == 1 ? "active" : ""}" aria-current="${item.id == 1 ? "true" : ""
-        }" aria-label="Slide ${item.id}"></button>
-    `
-    )
-    .join("")}
-</div>
-`;
+// addPortfolio.innerHTML += `
+// <div class="carousel-indicators">
+//     ${projectData
+//     .map(
+//       (item) => `
+//         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${item.id - 1
+//         }" class="${item.id == 1 ? "active" : ""}" aria-current="${item.id == 1 ? "true" : ""
+//         }" aria-label="Slide ${item.id}"></button>
+//     `
+//     )
+//     .join("")}
+// </div>
+// `;
 
 projectData.map((val, key) => {
   portfolioSectionEl.innerHTML +=
     `
-  <div class="col-11 col-md-4 mb-5">
+  <div class="col-11 col-md-4 mb-5 mx-auto" key=${key}>
     <img src=${val.projectmageSrc} class="img-fluid mb-2 rounded drop-shadow">
     <h5>${val.projectName}</h5>
     <button data-bs-toggle="modal" data-bs-target="#exampleModal${val.id}" id="view-project-btn">View Project</button>
