@@ -7,32 +7,8 @@ import {
   FAQs,
 } from "./project_data.mjs";
 
-// const addPortfolio = document.getElementById("add-projects");
 const addAchievments = document.getElementById("add-achievments");
 const portfolioSectionEl = document.getElementById("portfolio-projects")
-
-// projectData.map((data) => {
-//   addPortfolio.innerHTML += `
-//          <div class="carousel-item ${data.id == 1 ? "active" : " "} ">
-//             <img src="${data.projectmageSrc}" class="d-block w-100" alt="${data.projectName}">
-//         </div>
-        
-// `;
-// });
-
-// addPortfolio.innerHTML += `
-// <div class="carousel-indicators">
-//     ${projectData
-//     .map(
-//       (item) => `
-//         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${item.id - 1
-//         }" class="${item.id == 1 ? "active" : ""}" aria-current="${item.id == 1 ? "true" : ""
-//         }" aria-label="Slide ${item.id}"></button>
-//     `
-//     )
-//     .join("")}
-// </div>
-// `;
 
 projectData.map((val, key) => {
   portfolioSectionEl.innerHTML +=
@@ -55,7 +31,7 @@ projectData.map((val, key) => {
           <h6>Technology Used:</h6>
           <p>${val.technology.map(item => `<button class="technology-btn">${item}</button>`).join(" ")}</p>
 
-          ${val.websiteURL ? `<a href=${val.websiteURL} id="demo-url-btn">Live Demo</a>`:``}
+          ${val.websiteURL ? `<a href=${val.websiteURL} id="demo-url-btn" target="_blank">Live Demo</a>`:``}
         </div>
       </div>
     </div>
