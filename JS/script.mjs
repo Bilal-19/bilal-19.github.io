@@ -77,7 +77,7 @@ const priceEl = document.getElementById("pricingPackages")
 pricingPackages.map((val, key) => {
   priceEl.innerHTML +=
     `
-  <div class="col-10 col-md-3 mt-sm-20 pricing-card">
+  <div class="col-10 col-md-3 pricing-card ${val.id == 1 ? '':'mt-sm-20'}">
     <img src="${val.imgPath}" class="img-fluid"/>
     <h4 class="text-center">${val.packageName}</h4>
     <p class="d-flex justify-content-between">USD <span class="fw-bolder">$${val.newPrice}</span></p>

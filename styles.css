@@ -39,9 +39,9 @@ h1 {
 .navbar-brand {
   font-family: "Amsterdam One";
   color: #f1f1f1 !important;
-  font-size: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .ff-amsterdam-one-slant {
@@ -61,7 +61,7 @@ button {
 }
 
 .navbar-toggler i {
-  font-size: 23px; /* Increase icon size */
+  font-size: 18px; /* Increase icon size */
   color: white; /* Change icon color */
 }
 
@@ -100,7 +100,7 @@ button {
   color: aliceblue;
   height: 550px;
   width: 95%;
-  margin: 10px auto;
+  margin: 100px auto;
   border-radius: 6px;
   display: flex;
   justify-content: center;
