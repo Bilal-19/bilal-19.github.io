@@ -93,6 +93,31 @@ button {
   border-radius: 6px;
 }
 
+#demo-url-btn{
+  text-decoration: none;
+}
+
+#view-project-btn, #demo-url-btn{
+  padding: 8px 10px;
+  background-color: var(--charcoal-blue);
+  color: #f2f8fc;
+  border: none;
+  border-radius: 6px;
+}
+
+#view-project-btn:hover{
+  background-color: #102C4A;
+}
+
+.technology-btn{
+  padding: 8px 10px;
+  color: var(--charcoal-blue);
+  background-color: #f2f8fc;
+  border: 1px solid var(--charcoal-blue);
+  border-radius: 12px;
+  margin: 2px
+}
+
 #banner-bg-img {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0 100%),
     url("./media/images/workspace.webp");
