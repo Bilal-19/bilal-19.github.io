@@ -14,7 +14,12 @@ projectData.forEach((val) => {
   portfolioSectionEl.innerHTML += `
       <div class="swiper-slide">
           <img src="${val.projectmageSrc}" class="img-fluid mb-2 rounded drop-shadow">
-          <h5>${val.projectName}</h5>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5>${val.projectName}</h5>
+            <h5>
+              <a href=${val.websiteURL} class="${val.websiteURL ? `fa-solid fa-globe text-dark text-decoration-none` : `hidden`}" target="_blank"><i class=""></i></a>
+            </h5>
+          </div>     
       </div>
   `;
 });
@@ -28,7 +33,7 @@ const swiper = new Swiper('.swiper', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-    clickable:true
+    clickable: true
   },
 
   breakpoints: {
