@@ -65,7 +65,6 @@ button {
   color: white; /* Change icon color */
 }
 
-
 .dropdown-item:hover {
   background-color: var(--charcoal-blue);
   color: #f2f8fc;
@@ -93,11 +92,62 @@ button {
   border-radius: 6px;
 }
 
-#demo-url-btn{
+#demo-url-btn {
   text-decoration: none;
 }
 
-#view-project-btn, #demo-url-btn{
+.swiper{
+  padding-bottom: 40px;
+}
+
+/* Remove default swipper arrows */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* Adjust Icon Size */
+.swiper-button-prev i,
+.swiper-button-next i{
+  font-size: 25px;
+  color: #051527;
+}
+
+/* Hover effect */
+.swiper-button-prev i:hover,
+.swiper-button-next i:hover {
+  color: #102c4a;
+}
+
+.swiper-pagination-bullet{
+  background-color: #cacaca;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+ background-color: #051527; 
+}
+
+.swiper-pagination{
+  margin-bottom: 0px;
+  bottom: 10px;
+}
+#view-project-btn {
+  padding: 6px 10px;
+  background-color: var(--charcoal-blue);
+  color: #f2f8fc;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#demo-url-btn {
   padding: 8px 10px;
   background-color: var(--charcoal-blue);
   color: #f2f8fc;
@@ -105,17 +155,17 @@ button {
   border-radius: 6px;
 }
 
-#view-project-btn:hover{
-  background-color: #102C4A;
+#view-project-btn:hover {
+  background-color: #102c4a;
 }
 
-.technology-btn{
+.technology-btn {
   padding: 8px 10px;
   color: var(--charcoal-blue);
   background-color: #f2f8fc;
   border: 1px solid var(--charcoal-blue);
   border-radius: 12px;
-  margin: 2px
+  margin: 2px;
 }
 
 #banner-bg-img {
@@ -194,8 +244,8 @@ button {
   border-radius: 6px;
 }
 
-#portfolio-btn:hover{
-  background-color: #102C4A;
+#portfolio-btn:hover {
+  background-color: #102c4a;
   transition: background-color 0.2s ease;
 }
 
@@ -208,7 +258,7 @@ button {
   border-radius: 6px;
 }
 
-b{
+b {
   font-weight: 500;
 }
 
@@ -253,29 +303,29 @@ b{
 }
 
 /* FAQs */
-.accordion-header > .accordion-button{
+.accordion-header > .accordion-button {
   color: var(--charcoal-blue) !important;
   background-color: #f2f8fc;
   border-top: none;
   font-weight: 400;
 }
 
-.accordion-header > .accordion-button:focus{
+.accordion-header > .accordion-button:focus {
   border: none;
   outline: none;
   box-shadow: none;
 }
 
-.accordion-body{
+.accordion-body {
   font-weight: 350;
 }
 
-.accordion-button::after{
+.accordion-button::after {
   display: none;
 }
 
 /* Contact Us */
-#submit-btn{
+#submit-btn {
   padding: 8px 10px;
   width: 100%;
   border-radius: 6px;
@@ -285,8 +335,8 @@ b{
   margin-top: 10px;
 }
 
-#submit-btn:hover{
-  background-color: #102C4A;
+#submit-btn:hover {
+  background-color: #102c4a;
 }
 
 /* Animation */
@@ -420,7 +470,6 @@ b{
   transform: scale(1.01);
 }
 
-
 .blog-card img {
   border-radius: 6px;
   border: 1px solid #f2f8fc;
@@ -439,8 +488,8 @@ b{
 }
 
 .blog-card a:hover {
-  background-color: #102C4A;
-  transition: background-color 0.2s ease;  
+  background-color: #102c4a;
+  transition: background-color 0.2s ease;
 }
 
 .drop-shadow {
@@ -498,5 +547,4 @@ b{
     display: block;
     margin: 25px auto;
   }
-
 }

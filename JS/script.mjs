@@ -8,39 +8,46 @@ import {
 } from "./project_data.mjs";
 
 const addAchievments = document.getElementById("add-achievments");
-const portfolioSectionEl = document.getElementById("portfolio-projects")
+const portfolioSectionEl = document.querySelector(".swiper-wrapper")
 
-projectData.map((val, key) => {
-  portfolioSectionEl.innerHTML +=
-    `
-  <div class="col-11 col-md-4 mb-5 mx-auto" key=${key}>
-    <img src=${val.projectmageSrc} class="img-fluid mb-2 rounded drop-shadow">
-    <h5>${val.projectName}</h5>
-    <button data-bs-toggle="modal" data-bs-target="#exampleModal${val.id}" id="view-project-btn">View Project</button>
-    <div class="modal fade" id="exampleModal${val.id}" tabindex="-1" aria-labelledby="modalLabel${val.id}" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title fs-5" id="modalLabel${val.id}">${val.projectName}</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-        <div class="modal-body">
-          <img src=${val.projectmageSrc} class="img-fluid mb-4">
-          <h6>Project Description:</h6>
-          <p>${val.desc}</p>
-          <h6>Technology Used:</h6>
-          <p>${val.technology.map(item => `<button class="technology-btn">${item}</button>`).join(" ")}</p>
-
-          ${val.websiteURL ? `<a href=${val.websiteURL} id="demo-url-btn" target="_blank">Live Demo</a>`:``}
-        </div>
+projectData.forEach((val) => {
+  portfolioSectionEl.innerHTML += `
+      <div class="swiper-slide">
+          <img src="${val.projectmageSrc}" class="img-fluid mb-2 rounded drop-shadow">
+          <h5>${val.projectName}</h5>
       </div>
-    </div>
-  </div>
-    </div>
+  `;
+});
 
-  
-  `
-})
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 20,
+  loopAdditionalSlides: projectData.length+1,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true
+  },
+
+  breakpoints: {
+    768: { slidesPerView: 1 },
+    1024: { slidesPerView: 3 }
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
 
 const professionalConnectionEl = document.getElementById(
   "professional-connection"
@@ -87,8 +94,8 @@ pricingPackages.map((val, key) => {
     `
   <div class="col-10 col-md-3 pricing-card ${val.id == 1 ? '' : 'mt-sm-20'}">
     <img src="${val.imgPath}" class="img-fluid"/>
-    <h4 class="text-center">${val.packageName}</h4>
-    <p class="d-flex justify-content-between">USD <span class="fw-bolder">$${val.newPrice}</span></p>
+    <h5 class="text-center">${val.packageName}</h5>
+    <h3 class="text-center">$${val.newPrice}</h3>
     <p>${val.description}</p>
     <div class="d-flex justify-content-between">
       <p><i class="fa-solid fa-calendar-days"></i> ${val.timeFrame}-days delivery</p>

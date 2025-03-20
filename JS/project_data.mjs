@@ -34,7 +34,7 @@ const projectData = [
   {
     id: 5,
     projectmageSrc: "./media/images/E-commerce.png",
-    projectName: "E-Commerce Web Application",
+    projectName: "E-Commerce Store",
     desc: "Built an eCommerce platform where admins can manage categories, products, and orders from a centralized dashboard. Customers can create accounts, add or remove products from their cart, and choose between Stripe payment or cash on delivery.",
     technology: ["HTML", "CSS","JavaScript", "Bootstrap 5","PHP", "Laravel", "MySQL"],
     websiteURL:""
@@ -50,7 +50,7 @@ const projectData = [
   {
     id: 7,
     projectmageSrc: "./media/images/SER.png",
-    projectName: "UK Real Estate Software",
+    projectName: "Sterling Executive Residential",
     desc: "Developed a seamless property booking platform where users can browse listings, check availability, and book properties. Admins have control over property listings, user inquiries, and overall management.",
     technology: ["HTML", "CSS","JavaScript", "Bootstrap 5","PHP", "Laravel", "MySQL"],
     websiteURL:"https://sterling-executive.com/"
@@ -58,7 +58,7 @@ const projectData = [
   {
     id: 8,
     projectmageSrc: "./media/images/Green-Key.png",
-    projectName: "Dubai Real Estate Website",
+    projectName: "Green Key Lettings",
     desc: "Developed a real estate management platform to streamline property management for admins, landlords, and tenants in the UAE housing sector. Features include property listings, tenancy management, and inquiry handling.",
     technology: ["HTML", "CSS","JavaScript", "Bootstrap 5","PHP", "Laravel", "MySQL"],
     websiteURL:"https://greenkeylettings.com/"
@@ -66,7 +66,7 @@ const projectData = [
   {
     id: 9,
     projectmageSrc: "./media/images/aquaVenture.png",
-    projectName: "Aqua Venture ~ Swimming Academy",
+    projectName: "Swimming Academy",
     desc: "Designed and developed a website for a swimming academy, featuring class schedules, trainer profiles, membership options, and contact inquiries.",
     technology: ["HTML", "CSS","React JS", "Tailwind CSS"],
     websiteURL:"https://aquaswimventure.netlify.app/"
@@ -74,7 +74,15 @@ const projectData = [
   {
     id: 10,
     projectmageSrc: "./media/images/iron-pulse-portfolio.png",
-    projectName: "Iron Pulse",
+    projectName: "Gym Website",
+    desc: "Designed and developed a website for a swimming academy, featuring class schedules, trainer profiles, membership options, and contact inquiries.",
+    technology: ["HTML", "CSS","React JS", "Tailwind CSS"],
+    websiteURL:"https://ironpulse.netlify.app/"
+  },
+  {
+    id: 11,
+    projectmageSrc: "./media/images/curemed-pharmas.png",
+    projectName: "Pharmaceutical Website",
     desc: "Designed and developed a website for a swimming academy, featuring class schedules, trainer profiles, membership options, and contact inquiries.",
     technology: ["HTML", "CSS","React JS", "Tailwind CSS"],
     websiteURL:"https://ironpulse.netlify.app/"
