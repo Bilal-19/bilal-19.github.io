@@ -547,4 +547,8 @@ b {
     display: block;
     margin: 25px auto;
   }
+
+  .swiper{
+    padding-bottom: 20px;
+  }
 }

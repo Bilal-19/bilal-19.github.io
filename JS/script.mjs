@@ -23,8 +23,7 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  spaceBetween: 20,
-  loopAdditionalSlides: projectData.length+1,
+  spaceBetween: 25,
 
   // If we need pagination
   pagination: {
