@@ -14,12 +14,9 @@ projectData.forEach((val) => {
   portfolioSectionEl.innerHTML += `
       <div class="swiper-slide">
           <img src="${val.projectmageSrc}" class="img-fluid mb-2 rounded drop-shadow">
-          <div class="d-flex justify-content-between align-items-center">
-            <h5>${val.projectName}</h5>
-            <h5>
-              <a href=${val.websiteURL} class="${val.websiteURL ? `fa-solid fa-globe text-dark text-decoration-none` : `hidden`}" target="_blank"><i class=""></i></a>
-            </h5>
-          </div>     
+            <h5 class="text-xl font-semibold">${val.projectName}</h5>
+            <p class="text-[#6B7280] mt-3 mb-3">${val.desc}</p>
+            <p>${val.technology.map(item => `<button class="bg-[#051527] text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
       </div>
   `;
 });
@@ -149,4 +146,11 @@ FAQs.map((val, key) => {
     </div>
   </div>
   `
+})
+
+
+// Adding navbar toggle functionality
+
+document.getElementById("menu-toggle").addEventListener("click", ()=>{
+  document.getElementById("navbar-default").classList.toggle("hidden")
 })

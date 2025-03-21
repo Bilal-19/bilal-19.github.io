@@ -3,89 +3,89 @@ const projectData = [
     id: 1,
     projectmageSrc: "./media/images/visa_application.png",
     projectName: "Visa Web Application",
-    desc: "Developed a Visa Web Application where applicants can create accounts, apply for visas, read FAQs, and submit inquiries. Admins have access to an analytics dashboard, manage users and visa applications, approve or reject requests, and handle customer inquiries with recovery options for trashed records.",
-    technology: ["HTML", "CSS","JavaScript", "Bootstrap 5","PHP", "Laravel", "MySQL"],
-    websiteURL:""
+    desc: "A visa application platform with user accounts, application management, FAQs, inquiries, admin dashboard, and approval system.",
+    technology: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    websiteURL: ""
   },
   {
     id: 2,
     projectmageSrc: "./media/images/food_catering_website.png",
     projectName: "Food Catering Platform",
-    desc: "Developed a food catering platform for both customers and administrators. Customers can place event-based orders (e.g., weddings, birthdays), access customer support, read FAQs, and view order history. Admins can manage menu items, orders, inventory, customer inquiries, user roles, and generate reports via a centralized dashboard.",
-    technology: ["HTML", "CSS","JavaScript", "Bootstrap 5","PHP", "Laravel", "MySQL"],
-    websiteURL:""
+    desc: "An event-based food catering platform with order management, customer support, FAQs, inventory tracking, and admin dashboard.",
+    technology: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    websiteURL: ""
   },
   {
     id: 3,
     projectmageSrc: "./media/images/rehnuma_portfolio.png",
     projectName: "Rehnuma Portfolio",
-    desc: "Designed and developed a portfolio website to establish a strong digital presence for an NGO. The website highlights the organization's mission, showcases team members, displays progress through a gallery, and integrates social media links for seamless engagement.",
+    desc: "An NGO portfolio website showcasing mission, team, progress gallery, and social media integration.",
     technology: ["React JS", "Bootstrap 5"],
-    websiteURL:"https://rehnuma.netlify.app/"
+    websiteURL: "https://rehnuma.netlify.app/"
   },
   {
     id: 4,
     projectmageSrc: "./media/images/royal_jewellers.png",
     projectName: "Royal Jewellers Portfolio",
-    desc: "Developed a jewelry portfolio website showcasing jewelry materials and providing cost estimation. Features include a landing page, material options, an estimate cost calculator, a request quotation page, and a contact inquiry section. The website enhances digital presence and improves customer engagement.",
+    desc: "A jewelry portfolio website featuring materials, cost estimation, quotation requests, and customer inquiries.",
     technology: ["React JS", "Bootstrap 5"],
-    websiteURL:"https://royaljewellers.netlify.app/"
+    websiteURL: "https://royaljewellers.netlify.app/"
   },
   {
     id: 5,
     projectmageSrc: "./media/images/E-commerce.png",
     projectName: "E-Commerce Store",
-    desc: "Built an eCommerce platform where admins can manage categories, products, and orders from a centralized dashboard. Customers can create accounts, add or remove products from their cart, and choose between Stripe payment or cash on delivery.",
-    technology: ["HTML", "CSS","JavaScript", "Bootstrap 5","PHP", "Laravel", "MySQL"],
-    websiteURL:""
+    desc: "An eCommerce platform with product management, shopping cart, Stripe payments, and admin dashboard.",
+    technology: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    websiteURL: ""
   },
   {
     id: 6,
     projectmageSrc: "./media/images/Ridehub.png",
     projectName: "Ride-Hub Portfolio",
-    desc: "Developed a static website using React JS to showcase premium cars and professional drivers. The website features a sleek design with sections for available cars, driver profiles, and contact inquiries.",
-    technology: ["HTML", "CSS","React JS", "Bootstrap 5"],
-    websiteURL:"https://ridewithcomfort.netlify.app/"
+    desc: "A static website showcasing premium cars, driver profiles, and contact inquiries.",
+    technology: ["HTML", "CSS", "React JS", "Bootstrap 5"],
+    websiteURL: "https://ridewithcomfort.netlify.app/"
   },
   {
     id: 7,
     projectmageSrc: "./media/images/SER.png",
     projectName: "Sterling Executive Residential",
-    desc: "Developed a seamless property booking platform where users can browse listings, check availability, and book properties. Admins have control over property listings, user inquiries, and overall management.",
-    technology: ["HTML", "CSS","JavaScript", "Bootstrap 5","PHP", "Laravel", "MySQL"],
-    websiteURL:"https://sterling-executive.com/"
+    desc: "A property booking platform with listings, availability checking, booking, and admin management.",
+    technology: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    websiteURL: "https://sterling-executive.com/"
   },
   {
     id: 8,
     projectmageSrc: "./media/images/Green-Key.png",
     projectName: "Green Key Lettings",
-    desc: "Developed a real estate management platform to streamline property management for admins, landlords, and tenants in the UAE housing sector. Features include property listings, tenancy management, and inquiry handling.",
-    technology: ["HTML", "CSS","JavaScript", "Bootstrap 5","PHP", "Laravel", "MySQL"],
-    websiteURL:"https://greenkeylettings.com/"
+    desc: "A real estate platform for property management, tenancy handling, and inquiries in the UAE housing sector.",
+    technology: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    websiteURL: "https://greenkeylettings.com/"
   },
   {
     id: 9,
     projectmageSrc: "./media/images/aquaVenture.png",
     projectName: "Swimming Academy",
-    desc: "Designed and developed a website for a swimming academy, featuring class schedules, trainer profiles, membership options, and contact inquiries.",
-    technology: ["HTML", "CSS","React JS", "Tailwind CSS"],
-    websiteURL:"https://aquaswimventure.netlify.app/"
+    desc: "A website for a swimming academy with class schedules, trainer profiles, membership options, and contact inquiries.",
+    technology: ["HTML", "CSS", "React JS", "Tailwind CSS"],
+    websiteURL: "https://aquaswimventure.netlify.app/"
   },
   {
     id: 10,
     projectmageSrc: "./media/images/iron-pulse-portfolio.png",
     projectName: "Gym Website",
-    desc: "Designed and developed a website for a swimming academy, featuring class schedules, trainer profiles, membership options, and contact inquiries.",
-    technology: ["HTML", "CSS","React JS", "Tailwind CSS"],
-    websiteURL:"https://ironpulse.netlify.app/"
+    desc: "A gym website with membership options, trainer profiles, workout schedules, and contact inquiries.",
+    technology: ["HTML", "CSS", "React JS", "Tailwind CSS"],
+    websiteURL: "https://ironpulse.netlify.app/"
   },
   {
     id: 11,
     projectmageSrc: "./media/images/curemed-pharmas.png",
     projectName: "Pharmaceutical Website",
-    desc: "Designed and developed a website for a swimming academy, featuring class schedules, trainer profiles, membership options, and contact inquiries.",
-    technology: ["HTML", "CSS","React JS", "Tailwind CSS"],
-    websiteURL:"https://ironpulse.netlify.app/"
+    desc: "A pharmaceutical website featuring product details, services, and contact inquiries.",
+    technology: ["HTML", "CSS", "React JS", "Tailwind CSS"],
+    websiteURL: "https://curemed-pharmas.netlify.app/"
   }
 ];
 

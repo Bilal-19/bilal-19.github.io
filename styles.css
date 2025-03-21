@@ -19,11 +19,12 @@ html {
   font-weight: normal;
   font-style: italic;
 }
-
+/* 
 body {
   background-color: #f2f8fc;
-}
+} */
 
+h1,
 h2,
 h3,
 h4,
@@ -32,26 +33,35 @@ h6 {
   font-family: "Poppins", serif;
 }
 
-h1 {
+/* h1 {
   font-family: "Amsterdam One";
+} */
+
+.nav-item a{
+  color: var(--charcoal-blue) !important;
 }
 
 .navbar-brand {
   font-family: "Amsterdam One";
-  color: #f1f1f1 !important;
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: 500;
   margin-top: 5px;
   margin-bottom: 5px;
+  color: #051527 !important;
+}
+
+.ff-amsterdam-one {
+  font-family: "Amsterdam One";
 }
 
 .ff-amsterdam-one-slant {
   font-family: "Amsterdam One Slant";
 }
-p,
+/* p,
 a,
 button {
   font-family: "Roboto", serif;
-}
+} */
 
 /* Navigation */
 .navbar-toggler {
@@ -106,24 +116,19 @@ button {
   display: none;
 }
 
-.swiper-button-next, .swiper-button-prev{
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-}
 
 /* Adjust Icon Size */
-.swiper-button-prev i,
+/* .swiper-button-prev i,
 .swiper-button-next i{
   font-size: 25px;
   color: #051527;
-}
+} */
 
 /* Hover effect */
-.swiper-button-prev i:hover,
+/* .swiper-button-prev i:hover,
 .swiper-button-next i:hover {
   color: #102c4a;
-}
+} */
 
 .swiper-pagination-bullet{
   background-color: #cacaca;
@@ -159,29 +164,6 @@ button {
   background-color: #102c4a;
 }
 
-.technology-btn {
-  padding: 8px 10px;
-  color: var(--charcoal-blue);
-  background-color: #f2f8fc;
-  border: 1px solid var(--charcoal-blue);
-  border-radius: 12px;
-  margin: 2px;
-}
-
-#banner-bg-img {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0 100%),
-    url("./media/images/workspace.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: aliceblue;
-  height: 550px;
-  width: 95%;
-  margin: 100px auto;
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 #education {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0 100%),
@@ -250,8 +232,8 @@ button {
 }
 
 #cta-btn {
-  color: var(--charcoal-blue);
-  background-color: white;
+  background-color: var(--charcoal-blue);
+  color: white;
   text-decoration: none;
   padding: 8px 10px;
   margin-bottom: 10px;
@@ -402,6 +384,12 @@ b {
   animation-duration: 3s;
 }
 
+.swiper-slide{
+  height: fit-content;
+  padding: 10px;
+  border-radius: 12px;
+}
+
 /* Create Custom Scrollbar */
 /* width */
 ::-webkit-scrollbar {
@@ -512,14 +500,6 @@ b {
 
   .fs-sm-20 {
     font-size: 20px;
-  }
-
-  #banner-bg-img {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0 100%),
-      url("./media/images/workspace.webp");
-    width: 90%;
-    height: 400px;
-    margin: 80px auto;
   }
 
   .flex-sm-col-rev {

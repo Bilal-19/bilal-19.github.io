@@ -12,8 +12,8 @@
     <meta name="keywords"
         content="Full Stack Developer, Web Developer, React JS, Laravel, Software Developer, Portfolio, Hire Developer">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,213 +26,155 @@
     <!-- Swiper JS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body>
-    <div class="container-fluid fixed-top">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg-charcoal-blue text-light shadow h-100">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html">
-                        BMY
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars text-light"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#portfolio-projects">Portfolio</a>
-                            </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light" href="#" id="aboutDropdown" role="button"
-                                    data-bs-toggle="dropdown">
-                                    About Me
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#education">Education</a></li>
-                                    <li><a class="dropdown-item" href="#experience">Experience</a></li>
-                                    <li><a class="dropdown-item" href="#achievements">Achievements</a></li>
-                                    <li><a class="dropdown-item" href="#skills">Skills</a></li>
-                                    <li><a class="dropdown-item" href="#blogs">Blogs</a></li>
-                                    <li><a class="dropdown-item" href="#faqs">FAQs</a></li>
-                                </ul>
-                            </li>
+    <div class="w-full text-[#6B7280] flex flex-col md:flex-row justify-between h-fit pt-5 pb-5 shadow-md">
+        <div class="flex items-center justify-between ml-2">
+            <a href="" class="ff-amsterdam-one text-xs md:text-md">Bilal Muhammad Yousuf</a>
+            <button
+                class="md:hidden mx-5 inline-flex size-10 items-center justify-center duration-3000 focus:transition"
+                id="menu-toggle" aria-controls="navbar-default" aria-expanded="false">
+                <i class="fas fa-bars text-lg"></i>
+            </button>
+        </div>
 
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#pricing">Pricing</a>
-                            </li>
+        <div class="flex flex-col md:flex-row mx-5 md:m-0" id="navbar-default">
+            <a href="" class="mr-5 hover:underline underline-offset-4 text-sm font-medium my-1 md:my-0">Home</a>
+            <a href="" class="mr-5 hover:underline underline-offset-4 text-sm font-medium my-1 md:my-0">Projects</a>
+            <a href="" class="mr-5 hover:underline underline-offset-4 text-sm font-medium my-1 md:my-0">Experience</a>
+            <a href="" class="mr-5 hover:underline underline-offset-4 text-sm font-medium my-1 md:my-0">Blog</a>
+            <a href="" class="hover:underline underline-offset-4 text-sm font-medium my-1 md:my-0">Contact</a>
+        </div>
 
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#contact">Contact</a>
-                            </li>
-                        </ul>
+        <div class="mx-5">
+            <a href="" class="fa-brands fa-facebook"></a>
+            <a href="" class="fa-brands fa-instagram"></a>
+            <a href="" class="fa-brands fa-linkedin"></a>
+        </div>
 
-                        <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                            <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link text-light fa-lg" target="_blank"
-                                    href="https://www.facebook.com/profile.php?id=100013114033412">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
+    </div>
 
-                                <a class="nav-link text-light fa-lg" target="_blank"
-                                    href="https://www.instagram.com/bilal_8939/">
-                                    <i class="mx-3 fa-brands fa-instagram"></i>
-                                </a>
+    <div class="container mx-auto flex flex-col-reverse md:flex-row items-center mt-10">
+        <div class="w-90 md:w-1/2 m-2 md:m-5">
+            <h2 class="font-medium text-4xl md:text-6xl">Hi, I'm Bilal</h2>
+            <h2 class="text-2xl md:text-5xl">Full Stack <span class="text-[#051527] font-medium">Web Developer</span>
+            </h2>
+            <p class="text-md md:text-xl text-[#6B7280] mb-5">
+                I developed custom, SEO-optimized, and high-performance websites tailored to
+                diverse industries, including Visa applications, Food catering, NGOs, Jewelry businesses, and real
+                estate.
+                My experience spans building scalable, user-friendly, and visually engaging web
+                solutions that enhance user experience and drive business growth.
+            </p>
+            <a href="mailto:bilalmuhammadyousuf543@gmail.com"
+                class="bg-[#051527] text-white px-3 py-2 mt-5 rounded-lg hover:bg-[#102c4a]">
+                <i class="fa-solid fa-handshake-simple"></i>
+                Let's Work Together
+            </a>
+        </div>
 
-                                <a class="nav-link text-light fa-lg" target="_blank"
-                                    href="https://www.linkedin.com/in/bilalmuhammadyousuf/">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        <div class="w-90 md:w-1/2">
+            <img src="/media/images/workspace.webp" alt="workspace" class="rounded-lg">
         </div>
     </div>
 
-    <div class="container-fluid" id="banner-bg-img">
-        <div class="row">
-            <div class="col-md-12 mx-auto text-center">
-                <p class="mb-4">Hello, I'm</p>
-                <h1 class="slideInLeft fs-sm-20">Bilal Muhammad Yousuf</h1>
-                <p class="slideFromBottom mt-5">Full Stack Web Developer</p>
-                <a href="mailto:bilalmuhammadyousuf543@gmail.com" id="cta-btn"><i
-                        class="fa-solid fa-handshake-simple"></i> Let's Work Together</a>
+    <div class="container mx-auto pt-5 bg-[#f9fafb] border-2 border-[#f9fafb] mt-20">
+        <div class="md:w-1/2 text-center mx-auto">
+            <h2 class="slideFromTop text-2xl md:text-4xl">Featured Projects</h2>
+            <p class="text-xl text-[#6B7280]">A section of my recent work</p>
+        </div>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 
-    <div class="container-fluid mt-100 mt-sm-120">
-        <div class="row d-flex justify-content-around align-items-center flex-sm-col-rev">
-            <div class="col-11 col-md-5 text-justify text-sm-start">
-                <h2 class="text-center text-md-start slideFromTop">About Me</h2>
-                <p>
-                    Hi, I'm <b>Bilal Muhammad Yousuf</b>, a <b>Full Stack Web Developer</b> with expertise in <b>HTML,
-                        CSS, Bootstrap, Tailwind CSS, JavaScript, React JS, PHP, Laravel, and MySQL.</b>
-                </p>
-                <p>
-                    I specialize in crafting <b> custom, SEO-optimized, and high-performance</b> websites tailored to
-                    diverse industries, including <b> visa applications, food catering, NGOs, jewelry businesses, and
-                        real
-                        estate.</b> My experience spans <b> building scalable, user-friendly, and visually engaging web
-                        solutions</b>
-                    that enhance user experience and drive business growth.
-                </p>
-                <p>
-                    What sets me apart? I focus on <b>precision, performance, and pixel-perfect designs,</b> ensuring
-                    every
-                    website I create is <b> optimized for speed, responsiveness, and SEO.</b> With a keen eye for detail
-                    and a
-                    results-driven approach, I deliver web solutions that not only look great but also <b>convert
-                        visitors
-                        into customers.</b>
-                </p>
-                <p>
-                    Let’s build something exceptional together!
-                </p>
-                <a href="./media/Bilal - Portfolio.pdf" download id="portfolio-btn">
-                    <i class="fa-solid fa-download" aria-label="Download Portfolio"></i>
-                    Download Portfolio
-                </a>
+    <div class="container mx-auto flex flex-col md:flex-row justify-center items-center mt-20">
+        <div class="w-100 md:w-1/2 m-2 md:m-5">
+            <img src="/media/images/education.jpg" alt="education" class="rounded-lg">
+        </div>
+        <div class="w-100 md:w-1/2 m-2 md:m-5">
+            <h2 class="slideFromTop text-2xl md:text-4xl mb-10">Educational Background</h2>
+            <div class="mb-5 border-l-2 pl-2">
+                <h5 class="text-xl">NED University of Engineering & Technology</h5>
+                <p class="text-md">Bachelor of Science, Software Engineering</p>
+                <small class="text-xs">Oct 2019 - Aug 2023</small>
             </div>
-            <div class="col-11 col-md-3">
-                <img src="./media/images/profile.png" alt="bilal-profile" class="img-fluid shadow my-profile">
+
+            <div class="border-l-2 pl-2">
+                <h5 class="text-xl">Islamia Government Science College</h5>
+                <p class="text-md">Engineering, Pre Engineering</p>
+                <small class="text-xs">Sept 2017 - May 2019</small>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid mt-100 mt-sm-120">
-        <div class="row">
-            <h2 class="text-center slideFromTop">Featured Projects</h2>
-            <div class="col-11 col-md-11 mb-5 mx-auto">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"><i class="fa-solid fa-circle-chevron-left"></i></div>
-                    <div class="swiper-button-next"><i class="fa-solid fa-circle-chevron-right"></i></div>
-                    <!-- <div class="swiper-scrollbar"></div> -->
-                </div>
-            </div>
-        </div>
-
-        <div class="row mb-5">
-            <div class="col-md-11 mx-auto">
-                <div class="row" id="portfolio-projects"></div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="container-fluid mt-100 mt-sm-120" id="education">
-        <div class="row d-flex justify-content-around pt-5 pb-5 text-white">
-            <h2 class="text-center slideFromTop">Educational Background</h2>
-            <div class="col-10 col-md-5 educational-card">
-                <h5 class="mb-0">NED University of Engineering &
-                    Technology
-                </h5>
-                <p class="mb-0 fw-normal">Bachelor of Science, Software Engineering</p>
-                <small class="mt-0">Oct 2019 - Aug 2023</small>
-            </div>
-            <div class="col-10 col-md-5 educational-card">
-                <h5 class="mb-0">Islamia Government Science College</h5>
-                <p class="mb-0 fw-normal">Engineering, Pre Engineering</p>
-                <small class="mt-0">Sept 2017 - May 2019</small>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid mt-100 mt-sm-120" id="experience">
-        <div class="row d-flex justify-content-around align-items-center pt-5">
-            <h2 class="text-center slideFromTop">Professional Experience</h2>
-            <div class="col-10 col-md-5 experience-card">
-                <h5 class="mb-0">Upwork</h5>
-                <div class="mb-0 fw-normal flex-container">
+    <div class="container mx-auto flex flex-col-reverse md:flex-row justify-center items-center mt-20">
+        <div class="w-100 md:w-1/2 m-2 md:m-5">
+            <h2 class="slideFromTop text-2xl md:text-4xl mb-10">Professional Experience</h2>
+            <div class="mb-5 border-l-2 pl-2">
+                <h5 class="text-xl">Upwork</h5>
+                <p class="text-md flex justify-between md:w-90">
                     <span>Software Developer</span>
-                    <small class="mt-0">Sept 2024 - Present</small>
-                </div>
-                <ul class="resume-experience-points">
-                    <li>Provide web development service to local and international clients.</li>
-                </ul>
+                    <span class="text-xs">Sept 2024 - Present</span>
+                </p>
             </div>
 
-            <div class="col-10 col-md-5 experience-card">
-                <h5 class="mb-0">ZH Tech</h5>
-                <div class="mb-0 fw-normal flex-container">
+            <div class="mb-5 border-l-2 pl-2">
+                <h5 class="text-xl">ZH Tech</h5>
+                <p class="text-md flex justify-between md:w-90">
                     <span>Software Developer</span>
-                    <small class="mt-0">Sept 2024 - Present</small>
-                </div>
-                <ul class="resume-experience-points">
-                    <li>Developed web applications for diverse industries including Medical, E-Commerce, Real Estate and
-                        much more.</li>
-                </ul>
+                    <span class="text-xs">Sept 2024 - Present</span>
+                </p>
             </div>
+        </div>
+        <div class="w-100 md:w-1/2 m-2 md:m-5">
+            <img src="/media/images/experience.jpg" alt="experience" class="rounded-lg">
         </div>
     </div>
 
 
-    <div class="container-fluid mt-100 mt-sm-120" id="skills">
-        <div class="row">
-            <h2 class="text-center slideFromTop">Technical Expertise</h2>
-            <div class="col-11 col-md-10 mx-auto mb-4 d-flex flex-sm-row justify-content-around slideInRight">
-                <img src="./media/Icons/html-5.png" alt="html" class="skill-icon img-fluid">
-                <img src="./media/Icons/css.png" alt="css" class="skill-icon img-fluid">
-                <img src="./media/Icons/bootstrap.png" alt="bootstrap" class="skill-icon img-fluid">
-                <img src="./media/Icons/tailwindcss.svg" alt="tailwind" class="skill-icon img-fluid">
-                <img src="./media/Icons/js.png" alt="javascript" class="skill-icon img-fluid">
+
+
+    <div class="container mx-auto mt-20" id="skills">
+        <h2 class="text-center slideFromTop text-4xl">Skills & Technologies</h2>
+        <div class="flex flex-col md:flex-row justify-around">
+            <div class="flex mx-10 my-5">
+                <div>
+                    <img src="./media/images/frontend.png" alt="">
+                </div>
+                <div class="mx-2">
+                    <h5>Frontend Development</h5>
+                    <p>HTML, CSS, Boostrap 5, Tailwind CSS, JavaScript & React JS</p>
+                </div>
             </div>
-            <div class="col-11 col-md-10 mx-auto d-flex flex-sm-row justify-content-around slideInLeft">
-                <img src="./media/Icons/react_js.png" alt="react js" class="skill-icon img-fluid">
-                <img src="./media/Icons/php.png" alt="php" class="skill-icon img-fluid">
-                <img src="./media/Icons/laravel.png" alt="laravel" class="skill-icon img-fluid">
-                <img src="./media/Icons/mysql.png" alt="mysql" class="skill-icon img-fluid">
-                <img src="./media/Icons/github.png" alt="github" class="skill-icon img-fluid">
+
+            <div class="flex mx-10 my-5">
+                <div>
+                    <img src="./media/images/backend.png" alt="">
+                </div>
+                <div class="mx-2">
+                    <h5>Backend Development</h5>
+                    <p>PHP, Laravel & Rest APIs</p>
+                </div>
+            </div>
+
+            <div class="flex mx-10 my-5">
+                <div>
+                    <img src="./media/images/database.png" alt="">
+                </div>
+                <div class="mx-2">
+                    <h5>Database & Cloud</h5>
+                    <p>MySQL & Hostinger</p>
+                </div>
             </div>
         </div>
     </div>
