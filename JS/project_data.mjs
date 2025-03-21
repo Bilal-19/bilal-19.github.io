@@ -4,7 +4,7 @@ const projectData = [
     projectmageSrc: "./media/images/visa_application.png",
     projectName: "Visa Web Application",
     desc: "A visa application platform with user accounts, application management, FAQs, inquiries, admin dashboard, and approval system.",
-    technology: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    technology: [ "JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: ""
   },
   {
@@ -12,7 +12,7 @@ const projectData = [
     projectmageSrc: "./media/images/food_catering_website.png",
     projectName: "Food Catering Platform",
     desc: "An event-based food catering platform with order management, customer support, FAQs, inventory tracking, and admin dashboard.",
-    technology: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: ""
   },
   {
@@ -36,7 +36,7 @@ const projectData = [
     projectmageSrc: "./media/images/E-commerce.png",
     projectName: "E-Commerce Store",
     desc: "An eCommerce platform with product management, shopping cart, Stripe payments, and admin dashboard.",
-    technology: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: ""
   },
   {
@@ -44,7 +44,7 @@ const projectData = [
     projectmageSrc: "./media/images/Ridehub.png",
     projectName: "Ride-Hub Portfolio",
     desc: "A static website showcasing premium cars, driver profiles, and contact inquiries.",
-    technology: ["HTML", "CSS", "React JS", "Bootstrap 5"],
+    technology: ["React JS", "Bootstrap 5"],
     websiteURL: "https://ridewithcomfort.netlify.app/"
   },
   {
@@ -52,7 +52,7 @@ const projectData = [
     projectmageSrc: "./media/images/SER.png",
     projectName: "Sterling Executive Residential",
     desc: "A property booking platform with listings, availability checking, booking, and admin management.",
-    technology: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "https://sterling-executive.com/"
   },
   {
@@ -60,7 +60,7 @@ const projectData = [
     projectmageSrc: "./media/images/Green-Key.png",
     projectName: "Green Key Lettings",
     desc: "A real estate platform for property management, tenancy handling, and inquiries in the UAE housing sector.",
-    technology: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "https://greenkeylettings.com/"
   },
   {
@@ -68,7 +68,7 @@ const projectData = [
     projectmageSrc: "./media/images/aquaVenture.png",
     projectName: "Swimming Academy",
     desc: "A website for a swimming academy with class schedules, trainer profiles, membership options, and contact inquiries.",
-    technology: ["HTML", "CSS", "React JS", "Tailwind CSS"],
+    technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://aquaswimventure.netlify.app/"
   },
   {
@@ -76,7 +76,7 @@ const projectData = [
     projectmageSrc: "./media/images/iron-pulse-portfolio.png",
     projectName: "Gym Website",
     desc: "A gym website with membership options, trainer profiles, workout schedules, and contact inquiries.",
-    technology: ["HTML", "CSS", "React JS", "Tailwind CSS"],
+    technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://ironpulse.netlify.app/"
   },
   {
@@ -84,7 +84,7 @@ const projectData = [
     projectmageSrc: "./media/images/curemed-pharmas.png",
     projectName: "Pharmaceutical Website",
     desc: "A pharmaceutical website featuring product details, services, and contact inquiries.",
-    technology: ["HTML", "CSS", "React JS", "Tailwind CSS"],
+    technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://curemed-pharmas.netlify.app/"
   }
 ];
