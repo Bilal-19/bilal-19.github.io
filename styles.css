@@ -13,16 +13,9 @@ html {
   font-style: normal;
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body{
   font-family: "Poppins", serif;
 }
-
 
 .nav-item a{
   color: var(--charcoal-blue) !important;
@@ -40,13 +33,6 @@ h6 {
 .ff-amsterdam-one {
   font-family: "Amsterdam One";
 }
-
-/* p,
-a,
-button {
-  font-family: "Roboto", serif;
-} */
-
 
 /* Footer & Header */
 .bg-charcoal-blue {

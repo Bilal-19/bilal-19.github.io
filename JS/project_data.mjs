@@ -238,9 +238,11 @@ const pricingPackages = [
 const blogs = [
   {
     id: 1,
-    blogTitle: "How To Host A React JS Website On Github Pages",
+    blogTitle: "Host React JS Website On Github Pages",
     thumbnailImg: "host-react-github.jpg",
-    mediumURL: "how-to-host-a-react-js-website-on-github-pages-678a714cdc2a"
+    mediumURL: "how-to-host-a-react-js-website-on-github-pages-678a714cdc2a",
+    blogDesc: "Learn about the deployment of React JS website on github pages.",
+    publishDate: "Mar 14, 2025"
   }
 ]
 
