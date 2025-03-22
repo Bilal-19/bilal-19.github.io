@@ -480,9 +480,9 @@ b {
   transition: background-color 0.2s ease;
 }
 
-.drop-shadow {
+/* .drop-shadow {
   box-shadow: 1px 1px 4px 1px rgba(66, 22, 22, 0.15) !important;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .educational-card {
