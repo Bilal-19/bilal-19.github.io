@@ -182,12 +182,11 @@ const pricingPackages = [
   {
     id: 1,
     packageName: "Starter Website",
-    description: "A simple yet professional website for small businesses, personal brands, or startups needing an online presence.",
+    description: "Perfect for small businesses and personal websites.",
     newPrice: 99,
     keyFeatures: [
       "5 pages",
-      "Responsive Design",
-      "Mobile-Friendly",
+      "Mobile Responsive",
       "Social Media Icons",
       "Speed Optimization",
       "Hosting Setup"
@@ -199,12 +198,11 @@ const pricingPackages = [
   {
     id: 2,
     packageName: "Business Website",
-    description: "A more advanced website with additional functionalities suitable for businesses looking to expand their online reach.",
+    description: "Advanced features for growing businesses.",
     newPrice: 149,
     keyFeatures: [
       "5 to 10 Pages",
-      "Responsive Design",
-      "Mobile-Friendly",
+      "Mobile Responsive",
       "Social Media Icons",
       "Speed Optimization",
       "On-Page SEO",
@@ -218,12 +216,11 @@ const pricingPackages = [
   {
     id: 3,
     packageName: "Advanced Web Solution",
-    description: "A full-featured, high-performance website with custom development tailored to business needs. Ideal for startups, e-commerce stores, or large enterprises.",
+    description: "Custom development for complex needs.",
     newPrice: 249,
     keyFeatures: [
       "More than 10 Pages",
-      "Responsive Design",
-      "Mobile-Friendly",
+      "Mobile Responsive",
       "Social Media Icons",
       "Speed Optimization",
       "On-Page & Technical SEO",

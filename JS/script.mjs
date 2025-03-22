@@ -1,18 +1,17 @@
 import {
   projectData,
-  professionalConnectionIcons,
   achievmentsData,
   pricingPackages,
   blogs,
   FAQs,
 } from "./project_data.mjs";
 
-const addAchievments = document.getElementById("add-achievments");
 const portfolioSectionEl = document.querySelector(".swiper-wrapper")
+const certificateSectionEl = document.querySelector(".certificate-wrapper")
 
 projectData.forEach((val) => {
   portfolioSectionEl.innerHTML += `
-      <div class="swiper-slide rounded-xl border border-gray-200 drop-shadow">
+      <div class="swiper-slide rounded-xl border border-gray-200 drop-shadow mb-5">
           <img src="${val.projectmageSrc}" class="img-fluid mb-2 rounded drop-shadow">
             <h5 class="text-xl font-semibold">${val.projectName}</h5>
             <p class="text-[#6B7280] mt-3 mb-3">${val.desc}</p>
@@ -21,7 +20,7 @@ projectData.forEach((val) => {
   `;
 });
 
-const swiper = new Swiper('.swiper', {
+new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -50,63 +49,26 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const professionalConnectionEl = document.getElementById(
-  "professional-connection"
-);
-
-professionalConnectionIcons.map((item) => {
-  professionalConnectionEl.innerHTML += `
-     <li>
-        <a href="${item.hrefPath}" class="mt-5 mx-2 social" target="_blank">
-            <i class="${item.iconClass} fa-xl" style="color: #ffffff;"></i>
-        </a>
-    </li>
-    `;
-});
-
-achievmentsData.map((data) => {
-  addAchievments.innerHTML += `
-         <div class="carousel-item ${data.id == 1 ? "active" : " "} ">
-            <img src="${data.imagePath}" class="d-block w-100" alt="${data.altDesc
-    }"> 
-        </div>
-        
-`;
-});
-
-addAchievments.innerHTML += `
-<div class="carousel-indicators">
-    ${achievmentsData
-    .map(
-      (item) => `
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${item.id - 1
-        }" class="${item.id == 1 ? "active" : ""}" aria-current="${item.id == 1 ? "true" : ""
-        }" aria-label="Slide ${item.id}"></button>
-    `
-    )
-    .join("")}
-</div>
-`;
 
 const priceEl = document.getElementById("pricingPackages")
 
 pricingPackages.map((val, key) => {
   priceEl.innerHTML +=
     `
-  <div class="col-10 col-md-3 pricing-card ${val.id == 1 ? '' : 'mt-sm-20'}">
-    <img src="${val.imgPath}" class="img-fluid"/>
-    <h5 class="text-center">${val.packageName}</h5>
-    <h3 class="text-center">$${val.newPrice}</h3>
-    <p>${val.description}</p>
-    <div class="d-flex justify-content-between">
+  <div class="m-3 border shadow-md rounded-lg hover:scale-102 duration-100 p-5 ${val.id == 2 ? 'border-gray-500' : 'border-gray-300'}">
+    <img src="${val.imgPath}" class="h-10 mx-auto mb-3"/>
+    <h5 class="text-center md:text-lg font-medium mb-3">${val.packageName}</h5>
+    <h3 class="text-center md:text-4xl font-medium mb-3">$${val.newPrice}</h3>
+    <p class="mb-3">${val.description}</p>
+    <div class="mb-3 flex justify-between text-[#6B7280]">
       <p><i class="fa-solid fa-calendar-days"></i> ${val.timeFrame}-days delivery</p>
       <p><i class="fa-solid fa-repeat"></i> ${val.revisions} free revisions</p>
     </div>
     <h6>Key Features:</h6>
-    <ul class="list-group pb-3">
+    <ul class="text-[#6B7280]">
     ${val.keyFeatures.map(value =>
       `
-      <li class="list-group-item"><i class="fa-solid fa-circle-check" style="color: #051527;"></i> ${value}</li>
+      <li class="ml-5"><i class="fa-solid fa-check text-green-700"></i> ${value}</li>
       `
     ).join("")}
     </ul>
@@ -151,6 +113,48 @@ FAQs.map((val, key) => {
 
 // Adding navbar toggle functionality
 
-document.getElementById("menu-toggle").addEventListener("click", ()=>{
+document.getElementById("menu-toggle").addEventListener("click", () => {
   document.getElementById("navbar-default").classList.toggle("hidden")
 })
+
+
+// Adding swiper to certificates
+
+
+
+new Swiper('.swiper-certificates', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 25,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  breakpoints: {
+    768: { slidesPerView: 1 },
+    1024: { slidesPerView: 3 }
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+achievmentsData.forEach((val) => {
+  certificateSectionEl.innerHTML += `
+      <div class="swiper-slide rounded-xl border border-gray-200 drop-shadow mb-5">
+          <img src="${val.imagePath}" class="img-fluid mb-2 rounded drop-shadow">
+      </div>
+  `;
+});

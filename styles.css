@@ -13,16 +13,6 @@ html {
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Amsterdam One Slant";
-  src: url("/fonts/AmsterdamOneSlant-0WglP.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-/* 
-body {
-  background-color: #f2f8fc;
-} */
 
 h1,
 h2,
@@ -33,9 +23,6 @@ h6 {
   font-family: "Poppins", serif;
 }
 
-/* h1 {
-  font-family: "Amsterdam One";
-} */
 
 .nav-item a{
   color: var(--charcoal-blue) !important;
@@ -54,56 +41,16 @@ h6 {
   font-family: "Amsterdam One";
 }
 
-.ff-amsterdam-one-slant {
-  font-family: "Amsterdam One Slant";
-}
 /* p,
 a,
 button {
   font-family: "Roboto", serif;
 } */
 
-/* Navigation */
-.navbar-toggler {
-  border: 1px solid white !important; /* Change border color */
-  padding: 5px 7px; /* Adjust padding */
-  border-radius: 6px;
-}
-
-.navbar-toggler i {
-  font-size: 18px; /* Increase icon size */
-  color: white; /* Change icon color */
-}
-
-.dropdown-item:hover {
-  background-color: var(--charcoal-blue);
-  color: #f2f8fc;
-}
-
-/* Skils Section */
-.skill-icon {
-  height: 60px;
-  width: 60px;
-}
 
 /* Footer & Header */
 .bg-charcoal-blue {
   background-color: var(--charcoal-blue);
-}
-
-.my-profile {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-#add-projects,
-#add-achievments {
-  border-radius: 6px;
-}
-
-#demo-url-btn {
-  text-decoration: none;
 }
 
 .swiper{
@@ -115,20 +62,6 @@ button {
 .swiper-button-next::after {
   display: none;
 }
-
-
-/* Adjust Icon Size */
-/* .swiper-button-prev i,
-.swiper-button-next i{
-  font-size: 25px;
-  color: #051527;
-} */
-
-/* Hover effect */
-/* .swiper-button-prev i:hover,
-.swiper-button-next i:hover {
-  color: #102c4a;
-} */
 
 .swiper-pagination-bullet{
   background-color: #cacaca;
@@ -142,146 +75,6 @@ button {
 .swiper-pagination{
   margin-bottom: 0px;
   bottom: 10px;
-}
-#view-project-btn {
-  padding: 6px 10px;
-  background-color: var(--charcoal-blue);
-  color: #f2f8fc;
-  border: none;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-#demo-url-btn {
-  padding: 8px 10px;
-  background-color: var(--charcoal-blue);
-  color: #f2f8fc;
-  border: none;
-  border-radius: 6px;
-}
-
-#view-project-btn:hover {
-  background-color: #102c4a;
-}
-
-
-#education {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0 100%),
-    url("./media/images/education.jpg");
-  background-size: cover;
-  height: 500px;
-  width: 95%;
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#experience {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0 100%),
-    url("./media/images/experience.jpg");
-  background-size: cover;
-  height: 500px;
-  width: 95%;
-  border-radius: 6px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.educational-card {
-  border-top: 2px solid white;
-  border-bottom: 1px solid grey;
-  border-left: 2px solid white;
-  border-right: 1px solid grey;
-  padding: 10px 12px;
-  border-radius: 6px;
-  margin-top: 15px;
-}
-
-.experience-card {
-  border-bottom: 2px solid white;
-  border-top: 1px solid grey;
-  border-right: 2px solid white;
-  border-left: 1px solid grey;
-  padding: 10px 12px;
-  border-radius: 6px;
-  margin-top: 15px;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.mt-100 {
-  margin-top: 100px;
-}
-#portfolio-btn {
-  background-color: var(--charcoal-blue);
-  color: white;
-  text-decoration: none;
-  padding: 8px 10px;
-  margin-bottom: 10px;
-  border-radius: 6px;
-}
-
-#portfolio-btn:hover {
-  background-color: #102c4a;
-  transition: background-color 0.2s ease;
-}
-
-#cta-btn {
-  background-color: var(--charcoal-blue);
-  color: white;
-  text-decoration: none;
-  padding: 8px 10px;
-  margin-bottom: 10px;
-  border-radius: 6px;
-}
-
-b {
-  font-weight: 500;
-}
-
-.resume-experience-points li {
-  list-style: none;
-}
-.resume-experience-points li:before {
-  content: "✓";
-  margin-right: 10px;
-}
-
-.form-control::placeholder {
-  color: var(--charcoal-blue);
-  font-size: 15px;
-}
-
-.form-control:focus {
-  box-shadow: none !important;
-  outline: none;
-}
-
-.fs-40 {
-  font-size: 40px;
-}
-
-.fw-normal {
-  font-weight: 400;
-}
-
-#contact {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0 100%),
-    url("./media/images/contact-us.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 95%;
-  height: 500px;
-  border-radius: 6px;
-}
-
-.text-justify {
-  text-align: justify;
 }
 
 /* FAQs */
@@ -306,20 +99,6 @@ b {
   display: none;
 }
 
-/* Contact Us */
-#submit-btn {
-  padding: 8px 10px;
-  width: 100%;
-  border-radius: 6px;
-  background-color: var(--charcoal-blue);
-  color: #f2f8fc;
-  border: none;
-  margin-top: 10px;
-}
-
-#submit-btn:hover {
-  background-color: #102c4a;
-}
 
 /* Animation */
 @keyframes slideInLeft {
@@ -404,131 +183,4 @@ b {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--charcoal-blue);
-}
-
-.carousel .carousel-indicators button {
-  background-color: #555555;
-  height: 2px;
-}
-
-.carousel .carousel-indicators .active {
-  background-color: var(--charcoal-blue);
-}
-
-/* Customize carousel arrow buttons */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 28px;
-  width: 28px;
-  outline: var(--charcoal-blue);
-  background-size: 100%, 100%;
-  border: 3px solid var(--charcoal-blue);
-  background-color: var(--charcoal-blue);
-  border-radius: 50%;
-  padding: 15px;
-}
-
-/* Pricing Section */
-.pricing-card {
-  border-top: 2px solid var(--charcoal-blue);
-  border-bottom: 1px solid var(--charcoal-blue);
-  border-left: 2px solid var(--charcoal-blue);
-  border-right: 1px solid var(--charcoal-blue);
-  border-radius: 6px;
-  color: var(--charcoal-blue);
-  background-color: #f2f8fc;
-  transition: transform 0.2s;
-}
-
-.pricing-card img {
-  height: 50px;
-  display: block;
-  margin: 10px auto;
-}
-.pricing-card .list-group-item {
-  background-color: transparent;
-  color: var(--charcoal-blue);
-  border: none;
-  padding: 1px 10px;
-}
-
-.pricing-card:hover {
-  -ms-transform: scale(1.01); /* IE 9 */
-  -webkit-transform: scale(1.01); /* Safari 3-8 */
-  transform: scale(1.01);
-}
-
-.blog-card img {
-  border-radius: 6px;
-  border: 1px solid #f2f8fc;
-  height: 300px;
-  object-fit: cover;
-}
-
-.blog-card a {
-  background-color: var(--charcoal-blue);
-  color: white;
-  text-decoration: none;
-  border: 1px solid var(--charcoal-blue);
-  border-radius: 6px;
-  padding: 8px 10px;
-  margin-top: 10px;
-}
-
-.blog-card a:hover {
-  background-color: #102c4a;
-  transition: background-color 0.2s ease;
-}
-
-/* .drop-shadow {
-  box-shadow: 1px 1px 4px 1px rgba(66, 22, 22, 0.15) !important;
-} */
-
-@media screen and (max-width: 768px) {
-  .educational-card {
-    margin-bottom: 10px;
-  }
-
-  .skill-icon {
-    height: 50px;
-    width: 50px;
-  }
-
-  .fs-sm-14 {
-    font-size: 14px;
-  }
-
-  .fs-sm-20 {
-    font-size: 20px;
-  }
-
-  .flex-sm-col-rev {
-    flex-direction: column-reverse;
-  }
-
-  .mt-sm-120 {
-    margin-top: 120px;
-  }
-
-  .mt-sm-20 {
-    margin-top: 20px;
-  }
-
-  #experience {
-    height: 600px;
-  }
-
-  .flex-container {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .my-profile {
-    display: block;
-    margin: 25px auto;
-  }
-
-  .swiper{
-    padding-bottom: 20px;
-  }
 }
