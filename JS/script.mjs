@@ -8,7 +8,7 @@ const portfolioSectionEl = document.querySelector(".swiper-wrapper")
 
 projectData.forEach((val) => {
   portfolioSectionEl.innerHTML += `
-      <div class="swiper-slide rounded-xl border border-gray-300 mb-5 h-fit p-2 w-80 md:w-100">
+      <div class="swiper-slide rounded-xl border border-gray-300 mb-5 h-fit px-2 py-5 w-75 md:w-100">
           <img src="${val.projectmageSrc}" class="img-fluid mb-2 rounded">
             <h5 class="text-xl font-semibold">${val.projectName}</h5>
             <p class="text-[#6B7280] mt-3 mb-3">${val.desc}</p>
