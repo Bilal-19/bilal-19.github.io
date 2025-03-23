@@ -54,10 +54,10 @@ pricingPackages.map((val, key) => {
     `
   <div class="m-3 border shadow-md rounded-lg hover:scale-102 duration-100 p-5 ${val.id == 2 ? 'border-gray-500' : 'border-gray-300'}">
     <img src="${val.imgPath}" class="h-10 mx-auto mb-3"/>
-    <h5 class="text-center md:text-lg font-medium mb-3">${val.packageName}</h5>
-    <h3 class="text-center md:text-4xl font-medium mb-3">$${val.newPrice}</h3>
+    <h5 class="text-center text-md md:text-lg font-medium mb-3">${val.packageName}</h5>
+    <h3 class="text-center text-2xl md:text-4xl font-medium mb-3">$${val.newPrice}</h3>
     <p class="mb-3">${val.description}</p>
-    <div class="mb-3 flex justify-between text-[#6B7280]">
+    <div class="mb-3 flex flex-col md:flex-row justify-between text-[#6B7280]">
       <p><i class="fa-solid fa-calendar-days"></i> ${val.timeFrame}-days delivery</p>
       <p><i class="fa-solid fa-repeat"></i> ${val.revisions} free revisions</p>
     </div>
