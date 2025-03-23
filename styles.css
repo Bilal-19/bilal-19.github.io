@@ -13,8 +13,12 @@ html {
   font-style: normal;
 }
 
-body{
+h1,h2,h3,h4,h5,h6{
   font-family: "Poppins", serif;
+}
+
+p,a,button, input, textarea, li{
+  font-family: "Inter", sans-serif;
 }
 
 .nav-item a{
@@ -62,29 +66,6 @@ body{
   margin-bottom: 0px;
   bottom: 10px;
 }
-
-/* FAQs */
-.accordion-header > .accordion-button {
-  color: var(--charcoal-blue) !important;
-  background-color: #f2f8fc;
-  border-top: none;
-  font-weight: 400;
-}
-
-.accordion-header > .accordion-button:focus {
-  border: none;
-  outline: none;
-  box-shadow: none;
-}
-
-.accordion-body {
-  font-weight: 350;
-}
-
-.accordion-button::after {
-  display: none;
-}
-
 
 /* Animation */
 @keyframes slideInLeft {
@@ -149,11 +130,6 @@ body{
   animation-duration: 3s;
 }
 
-.swiper-slide{
-  height: fit-content;
-  padding: 10px;
-  border-radius: 12px;
-}
 
 /* Create Custom Scrollbar */
 /* width */
