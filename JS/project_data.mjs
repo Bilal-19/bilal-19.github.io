@@ -4,7 +4,7 @@ const projectData = [
     projectmageSrc: "./media/images/visa_application.png",
     projectName: "Visa Web Application",
     desc: "A visa application platform with user accounts, application management, FAQs, inquiries, admin dashboard, and approval system.",
-    technology: [ "JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: ""
   },
   {
@@ -224,7 +224,7 @@ const pricingPackages = [
       "Social Media Icons",
       "Speed Optimization",
       "On-Page & Technical SEO",
-      "Admin Dashboard", 
+      "Admin Dashboard",
       "Ongoing Maintenance & Support",
       "Advanced E-commerce Features",
       "Hosting Setup & Domain"
@@ -274,6 +274,32 @@ const FAQs = [
   }
 ];
 
+const professionalExperience = [
+  {
+    id: 1,
+    companyName: "ZH Tech",
+    designation: "Software Developer",
+    duration: "Sept 2024 - Present",
+    jobDescription: [
+      "Developed UK Real Estate platform for seamless property booking, allowing users to browse, check availability, and book, while admins manage listings and inquiries.",
+      "Developed a Dubai real estate platform with role-based dashboards for admins and landlords to manage properties, FAQs, and partner companies. Tenants can browser and book properties.",
+      "Developed a pharmaceutical website for <b>Cure Med Pharmas</b>, showcasing products, services, and a career page for job applicants."
+    ]
+  },
+
+  {
+    id: 2,
+    companyName: "Upwork",
+    designation: "Software Developer",
+    duration: "Sept 2024 - Present",
+    jobDescription: [
+      "Developed a Full Stack Visa Web Application for applicants to apply for visas, read FAQs, and submit inquiries. Admins manage users, applications, approvals, and customer inquiries with analytics and recovery options.",
+      "Designed and developed a Food Catering platform with event-based ordering, customer support, FAQs, and order history. Admins manage analytics, menus, orders, inventory, user roles, and customer inquiries.",
+      "Designed & Developed a develop a website that effectively showcases jewelry materials to customers, provides cost estimation, and includes a request quotation and contact inquiry page.",
+      "Developed a strong online presence for Aqua Venture Swimming Academy by showcase their swimming programs, highlight a gallery of activities, feature testimonials from parents and alumni, and provide an easy way for visitors to get in touch via a contact form."
+    ]
+  }
+]
 
 export {
   projectData,
@@ -281,5 +307,6 @@ export {
   achievmentsData,
   pricingPackages,
   blogs,
-  FAQs
+  FAQs,
+  professionalExperience
 };

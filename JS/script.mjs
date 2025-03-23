@@ -1,7 +1,8 @@
 import {
   projectData,
   pricingPackages,
-  blogs
+  blogs,
+  professionalExperience
 } from "./project_data.mjs";
 
 const portfolioSectionEl = document.querySelector(".swiper-wrapper")
@@ -94,3 +95,23 @@ blogs.map((val, key) => {
 document.getElementById("menu-toggle").addEventListener("click", () => {
   document.getElementById("navbar-default").classList.toggle("hidden")
 })
+
+
+const experienceEl = document.getElementById("experience-section")
+
+professionalExperience.map((item, key) => (
+  experienceEl.innerHTML += 
+  `
+  <div class="mb-5 border-l-2 pl-2">
+    <h5 class="text-xl">${item.companyName}</h5>
+    <p class="text-md flex flex-col md:flex-row justify-between mb-5">
+    <span>${item.designation}</span>
+    <span class="text-xs">${item.duration}</span>
+    </p>
+    <h6>Roles & Responsibilites:</h6>
+    <ul>
+    ${item.jobDescription.map(val => `<li class="text-sm mb-2"><i class="fa-solid fa-check text-green-700"></i> ${val}</li>`).join("")}
+    </ul>
+  </div>
+  `
+))
