@@ -281,22 +281,21 @@ const professionalExperience = [
     designation: "Software Developer",
     duration: "Sept 2024 - Present",
     jobDescription: [
-      "Developed UK Real Estate platform for seamless property booking, allowing users to browse, check availability, and book, while admins manage listings and inquiries.",
-      "Developed a Dubai real estate platform with role-based dashboards for admins and landlords to manage properties, FAQs, and partner companies. Tenants can browser and book properties.",
+      "Developed a Real Estate platform for seamless property booking, allowing users to browse, check availability, and book, while admins manage listings and inquiries.",
       "Developed a pharmaceutical website for <b>Cure Med Pharmas</b>, showcasing products, services, and a career page for job applicants."
     ]
   },
 
   {
     id: 2,
-    companyName: "Upwork",
-    designation: "Software Developer",
-    duration: "Sept 2024 - Present",
+    companyName: "The Algorithm PK",
+    designation: "Web Developer & Instructor",
+    duration: "Jan 2024 - Aug 2024",
     jobDescription: [
-      "Developed a Full Stack Visa Web Application for applicants to apply for visas, read FAQs, and submit inquiries. Admins manage users, applications, approvals, and customer inquiries with analytics and recovery options.",
-      "Designed and developed a Food Catering platform with event-based ordering, customer support, FAQs, and order history. Admins manage analytics, menus, orders, inventory, user roles, and customer inquiries.",
-      "Designed & Developed a develop a website that effectively showcases jewelry materials to customers, provides cost estimation, and includes a request quotation and contact inquiry page.",
-      "Developed a strong online presence for Aqua Venture Swimming Academy by showcase their swimming programs, highlight a gallery of activities, feature testimonials from parents and alumni, and provide an easy way for visitors to get in touch via a contact form."
+      "Assessment: Evaluate software boot camp students related to HTML, CSS, and JavaScript.",
+      "Instructed: Educating 20 NAVTTC Students related to web development, including the technology HTML, CSS, Bootstrap 5, and JavaScript.",
+      "Developed website for Royal Jewellers that showcases jewelry materials, provides cost estimation, and includes a request quotation and contact inquiry page.",
+      "Developed website for swimming academy by showcase swimming programs, highlight activities, testimonials from customers, and contact form for visitors."
     ]
   }
 ]

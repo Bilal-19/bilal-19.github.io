@@ -9,7 +9,7 @@ const portfolioSectionEl = document.querySelector(".swiper-wrapper")
 
 projectData.forEach((val) => {
   portfolioSectionEl.innerHTML += `
-      <div class="swiper-slide rounded-xl border border-gray-300 mb-5 h-fit px-2 py-5 w-75 md:w-100">
+      <div class="swiper-slide rounded-xl md:border border-gray-300 mb-5 h-fit px-2 py-5 w-75 md:w-100">
           <img src="${val.projectmageSrc}" class="img-fluid mb-2 rounded">
             <h5 class="text-xl font-semibold">${val.projectName}</h5>
             <p class="text-[#6B7280] mt-3 mb-3">${val.desc}</p>
@@ -108,7 +108,7 @@ professionalExperience.map((item, key) => (
     <span>${item.designation}</span>
     <span class="text-xs">${item.duration}</span>
     </p>
-    <h6>Roles & Responsibilites:</h6>
+    <h6 class="font-medium">Roles & Responsibilites:</h6>
     <ul>
     ${item.jobDescription.map(val => `<li class="text-sm mb-2"><i class="fa-solid fa-check text-green-700"></i> ${val}</li>`).join("")}
     </ul>
