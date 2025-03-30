@@ -183,7 +183,7 @@ const pricingPackages = [
     id: 1,
     packageName: "Starter Website",
     description: "Perfect for small businesses and personal websites.",
-    newPrice: 99,
+    newPrice: 49,
     keyFeatures: [
       "5 pages",
       "Mobile Responsive",
@@ -199,7 +199,7 @@ const pricingPackages = [
     id: 2,
     packageName: "Business Website",
     description: "Advanced features for growing businesses.",
-    newPrice: 149,
+    newPrice: 99,
     keyFeatures: [
       "5 to 10 Pages",
       "Mobile Responsive",
@@ -217,7 +217,7 @@ const pricingPackages = [
     id: 3,
     packageName: "Advanced Web Solution",
     description: "Custom development for complex needs.",
-    newPrice: 249,
+    newPrice: 149,
     keyFeatures: [
       "More than 10 Pages",
       "Mobile Responsive",
@@ -281,8 +281,8 @@ const professionalExperience = [
     designation: "Software Developer",
     duration: "Sept 2024 - Present",
     jobDescription: [
-      "Developed a Real Estate platform for seamless property booking, allowing users to browse, check availability, and book, while admins manage listings and inquiries.",
-      "Developed a pharmaceutical website for <b>Cure Med Pharmas</b>, showcasing products, services, and a career page for job applicants."
+      "Developed Real Estate platform for seamless property booking, allowing users to browse, check availability, and book, while admins manage listings and inquiries.",
+      "Developed pharmaceutical website, showcasing products, services, and a career page for job applicants."
     ]
   },
 
@@ -292,10 +292,8 @@ const professionalExperience = [
     designation: "Web Developer & Instructor",
     duration: "Jan 2024 - Aug 2024",
     jobDescription: [
-      "Assessment: Evaluate software boot camp students related to HTML, CSS, and JavaScript.",
-      "Instructed: Educating 20 NAVTTC Students related to web development, including the technology HTML, CSS, Bootstrap 5, and JavaScript.",
-      "Developed website for Royal Jewellers that showcases jewelry materials, provides cost estimation, and includes a request quotation and contact inquiry page.",
-      "Developed website for swimming academy by showcase swimming programs, highlight activities, testimonials from customers, and contact form for visitors."
+      "Assessment: Evaluated software boot camp students related to HTML, CSS, and JavaScript.",
+      "Instructed: Educated 20 NAVTTC students related to web development, including the technology HTML, CSS, Bootstrap 5, and JavaScript."
     ]
   }
 ]

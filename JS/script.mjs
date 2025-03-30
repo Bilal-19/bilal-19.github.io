@@ -56,7 +56,9 @@ pricingPackages.map((val, key) => {
   <div class="m-3 border shadow-md rounded-lg hover:scale-102 duration-100 p-5 ${val.id == 2 ? 'border-gray-500' : 'border-gray-300'}">
     <img src="${val.imgPath}" class="h-10 mx-auto mb-3"/>
     <h5 class="text-center text-md md:text-lg font-medium mb-3">${val.packageName}</h5>
-    <h3 class="text-center text-2xl md:text-4xl font-medium mb-3">$${val.newPrice}</h3>
+    <div class="flex items-center justify-center">
+      <h3 class="text-center text-2xl md:text-4xl font-medium">$${val.newPrice}</h3><span class="text-[#4B5563]">/project</span>
+    </div>
     <p class="mb-3">${val.description}</p>
     <div class="mb-3 flex flex-col md:flex-row justify-between text-[#6B7280]">
       <p><i class="fa-solid fa-calendar-days"></i> ${val.timeFrame}-days delivery</p>
@@ -102,15 +104,13 @@ const experienceEl = document.getElementById("experience-section")
 professionalExperience.map((item, key) => (
   experienceEl.innerHTML += 
   `
-  <div class="mb-5 border-l-2 pl-2">
-    <h5 class="text-xl">${item.companyName}</h5>
-    <p class="text-md flex flex-col md:flex-row justify-between mb-5">
-    <span>${item.designation}</span>
-    <span class="text-xs">${item.duration}</span>
-    </p>
+  <div class="mb-5 mb-5 p-5 rounded-md bg-white shadow-md">
+    <h5 class="text-xl font-semibold">${item.designation}</h5>
+    <p class="text-[#4B5563]">${item.companyName}</p>
+    <p class="text-[#4B5563]">${item.duration}</p>
     <h6 class="font-medium">Roles & Responsibilites:</h6>
     <ul>
-    ${item.jobDescription.map(val => `<li class="text-sm mb-2"><i class="fa-solid fa-check text-green-700"></i> ${val}</li>`).join("")}
+    ${item.jobDescription.map(val => `<li class="text-sm mt-1 text-[#4B5563]"><i class="fa-solid fa-check text-green-700"></i> ${val}</li>`).join("")}
     </ul>
   </div>
   `
