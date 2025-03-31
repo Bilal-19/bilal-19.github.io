@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <!-- Swiper JS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -32,9 +32,9 @@
 <body>
 
     <div
-        class="w-full bg-[#051527] text-white flex flex-col md:flex-row justify-between md:items-center h-fit pt-5 pb-5 shadow-md">
+        class="w-full bg-[#051527] text-white flex flex-col md:flex-row justify-between md:items-center h-fit py-2.5 shadow-md">
         <div class="flex items-center justify-between ml-2">
-            <a href="./index.html" class="ff-amsterdam-one text-xs md:text-md">Bilal Muhammad Yousuf</a>
+            <a href="./index.html" class="ff-amsterdam-one text-xs md:text-sm">Bilal Muhammad Yousuf</a>
             <button
                 class="sm:block md:hidden mx-5 inline-flex size-10 items-center justify-center transition hover:cursor-pointer duration-3000 focus:transition"
                 id="menu-toggle" aria-controls="navbar-default" aria-expanded="false">
@@ -46,26 +46,27 @@
             <a href="#projects" class="hover:underline underline-offset-4 text-md my-1 md:my-0">Projects</a>
             <a href="#experience" class="hover:underline underline-offset-4 text-md my-1 md:my-0">Experience</a>
             <a href="#blogs" class="hover:underline underline-offset-4 text-md my-1 md:my-0">Blog</a>
-            <a href="#contact" class="hover:underline underline-offset-4 text-md my-1 md:my-0 block md:hidden">Contact</a>
+            <a href="#contact"
+                class="hover:underline underline-offset-4 text-md my-1 md:my-0 block md:hidden">Contact</a>
         </div>
 
         <div class="mx-5 space-x-4 hidden md:block">
-            <button class="text-[#051527] bg-white px-4 py-2 rounded-md">Contact Me</button>
+            <button class="text-[#051527] bg-white px-3 py-1 rounded-md">Contact Me</button>
         </div>
 
     </div>
 
-    <div class="container-fluid mx-auto flex flex-col-reverse md:flex-row items-center bg-[#F3F4F6]">
-        <div class="w-80 md:w-1/2 m-2 md:m-5 py-10">
-            <h2 class="font-medium text-4xl md:text-6xl">Hi, I'm Bilal</h2>
-            <h2 class="text-2xl md:text-5xl">Full Stack <span class="text-[#051527] font-medium">Web Developer</span>
+    <div class="w-full mx-auto flex flex-col-reverse md:flex-row items-center bg-[#F3F4F6]">
+        <div class="w-80 md:w-1/2 m-2 md:m-5 py-5 md:py-10">
+            <h2 class="text-4xl md:text-6xl">Hi, I'm Bilal</h2>
+            <h2 class="text-2xl md:text-5xl mb-2">Full Stack <span class="text-[#051527] font-medium">Web
+                    Developer</span>
             </h2>
             <p class="text-md md:text-xl text-[#6B7280] mb-5">
-                I developed custom, SEO-optimized, and high-performance websites tailored to
-                diverse industries, including Visa applications, Food catering, NGOs, Jewelry businesses, and real
-                estate.
-                My experience spans building scalable, user-friendly, and visually engaging web
-                solutions that enhance user experience and drive business growth.
+                I specialize in developing custom, SEO-optimized, and high-performance websites tailored to various
+                industries, including Visa Application, Food catering, NGOs, Jewelry businesses, and Real estate. With
+                a strong focus on scalability, user experience, and visual appeal, I create web solutions that enhance
+                engagement and drive business growth.
             </p>
             <a href="mailto:bilalmuhammadyousuf543@gmail.com"
                 class="bg-[#051527] text-white px-3 py-2 mt-5 rounded-lg hover:bg-[#102c4a]">
@@ -74,12 +75,12 @@
             </a>
         </div>
 
-        <div class="w-80 md:w-1/2 py-10">
+        <div class="w-80 md:w-1/2 pt-5 md:py-10">
             <img src="/media/images/workspace.webp" alt="workspace" class="rounded-lg">
         </div>
     </div>
 
-    <div class="container-fluid pt-5 bg-[#FFFFFF] mt-5 pt-10 pb-10" id="projects">
+    <div class="w-full pt-5 bg-[#FFFFFF] mt-5 pt-10 pb-10" id="projects">
         <div class="md:w-1/2 text-center mx-auto">
             <h2 class="slideFromTop text-2xl md:text-4xl text-[#051527]">Featured Projects</h2>
             <p class="text-base md:text-xl text-[#6B7280] mb-5">A section of my recent work</p>
@@ -94,7 +95,7 @@
         </div>
     </div>
 
-    <div class="w-full mt-5 border-[#FFFFFF] bg-[#F3F4F6] pt-10 pb-10">
+    <div class="w-full mt-5 border-[#FFFFFF] bg-[#F3F4F6] pt-10 pb-10" id="experience">
         <h2 class="text-2xl md:text-4xl text-center mb-10">Professional Journey</h2>
         <div class="flex flex-col md:flex-row justify-between items-start">
             <div class="w-80 mx-auto md:w-2/5 m-2 md:m-5">
@@ -104,7 +105,7 @@
                     <p class="text-md">Bachelor of Science, Software Engineering</p>
                     <small class="text-xs">Oct 2019 - Aug 2023</small>
                 </div>
-    
+
                 <div class="mb-5 p-5 rounded-md bg-white shadow-md">
                     <h5 class="text-xl">Islamia Government Science College</h5>
                     <p class="text-md">Engineering, Pre Engineering</p>
@@ -124,7 +125,7 @@
         <div class="w-full flex flex-col md:flex-row justify-around">
             <div class="w-80 md:w-1/4 mx-auto flex items-center my-5 bg-[#F3F4F6] px-3 py-2 rounded-md shadow-md">
                 <div>
-                    <img src="./media/images/frontend.svg" alt="">
+                    <img src="./media/images/frontend.svg" alt="Frontend Icon">
                 </div>
                 <div class="mx-2">
                     <h5 class="font-medium text-lg">Frontend Development</h5>
@@ -134,7 +135,7 @@
 
             <div class="w-80 md:w-1/4 mx-auto flex items-center my-5 bg-[#F3F4F6] px-3 py-2 rounded-md shadow-md">
                 <div>
-                    <img src="./media/images/backend.svg" alt="">
+                    <img src="./media/images/backend.svg" alt="Backend Icon">
                 </div>
                 <div class="mx-2">
                     <h5 class="font-medium text-lg">Backend Development</h5>
@@ -144,7 +145,7 @@
 
             <div class="w-80 md:w-1/4 mx-auto flex items-center my-5 bg-[#F3F4F6] px-3 py-2 rounded-md shadow-md">
                 <div>
-                    <img src="./media/images/database.svg" alt="">
+                    <img src="./media/images/database.svg" alt="Database Icon">
                 </div>
                 <div class="mx-2">
                     <h5 class="font-medium text-lg">Database & Cloud</h5>
@@ -161,7 +162,13 @@
         </div>
     </div>
 
-    <div class="container-fluid pt-10 pb-10" id="blogs">
+    <div class="w-full py-10" id="faqs">
+        <h2 class="text-center text-2xl md:text-4xl slideFromTop pt-5">Frequently Asked Questions</h2>
+        <div class="md:w-1/2 mx-auto" id="ques-ans">
+        </div>
+    </div>
+
+    <div class="w-full py-10 bg-[#F3F4F6]" id="blogs">
         <h2 class="text-center text-2xl md:text-4xl slideFromTop pt-5">Blogs</h2>
         <p class="text-center text-base md:text-xl text-[#6B7280] mb-5">Insights about web development</p>
         <div class="grid grid-cols-1 md:grid-cols-3 m-2 md:m-5" id="blog-section">
@@ -169,11 +176,11 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-[#F3F4F6] pt-10 pb-10" id="contact">
-        <div class="md:w-1/2 mx-auto">
+    <div class="w-full py-10 flex flex-col md:flex-row" id="contact">
+        <div class="w-80 mx-auto md:w-1/2 md:m-10">
             <h2 class="text-center text-2xl md:text-4xl slideFromTop pt-5">Get in Touch</h2>
             <p class="text-base md:text-xl text-[#6B7280] mb-5 text-center">Let's discuss your project</p>
-            <form class="form mt-5 mb-5" id="contact-form"
+            <form class="form" id="contact-form"
                 action="https://formsubmit.co/bilalmuhammadyousuf543@gmail.com" method="post" autocomplete="off">
 
                 <input type="text" name="username" placeholder="Your Name"
@@ -191,9 +198,51 @@
                 </button>
             </form>
         </div>
+
+        <div class="w-80 mx-auto md:w-1/5 md:m-10 my-5 bg-[#F3F4F6] p-5 md:p-10 rounded-lg shadow-md">
+            <h4 class="md:text-lg font-semibold">Contact Information</h4>
+            <div class="flex flex-row my-5">
+                <div class="mr-2">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                    <h6 class="font-medium">Email</h6>
+                    <p class="text-sm md:text-base text-[#4B5563]">bilalmuhammadyousuf543@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row my-5">
+                <div class="mr-2">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                    <h6 class="font-medium">Phone</h6>
+                    <p class="text-sm md:text-base text-[#4B5563]">03427634247</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row my-5">
+                <div class="mr-2">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                    <h6 class="font-medium">Location</h6>
+                    <p class="text-sm md:text-base text-[#4B5563]">Karachi, Pakistan</p>
+                </div>
+            </div>
+
+            <p class="font-medium mt-5">Social Media</p>
+            <div class="flex flex-row space-x-3 my-5">
+                <a target="_blank" href="https://www.linkedin.com/in/bilalmuhammadyousuf/"
+                    class="fa-xl fa-brands fa-linkedin"></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100013114033412"
+                class="fa-xl fa-brands fa-facebook"></a>
+            <a target="_blank" href="https://www.instagram.com/bilal_8939/" class="fa-xl fa-brands fa-instagram"></a>
+            </div>
+        </div>
     </div>
 
-    <div class="container-fluid bg-charcoal-blue text-white">
+    <div class="w-full bg-charcoal-blue text-white">
         <div class="flex flex-col md:flex-row justify-around">
             <div class="p-5 md:p-15">
                 <a href="./index.html" class="ff-amsterdam-one text-xs">
@@ -214,9 +263,11 @@
             </div>
 
             <div class="p-5 md:p-15 flex flex-col">
-                <h5 class="text-2xl mb-5">Contact</h5>
-                <a href="mailto:bilalmuhammadyousuf543@gmail.com">bilalmuhammadyousuf543@gmail.com</a>
-                <a href="tel:03427634247">03427634247</a>
+                <h5 class="text-md mb-5">Quick Links</h5>
+               <a href="#projects" class="text-sm mb-2 text-[#9CA3AF]">Projects</a>
+               <a href="#experience" class="text-sm mb-2 text-[#9CA3AF]">Price</a>
+               <a href="#faqs" class="text-sm mb-2 text-[#9CA3AF]">FAQs</a>
+               <a href="#contact" class="text-sm mb-2 text-[#9CA3AF]">Contact Us</a>
             </div>
         </div>
 
@@ -232,10 +283,6 @@
 
 
     <script src="./JS/script.mjs" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
     <!-- Schema Markup -->
     <script type="application/ld+json">
         {

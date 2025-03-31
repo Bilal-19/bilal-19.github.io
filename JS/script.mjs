@@ -2,15 +2,16 @@ import {
   projectData,
   pricingPackages,
   blogs,
-  professionalExperience
+  professionalExperience,
+  FAQs
 } from "./project_data.mjs";
 
 const portfolioSectionEl = document.querySelector(".swiper-wrapper")
 
 projectData.forEach((val) => {
   portfolioSectionEl.innerHTML += `
-      <div class="swiper-slide rounded-xl md:border border-gray-300 mb-5 h-fit px-2 py-5 w-75 md:w-100">
-          <img src="${val.projectmageSrc}" class="img-fluid mb-2 rounded">
+      <div class="swiper-slide rounded-xl md:border border-gray-300 mb-5 h-fit px-2 py-5 md:w-100">
+          <img src="${val.projectmageSrc}" class="mb-2 rounded" alt=${val.projectName}>
             <h5 class="text-xl font-semibold">${val.projectName}</h5>
             <p class="text-[#6B7280] mt-3 mb-3">${val.desc}</p>
             <p>${val.technology.map(item => `<button class="bg-[#051527] text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
@@ -105,9 +106,9 @@ professionalExperience.map((item, key) => (
   experienceEl.innerHTML += 
   `
   <div class="mb-5 mb-5 p-5 rounded-md bg-white shadow-md">
-    <h5 class="text-xl font-semibold">${item.designation}</h5>
+    <h5 class="text-xl font-medium">${item.designation}</h5>
     <p class="text-[#4B5563]">${item.companyName}</p>
-    <p class="text-[#4B5563]">${item.duration}</p>
+    <p class="text-[#4B5563] text-sm">${item.duration}</p>
     <h6 class="font-medium">Roles & Responsibilites:</h6>
     <ul>
     ${item.jobDescription.map(val => `<li class="text-sm mt-1 text-[#4B5563]"><i class="fa-solid fa-check text-green-700"></i> ${val}</li>`).join("")}
@@ -115,3 +116,27 @@ professionalExperience.map((item, key) => (
   </div>
   `
 ))
+
+
+const FaqEl = document.getElementById("ques-ans")
+FAQs.map((val, key)=> (
+  FaqEl.innerHTML += 
+  `
+  <div class="w-80 mx-auto md:w-auto p-5 border border-gray-300 my-5 rounded-lg shadow-md">
+      <div class="flex justify-between toggle-faq">
+          <h4 class="font-medium">${val.id}. ${val.ques}</h4>
+          <i class="fa-solid fa-caret-down hover:cursor-pointer"></i>
+      </div>
+      <p class="text-[#4B5563] toggle-answer">${val.answer}</p>
+  </div>
+  `
+))
+
+document.querySelectorAll(".toggle-faq").forEach((faq, index) => {
+// 'faq' is the question
+
+// Attach event listener to each question
+faq.addEventListener("click", ()=>{
+  faq.nextElementSibling.classList.toggle("hidden")
+})
+})
