@@ -35,8 +35,8 @@
         class="w-full bg-[#051527] text-white flex flex-col md:flex-row justify-between md:items-center h-fit py-2.5 shadow-md">
         <div class="flex items-center justify-between ml-2">
             <a href="./index.html" class="ff-amsterdam-one text-xs md:text-sm">Bilal Muhammad Yousuf</a>
-            <button
-                class="sm:block md:hidden mx-5 inline-flex size-10 items-center justify-center transition hover:cursor-pointer duration-3000 focus:transition"
+            <button aria-label="toggle-button"
+                class="sm:block md:hidden mx-5 inline-flex size-10 items-center justify-center transition hover:cursor-pointer bg-white text-[#051527] rounded-md"
                 id="menu-toggle" aria-controls="navbar-default" aria-expanded="false">
                 <i class="fas fa-bars text-lg"></i>
             </button>
@@ -51,7 +51,7 @@
         </div>
 
         <div class="mx-5 space-x-4 hidden md:block">
-            <button class="text-[#051527] bg-white px-3 py-1 rounded-md">Contact Me</button>
+            <button class="text-[#051527] bg-white px-3 py-1 rounded-md" aria-label="contact-us">Contact Me</button>
         </div>
 
     </div>
@@ -191,7 +191,7 @@
                     class="block border border-gray-300 px-3 py-2 focus:outline-none w-80 md:w-3/4 rounded-md mx-auto my-5 text-sm resize-none"
                     rows="5"></textarea>
 
-                <button type="submit"
+                <button type="submit" aria-label="submit-button"
                     class="text-white bg-[#051527] px-3 py-2 rounded-lg block w-80 md:w-3/4 mx-auto hover:cursor-pointer hover:bg-[#102c4a]">
                     <i class="fas fa-paper-plane"></i>
                     Submit
@@ -199,7 +199,7 @@
             </form>
         </div>
 
-        <div class="w-80 mx-auto md:w-1/5 md:m-10 my-5 bg-[#F3F4F6] p-5 md:p-10 rounded-lg shadow-md">
+        <div class="w-80 mx-auto md:w-1/2 md:m-10 my-5 bg-[#F3F4F6] p-5 md:p-10 rounded-lg shadow-md">
             <h4 class="md:text-lg font-semibold">Contact Information</h4>
             <div class="flex flex-row my-5">
                 <div class="mr-2">
@@ -249,23 +249,15 @@
                     Bilal Muhammad Yousuf
                 </a>
 
-                <p class="mt-10">
+                <p class="mt-10 text-[#9CA3AF]">
                     Building digital solutions with passion and precision.
                 </p>
-
-                <div class="mt-5 space-x-4">
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100013114033412"
-                        class="fa-brands fa-facebook"></a>
-                    <a target="_blank" href="https://www.instagram.com/bilal_8939/" class="fa-brands fa-instagram"></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/bilalmuhammadyousuf/"
-                        class="fa-brands fa-linkedin"></a>
-                </div>
             </div>
 
             <div class="p-5 md:p-15 flex flex-col">
                 <h5 class="text-md mb-5">Quick Links</h5>
                <a href="#projects" class="text-sm mb-2 text-[#9CA3AF]">Projects</a>
-               <a href="#experience" class="text-sm mb-2 text-[#9CA3AF]">Price</a>
+               <a href="#pricing" class="text-sm mb-2 text-[#9CA3AF]">Price</a>
                <a href="#faqs" class="text-sm mb-2 text-[#9CA3AF]">FAQs</a>
                <a href="#contact" class="text-sm mb-2 text-[#9CA3AF]">Contact Us</a>
             </div>
@@ -276,7 +268,7 @@
         </div>
 
         <div class="container mx-auto py-5">
-            <p class="text-center text-sm">&copy;2025 Developed by Bilal Muhammad Yousuf. All Right Reserved.</p>
+            <p class="text-center text-sm text-[#9CA3AF]">&copy;2025 Developed by Bilal Muhammad Yousuf. All Right Reserved.</p>
         </div>
 
     </div>

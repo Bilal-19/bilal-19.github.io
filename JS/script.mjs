@@ -55,7 +55,7 @@ pricingPackages.map((val, key) => {
   priceEl.innerHTML +=
     `
   <div class="m-3 border shadow-md rounded-lg hover:scale-102 duration-100 p-5 ${val.id == 2 ? 'border-gray-500' : 'border-gray-300'}">
-    <img src="${val.imgPath}" class="h-10 mx-auto mb-3"/>
+    <img src="${val.imgPath}" class="h-10 mx-auto mb-3" alt=${val.packageName}/>
     <h5 class="text-center text-md md:text-lg font-medium mb-3">${val.packageName}</h5>
     <div class="flex items-center justify-center">
       <h3 class="text-center text-2xl md:text-4xl font-medium">$${val.newPrice}</h3><span class="text-[#4B5563]">/project</span>
