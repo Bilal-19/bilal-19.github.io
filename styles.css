@@ -1,6 +1,12 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 :root {
   --charcoal-blue: #051527;
 }
+
 
 html {
   scroll-behavior: smooth;

@@ -10,11 +10,17 @@ const portfolioSectionEl = document.querySelector(".swiper-wrapper")
 
 projectData.forEach((val) => {
   portfolioSectionEl.innerHTML += `
-      <div class="swiper-slide rounded-xl md:border border-gray-300 mb-5 h-fit px-2 py-5 md:w-100">
+      <div class="swiper-slide rounded-xl md:border border-gray-300 shadow-md mb-5 h-fit px-2 py-5">
           <img src="${val.projectmageSrc}" class="mb-2 rounded" alt=${val.projectName}>
             <h5 class="text-xl font-semibold">${val.projectName}</h5>
             <p class="text-[#6B7280] mt-3 mb-3">${val.desc}</p>
-            <p>${val.technology.map(item => `<button class="bg-[#051527] text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
+            <p class="mb-3">${val.technology.map(item => `<button class="bg-[#051527] text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
+            ${val.websiteURL ? 
+              `<a href="${val.websiteURL}" target="_blank" class="bg-[#051527] text-white text-sm px-3 py-2 rounded-md"><i class="fa-solid fa-globe"></i> Visit Website</a>`
+              : 
+              ``
+            }
+            <a href="${val.githubURL}" target="_blank" class="bg-[#051527] text-white text-sm px-3 py-2 rounded-md"><i class="fa-brands fa-github"></i> Visit Repository</a>
       </div>
   `;
 });
@@ -105,13 +111,13 @@ const experienceEl = document.getElementById("experience-section")
 professionalExperience.map((item, key) => (
   experienceEl.innerHTML += 
   `
-  <div class="mb-5 mb-5 p-5 rounded-md bg-white shadow-md">
+  <div class="mb-5 mb-5 p-5 rounded-md bg-white shadow-md" key=${key}>
     <h5 class="text-xl font-medium">${item.designation}</h5>
     <p class="text-[#4B5563]">${item.companyName}</p>
     <p class="text-[#4B5563] text-sm">${item.duration}</p>
     <h6 class="font-medium">Roles & Responsibilites:</h6>
     <ul>
-    ${item.jobDescription.map(val => `<li class="text-sm mt-1 text-[#4B5563]"><i class="fa-solid fa-check text-green-700"></i> ${val}</li>`).join("")}
+    ${item.jobDescription.map(val => `<li class="text-sm mt-1 text-[#4B5563]">* ${val}</li>`).join("")}
     </ul>
   </div>
   `
@@ -123,9 +129,9 @@ FAQs.map((val, key)=> (
   FaqEl.innerHTML += 
   `
   <div class="w-80 mx-auto md:w-auto p-5 border border-gray-300 my-5 rounded-lg shadow-md">
-      <div class="flex justify-between toggle-faq">
+      <div class="flex justify-between toggle-faq hover:cursor-pointer">
           <h4 class="font-medium">${val.id}. ${val.ques}</h4>
-          <i class="fa-solid fa-caret-down hover:cursor-pointer"></i>
+          <i class="fa-solid fa-caret-down hover:cursor-pointer "></i>
       </div>
       <p class="text-[#4B5563] toggle-answer">${val.answer}</p>
   </div>

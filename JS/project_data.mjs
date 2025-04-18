@@ -3,91 +3,103 @@ const projectData = [
     id: 1,
     projectmageSrc: "./media/images/visa_application.png",
     projectName: "Visa Web Application",
-    desc: "A visa application platform with user accounts, application management, FAQs, inquiries, admin dashboard, and approval system.",
+    desc: "A CRM web app where applicants can apply for visas, read FAQs, track their application status, and submit inquiries. Admins manage and approve/reject applications, track user data, and respond to inquiries via a centralized dashboard.",
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
-    websiteURL: ""
+    websiteURL: "",
+    githubURL: "https://github.com/Bilal-19/visa-web-application"
   },
   {
     id: 2,
     projectmageSrc: "./media/images/food_catering_website.png",
     projectName: "Food Catering Platform",
-    desc: "An event-based food catering platform with order management, customer support, FAQs, inventory tracking, and admin dashboard.",
+    desc: "A platform for customers to place event-based food orders, track history, and get support. Admins handle orders, manage inventory, and view dashboard analytics to ensure smooth operations and efficient inquiry handling through a single interface.",
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
-    websiteURL: ""
+    websiteURL: "",
+    githubURL: "https://github.com/Bilal-19/FoodCateringPlatform"
   },
   {
     id: 3,
-    projectmageSrc: "./media/images/rehnuma_portfolio.png",
-    projectName: "Rehnuma Portfolio",
-    desc: "An NGO portfolio website showcasing mission, team, progress gallery, and social media integration.",
+    projectmageSrc: "./media/images/royal_jewellers.png",
+    projectName: "Royal Jewellers Portfolio",
+    desc: "A portfolio website to showcase jewelry materials, provide customers with real-time cost estimates, and offer features such as request-for-quote and contact inquiry forms to boost user interaction and lead generation efficiently.",
     technology: ["React JS", "Bootstrap 5"],
-    websiteURL: "https://rehnuma.netlify.app/"
+    websiteURL: "https://royaljewellers.netlify.app/",
+    githubURL: "https://github.com/Bilal-19/RoyalJewellersPortfolio"
   },
   {
     id: 4,
-    projectmageSrc: "./media/images/royal_jewellers.png",
-    projectName: "Royal Jewellers Portfolio",
-    desc: "A jewelry portfolio website featuring materials, cost estimation, quotation requests, and customer inquiries.",
-    technology: ["React JS", "Bootstrap 5"],
-    websiteURL: "https://royaljewellers.netlify.app/"
+    projectmageSrc: "./media/images/E-commerce.png",
+    projectName: "E-Commerce Store",
+    desc: "An online store with user authentication, shopping cart, and payment integration (Stripe/COD). Admins can manage categories, products, and orders from a dashboard, while users browse, purchase, and track products through their personal account.",
+    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    websiteURL: "",
+    githubURL: "https://github.com/Bilal-19/LaravelEcommerceWebApplication"
   },
   {
     id: 5,
-    projectmageSrc: "./media/images/E-commerce.png",
-    projectName: "E-Commerce Store",
-    desc: "An eCommerce platform with product management, shopping cart, Stripe payments, and admin dashboard.",
-    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
-    websiteURL: ""
+    projectmageSrc: "./media/images/Ridehub.png",
+    projectName: "Ride-Hub Portfolio",
+    desc: "A static React-based portfolio website designed to highlight premium car services and professional drivers. The site presents the brand’s service features with elegance, focusing on visual storytelling and smooth user experience.",
+    technology: ["React JS", "Bootstrap 5"],
+    websiteURL: "https://ridewithcomfort.netlify.app/",
+    githubURL: "https://github.com/Bilal-19/RideHub"
   },
   {
     id: 6,
-    projectmageSrc: "./media/images/Ridehub.png",
-    projectName: "Ride-Hub Portfolio",
-    desc: "A static website showcasing premium cars, driver profiles, and contact inquiries.",
-    technology: ["React JS", "Bootstrap 5"],
-    websiteURL: "https://ridewithcomfort.netlify.app/"
+    projectmageSrc: "./media/images/SER.png",
+    projectName: "Sterling Executive Residential",
+    desc: "A real estate booking platform where users can explore property listings, check availability, and book their desired property online. Admins manage properties listing, view inquiries (booking, general etc), using a centralized dashboard.",
+    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    websiteURL: "https://sterling-executive.com/",
+    githubURL: "https://github.com/Bilal-19/SER_RealEstate"
   },
   {
     id: 7,
-    projectmageSrc: "./media/images/SER.png",
-    projectName: "Sterling Executive Residential",
-    desc: "A property booking platform with listings, availability checking, booking, and admin management.",
+    projectmageSrc: "./media/images/Green-Key.png",
+    projectName: "Green Key Lettings",
+    desc: "A multi-user platform with dashboards for admins and landlords. Landlords manage properties, tenants browse listings based on filters, and admins handle FAQs, company profiles, and overall content from a single panel.",
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
-    websiteURL: "https://sterling-executive.com/"
+    websiteURL: "https://greenkeylettings.com/",
+    githubURL: "https://github.com/Bilal-19/NewLeafLettingHousing"
   },
   {
     id: 8,
-    projectmageSrc: "./media/images/Green-Key.png",
-    projectName: "Green Key Lettings",
-    desc: "A real estate platform for property management, tenancy handling, and inquiries in the UAE housing sector.",
-    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
-    websiteURL: "https://greenkeylettings.com/"
+    projectmageSrc: "./media/images/aquaVenture.png",
+    projectName: "Swimming Academy",
+    desc: "An interactive website for Aqua Venture Academy showcasing programs, galleries, testimonials, and contact forms. The site aims to engage parents and promote swimming courses with a clean layout and strong brand presence.",
+    technology: ["React JS", "Tailwind CSS"],
+    websiteURL: "https://aquaswimventure.netlify.app/",
+    githubURL: "https://github.com/Bilal-19/swimming-academy-website"
   },
   {
     id: 9,
-    projectmageSrc: "./media/images/aquaVenture.png",
-    projectName: "Swimming Academy",
-    desc: "A website for a swimming academy with class schedules, trainer profiles, membership options, and contact inquiries.",
+    projectmageSrc: "./media/images/iron-pulse-portfolio.png",
+    projectName: "Gym Website",
+    desc: "A dynamic gym website that presents membership options, trainer profiles, workout schedules, and contact forms. Designed to attract new members and provide essential information in an organized and visually appealing layout.",
     technology: ["React JS", "Tailwind CSS"],
-    websiteURL: "https://aquaswimventure.netlify.app/"
+    websiteURL: "https://ironpulse.netlify.app/",
+    githubURL: "https://github.com/Bilal-19/iron-pulse-gym"
   },
   {
     id: 10,
-    projectmageSrc: "./media/images/iron-pulse-portfolio.png",
-    projectName: "Gym Website",
-    desc: "A gym website with membership options, trainer profiles, workout schedules, and contact inquiries.",
+    projectmageSrc: "./media/images/curemed-pharmas.png",
+    projectName: "CureMed Pharmas",
+    desc: "A portfolio website created for CureMed Pharmas to highlight medical products, services, company vision, and career opportunities. It features a clean layout with sections for mission, product display, job listings, and a contact form for clients and job seekers.",
     technology: ["React JS", "Tailwind CSS"],
-    websiteURL: "https://ironpulse.netlify.app/"
+    websiteURL: "https://curemed-pharmas.netlify.app/",
+    githubURL: "https://github.com/Bilal-19/curemed-pharmacy"
   },
   {
     id: 11,
-    projectmageSrc: "./media/images/curemed-pharmas.png",
-    projectName: "Pharmaceutical Website",
-    desc: "A pharmaceutical website featuring product details, services, and contact inquiries.",
+    projectmageSrc: "./media/images/furnicraft.png",
+    projectName: "FurniCraft Studio",
+    desc: "An interior design and furniture studio website that displays trending designs, featured collections, and company philosophy. Includes team profiles and testimonials to build trust and attract potential clients or collaborators.",
     technology: ["React JS", "Tailwind CSS"],
-    websiteURL: "https://curemed-pharmas.netlify.app/"
+    websiteURL: "https://furnicraft-studio.netlify.app/",
+    githubURL: "https://github.com/Bilal-19/FurniCraft-Studio"
   }
 ];
+
 
 
 const pricingPackages = [
@@ -100,8 +112,7 @@ const pricingPackages = [
       "5 pages",
       "Mobile Responsive",
       "Social Media Icons",
-      "Speed Optimization",
-      "Hosting Setup"
+      "Speed Optimization"
     ],
     revisions: 2,
     timeFrame: 10,
@@ -119,7 +130,7 @@ const pricingPackages = [
       "Speed Optimization",
       "On-Page SEO",
       "Basic E-commerce (Up to 10 Products)",
-      "Hosting Setup & Domain",
+      "Domain & Hosting Setup",
     ],
     revisions: 3,
     timeFrame: 18,
@@ -139,7 +150,7 @@ const pricingPackages = [
       "Admin Dashboard",
       "Ongoing Maintenance & Support",
       "Advanced E-commerce Features",
-      "Hosting Setup & Domain"
+      "Domain & Hosting Setup",
     ],
     revisions: 4,
     timeFrame: 30,
@@ -193,8 +204,9 @@ const professionalExperience = [
     designation: "Software Developer",
     duration: "Sept 2024 - Present",
     jobDescription: [
-      "Developed Real Estate platform for seamless property booking, allowing users to browse, check availability, and book, while admins manage listings and inquiries.",
-      "Developed pharmaceutical website, showcasing products, services, and a career page for job applicants."
+      "Developed: Real Estate platform enabling seamless property browsing, check availability, and online bookings, while empowering admins to manage property listings and user inquiries.",
+      "Developed: Pharmaceutical website showcasing company products, services, mission, and careers, with an integrated “Contact Us” page to enhance visitor engagement.",
+      "Developed: Furniture & Interior business website featuring product collections, trending designs, service offerings, customer feedback, and real-time form submissions using EmailJS."
     ]
   },
 
@@ -204,8 +216,9 @@ const professionalExperience = [
     designation: "Web Developer & Instructor",
     duration: "Jan 2024 - Aug 2024",
     jobDescription: [
-      "Assessment: Evaluated software boot camp students related to HTML, CSS, and JavaScript.",
-      "Instructed: Educated 20 NAVTTC students related to web development, including the technology HTML, CSS, Bootstrap 5, and JavaScript."
+      "Assessment: Evaluated software developer bootcamp students on HTML, CSS, Bootstrap 5, JavaScript and MySQL.",
+      "Instructed: Educated 20 NAVTTC Students on web development, including the modern technology such as HTML, CSS, Bootstrap 5, JavaScript, PHP and MySQL.",
+      "Prepared: Conducted research, and documented check sheet, developed slides, and compiled over 150 glossaries entries relevant to web development on Google Sheets."
     ]
   }
 ]

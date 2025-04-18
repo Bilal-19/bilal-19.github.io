@@ -51,9 +51,9 @@
 <body>
 
     <div
-        class="w-full bg-[#051527] text-white flex flex-col md:flex-row justify-between md:items-center h-fit py-2.5 shadow-md">
+        class="w-full bg-[#051527] text-white flex flex-col md:flex-row justify-between md:items-center h-fit py-3.5 shadow-md">
         <div class="flex items-center justify-between ml-2">
-            <a href="./index.html" class="ff-amsterdam-one text-xs md:text-sm">Bilal Muhammad Yousuf</a>
+            <a href="./index.html" class="ff-amsterdam-one text-xs">Bilal Muhammad Yousuf</a>
             <button aria-label="toggle-button"
                 class="sm:block md:hidden mx-5 inline-flex size-10 items-center justify-center transition hover:cursor-pointer bg-white text-[#051527] rounded-md"
                 id="menu-toggle" aria-controls="navbar-default" aria-expanded="false">
@@ -202,11 +202,11 @@
             <form class="form" id="contact-form" action="https://formsubmit.co/bilalmuhammadyousuf543@gmail.com"
                 method="post" autocomplete="off">
 
-                <input type="text" name="username" placeholder="Your Name"
+                <input required type="text" name="username" placeholder="Your Name"
                     class="block border border-gray-300 px-3 py-2 focus:outline-none w-80 md:w-3/4 rounded-md mx-auto my-5 text-sm">
-                <input type="email" name="useremail" placeholder="Your Email"
+                <input required type="email" name="useremail" placeholder="Your Email"
                     class="block border border-gray-300 px-3 py-2 focus:outline-none w-80 md:w-3/4 rounded-md mx-auto my-5 text-sm">
-                <textarea name="message" placeholder="Type your message here..."
+                <textarea required name="message" placeholder="Type your message here..."
                     class="block border border-gray-300 px-3 py-2 focus:outline-none w-80 md:w-3/4 rounded-md mx-auto my-5 text-sm resize-none"
                     rows="5"></textarea>
 
@@ -263,23 +263,25 @@
     </div>
 
     <div class="w-full bg-charcoal-blue text-white">
-        <div class="flex flex-col md:flex-row justify-around">
-            <div class="p-5 md:p-15">
-                <a href="./index.html" class="ff-amsterdam-one text-xs">
-                    Bilal Muhammad Yousuf
-                </a>
-
-                <p class="mt-10 text-[#9CA3AF]">
-                    Building digital solutions with passion and precision.
-                </p>
-            </div>
-
-            <div class="p-5 md:p-15 flex flex-col">
-                <h5 class="text-md mb-5">Quick Links</h5>
-                <a href="#projects" class="text-sm mb-2 text-[#9CA3AF]">Projects</a>
-                <a href="#pricing" class="text-sm mb-2 text-[#9CA3AF]">Price</a>
-                <a href="#faqs" class="text-sm mb-2 text-[#9CA3AF]">FAQs</a>
-                <a href="#contact" class="text-sm mb-2 text-[#9CA3AF]">Contact Us</a>
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="p-5 md:p-15">
+                    <a href="./index.html" class="ff-amsterdam-one text-xs">
+                        Bilal Muhammad Yousuf
+                    </a>
+    
+                    <p class="mt-10 text-[#9CA3AF]">
+                        Building digital solutions with passion and precision.
+                    </p>
+                </div>
+    
+                <div class="p-5 md:p-15 flex flex-col">
+                    <h5 class="text-md mb-5">Quick Links</h5>
+                    <a href="#projects" class="text-sm mb-2 text-[#9CA3AF]">Projects</a>
+                    <a href="#pricing" class="text-sm mb-2 text-[#9CA3AF]">Price</a>
+                    <a href="#faqs" class="text-sm mb-2 text-[#9CA3AF]">FAQs</a>
+                    <a href="#contact" class="text-sm mb-2 text-[#9CA3AF]">Contact Us</a>
+                </div>
             </div>
         </div>
 
