@@ -115,7 +115,7 @@ const pricingPackages = [
       "Speed Optimization"
     ],
     revisions: 2,
-    timeFrame: 10,
+    timeFrame: 7,
     imgPath: "./media/Icons/basic.png"
   },
   {
@@ -133,7 +133,7 @@ const pricingPackages = [
       "Domain & Hosting Setup",
     ],
     revisions: 3,
-    timeFrame: 18,
+    timeFrame: 15,
     imgPath: "./media/Icons/elite.png"
   },
   {
@@ -153,7 +153,7 @@ const pricingPackages = [
       "Domain & Hosting Setup",
     ],
     revisions: 4,
-    timeFrame: 30,
+    timeFrame: 25,
     imgPath: "./media/Icons/premium.png"
   }
 ]
