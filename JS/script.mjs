@@ -12,15 +12,20 @@ projectData.forEach((val) => {
   portfolioSectionEl.innerHTML += `
       <div class="swiper-slide rounded-xl md:border border-gray-300 shadow-md mb-5 h-fit px-2 py-5">
           <img src="${val.projectmageSrc}" class="mb-2 rounded" alt=${val.projectName}>
-            <h5 class="text-xl font-semibold">${val.projectName}</h5>
+            <div class="flex flex-row items-center justify-between">
+                <h5 class="text-xl font-semibold">${val.projectName}</h5>
+                <div class="space-x-2">
+                  ${val.websiteURL ?
+                    `<a href="${val.websiteURL}" target="_blank" class="text-[#051527]"><i class="fa-solid fa-globe"></i></a>`
+                    :
+                    ``
+                  }
+                  <a href="${val.githubURL}" target="_blank" class="text-[#051527]"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
             <p class="text-[#6B7280] mt-3 mb-3">${val.desc}</p>
             <p class="mb-3">${val.technology.map(item => `<button class="bg-[#051527] text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
-            ${val.websiteURL ? 
-              `<a href="${val.websiteURL}" target="_blank" class="bg-[#051527] text-white text-sm px-3 py-2 rounded-md"><i class="fa-solid fa-globe"></i> Visit Website</a>`
-              : 
-              ``
-            }
-            <a href="${val.githubURL}" target="_blank" class="bg-[#051527] text-white text-sm px-3 py-2 rounded-md"><i class="fa-brands fa-github"></i> Visit Repository</a>
+           
       </div>
   `;
 });
@@ -68,7 +73,7 @@ pricingPackages.map((val, key) => {
     </div>
     <p class="mb-3">${val.description}</p>
     <div class="mb-3 flex flex-col md:flex-row justify-between text-[#6B7280]">
-      <p><i class="fa-solid fa-calendar-days"></i> ${val.timeFrame}-days delivery</p>
+      <p><i class="fa-solid fa-calendar-days"></i> ${val.timeFrame} business days</p>
       <p><i class="fa-solid fa-repeat"></i> ${val.revisions} free revisions</p>
     </div>
     <h6>Key Features:</h6>
@@ -109,7 +114,7 @@ document.getElementById("menu-toggle").addEventListener("click", () => {
 const experienceEl = document.getElementById("experience-section")
 
 professionalExperience.map((item, key) => (
-  experienceEl.innerHTML += 
+  experienceEl.innerHTML +=
   `
   <div class="mb-5 mb-5 p-5 rounded-md bg-white shadow-md" key=${key}>
     <h5 class="text-xl font-medium">${item.designation}</h5>
@@ -125,24 +130,24 @@ professionalExperience.map((item, key) => (
 
 
 const FaqEl = document.getElementById("ques-ans")
-FAQs.map((val, key)=> (
-  FaqEl.innerHTML += 
+FAQs.map((val, key) => (
+  FaqEl.innerHTML +=
   `
-  <div class="w-80 mx-auto md:w-auto p-5 border border-gray-300 my-5 rounded-lg shadow-md">
+  <div class="w-80 mx-auto md:w-auto p-5 my-5 border border-gray-300 rounded-md shadow-md">
       <div class="flex justify-between toggle-faq hover:cursor-pointer">
           <h4 class="font-medium">${val.id}. ${val.ques}</h4>
-          <i class="fa-solid fa-caret-down hover:cursor-pointer "></i>
+          <i class="fa-solid fa-caret-down hover:cursor-pointer"></i>
       </div>
-      <p class="text-[#4B5563] toggle-answer">${val.answer}</p>
+      <p class="text-[#4B5563] toggle-answer transition duration-1000 text-sm">${val.answer}</p>
   </div>
   `
 ))
 
 document.querySelectorAll(".toggle-faq").forEach((faq, index) => {
-// 'faq' is the question
+  // 'faq' is the question
 
-// Attach event listener to each question
-faq.addEventListener("click", ()=>{
-  faq.nextElementSibling.classList.toggle("hidden")
-})
+  // Attach event listener to each question
+  faq.addEventListener("click", () => {
+    faq.nextElementSibling.classList.toggle("hidden")
+  })
 })

@@ -97,6 +97,15 @@ const projectData = [
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://furnicraft-studio.netlify.app/",
     githubURL: "https://github.com/Bilal-19/FurniCraft-Studio"
+  },
+  {
+    id: 12,
+    projectmageSrc: "./media/images/HMS.png",
+    projectName: "Hospital Management Software",
+    desc: "A complete CRM solution built for hospitals and clinics to streamline operations. With dedicated portals for Admins, Doctors, and Receptionists, the system simplifies tasks like appointment management, shift scheduling, billing, inventory, and salary generation.",
+    technology: ["Tailwind CSS", "JavaScript", "PHP", "Laravel", "MySQL"],
+    websiteURL: "",
+    githubURL: "https://github.com/Bilal-19/Hospital-Management-Software"
   }
 ];
 
@@ -115,7 +124,7 @@ const pricingPackages = [
       "Speed Optimization"
     ],
     revisions: 2,
-    timeFrame: 7,
+    timeFrame: 5,
     imgPath: "./media/Icons/basic.png"
   },
   {
@@ -133,7 +142,7 @@ const pricingPackages = [
       "Domain & Hosting Setup",
     ],
     revisions: 3,
-    timeFrame: 15,
+    timeFrame: 12,
     imgPath: "./media/Icons/elite.png"
   },
   {
@@ -153,7 +162,7 @@ const pricingPackages = [
       "Domain & Hosting Setup",
     ],
     revisions: 4,
-    timeFrame: 25,
+    timeFrame: 20,
     imgPath: "./media/Icons/premium.png"
   }
 ]
@@ -193,7 +202,7 @@ const FAQs = [
   {
     id: 5,
     ques: "How long does it take to complete a project?",
-    answer: "Project timelines depend on complexity. A basic website takes 8-10 days, while business websites require 15-18 days. Custom web applications may take 25+ days. I always focus on delivering high-quality work within the agreed timeframe."
+    answer: "Project timelines depend on complexity. A basic website takes 5-7 days, while business websites require 10-12 days. Custom web applications may take 15-20 days. I always focus on delivering high-quality work within the agreed timeframe."
   }
 ];
 
