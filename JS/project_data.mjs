@@ -1,51 +1,6 @@
 const projectData = [
   {
     id: 1,
-    projectmageSrc: "./media/images/visa_application.png",
-    projectName: "Visa Web Application",
-    desc: "A CRM web app where applicants can apply for visas, read FAQs, track their application status, and submit inquiries. Admins manage and approve/reject applications, track user data, and respond to inquiries via a centralized dashboard.",
-    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
-    websiteURL: "",
-    githubURL: "https://github.com/Bilal-19/visa-web-application"
-  },
-  {
-    id: 2,
-    projectmageSrc: "./media/images/food_catering_website.png",
-    projectName: "Food Catering Platform",
-    desc: "A platform for customers to place event-based food orders, track history, and get support. Admins handle orders, manage inventory, and view dashboard analytics to ensure smooth operations and efficient inquiry handling through a single interface.",
-    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
-    websiteURL: "",
-    githubURL: "https://github.com/Bilal-19/FoodCateringPlatform"
-  },
-  {
-    id: 3,
-    projectmageSrc: "./media/images/royal_jewellers.png",
-    projectName: "Royal Jewellers Portfolio",
-    desc: "A portfolio website to showcase jewelry materials, provide customers with real-time cost estimates, and offer features such as request-for-quote and contact inquiry forms to boost user interaction and lead generation efficiently.",
-    technology: ["React JS", "Bootstrap 5"],
-    websiteURL: "https://royaljewellers.netlify.app/",
-    githubURL: "https://github.com/Bilal-19/RoyalJewellersPortfolio"
-  },
-  {
-    id: 4,
-    projectmageSrc: "./media/images/E-commerce.png",
-    projectName: "E-Commerce Store",
-    desc: "An online store with user authentication, shopping cart, and payment integration (Stripe/COD). Admins can manage categories, products, and orders from a dashboard, while users browse, purchase, and track products through their personal account.",
-    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
-    websiteURL: "",
-    githubURL: "https://github.com/Bilal-19/LaravelEcommerceWebApplication"
-  },
-  {
-    id: 5,
-    projectmageSrc: "./media/images/Ridehub.png",
-    projectName: "Ride-Hub Portfolio",
-    desc: "A static React-based portfolio website designed to highlight premium car services and professional drivers. The site presents the brand’s service features with elegance, focusing on visual storytelling and smooth user experience.",
-    technology: ["React JS", "Bootstrap 5"],
-    websiteURL: "https://ridewithcomfort.netlify.app/",
-    githubURL: "https://github.com/Bilal-19/RideHub"
-  },
-  {
-    id: 6,
     projectmageSrc: "./media/images/SER.png",
     projectName: "Sterling Executive Residential",
     desc: "A real estate booking platform where users can explore property listings, check availability, and book their desired property online. Admins manage properties listing, view inquiries (booking, general etc), using a centralized dashboard.",
@@ -54,7 +9,7 @@ const projectData = [
     githubURL: "https://github.com/Bilal-19/SER_RealEstate"
   },
   {
-    id: 7,
+    id: 2,
     projectmageSrc: "./media/images/Green-Key.png",
     projectName: "Green Key Lettings",
     desc: "A multi-user platform with dashboards for admins and landlords. Landlords manage properties, tenants browse listings based on filters, and admins handle FAQs, company profiles, and overall content from a single panel.",
@@ -63,7 +18,61 @@ const projectData = [
     githubURL: "https://github.com/Bilal-19/NewLeafLettingHousing"
   },
   {
+    id: 3,
+    projectmageSrc: "./media/images/curemed-pharmas.png",
+    projectName: "CureMed Pharmas",
+    desc: "A portfolio website created for CureMed Pharmas to highlight medical products, services, company vision, and career opportunities. It features a clean layout with sections for mission, product display, job listings, and a contact form for clients and job seekers.",
+    technology: ["React JS", "Tailwind CSS"],
+    websiteURL: "https://curemed-pharmas.netlify.app/",
+    githubURL: "https://github.com/Bilal-19/curemed-pharmacy"
+  },
+  {
+    id: 4,
+    projectmageSrc: "./media/images/visa_application.png",
+    projectName: "Visa Web Application",
+    desc: "A CRM web app where applicants can apply for visas, read FAQs, track their application status, and submit inquiries. Admins manage and approve/reject applications, track user data, and respond to inquiries via a centralized dashboard.",
+    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    websiteURL: "",
+    githubURL: "https://github.com/Bilal-19/visa-web-application"
+  },
+  {
+    id: 5,
+    projectmageSrc: "./media/images/food_catering_website.png",
+    projectName: "Food Catering Platform",
+    desc: "A platform for customers to place event-based food orders, track history, and get support. Admins handle orders, manage inventory, and view dashboard analytics to ensure smooth operations and efficient inquiry handling through a single interface.",
+    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    websiteURL: "",
+    githubURL: "https://github.com/Bilal-19/FoodCateringPlatform"
+  },
+  {
+    id: 6,
+    projectmageSrc: "./media/images/royal_jewellers.png",
+    projectName: "Royal Jewellers Portfolio",
+    desc: "A portfolio website to showcase jewelry materials, provide customers with real-time cost estimates, and offer features such as request-for-quote and contact inquiry forms to boost user interaction and lead generation efficiently.",
+    technology: ["React JS", "Bootstrap 5"],
+    websiteURL: "https://royaljewellers.netlify.app/",
+    githubURL: "https://github.com/Bilal-19/RoyalJewellersPortfolio"
+  },
+  {
+    id: 7,
+    projectmageSrc: "./media/images/E-commerce.png",
+    projectName: "E-Commerce Store",
+    desc: "An online store with user authentication, shopping cart, and payment integration (Stripe/COD). Admins can manage categories, products, and orders from a dashboard, while users browse, purchase, and track products through their personal account.",
+    technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
+    websiteURL: "",
+    githubURL: "https://github.com/Bilal-19/LaravelEcommerceWebApplication"
+  },
+  {
     id: 8,
+    projectmageSrc: "./media/images/Ridehub.png",
+    projectName: "Ride-Hub Portfolio",
+    desc: "A static React-based portfolio website designed to highlight premium car services and professional drivers. The site presents the brand’s service features with elegance, focusing on visual storytelling and smooth user experience.",
+    technology: ["React JS", "Bootstrap 5"],
+    websiteURL: "https://ridewithcomfort.netlify.app/",
+    githubURL: "https://github.com/Bilal-19/RideHub"
+  },
+  {
+    id: 9,
     projectmageSrc: "./media/images/aquaVenture.png",
     projectName: "Swimming Academy",
     desc: "An interactive website for Aqua Venture Academy showcasing programs, galleries, testimonials, and contact forms. The site aims to engage parents and promote swimming courses with a clean layout and strong brand presence.",
@@ -72,22 +81,13 @@ const projectData = [
     githubURL: "https://github.com/Bilal-19/swimming-academy-website"
   },
   {
-    id: 9,
+    id: 10,
     projectmageSrc: "./media/images/iron-pulse-portfolio.png",
     projectName: "Gym Website",
     desc: "A dynamic gym website that presents membership options, trainer profiles, workout schedules, and contact forms. Designed to attract new members and provide essential information in an organized and visually appealing layout.",
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://ironpulse.netlify.app/",
     githubURL: "https://github.com/Bilal-19/iron-pulse-gym"
-  },
-  {
-    id: 10,
-    projectmageSrc: "./media/images/curemed-pharmas.png",
-    projectName: "CureMed Pharmas",
-    desc: "A portfolio website created for CureMed Pharmas to highlight medical products, services, company vision, and career opportunities. It features a clean layout with sections for mission, product display, job listings, and a contact form for clients and job seekers.",
-    technology: ["React JS", "Tailwind CSS"],
-    websiteURL: "https://curemed-pharmas.netlify.app/",
-    githubURL: "https://github.com/Bilal-19/curemed-pharmacy"
   },
   {
     id: 11,
@@ -106,6 +106,15 @@ const projectData = [
     technology: ["Tailwind CSS", "JavaScript", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
     githubURL: "https://github.com/Bilal-19/Hospital-Management-Software"
+  },
+  {
+    id: 13,
+    projectmageSrc: "./media/images/dr_portfolio.png",
+    projectName: "Dr. Ayesha Portfolio",
+    desc: "A simple portfolio website created for Dr. Ayesha to establish her professional presence online. The one-page design highlights her background, services, and contact information with a clean layout, soft mesh gradient, and Poppins typography.",
+    technology: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
+    websiteURL: "https://dr-ayesha.netlify.app/",
+    githubURL: "https://github.com/Bilal-19/dr-portfolio"
   }
 ];
 
