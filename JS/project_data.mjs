@@ -220,7 +220,7 @@ const professionalExperience = [
     id: 1,
     companyName: "ZH Tech",
     designation: "Software Developer",
-    duration: "Sept 2024 - Present",
+    duration: "Sept 2024 - April 2025",
     jobDescription: [
       "Developed: Real Estate platform enabling seamless property browsing, check availability, and online bookings, while empowering admins to manage property listings and user inquiries.",
       "Developed: Pharmaceutical website showcasing company products, services, mission, and careers, with an integrated “Contact Us” page to enhance visitor engagement.",
