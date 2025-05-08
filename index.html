@@ -12,9 +12,12 @@
     <meta name="keywords"
         content="Full Stack Developer, Web Developer, React JS, Laravel, Software Developer, Portfolio, Hire Developer">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </noscript>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,7 +73,8 @@
         </div>
 
         <div class="mx-5 space-x-4 hidden md:block">
-            <button class="text-[#051527] bg-white px-3 py-1 rounded-md hover:cursor-pointer" aria-label="contact-us">Contact Me</button>
+            <button class="text-[#051527] bg-white px-3 py-1 rounded-md hover:cursor-pointer"
+                aria-label="contact-us">Contact Me</button>
         </div>
 
     </div>
@@ -95,7 +99,7 @@
         </div>
 
         <div class="w-80 md:w-1/2 pt-5 md:py-10 md:m-5">
-            <img src="/media/images/workspace.webp" alt="workspace" class="rounded-lg aspect-[3/2]">
+            <img src="/media/images/workspace.webp" alt="workspace" class="rounded-lg h-52 md:h-120">
         </div>
     </div>
 
@@ -226,7 +230,8 @@
                 </div>
                 <div>
                     <h6 class="font-medium">Email</h6>
-                    <a href="mailto:bilalmuhammadyousuf543@gmail.com" class="text-sm md:text-base text-[#4B5563]">bilalmuhammadyousuf543@gmail.com</a>
+                    <a href="mailto:bilalmuhammadyousuf543@gmail.com"
+                        class="text-sm md:text-base text-[#4B5563]">bilalmuhammadyousuf543@gmail.com</a>
                 </div>
             </div>
 
