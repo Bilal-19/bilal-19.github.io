@@ -28,27 +28,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles.css">
 
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
-
-    <link rel="preload" as="image" href="/media/images/workspace.webp" type="image/webp">
-
-
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org/",
-          "@type": "Person",
-          "name": "Bilal Muhammad Yousuf",
-          "jobTitle": "Full Stack Software Developer",
-          "url": "https://bilal-19.github.io/",
-          "sameAs": [
-            "https://www.linkedin.com/in/bilalmuhammadyousuf/",
-            "https://github.com/Bilal-19"
-          ],
-          "skills": "React JS, Laravel, PHP, JavaScript, MySQL, Bootstrap, Tailwind CSS"
-        }
-        </script>
+     <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
@@ -56,7 +37,7 @@
     <div
         class="w-full bg-[#051527] text-white flex flex-col md:flex-row justify-between md:items-center h-fit py-3.5 shadow-md">
         <div class="flex items-center justify-between ml-2">
-            <a href="./index.html" class="ff-amsterdam-one text-xs">Bilal Muhammad Yousuf</a>
+            <a href="./index.html" class="ff-amsterdam-one">Bilal Muhammad Yousuf</a>
             <button aria-label="toggle-button"
                 class="sm:block md:hidden mx-5 inline-flex size-10 items-center justify-center transition hover:cursor-pointer bg-white text-[#051527] rounded-md"
                 id="menu-toggle" aria-controls="navbar-default" aria-expanded="false">
@@ -80,26 +61,30 @@
 
     </div>
 
-    <div
-        class="w-full bg-[#F3F4F6] flex flex-col justify-between items-start">
-            <div class="md:w-1/2 m-5 md:m-5 py-5 md:py-10 text-justify">
-                <h2 class="text-4xl md:text-6xl mb-4">Hello, I'm Bilal</h2>
-                <h2 class="text-2xl md:text-4xl mb-2 font-light">Full Stack <span class="font-medium">Web Developer</span>
-                </h2>
-                <p class="text-base md:text-md mb-5 font-light">
-                    I specialize in developing custom, SEO-optimized, and high-performance websites tailored to various
-                    industries, including Visa Application, Food catering, NGOs, Jewelry businesses, and Real estate.
-                    With
-                    a strong focus on scalability, user experience, and visual appeal, I create web solutions that
-                    enhance
-                    engagement and drive business growth.
-                </p>
-                <a href="mailto:bilalmuhammadyousuf543@gmail.com"
-                    class="bg-[#051527] text-white px-3 py-2 mt-5 rounded-lg hover:bg-[#102c4a]">
-                    <i class="fa-solid fa-handshake-simple"></i>
-                    Let's Work Together
-                </a>
-            </div>
+    <div class="w-full bg-[#F3F4F6] flex flex-col justify-between items-start">
+        <div class="md:w-1/2 m-5 md:m-5 py-5 md:py-10 text-justify">
+            <h2 class="text-4xl md:text-6xl mb-4">Hello, I'm Bilal</h2>
+            <h2 class="text-2xl md:text-4xl mb-2 font-light">Full Stack <span class="font-medium">Web Developer</span>
+            </h2>
+            <p class="text-base md:text-md mb-5 font-light">
+                I specialize in developing custom, SEO-optimized, and high-performance websites tailored to various
+                industries, including Visa Application, Food catering, NGOs, Jewelry businesses, and Real estate.
+                With
+                a strong focus on scalability, user experience, and visual appeal, I create web solutions that
+                enhance
+                engagement and drive business growth.
+            </p>
+            <a href="mailto:bilalmuhammadyousuf543@gmail.com"
+                class="bg-[#051527] text-white px-3 py-2 mt-5 rounded-lg hover:bg-[#102c4a] mr-5">
+                <i class="fa-solid fa-handshake-simple"></i>
+                Let's Work Together
+            </a>
+            <a href="./media/Resume - Bilal.pdf" download
+                class="bg-[#051527] text-white px-3 py-2 mt-5 rounded-lg hover:bg-[#102c4a]">
+                <i class="fa-solid fa-download"></i>
+                Download Resume
+            </a>
+        </div>
     </div>
 
     <div class="w-full pt-5 bg-[#FFFFFF] mt-5 py-10" id="projects">
@@ -270,6 +255,23 @@
         </div>
 
     </div>
+
+   
+    <!-- Schema Markup -->
+    <script type="application/ld+json" defer>
+        {
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          "name": "Bilal Muhammad Yousuf",
+          "jobTitle": "Full Stack Software Developer",
+          "url": "https://bilal-19.github.io/",
+          "sameAs": [
+            "https://www.linkedin.com/in/bilalmuhammadyousuf/",
+            "https://github.com/Bilal-19"
+          ],
+          "skills": "React JS, Laravel, PHP, JavaScript, MySQL, Bootstrap, Tailwind CSS"
+        }
+        </script>
 
     <script src="./JS/script.mjs" type="module" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
