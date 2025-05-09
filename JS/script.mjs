@@ -3,7 +3,8 @@ import {
   pricingPackages,
   blogs,
   professionalExperience,
-  FAQs
+  FAQs,
+  technicalSkills
 } from "./project_data.mjs";
 
 const portfolioSectionEl = document.querySelector(".swiper-wrapper")
@@ -16,10 +17,10 @@ projectData.forEach((val) => {
                 <h5 class="text-xl font-semibold">${val.projectName}</h5>
                 <div class="space-x-2">
                   ${val.websiteURL ?
-                    `<a href="${val.websiteURL}" target="_blank" class="text-[#051527]"><i class="fa-solid fa-globe"></i></a>`
-                    :
-                    ``
-                  }
+      `<a href="${val.websiteURL}" target="_blank" class="text-[#051527]"><i class="fa-solid fa-globe"></i></a>`
+      :
+      ``
+    }
                   <a href="${val.githubURL}" target="_blank" class="text-[#051527]"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
@@ -59,6 +60,22 @@ new Swiper('.swiper', {
   },
 });
 
+
+const skillsEl = document.getElementById("technicalSkills");
+technicalSkills.map((val, key) => {
+  skillsEl.innerHTML +=
+    `
+   <div class="w-80 md:w-1/4 mx-auto flex items-center justify-start my-5 bg-[#F3F4F6] px-3 py-2 rounded-md border-b-3 border-t-[0.5px] border-x-[0.5px] border-[#051527]">
+      <div>
+        <img src="./media/images/${val.imageAdd}" alt="${val.category}" class="object-contain">
+      </div>
+      <div class="mx-2">
+        <h5 class="font-medium text-lg">${val.category}</h5>
+        <p class="text-xs">${val.coreSkills}</p>
+      </div>
+    </div>
+  `
+})
 
 const priceEl = document.getElementById("pricingPackages")
 
@@ -133,12 +150,12 @@ const FaqEl = document.getElementById("ques-ans")
 FAQs.map((val, key) => (
   FaqEl.innerHTML +=
   `
-  <div class="w-80 mx-auto md:w-auto p-5 my-5 border border-gray-300 rounded-md shadow-md">
+  <div class="w-80 mx-auto md:w-auto p-5 my-5 rounded-md border-b-3 border-t-[0.5px] border-x-[0.5px] border-[#051527]">
       <div class="flex justify-between toggle-faq hover:cursor-pointer">
           <h4 class="font-medium">${val.id}. ${val.ques}</h4>
           <i class="fa-solid fa-caret-down hover:cursor-pointer"></i>
       </div>
-      <p class="text-[#4B5563] toggle-answer transition duration-1000 text-sm">${val.answer}</p>
+      <p class="text-[#4B5563] mt-3 toggle-answer text-sm hidden">${val.answer}</p>
   </div>
   `
 ))

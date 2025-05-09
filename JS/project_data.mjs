@@ -241,10 +241,32 @@ const professionalExperience = [
   }
 ]
 
+const technicalSkills = [
+  {
+    id:1,
+    category: "Frontend Development",
+    coreSkills: "Bootstrap, Tailwind, JavaScript & React JS",
+    imageAdd: "frontend.png"
+  },
+  {
+    id:2,
+    category: "Backend Development",
+    coreSkills:"PHP, Laravel & MySQL",
+    imageAdd: "backend.png"
+  },
+  {
+    id:3,
+    category: "Database & Cloud",
+    coreSkills: "MySQL & Hostinger",
+    imageAdd: "database.png"
+  }
+]
+
 export {
   projectData,
   pricingPackages,
   blogs,
   FAQs,
-  professionalExperience
+  professionalExperience,
+  technicalSkills
 };
