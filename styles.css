@@ -1,4 +1,4 @@
-body{
+body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -6,7 +6,6 @@ body{
 :root {
   --charcoal-blue: #051527;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -31,23 +30,22 @@ html {
   background-color: var(--charcoal-blue);
 }
 
-
 /* Remove default swipper arrows */
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: #cacaca;
   opacity: 1;
 }
 
-.swiper-pagination-bullet-active{
- background-color: #051527; 
+.swiper-pagination-bullet-active {
+  background-color: #051527;
 }
 
-.swiper-pagination{
+.swiper-pagination {
   margin-bottom: 0px;
   bottom: 10px;
 }
