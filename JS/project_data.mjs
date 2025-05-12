@@ -222,9 +222,11 @@ const professionalExperience = [
     designation: "Software Developer",
     duration: "Sept 2024 - April 2025",
     jobDescription: [
-      "Developed: Real Estate platform enabling seamless property browsing, check availability, and online bookings, while empowering admins to manage property listings and user inquiries.",
+      "Developed: Real Estate platform enabling seamless property browsing, check availability, and online bookings, while empowering admins or landlords to manage property listings and user inquiries.",
       "Developed: Pharmaceutical website showcasing company products, services, mission, and careers, with an integrated “Contact Us” page to enhance visitor engagement.",
-      "Developed: Furniture & Interior business website featuring product collections, trending designs, service offerings, customer feedback, and real-time form submissions using EmailJS."
+      "Developed: Furniture & Interior business website featuring product collections, trending designs, service offerings, customer feedback, and real-time form submissions using EmailJS.",
+      "Collaborated: With UI/UX designers to build responsive, mobile-friendly websites using Bootstrap 5 and Tailwind CSS, ensuring smooth cross-device functionality and modern design. "
+
     ]
   },
 
@@ -243,19 +245,19 @@ const professionalExperience = [
 
 const technicalSkills = [
   {
-    id:1,
+    id: 1,
     category: "Frontend Development",
     coreSkills: "Bootstrap, Tailwind, JavaScript & React JS",
     imageAdd: "frontend.png"
   },
   {
-    id:2,
+    id: 2,
     category: "Backend Development",
-    coreSkills:"PHP, Laravel & MySQL",
+    coreSkills: "PHP, Laravel & MySQL",
     imageAdd: "backend.png"
   },
   {
-    id:3,
+    id: 3,
     category: "Database & Cloud",
     coreSkills: "MySQL & Hostinger",
     imageAdd: "database.png"

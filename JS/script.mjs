@@ -111,8 +111,9 @@ blogs.map((val, key) => {
     `
    <div class="border border-gray-300 p-5 rounded-md shadow-md bg-white" key=${key}>
     <img src="./media/images/${val.thumbnailImg}" alt="${val.blogTitle}" class="rounded-lg mb-3" />
-    <h6 class="mb-3 font-semibold md:text-xl">${val.blogTitle}</h6>
-    <p class="mb-5 text-[#6B7280]">${val.blogDesc}</p>
+    <h6 class="mb-1 font-semibold md:text-xl">${val.blogTitle}</h6>
+    <p class="text-md text-[#6B7280]">${val.blogDesc}</p>
+    <p class="text-sm mb-3 text-[#6B7280]">${val.publishDate}</p>
     <a href="https://medium.com/@bilalmuhammadyousuf543/${val.mediumURL}" target="_blank" class="text-white bg-[#051527] px-3 py-2 rounded-lg">
     <i class="fa-brands fa-medium"></i> View on Medium
     </a>
