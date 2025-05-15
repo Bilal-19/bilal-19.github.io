@@ -264,11 +264,34 @@ const technicalSkills = [
   }
 ]
 
+const customerFeedback = [
+  {
+    id: 1,
+    clientName: "Emily Johnson",
+    rating: 5,
+    feedbackMessage: "Working with Bilal was a game-changer for our business. He delivered a clean, responsive website ahead of schedule. Highly professional!"
+  },
+  {
+    id: 2,
+    clientName: "Michael Smith",
+    rating: 5,
+    feedbackMessage: "Bilal built our company’s landing page and it turned out better than we imagined. Great eye for detail and very responsive to feedback."
+  },
+  {
+    id: 3,
+    clientName: "Sarah Williams",
+    rating: 5,
+    feedbackMessage: "Excellent work on our e-commerce site. Bilal is a skilled developer with strong problem-solving abilities. Would definitely hire again!"
+  }
+];
+
+
 export {
   projectData,
   pricingPackages,
   blogs,
   FAQs,
   professionalExperience,
-  technicalSkills
+  technicalSkills,
+  customerFeedback
 };

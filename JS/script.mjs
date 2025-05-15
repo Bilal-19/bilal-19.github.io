@@ -4,7 +4,8 @@ import {
   blogs,
   professionalExperience,
   FAQs,
-  technicalSkills
+  technicalSkills,
+  customerFeedback
 } from "./project_data.mjs";
 
 const portfolioSectionEl = document.querySelector(".swiper-wrapper")
@@ -166,4 +167,31 @@ document.querySelectorAll(".toggle-faq").forEach((faq, index) => {
   faq.addEventListener("click", () => {
     faq.nextElementSibling.classList.toggle("hidden")
   })
+})
+
+
+function printStars(num) {
+  let fillStars = `<i class="fa-solid fa-star" style="color: #FFD43B;"></i>`.repeat(num) + `<i class="fa-regular fa-star" style="color: gray;"></i>`.repeat(5 - num)
+  return fillStars
+}
+
+console.log(printStars(2))
+
+const feedbackEl = document.getElementById("customerFeedback")
+customerFeedback.map((val, key) => {
+  feedbackEl.innerHTML +=
+    `
+  <div class="border-b-4 border-x-1 border-t-1 p-5 rounded-md">
+    <div class="flex flex-row mb-5 items-center">
+      <div>
+        <img src="./media/images/user.png" class="h-15"/>
+      </div>
+      <div>
+        <p>${val.clientName}</p>
+        <p>${printStars(val.rating)}</p>
+      </div>
+    </div>
+    <p class="text-[#4B5563]">${val.feedbackMessage}</p>
+  </div>
+  `
 })
