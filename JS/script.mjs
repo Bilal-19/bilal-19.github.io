@@ -18,15 +18,15 @@ projectData.forEach((val) => {
                 <h5 class="text-xl font-semibold mt-2">${val.projectName}</h5>
                 <div class="space-x-2">
                   ${val.websiteURL ?
-      `<a href="${val.websiteURL}" target="_blank" class="text-[#051527]"><i class="fa-solid fa-globe"></i></a>`
+      `<a href="${val.websiteURL}" target="_blank" class="text-charcoal-blue"><i class="fa-solid fa-globe"></i></a>`
       :
       ``
     }
-                  <a href="${val.githubURL}" target="_blank" class="text-[#051527]"><i class="fa-brands fa-github"></i></a>
+                  <a href="${val.githubURL}" target="_blank" class="text-charcoal-blue"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
           <p class="text-[#6B7280] mt-3 mb-3">${val.desc}</p>
-          <p class="mb-3">${val.technology.map(item => `<button class="bg-[#051527] text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p> 
+          <p class="mb-3">${val.technology.map(item => `<button class="bg-charcoal-blue text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p> 
       </div>
   `;
 });
@@ -97,7 +97,7 @@ pricingPackages.map((val, key) => {
     <ul class="text-[#6B7280]">
     ${val.keyFeatures.map(value =>
       `
-      <li class="ml-5"><i class="fa-solid fa-check text-green-700"></i> ${value}</li>
+      <li class="ml-5"><i class="fa-solid fa-check text-[#051527]"></i> ${value}</li>
       `
     ).join("")}
     </ul>
@@ -114,7 +114,7 @@ blogs.map((val, key) => {
     <img src="./media/images/${val.thumbnailImg}" alt="${val.blogTitle}" class="rounded-lg mb-3" />
     <h6 class="mb-1 font-semibold md:text-xl">${val.blogTitle}</h6>
     <p class="text-md text-[#6B7280] mb-3">${val.blogDesc}</p>
-    <a href="https://medium.com/@bilalmuhammadyousuf543/${val.mediumURL}" target="_blank" class="text-white bg-[#051527] px-3 py-2 rounded-md hover:bg-[#102c4a]">
+    <a href="https://medium.com/@bilalmuhammadyousuf543/${val.mediumURL}" target="_blank" class="text-white bg-charcoal-blue px-3 py-2 rounded-md hover:bg-[#102c4a]">
     <i class="fa-brands fa-medium"></i> View on Medium
     </a>
   </div>
@@ -181,7 +181,7 @@ const feedbackEl = document.getElementById("customerFeedback")
 customerFeedback.map((val, key) => {
   feedbackEl.innerHTML +=
     `
-  <div class="border-b-4 border-x-1 border-t-1 p-5 rounded-md">
+  <div class="bg-white border-b-4 border-#051527 border-x-1 border-t-1 p-5 rounded-md mx-5 md:mx-0 hover:shadow-lg transition duration-300">
     <div class="flex flex-row mb-5 items-center">
       <div>
         <img src="./media/images/user.png" class="h-15"/>

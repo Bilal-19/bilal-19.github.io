@@ -30,6 +30,10 @@ html {
   background-color: var(--charcoal-blue);
 }
 
+.text-charcoal-blue{
+  color: var(--charcoal-blue);
+}
+
 /* Remove default swipper arrows */
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -65,3 +69,4 @@ html {
 ::-webkit-scrollbar-thumb {
   background: var(--charcoal-blue);
 }
+
