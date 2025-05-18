@@ -93,11 +93,11 @@ pricingPackages.map((val, key) => {
       <p><i class="fa-solid fa-calendar-days"></i> ${val.timeFrame} business days</p>
       <p><i class="fa-solid fa-repeat"></i> ${val.revisions} free revisions</p>
     </div>
-    <h6>Key Features:</h6>
+    <h6 class="font-medium">Key Features:</h6>
     <ul class="text-[#6B7280]">
     ${val.keyFeatures.map(value =>
       `
-      <li class="ml-5"><i class="fa-solid fa-check text-[#051527]"></i> ${value}</li>
+      <li class="mb-1"><i class="fa-solid fa-check text-[#051527]"></i> ${value}</li>
       `
     ).join("")}
     </ul>
