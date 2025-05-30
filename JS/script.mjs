@@ -82,7 +82,7 @@ const priceEl = document.getElementById("pricingPackages")
 pricingPackages.map((val, key) => {
   priceEl.innerHTML +=
     `
-  <div class="m-3 border shadow-md rounded-lg hover:scale-102 duration-100 p-5 ${val.id == 2 ? 'border-gray-500' : 'border-gray-300'}">
+  <div class="m-3 border shadow-md rounded-lg hover:scale-102 duration-100 p-5 ${val.id == 2 ? 'border-gray-500' : 'border-gray-300'} border-b-4 border-b-[#051527] bg-white">
     <img src="${val.imgPath}" class="h-10 mx-auto mb-3" alt=${val.packageName}/>
     <h5 class="text-center text-md md:text-lg font-medium mb-3">${val.packageName}</h5>
     <div class="flex items-center justify-center">
@@ -175,7 +175,6 @@ function printStars(num) {
   return fillStars
 }
 
-console.log(printStars(2))
 
 const feedbackEl = document.getElementById("customerFeedback")
 customerFeedback.map((val, key) => {
