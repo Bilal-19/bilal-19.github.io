@@ -115,6 +115,15 @@ const projectData = [
     technology: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
     websiteURL: "https://dr-ayesha.netlify.app/",
     githubURL: "https://github.com/Bilal-19/dr-portfolio"
+  },
+  {
+    id: 14,
+    projectmageSrc: "./media/images/cultureEttiqutesGuide.png",
+    projectName: "Culture Ettiqutes Guide",
+    desc: "A website that serves as a cultural etiquette guide for travelers. It provides concise insights into country-specific greetings, tipping practices, dress codes, and social taboos. The platform enhances cross-cultural understanding and promotes global interactions.",
+    technology: ["HTML", "CSS", "Tailwind CSS", "React JS", "JavaScript"],
+    websiteURL: "https://culture-guide.netlify.app/",
+    githubURL: "https://github.com/Bilal-19/Cultural-Ettiqutes-Guide"
   }
 ];
 
