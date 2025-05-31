@@ -26,8 +26,7 @@ projectData.forEach((val) => {
                 </div>
             </div>
           <p class="text-[#6B7280] mt-3 mb-3">${val.desc}</p>
-          <p class="mb-3">${val.technology.map(item => `<button class="bg-charcoal-blue text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p> 
-      </div>
+          <p class="mb-3">${val.technology.map(item => `<button class="bg-charcoal-blue text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>      </div>
   `;
 });
 
