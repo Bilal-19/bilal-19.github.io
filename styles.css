@@ -70,3 +70,7 @@ html {
   background: var(--charcoal-blue);
 }
 
+.active-project{
+  background-color: #051527;
+  color: white;
+}

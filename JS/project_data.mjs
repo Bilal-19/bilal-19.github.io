@@ -6,7 +6,8 @@ const projectData = [
     desc: "A real estate booking platform where users can explore property listings, check availability, and book their desired property online. Admins manage properties listing, view inquiries (booking, general etc), using a centralized dashboard.",
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "https://sterling-executive.com/",
-    githubURL: "https://github.com/Bilal-19/SER_RealEstate"
+    githubURL: "https://github.com/Bilal-19/SER_RealEstate",
+    category:"realestate"
   },
   {
     id: 2,
@@ -15,7 +16,8 @@ const projectData = [
     desc: "A multi-user platform with dashboards for admins and landlords. Landlords manage properties, tenants browse listings based on filters, and admins handle FAQs, company profiles, and overall content from a single panel.",
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "https://greenkeylettings.com/",
-    githubURL: "https://github.com/Bilal-19/NewLeafLettingHousing"
+    githubURL: "https://github.com/Bilal-19/NewLeafLettingHousing",
+    category:"realestate"
   },
   {
     id: 3,
@@ -24,7 +26,8 @@ const projectData = [
     desc: "A portfolio website created for CureMed Pharmas to highlight medical products, services, company vision, and career opportunities. It features a clean layout with sections for mission, product display, job listings, and a contact form for clients and job seekers.",
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://curemed-pharmas.netlify.app/",
-    githubURL: "https://github.com/Bilal-19/curemed-pharmacy"
+    githubURL: "https://github.com/Bilal-19/curemed-pharmacy",
+    category:"pharmaceutical"
   },
   {
     id: 4,
@@ -33,7 +36,8 @@ const projectData = [
     desc: "A CRM web app where applicants can apply for visas, read FAQs, track their application status, and submit inquiries. Admins manage and approve/reject applications, track user data, and respond to inquiries via a centralized dashboard.",
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
-    githubURL: "https://github.com/Bilal-19/visa-web-application"
+    githubURL: "https://github.com/Bilal-19/visa-web-application",
+    category:"travelling"
   },
   {
     id: 5,
@@ -42,7 +46,8 @@ const projectData = [
     desc: "A platform for customers to place event-based food orders, track history, and get support. Admins handle orders, manage inventory, and view dashboard analytics to ensure smooth operations and efficient inquiry handling through a single interface.",
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
-    githubURL: "https://github.com/Bilal-19/FoodCateringPlatform"
+    githubURL: "https://github.com/Bilal-19/FoodCateringPlatform",
+    category:"others"
   },
   {
     id: 6,
@@ -51,7 +56,8 @@ const projectData = [
     desc: "A portfolio website to showcase jewelry materials, provide customers with real-time cost estimates, and offer features such as request-for-quote and contact inquiry forms to boost user interaction and lead generation efficiently.",
     technology: ["React JS", "Bootstrap 5"],
     websiteURL: "https://royaljewellers.netlify.app/",
-    githubURL: "https://github.com/Bilal-19/RoyalJewellersPortfolio"
+    githubURL: "https://github.com/Bilal-19/RoyalJewellersPortfolio",
+    category:"others"
   },
   {
     id: 7,
@@ -60,7 +66,8 @@ const projectData = [
     desc: "An online store with user authentication, shopping cart, and payment integration (Stripe/COD). Admins can manage categories, products, and orders from a dashboard, while users browse, purchase, and track products through their personal account.",
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
-    githubURL: "https://github.com/Bilal-19/LaravelEcommerceWebApplication"
+    githubURL: "https://github.com/Bilal-19/LaravelEcommerceWebApplication",
+    category:"others"
   },
   {
     id: 8,
@@ -69,7 +76,8 @@ const projectData = [
     desc: "A static React-based portfolio website designed to highlight premium car services and professional drivers. The site presents the brand’s service features with elegance, focusing on visual storytelling and smooth user experience.",
     technology: ["React JS", "Bootstrap 5"],
     websiteURL: "https://ridewithcomfort.netlify.app/",
-    githubURL: "https://github.com/Bilal-19/RideHub"
+    githubURL: "https://github.com/Bilal-19/RideHub",
+    category:"others"
   },
   {
     id: 9,
@@ -78,7 +86,8 @@ const projectData = [
     desc: "An interactive website for Aqua Venture Academy showcasing programs, galleries, testimonials, and contact forms. The site aims to engage parents and promote swimming courses with a clean layout and strong brand presence.",
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://aquaswimventure.netlify.app/",
-    githubURL: "https://github.com/Bilal-19/swimming-academy-website"
+    githubURL: "https://github.com/Bilal-19/swimming-academy-website",
+    category:"others"
   },
   {
     id: 10,
@@ -87,7 +96,8 @@ const projectData = [
     desc: "A dynamic gym website that presents membership options, trainer profiles, workout schedules, and contact forms. Designed to attract new members and provide essential information in an organized and visually appealing layout.",
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://ironpulse.netlify.app/",
-    githubURL: "https://github.com/Bilal-19/iron-pulse-gym"
+    githubURL: "https://github.com/Bilal-19/iron-pulse-gym",
+    category:"others"
   },
   {
     id: 11,
@@ -96,7 +106,8 @@ const projectData = [
     desc: "An interior design and furniture studio website that displays trending designs, featured collections, and company philosophy. Includes team profiles and testimonials to build trust and attract potential clients or collaborators.",
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://furnicraft-studio.netlify.app/",
-    githubURL: "https://github.com/Bilal-19/FurniCraft-Studio"
+    githubURL: "https://github.com/Bilal-19/FurniCraft-Studio",
+    category:"others"
   },
   {
     id: 12,
@@ -105,7 +116,8 @@ const projectData = [
     desc: "A complete CRM solution built for hospitals and clinics to streamline operations. With dedicated portals for Admins, Doctors, and Receptionists, the system simplifies tasks like appointment management, shift scheduling, billing, inventory, and salary generation.",
     technology: ["Tailwind CSS", "JavaScript", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
-    githubURL: "https://github.com/Bilal-19/Hospital-Management-Software"
+    githubURL: "https://github.com/Bilal-19/Hospital-Management-Software",
+    category:"pharmaceutical"
   },
   {
     id: 13,
@@ -114,7 +126,8 @@ const projectData = [
     desc: "A simple portfolio website created for Dr. Ayesha to establish her professional presence online. The one-page design highlights her background, services, and contact information with a clean layout, soft mesh gradient, and Poppins typography.",
     technology: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
     websiteURL: "https://dr-ayesha.netlify.app/",
-    githubURL: "https://github.com/Bilal-19/dr-portfolio"
+    githubURL: "https://github.com/Bilal-19/dr-portfolio",
+    category:"pharmaceutical"
   },
   {
     id: 14,
@@ -123,7 +136,8 @@ const projectData = [
     desc: "A website that serves as a cultural etiquette guide for travelers. It provides concise insights into country-specific greetings, tipping practices, dress codes, and social taboos. The platform enhances cross-cultural understanding and promotes global interactions.",
     technology: ["HTML", "CSS", "Tailwind CSS", "React JS", "JavaScript"],
     websiteURL: "https://culture-guide.netlify.app/",
-    githubURL: "https://github.com/Bilal-19/Cultural-Ettiqutes-Guide"
+    githubURL: "https://github.com/Bilal-19/Cultural-Ettiqutes-Guide",
+    category:"travelling"
   }
 ];
 

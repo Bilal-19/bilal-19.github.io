@@ -10,25 +10,38 @@ import {
 
 const portfolioSectionEl = document.querySelector(".swiper-wrapper")
 
-projectData.forEach((val) => {
-  portfolioSectionEl.innerHTML += `
+function renderProject(projects) {
+  return projects.forEach((val) => {
+    portfolioSectionEl.innerHTML += `
       <div class="swiper-slide rounded-xl md:border border-gray-300 shadow-md mb-5 h-fit px-2 py-5 bg-[#f3f4f6] text-black">
           <img src="${val.projectmageSrc}" alt="${val.projectName}" />
             <div class="flex flex-row items-center justify-between">
                 <h5 class="text-xl font-semibold mt-2">${val.projectName}</h5>
                 <div class="space-x-2">
                   ${val.websiteURL ?
-      `<a href="${val.websiteURL}" target="_blank" class="text-charcoal-blue"><i class="fa-solid fa-globe"></i></a>`
-      :
-      ``
-    }
+        `<a href="${val.websiteURL}" target="_blank" class="text-charcoal-blue"><i class="fa-solid fa-globe"></i></a>`
+        :
+        ``
+      }
                   <a href="${val.githubURL}" target="_blank" class="text-charcoal-blue"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
           <p class="text-[#6B7280] mt-3 mb-3">${val.desc}</p>
           <p class="mb-3">${val.technology.map(item => `<button class="bg-charcoal-blue text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>      </div>
   `;
-});
+  });
+}
+renderProject(projectData)
+
+const projectCategoryForm = document.getElementById("project-category")
+projectCategoryForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+  const getBtnVal = e.submitter.value
+  e.submitter.classList.add("active-project")
+  var filterProjects = getBtnVal === 'All' ? projectData : projectData.filter((val) => val.category === getBtnVal);
+  portfolioSectionEl.innerHTML = ``
+  renderProject(filterProjects)
+})
 
 new Swiper('.swiper', {
   // Optional parameters
