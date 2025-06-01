@@ -8,12 +8,12 @@ import {
   customerFeedback
 } from "./project_data.mjs";
 
-const portfolioSectionEl = document.querySelector(".swiper-wrapper")
+const projectCardEl = document.getElementById("project-card")
 
 function renderProject(projects) {
   return projects.forEach((val) => {
-    portfolioSectionEl.innerHTML += `
-      <div class="swiper-slide rounded-xl md:border border-gray-300 shadow-md mb-5 h-fit px-2 py-5 bg-[#f3f4f6] text-black">
+    projectCardEl.innerHTML += `
+      <div class="rounded-xl md:border border-gray-300 shadow-md mb-5 px-2 py-5 bg-[#f3f4f6] text-black w-80 md:w-auto mx-auto">
           <img src="${val.projectmageSrc}" alt="${val.projectName}" />
             <div class="flex flex-row items-center justify-between">
                 <h5 class="text-xl font-semibold mt-2">${val.projectName}</h5>
@@ -39,39 +39,10 @@ projectCategoryForm.addEventListener("submit", (e) => {
   const getBtnVal = e.submitter.value
   e.submitter.classList.add("active-project")
   var filterProjects = getBtnVal === 'All' ? projectData : projectData.filter((val) => val.category === getBtnVal);
-  portfolioSectionEl.innerHTML = ``
+  projectCardEl.innerHTML = ``
+  console.log(`Filter Projects: ${filterProjects}`)
   renderProject(filterProjects)
 })
-
-new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  spaceBetween: 30,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-
-  breakpoints: {
-    768: { slidesPerView: 1 },
-    1024: { slidesPerView: 3 }
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-
 
 const skillsEl = document.getElementById("technicalSkills");
 technicalSkills.map((val, key) => {
