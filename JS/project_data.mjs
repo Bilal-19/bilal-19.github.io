@@ -47,7 +47,7 @@ const projectData = [
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
     githubURL: "https://github.com/Bilal-19/FoodCateringPlatform",
-    category:"others"
+    category:"healthcare"
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const projectData = [
     technology: ["React JS", "Bootstrap 5"],
     websiteURL: "https://royaljewellers.netlify.app/",
     githubURL: "https://github.com/Bilal-19/RoyalJewellersPortfolio",
-    category:"others"
+    category:"jewellers"
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const projectData = [
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
     githubURL: "https://github.com/Bilal-19/LaravelEcommerceWebApplication",
-    category:"others"
+    category:"ecommerce"
   },
   {
     id: 8,
@@ -97,7 +97,7 @@ const projectData = [
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://ironpulse.netlify.app/",
     githubURL: "https://github.com/Bilal-19/iron-pulse-gym",
-    category:"others"
+    category:"healthcare"
   },
   {
     id: 11,
@@ -107,7 +107,7 @@ const projectData = [
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://furnicraft-studio.netlify.app/",
     githubURL: "https://github.com/Bilal-19/FurniCraft-Studio",
-    category:"others"
+    category:"furniture"
   },
   {
     id: 12,

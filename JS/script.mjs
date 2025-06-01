@@ -13,7 +13,7 @@ const projectCardEl = document.getElementById("project-card")
 function renderProject(projects) {
   return projects.forEach((val) => {
     projectCardEl.innerHTML += `
-      <div class="rounded-xl md:border border-gray-300 shadow-md mb-5 px-2 py-5 bg-[#f3f4f6] text-black w-80 md:w-auto mx-auto">
+      <div class="rounded-xl border-b-4 border-r-4 border-l-1 border-t-1 border-[#051527] shadow-md mb-5 px-2 py-5 bg-[#f3f4f6] text-black w-80 md:w-auto mx-auto">
           <img src="${val.projectmageSrc}" alt="${val.projectName}" />
             <div class="flex flex-row items-center justify-between">
                 <h5 class="text-xl font-semibold mt-2">${val.projectName}</h5>
