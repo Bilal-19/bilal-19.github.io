@@ -7,7 +7,7 @@ const projectData = [
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "https://sterling-executive.com/",
     githubURL: "https://github.com/Bilal-19/SER_RealEstate",
-    category:"realestate"
+    category: "realestate"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const projectData = [
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "https://greenkeylettings.com/",
     githubURL: "https://github.com/Bilal-19/NewLeafLettingHousing",
-    category:"realestate"
+    category: "realestate"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const projectData = [
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://curemed-pharmas.netlify.app/",
     githubURL: "https://github.com/Bilal-19/curemed-pharmacy",
-    category:"pharmaceutical"
+    category: "pharmaceutical"
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const projectData = [
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
     githubURL: "https://github.com/Bilal-19/visa-web-application",
-    category:"travelling"
+    category: "travelling"
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const projectData = [
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
     githubURL: "https://github.com/Bilal-19/FoodCateringPlatform",
-    category:"healthcare"
+    category: "healthcare"
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const projectData = [
     technology: ["React JS", "Bootstrap 5"],
     websiteURL: "https://royaljewellers.netlify.app/",
     githubURL: "https://github.com/Bilal-19/RoyalJewellersPortfolio",
-    category:"jewellers"
+    category: "jewellers"
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const projectData = [
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
     githubURL: "https://github.com/Bilal-19/LaravelEcommerceWebApplication",
-    category:"ecommerce"
+    category: "ecommerce"
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ const projectData = [
     technology: ["React JS", "Bootstrap 5"],
     websiteURL: "https://ridewithcomfort.netlify.app/",
     githubURL: "https://github.com/Bilal-19/RideHub",
-    category:"others"
+    category: "others"
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ const projectData = [
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://aquaswimventure.netlify.app/",
     githubURL: "https://github.com/Bilal-19/swimming-academy-website",
-    category:"others"
+    category: "others"
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ const projectData = [
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://ironpulse.netlify.app/",
     githubURL: "https://github.com/Bilal-19/iron-pulse-gym",
-    category:"healthcare"
+    category: "healthcare"
   },
   {
     id: 11,
@@ -107,7 +107,7 @@ const projectData = [
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://furnicraft-studio.netlify.app/",
     githubURL: "https://github.com/Bilal-19/FurniCraft-Studio",
-    category:"furniture"
+    category: "furniture"
   },
   {
     id: 12,
@@ -117,7 +117,7 @@ const projectData = [
     technology: ["Tailwind CSS", "JavaScript", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
     githubURL: "https://github.com/Bilal-19/Hospital-Management-Software",
-    category:"pharmaceutical"
+    category: "pharmaceutical"
   },
   {
     id: 13,
@@ -127,7 +127,7 @@ const projectData = [
     technology: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
     websiteURL: "https://dr-ayesha.netlify.app/",
     githubURL: "https://github.com/Bilal-19/dr-portfolio",
-    category:"pharmaceutical"
+    category: "pharmaceutical"
   },
   {
     id: 14,
@@ -137,7 +137,7 @@ const projectData = [
     technology: ["HTML", "CSS", "Tailwind CSS", "React JS", "JavaScript"],
     websiteURL: "https://culture-guide.netlify.app/",
     githubURL: "https://github.com/Bilal-19/Cultural-Ettiqutes-Guide",
-    category:"travelling"
+    category: "travelling"
   }
 ];
 
@@ -308,6 +308,54 @@ const customerFeedback = [
   }
 ];
 
+const categoryBtns = [
+  {
+    id: 1,
+    btnValue: "All",
+    btnContent: "All Projects"
+  },
+  {
+    id: 2,
+    btnValue: "realestate",
+    btnContent: "Real Estate"
+  },
+  {
+    id: 3,
+    btnValue: "pharmaceutical",
+    btnContent: "Pharmaceutical"
+  },
+  {
+    id: 4,
+    btnValue: "travelling",
+    btnContent: "Travelling"
+  },
+  {
+    id: 5,
+    btnValue: "healthcare",
+    btnContent: "Healthcare"
+  },
+  {
+    id: 6,
+    btnValue: "jewellers",
+    btnContent: "Jewellers"
+  },
+  {
+    id: 7,
+    btnValue: "ecommerce",
+    btnContent: "E-commerce"
+  },
+  {
+    id: 8,
+    btnValue: "furniture",
+    btnContent: "Interior"
+  },
+  {
+    id: 9,
+    btnValue: "others",
+    btnContent: "Others"
+  },
+]
+
 
 export {
   projectData,
@@ -316,5 +364,6 @@ export {
   FAQs,
   professionalExperience,
   technicalSkills,
-  customerFeedback
+  customerFeedback,
+  categoryBtns
 };

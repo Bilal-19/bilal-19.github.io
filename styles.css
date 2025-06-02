@@ -30,7 +30,7 @@ html {
   background-color: var(--charcoal-blue);
 }
 
-.text-charcoal-blue{
+.text-charcoal-blue {
   color: var(--charcoal-blue);
 }
 
@@ -70,7 +70,13 @@ html {
   background: var(--charcoal-blue);
 }
 
-.active-project{
+.active-project {
+  background-color: #051527;
+  color: white;
+}
+
+/* Target only the first button */
+#project-category ~ .category-btn {
   background-color: #051527;
   color: white;
 }

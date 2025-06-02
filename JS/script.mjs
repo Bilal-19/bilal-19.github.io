@@ -5,7 +5,8 @@ import {
   professionalExperience,
   FAQs,
   technicalSkills,
-  customerFeedback
+  customerFeedback,
+  categoryBtns
 } from "./project_data.mjs";
 
 const projectCardEl = document.getElementById("project-card")
@@ -16,7 +17,7 @@ function renderProject(projects) {
       <div class="rounded-xl border-b-4 border-r-4 border-l-1 border-t-1 border-[#051527] shadow-md mb-5 px-2 py-5 bg-[#f3f4f6] text-black w-80 md:w-auto mx-auto">
           <img src="${val.projectmageSrc}" alt="${val.projectName}" />
             <div class="flex flex-row items-center justify-between">
-                <h5 class="text-xl font-semibold mt-2">${val.projectName}</h5>
+                <h5 class="text-md md:text-xl font-semibold mt-2">${val.projectName}</h5>
                 <div class="space-x-2">
                   ${val.websiteURL ?
         `<a href="${val.websiteURL}" target="_blank" class="text-charcoal-blue"><i class="fa-solid fa-globe"></i></a>`
@@ -34,9 +35,19 @@ function renderProject(projects) {
 renderProject(projectData)
 
 const projectCategoryForm = document.getElementById("project-category")
+
+// Render project category buttons
+categoryBtns.map((val, key)=>{
+  projectCategoryForm.innerHTML += 
+  `
+  <button name="category" value="${val.btnValue}" class="category-btn hover:cursor-pointer text-[#051527] border-1 border-[#051527] px-3 py-1 rounded-xl text-xs">${val.btnContent}</button>
+  `
+})
+
 projectCategoryForm.addEventListener("submit", (e) => {
   e.preventDefault()
   const getBtnVal = e.submitter.value
+  document.querySelectorAll(".category-btn").forEach(val => val.classList.remove('active-project'))
   e.submitter.classList.add("active-project")
   var filterProjects = getBtnVal === 'All' ? projectData : projectData.filter((val) => val.category === getBtnVal);
   projectCardEl.innerHTML = ``
