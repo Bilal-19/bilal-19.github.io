@@ -28,7 +28,8 @@ function renderProject(projects) {
                 </div>
             </div>
           <p class="text-[#6B7280] mt-3 mb-3">${val.desc}</p>
-          <p class="mb-3">${val.technology.map(item => `<button class="bg-charcoal-blue text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>      </div>
+          <p class="mb-3">${val.technology.map(item => `<button class="bg-charcoal-blue text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
+          </div>
   `;
   });
 }
@@ -37,9 +38,9 @@ renderProject(projectData)
 const projectCategoryForm = document.getElementById("project-category")
 
 // Render project category buttons
-categoryBtns.map((val, key)=>{
-  projectCategoryForm.innerHTML += 
-  `
+categoryBtns.map((val, key) => {
+  projectCategoryForm.innerHTML +=
+    `
   <button name="category" value="${val.btnValue}" class="category-btn hover:cursor-pointer text-[#051527] border-1 border-[#051527] px-3 py-1 rounded-xl text-xs">${val.btnContent}</button>
   `
 })

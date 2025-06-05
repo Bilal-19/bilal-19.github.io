@@ -27,7 +27,7 @@ const projectData = [
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://curemed-pharmas.netlify.app/",
     githubURL: "https://github.com/Bilal-19/curemed-pharmacy",
-    category: "pharmaceutical"
+    category: "healthcare"
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const projectData = [
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
     githubURL: "https://github.com/Bilal-19/FoodCateringPlatform",
-    category: "healthcare"
+    category: "food"
   },
   {
     id: 6,
@@ -87,7 +87,7 @@ const projectData = [
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://aquaswimventure.netlify.app/",
     githubURL: "https://github.com/Bilal-19/swimming-academy-website",
-    category: "others"
+    category: "fitness"
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ const projectData = [
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://ironpulse.netlify.app/",
     githubURL: "https://github.com/Bilal-19/iron-pulse-gym",
-    category: "healthcare"
+    category: "fitness"
   },
   {
     id: 11,
@@ -117,7 +117,7 @@ const projectData = [
     technology: ["Tailwind CSS", "JavaScript", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
     githubURL: "https://github.com/Bilal-19/Hospital-Management-Software",
-    category: "pharmaceutical"
+    category: "healthcare"
   },
   {
     id: 13,
@@ -127,7 +127,7 @@ const projectData = [
     technology: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
     websiteURL: "https://dr-ayesha.netlify.app/",
     githubURL: "https://github.com/Bilal-19/dr-portfolio",
-    category: "pharmaceutical"
+    category: "healthcare"
   },
   {
     id: 14,
@@ -321,8 +321,8 @@ const categoryBtns = [
   },
   {
     id: 3,
-    btnValue: "pharmaceutical",
-    btnContent: "Pharmaceutical"
+    btnValue: "food",
+    btnContent: "Food"
   },
   {
     id: 4,
