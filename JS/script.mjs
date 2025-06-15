@@ -12,28 +12,45 @@ import {
 const projectCardEl = document.getElementById("project-card")
 
 function renderProject(projects) {
-  return projects.forEach((val) => {
+  projectCardEl.innerHTML = ''
+  return projects.forEach((val, index) => {
+    const modalId = `modal-${index}`;
     projectCardEl.innerHTML += `
       <div class="rounded-xl border-b-4 border-r-4 border-l-1 border-t-1 border-[#051527] shadow-md mb-5 px-2 py-5 bg-[#f3f4f6] text-black w-80 md:w-auto mx-auto">
           <img src="${val.projectmageSrc}" alt="${val.projectName}" />
-            <div class="flex flex-row items-center justify-between">
-                <h5 class="text-md md:text-xl font-semibold mt-2">${val.projectName}</h5>
-                <div class="space-x-2">
-                  ${val.websiteURL ?
-        `<a href="${val.websiteURL}" target="_blank" class="text-charcoal-blue"><i class="fa-solid fa-globe"></i></a>`
-        :
-        ``
-      }
-                  <a href="${val.githubURL}" target="_blank" class="text-charcoal-blue"><i class="fa-brands fa-github"></i></a>
-                </div>
+            <div class="flex flex-row items-center justify-between pt-3 mb-3">
+                <h5 class="text-md md:text-xl font-semibold">${val.projectName}</h5>
             </div>
-          <p class="text-[#6B7280] mt-3 mb-3">${val.desc}</p>
-          <p class="mb-3">${val.technology.map(item => `<button class="bg-charcoal-blue text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
+          <a onclick="openModal('${modalId}')" class="bg-charcoal-blue text-white text-xs px-3 py-2 rounded-lg hover:cursor-pointer">View Project</a>
           </div>
+
+           <div id="${modalId}" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 p-6 relative">
+          <button onclick="closeModal('${modalId}')" class="absolute top-2 right-2 text-gray-600 text-xl hover:text-red-500">&times;</button>
+          <h2 class="text-2xl font-semibold mb-4">${val.projectName}</h2>
+          <img src="${val.projectmageSrc}" class="mb-4 w-full object-cover rounded-lg border-b-4" />
+          <p class="mb-4">${val.desc}</p>
+          <p class="mb-3">${val.technology.map(item => `<button class="bg-charcoal-blue text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
+          ${val.websiteURL ?
+          `<a href="${val.websiteURL}" target="_blank" class="bg-charcoal-blue text-white px-3 py-2 text-sm rounded-md"><i class="fa-solid fa-globe"></i> Website</a>`
+          :
+          ``
+          }
+          <a href="${val.githubURL}" target="_blank" class="bg-charcoal-blue text-white px-3 py-2 text-sm rounded-md"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+      </div>
   `;
   });
 }
 renderProject(projectData)
+
+window.openModal = function(id){
+  document.getElementById(id).classList.remove("hidden")
+}
+
+window.closeModal = function(id){
+  document.getElementById(id).classList.add("hidden")
+}
 
 const projectCategoryForm = document.getElementById("project-category")
 
