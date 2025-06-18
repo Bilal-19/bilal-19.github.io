@@ -21,14 +21,16 @@ function renderProject(projects) {
             <div class="flex flex-row items-center justify-between pt-3 mb-3">
                 <h5 class="text-md md:text-xl font-semibold">${val.projectName}</h5>
             </div>
-          <a onclick="openModal('${modalId}')" class="bg-charcoal-blue text-white text-xs px-3 py-2 rounded-lg hover:cursor-pointer">View Project</a>
+          <a onclick="openModal('${modalId}')" class="bg-charcoal-blue text-white text-xs px-3 py-2 rounded-md hover:cursor-pointer"><i class="fas fa-eye"></i> View Project</a>
           </div>
 
-           <div id="${modalId}" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div id="${modalId}" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
         <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 p-6 relative">
-          <button onclick="closeModal('${modalId}')" class="absolute top-2 right-2 text-gray-600 text-xl hover:text-red-500">&times;</button>
-          <h2 class="text-2xl font-semibold mb-4">${val.projectName}</h2>
-          <img src="${val.projectmageSrc}" class="mb-4 w-full object-cover rounded-lg border-b-4" />
+          <div class="flex flex-row justify-between items-center mb-4">
+            <h2 class="text-2xl font-semibold">${val.projectName}</h2>
+            <button onclick="closeModal('${modalId}')" class="bg-charcoal-blue text-white text-sm rounded-md px-3 py-2 hover:cursor-pointer"><i class="fas fa-times"></i> Close</button>
+          </div>
+          <img src="${val.projectmageSrc}" class="mb-4 w-full object-cover rounded-lg" />
           <p class="mb-4">${val.desc}</p>
           <p class="mb-3">${val.technology.map(item => `<button class="bg-charcoal-blue text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
           ${val.websiteURL ?
@@ -97,8 +99,8 @@ pricingPackages.map((val, key) => {
   <div class="m-3 border shadow-md rounded-lg hover:scale-102 duration-100 p-5 ${val.id == 2 ? 'border-gray-500' : 'border-gray-300'} border-b-4 border-b-[#051527] bg-white">
     <img src="${val.imgPath}" class="h-10 mx-auto mb-3" alt=${val.packageName}/>
     <h5 class="text-center text-md md:text-lg font-medium mb-3">${val.packageName}</h5>
-    <div class="flex items-center justify-center">
-      <h3 class="text-center text-2xl md:text-4xl font-medium">$${val.newPrice}</h3><span class="text-[#4B5563]">/project</span>
+    <div class="flex items-center justify-center mb-5">
+      <button class="bg-charcoal-blue text-white px-3 py-2 rounded-full mx-auto block">Starting at $${val.newPrice} / project</button>
     </div>
     <p class="mb-3">${val.description}</p>
     <div class="mb-3 flex flex-col md:flex-row justify-between text-[#6B7280]">
