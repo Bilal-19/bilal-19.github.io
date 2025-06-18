@@ -27,8 +27,8 @@ function renderProject(projects) {
         <div id="${modalId}" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
         <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 p-6 relative">
           <div class="flex flex-row justify-between items-center mb-4">
-            <h2 class="text-2xl font-semibold">${val.projectName}</h2>
-            <button onclick="closeModal('${modalId}')" class="bg-charcoal-blue text-white text-sm rounded-md px-3 py-2 hover:cursor-pointer"><i class="fas fa-times"></i> Close</button>
+            <h2 class="text-md md:text-2xl font-semibold">${val.projectName}</h2>
+            <button onclick="closeModal('${modalId}')" class="bg-charcoal-blue text-white rounded-full hover:cursor-pointer size-5 text-xs"><i class="fas fa-times"></i></button>
           </div>
           <img src="${val.projectmageSrc}" class="mb-4 w-full object-cover rounded-lg" />
           <p class="mb-4">${val.desc}</p>
