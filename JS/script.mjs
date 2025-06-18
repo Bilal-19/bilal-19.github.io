@@ -98,9 +98,9 @@ pricingPackages.map((val, key) => {
     `
   <div class="m-3 border shadow-md rounded-lg hover:scale-102 duration-100 p-5 ${val.id == 2 ? 'border-gray-500' : 'border-gray-300'} border-b-4 border-b-[#051527] bg-white">
     <img src="${val.imgPath}" class="h-10 mx-auto mb-3" alt=${val.packageName}/>
-    <h5 class="text-center text-md md:text-lg font-medium mb-3">${val.packageName}</h5>
+    <h5 class="text-center text-lg md:text-2xl font-medium mb-3">${val.packageName}</h5>
     <div class="flex items-center justify-center mb-5">
-      <button class="bg-charcoal-blue text-white px-3 py-2 rounded-full mx-auto block">Starting at $${val.newPrice} / project</button>
+      <button class="bg-charcoal-blue text-white text-sm px-3 py-2 rounded-full mx-auto block">Starting at $${val.newPrice} / project</button>
     </div>
     <p class="mb-3">${val.description}</p>
     <div class="mb-3 flex flex-col md:flex-row justify-between text-[#6B7280]">
