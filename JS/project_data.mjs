@@ -138,7 +138,17 @@ const projectData = [
     websiteURL: "https://culture-guide.netlify.app/",
     githubURL: "https://github.com/Bilal-19/Cultural-Ettiqutes-Guide",
     category: "travelling"
-  }
+  },
+  {
+    id: 15,
+    projectmageSrc: "./media/images/naudiEstates.png",
+    projectName: "Naudi Estates",
+    desc: "Designed and deployed a professional real estate website for a client in San Gwann, Malta, featuring key pages and a custom admin dashboard to manage inquiries and testimonials. Email alerts were integrated to streamline customer communication and enhance the client’s online presence.",
+    technology: ["JavaScript", "Tailwind", "Laravel", "MySQL"],
+    websiteURL: "https://naudi-estates.com/",
+    githubURL: "hhttps://github.com/Bilal-19/Naudi-Estates",
+    category: "realestate"
+  },
 ];
 
 

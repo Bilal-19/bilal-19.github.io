@@ -21,7 +21,7 @@ function renderProject(projects) {
             <div class="flex flex-row items-center justify-between pt-3 mb-3">
                 <h5 class="text-md md:text-xl font-semibold">${val.projectName}</h5>
             </div>
-          <a onclick="openModal('${modalId}')" class="bg-charcoal-blue text-white text-xs px-3 py-2 rounded-md hover:cursor-pointer"><i class="fas fa-eye"></i> View Project</a>
+          <a onclick="openModal('${modalId}')" class="bg-charcoal-blue text-white text-xs px-3 py-2 rounded-full hover:cursor-pointer"><i class="fas fa-eye"></i> View Project</a>
           </div>
 
         <div id="${modalId}" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
