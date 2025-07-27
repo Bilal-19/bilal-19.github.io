@@ -244,7 +244,7 @@ const FAQs = [
   {
     id: 5,
     ques: "How long does it take to complete a project?",
-    answer: "Project timelines depend on complexity. A basic website takes 5-7 days, while business websites require 10-12 days. Custom web applications may take 15-20 days. I always focus on delivering high-quality work within the agreed timeframe."
+    answer: "Project timelines depend on complexity. A basic website takes 7-10 days, while business websites require 10-15 days. Custom web applications may take 25-30 days. I always focus on delivering high-quality work within the agreed timeframe."
   }
 ];
 
