@@ -158,7 +158,7 @@ const pricingPackages = [
     id: 1,
     packageName: "Starter Website",
     description: "Perfect for small businesses and personal websites.",
-    newPrice: 49,
+    newPrice: 99,
     keyFeatures: [
       "5 pages",
       "Mobile Responsive",
@@ -166,14 +166,14 @@ const pricingPackages = [
       "Speed Optimization"
     ],
     revisions: 2,
-    timeFrame: 5,
+    timeFrame: 10,
     imgPath: "./media/Icons/basic.png"
   },
   {
     id: 2,
     packageName: "Business Website",
     description: "Advanced features for growing businesses.",
-    newPrice: 99,
+    newPrice: 149,
     keyFeatures: [
       "5 to 10 Pages",
       "Mobile Responsive",
@@ -184,14 +184,14 @@ const pricingPackages = [
       "Domain & Hosting Setup",
     ],
     revisions: 3,
-    timeFrame: 12,
+    timeFrame: 15,
     imgPath: "./media/Icons/elite.png"
   },
   {
     id: 3,
     packageName: "Advanced Web Solution",
     description: "Custom development for complex needs.",
-    newPrice: 149,
+    newPrice: 249,
     keyFeatures: [
       "More than 10 Pages",
       "Mobile Responsive",
@@ -204,7 +204,7 @@ const pricingPackages = [
       "Domain & Hosting Setup",
     ],
     revisions: 4,
-    timeFrame: 20,
+    timeFrame: 30,
     imgPath: "./media/Icons/premium.png"
   }
 ]
@@ -258,9 +258,9 @@ const professionalExperience = [
       "Developed: Real Estate platform enabling seamless property browsing, check availability, and online bookings, while empowering admins or landlords to manage property listings and user inquiries.",
       "Developed: Pharmaceutical website showcasing company products, services, mission, and careers, with an integrated “Contact Us” page to enhance visitor engagement.",
       "Developed: Furniture & Interior business website featuring product collections, trending designs, service offerings, customer feedback, and real-time form submissions using EmailJS.",
-      "Collaborated: With UI/UX designers to build responsive, mobile-friendly websites using Bootstrap 5 and Tailwind CSS, ensuring smooth cross-device functionality and modern design. "
-
-    ]
+      "Collaborated: With UI/UX designers to build responsive, mobile-friendly websites using Bootstrap 5 and Tailwind CSS, ensuring smooth cross-device functionality and modern design."
+    ],
+    companyLogo: "../media/images/zhtech_logo.png"
   },
 
   {
@@ -272,7 +272,8 @@ const professionalExperience = [
       "Assessment: Evaluated software developer bootcamp students on HTML, CSS, Bootstrap 5, JavaScript and MySQL.",
       "Instructed: Educated 20 NAVTTC Students on web development, including the modern technology such as HTML, CSS, Bootstrap 5, JavaScript, PHP and MySQL.",
       "Prepared: Conducted research, and documented check sheet, developed slides, and compiled over 150 glossaries entries relevant to web development on Google Sheets."
-    ]
+    ],
+    companyLogo: "../media/images/tapk_logo.png"
   }
 ]
 
@@ -300,9 +301,9 @@ const technicalSkills = [
 const customerFeedback = [
   {
     id: 1,
-    clientName: "Emily Johnson",
-    rating: 5,
-    feedbackMessage: "Working with Bilal was a game-changer for our business. He delivered a clean, responsive website ahead of schedule. Highly professional!"
+    clientName: "Bobby Naudi",
+    rating: 4.3,
+    feedbackMessage: "Bilal delivered on the project in good time. While working with him was generally pleasant. He is polite, proactive, has a good response time, and great patience and cooperation."
   },
   {
     id: 2,

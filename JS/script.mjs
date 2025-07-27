@@ -17,40 +17,33 @@ function renderProject(projects) {
     const modalId = `modal-${index}`;
     projectCardEl.innerHTML += `
       <div class="rounded-xl border-b-4 border-r-4 border-l-1 border-t-1 border-[#051527] shadow-md mb-5 px-2 py-5 bg-[#f3f4f6] text-black w-80 md:w-auto mx-auto">
-          <img src="${val.projectmageSrc}" alt="${val.projectName}" />
+          <img src="${val.projectmageSrc}" alt="${val.projectName}" class="rounded-md" />
             <div class="flex flex-row items-center justify-between pt-3 mb-3">
                 <h5 class="text-md md:text-xl font-semibold">${val.projectName}</h5>
             </div>
-          <a onclick="openModal('${modalId}')" class="bg-charcoal-blue text-white text-xs px-3 py-2 rounded-full hover:cursor-pointer"><i class="fas fa-eye"></i> View Project</a>
-          </div>
-
-        <div id="${modalId}" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 p-6 relative">
-          <div class="flex flex-row justify-between items-center mb-4">
-            <h2 class="text-md md:text-2xl font-semibold">${val.projectName}</h2>
-            <button onclick="closeModal('${modalId}')" class="bg-charcoal-blue text-white rounded-full hover:cursor-pointer size-5 text-xs"><i class="fas fa-times"></i></button>
-          </div>
-          <img src="${val.projectmageSrc}" class="mb-4 w-full object-cover rounded-lg" />
-          <p class="mb-4">${val.desc}</p>
+            <div>
+            <p class="mb-4 font-light">${val.desc}</p>
           <p class="mb-3">${val.technology.map(item => `<button class="bg-charcoal-blue text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
           ${val.websiteURL ?
-          `<a href="${val.websiteURL}" target="_blank" class="bg-charcoal-blue text-white px-3 py-2 text-sm rounded-md"><i class="fa-solid fa-globe"></i> Website</a>`
-          :
-          ``
-          }
+        `<a href="${val.websiteURL}" target="_blank" class="bg-charcoal-blue text-white px-3 py-2 text-sm rounded-md"><i class="fa-solid fa-globe"></i> Website</a>`
+        :
+        ``
+      }
           <a href="${val.githubURL}" target="_blank" class="bg-charcoal-blue text-white px-3 py-2 text-sm rounded-md"><i class="fa-brands fa-github"></i> GitHub</a>
-        </div>
+        
+            </div>
+          </div>
       </div>
   `;
   });
 }
 renderProject(projectData)
 
-window.openModal = function(id){
+window.openModal = function (id) {
   document.getElementById(id).classList.remove("hidden")
 }
 
-window.closeModal = function(id){
+window.closeModal = function (id) {
   document.getElementById(id).classList.add("hidden")
 }
 
@@ -148,6 +141,7 @@ professionalExperience.map((item, key) => (
   experienceEl.innerHTML +=
   `
   <div class="mb-5 mb-5 p-5 rounded-md bg-white shadow-md" key=${key}>
+    <img src="${item.companyLogo}" alt="${item.companyName}">
     <h5 class="text-xl font-medium">${item.designation}</h5>
     <p class="text-[#4B5563]">${item.companyName}</p>
     <p class="text-[#4B5563] text-sm">${item.duration}</p>
@@ -200,7 +194,7 @@ customerFeedback.map((val, key) => {
         <img src="./media/images/user.png" class="h-15"/>
       </div>
       <div>
-        <p>${val.clientName}</p>
+        <p class="mb-0">${val.clientName}</p>
         <p>${printStars(val.rating)}</p>
       </div>
     </div>
