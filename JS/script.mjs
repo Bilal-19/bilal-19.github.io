@@ -191,7 +191,7 @@ customerFeedback.map((val, key) => {
   <div class="bg-white border-b-4 border-#051527 border-x-1 border-t-1 p-5 rounded-md mx-5 md:mx-0 hover:shadow-lg transition duration-300">
     <div class="flex flex-row mb-5 items-center">
       <div>
-        <img src="./media/images/user.png" class="h-15"/>
+        <img src="./media/images/user.png" class="h-15" alt=${val.clientName}/>
       </div>
       <div>
         <p class="mb-0">${val.clientName}</p>
