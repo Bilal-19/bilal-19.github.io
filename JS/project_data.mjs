@@ -251,20 +251,31 @@ const FAQs = [
 const professionalExperience = [
   {
     id: 1,
+    companyName: "College of Physicians and Surgeons Pakistan",
+    designation: "Junior Software Developer",
+    duration: "July 2025 - Present",
+    jobDescription: [
+      "Integrated Primary Surgical Skill workshop into the ASD ERP module, automating physician invitation letter generation using PHP TCPDF.",
+      "Implemented Course Participation Email feature in the ASD ERP, providing administrators with automated trainee notification capabilities.",
+      "Designed and deployed a regional BIRT report for the Examination MIS, displaying comprehensive candidate appearance data across all CPSP Programs.",
+      "Developed a form to store data related to No of Trainee Allowed Per Unit, enabling CRUD operations (View, List, Filter, Add, Update) for efficient administrative capacity control."
+    ]
+  },
+  {
+    id: 2,
     companyName: "ZH Tech",
     designation: "Software Developer",
     duration: "Sept 2024 - April 2025",
     jobDescription: [
-      "Developed: Real Estate platform enabling seamless property browsing, check availability, and online bookings, while empowering admins or landlords to manage property listings and user inquiries.",
-      "Developed: Pharmaceutical website showcasing company products, services, mission, and careers, with an integrated “Contact Us” page to enhance visitor engagement.",
-      "Developed: Furniture & Interior business website featuring product collections, trending designs, service offerings, customer feedback, and real-time form submissions using EmailJS.",
-      "Collaborated: With UI/UX designers to build responsive, mobile-friendly websites using Bootstrap 5 and Tailwind CSS, ensuring smooth cross-device functionality and modern design."
-    ],
-    companyLogo: "../media/images/zhtech_logo.png"
+      "Engineered five diverse full-stack applications (Real Estate, E-commerce, Healthcare, etc.) using the Laravel/PHP/MySQL stack.",
+      "Designed and architected all foundational MySQL database schemas (ERDs) to ensure application scalability and data integrity.",
+      "Developed specialized frontend applications (Pharmaceutical, Interior Design) utilizing React.js and Tailwind CSS for modern user experiences.",
+      "Collaborated closely with UI/UX designers to deliver responsive, mobile-friendly interfaces across all projects, ensuring smooth cross-device functionality and a contemporary user experience."
+    ]
   },
 
   {
-    id: 2,
+    id: 3,
     companyName: "The Algorithm PK",
     designation: "Web Developer & Instructor",
     duration: "Jan 2024 - Aug 2024",
@@ -272,8 +283,7 @@ const professionalExperience = [
       "Assessment: Evaluated software developer bootcamp students on HTML, CSS, Bootstrap 5, JavaScript and MySQL.",
       "Instructed: Educated 20 NAVTTC Students on web development, including the modern technology such as HTML, CSS, Bootstrap 5, JavaScript, PHP and MySQL.",
       "Prepared: Conducted research, and documented check sheet, developed slides, and compiled over 150 glossaries entries relevant to web development on Google Sheets."
-    ],
-    companyLogo: "../media/images/tapk_logo.png"
+    ]
   }
 ]
 

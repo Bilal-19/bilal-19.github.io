@@ -141,10 +141,11 @@ professionalExperience.map((item, key) => (
   experienceEl.innerHTML +=
   `
   <div class="mb-5 mb-5 p-5 rounded-md bg-white shadow-md" key=${key}>
-    <img src="${item.companyLogo}" alt="${item.companyName}">
     <h5 class="text-xl font-medium">${item.designation}</h5>
-    <p class="text-[#4B5563]">${item.companyName}</p>
-    <p class="text-[#4B5563] text-sm">${item.duration}</p>
+    <div class="flex justify-between items-center">
+        <p class="text-[#4B5563] font-bold">${item.companyName}</p>
+        <p class="text-[#4B5563]">${item.duration}</p>
+    </div>
     <h6 class="font-medium">Roles & Responsibilites:</h6>
     <ul>
     ${item.jobDescription.map(val => `<li class="text-sm mt-1 text-[#4B5563]">* ${val}</li>`).join("")}
