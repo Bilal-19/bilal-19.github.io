@@ -16,20 +16,20 @@ function renderProject(projects) {
   return projects.forEach((val, index) => {
     const modalId = `modal-${index}`;
     projectCardEl.innerHTML += `
-      <div class="rounded-xl border-b-4 border-r-4 border-l-1 border-t-1 border-[#051527] shadow-md mb-5 px-2 py-5 bg-[#f3f4f6] text-black w-80 md:w-auto mx-auto">
+      <div class="rounded-xl border-b-4 border-r-4 border-l-1 border-t-1 border-[#051527] shadow-md mb-5 px-5 py-5 w-80 md:w-auto mx-auto bg-gray-800 hover:translate-y-[-4px] hover:shadow-lg">
           <img src="${val.projectmageSrc}" alt="${val.projectName}" class="rounded-md" />
             <div class="flex flex-row items-center justify-between pt-3 mb-3">
                 <h5 class="text-md md:text-xl font-semibold">${val.projectName}</h5>
             </div>
             <div>
             <p class="mb-4 font-light">${val.desc}</p>
-          <p class="mb-3">${val.technology.map(item => `<button class="bg-charcoal-blue text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
+          <p class="mb-3">${val.technology.map(item => `<button class="bg-emerald-900 text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
           ${val.websiteURL ?
-        `<a href="${val.websiteURL}" target="_blank" class="bg-charcoal-blue text-white px-3 py-2 text-sm rounded-md"><i class="fa-solid fa-globe"></i> Website</a>`
+        `<a href="${val.websiteURL}" target="_blank" class="bg-emerald-500 text-white px-3 py-2 text-sm rounded-md hover:text-emerald-900 hover:bg-white"><i class="fa-solid fa-globe"></i> Website</a>`
         :
         ``
       }
-          <a href="${val.githubURL}" target="_blank" class="bg-charcoal-blue text-white px-3 py-2 text-sm rounded-md"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="${val.githubURL}" target="_blank" class="bg-emerald-500 text-white px-3 py-2 text-sm rounded-md hover:text-emerald-900 hover:bg-white"><i class="fa-brands fa-github"></i> GitHub</a>
         
             </div>
           </div>
@@ -72,12 +72,9 @@ const skillsEl = document.getElementById("technicalSkills");
 technicalSkills.map((val, key) => {
   skillsEl.innerHTML +=
     `
-   <div class="w-80 md:w-1/4 mx-auto flex items-center justify-start my-5 bg-[#F3F4F6] px-3 py-2 rounded-md border-b-3 border-t-[0.5px] border-x-[0.5px] border-[#051527]">
-      <div>
-        <img src="./media/images/${val.imageAdd}" alt="${val.category}" class="object-contain">
-      </div>
+   <div class="w-80 md:w-1/4 mx-auto flex items-center justify-start my-5 bg-gray-800 px-3 py-2 rounded-md border-b-3 border-t-[0.5px] border-x-[0.5px] border-[#051527]">
       <div class="mx-2">
-        <h5 class="font-medium text-lg">${val.category}</h5>
+        <h5 class="font-medium text-lg text-emerald-500">${val.category}</h5>
         <p class="text-xs">${val.coreSkills}</p>
       </div>
     </div>
@@ -89,22 +86,22 @@ const priceEl = document.getElementById("pricingPackages")
 pricingPackages.map((val, key) => {
   priceEl.innerHTML +=
     `
-  <div class="m-3 border shadow-md rounded-lg hover:scale-102 duration-100 p-5 ${val.id == 2 ? 'border-gray-500' : 'border-gray-300'} border-b-4 border-b-[#051527] bg-white">
+  <div class="m-3 border shadow-md rounded-lg hover:scale-102 duration-100 p-5 ${val.id == 2 ? 'border-emerald-700' : 'border-emerald-500'} border-b-4 border-b-emerald-500 bg-gray-800">
     <img src="${val.imgPath}" class="h-10 mx-auto mb-3" alt=${val.packageName}/>
-    <h5 class="text-center text-lg md:text-2xl font-medium mb-3">${val.packageName}</h5>
+    <h5 class="text-center text-lg md:text-2xl font-medium mb-3 text-emerald-500">${val.packageName}</h5>
     <div class="flex items-center justify-center mb-5">
-      <button class="bg-charcoal-blue text-white text-sm px-3 py-2 rounded-full mx-auto block">Starting at $${val.newPrice} / project</button>
+      <button class="bg-emerald-500 text-white text-sm px-3 py-2 rounded-full mx-auto block">Starting at $${val.newPrice} / project</button>
     </div>
     <p class="mb-3">${val.description}</p>
-    <div class="mb-3 flex flex-col md:flex-row justify-between text-[#6B7280]">
+    <div class="mb-3 flex flex-col md:flex-row justify-between">
       <p><i class="fa-solid fa-calendar-days"></i> ${val.timeFrame} business days</p>
       <p><i class="fa-solid fa-repeat"></i> ${val.revisions} free revisions</p>
     </div>
     <h6 class="font-medium">Key Features:</h6>
-    <ul class="text-[#6B7280]">
+    <ul>
     ${val.keyFeatures.map(value =>
       `
-      <li class="mb-1"><i class="fa-solid fa-check text-[#051527]"></i> ${value}</li>
+      <li class="mb-1"><i class="fa-solid fa-check"></i> ${value}</li>
       `
     ).join("")}
     </ul>
@@ -140,15 +137,13 @@ const experienceEl = document.getElementById("experience-section")
 professionalExperience.map((item, key) => (
   experienceEl.innerHTML +=
   `
-  <div class="mb-5 mb-5 p-5 rounded-md bg-white shadow-md" key=${key}>
-    <h5 class="text-xl font-medium">${item.designation}</h5>
-    <div class="flex justify-between items-center">
-        <p class="text-[#4B5563] font-bold">${item.companyName}</p>
-        <p class="text-[#4B5563]">${item.duration}</p>
-    </div>
+  <div class="mb-5 mb-5 p-5 rounded-md bg-gray-800 shadow-md text-white" key=${key}>
+    <h5 class="text-xl text-emerald-500 font-medium">${item.designation}</h5>
+    <p class="font-bold">${item.companyName}</p>
+    <p class="font-light">${item.duration}</p>
     <h6 class="font-medium">Roles & Responsibilites:</h6>
     <ul>
-    ${item.jobDescription.map(val => `<li class="text-sm mt-1 text-[#4B5563]">* ${val}</li>`).join("")}
+    ${item.jobDescription.map(val => `<li class="font-light text-sm mt-1">* ${val}</li>`).join("")}
     </ul>
   </div>
   `
@@ -159,12 +154,12 @@ const FaqEl = document.getElementById("ques-ans")
 FAQs.map((val, key) => (
   FaqEl.innerHTML +=
   `
-  <div class="w-80 mx-auto md:w-auto p-5 my-5 rounded-md border-b-3 border-t-[0.5px] border-x-[0.5px] border-[#051527]">
+  <div class="w-80 mx-auto md:w-auto p-5 my-5 rounded-md border-b-3 border-t-[0.5px] border-x-[0.5px] border-emerald-500">
       <div class="flex justify-between toggle-faq hover:cursor-pointer">
           <h4 class="font-medium">${val.id}. ${val.ques}</h4>
           <i class="fa-solid fa-caret-down hover:cursor-pointer"></i>
       </div>
-      <p class="text-[#4B5563] mt-3 toggle-answer text-sm hidden">${val.answer}</p>
+      <p class="mt-3 toggle-answer text-sm hidden">${val.answer}</p>
   </div>
   `
 ))

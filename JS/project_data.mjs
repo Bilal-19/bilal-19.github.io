@@ -291,7 +291,7 @@ const technicalSkills = [
   {
     id: 1,
     category: "Frontend Development",
-    coreSkills: "Bootstrap, Tailwind, JavaScript & React JS",
+    coreSkills: "HTML, CSS, Bootstrap 5, Tailwind, JavaScript & React.",
     imageAdd: "frontend.png"
   },
   {

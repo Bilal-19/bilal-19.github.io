@@ -40,14 +40,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-gray-900 text-gray-200">
+<body>
 
     <div
-        class="w-full  text-white flex flex-col md:flex-row justify-between md:items-center h-fit py-3 shadow-md sticky top-0 backdrop-filter backdrop-blur-sm">
+        class="w-full bg-charcoal-blue text-white flex flex-col md:flex-row justify-between md:items-center h-fit py-3 shadow-md">
         <div class="flex items-center justify-between ml-2">
             <a href="./index.html" class="ff-amsterdam-one text-sm">Bilal Muhammad Yousuf</a>
             <button aria-label="toggle-button"
-                class="sm:block md:hidden mx-5 inline-flex size-10 items-center justify-center transition hover:cursor-pointer text-charcoal-blue rounded-md bg-emerald-500"
+                class="sm:block md:hidden mx-5 inline-flex size-10 items-center justify-center transition hover:cursor-pointer bg-white text-charcoal-blue rounded-md"
                 id="menu-toggle" aria-controls="navbar-default" aria-expanded="false">
                 <i class="fas fa-bars text-md"></i>
             </button>
@@ -63,13 +63,13 @@
         </div>
 
         <div class="mx-5 space-x-4 hidden md:block">
-            <a class="text-charcoal-blue  px-3 py-1 rounded-md hover:cursor-pointer" aria-label="contact-us"
+            <a class="text-charcoal-blue bg-white px-3 py-1 rounded-md hover:cursor-pointer" aria-label="contact-us"
                 href="#contact">Contact Me</a>
         </div>
 
     </div>
 
-    <div class="w-full  flex flex-col-reverse md:flex-row justify-around items-center">
+    <div class="w-full bg-[#F3F4F6] flex flex-col-reverse md:flex-row justify-around items-center">
         <div class="md:w-1/2 mx-5 py-0 md:py-10 text-justify">
             <h1 class="text-3xl md:text-5xl mb-1">Hello, I'm Bilal</h1>
             <h2 class="text-xl md:text-3xl mb-2 font-light">Full Stack <span class="font-medium">Web Developer</span>
@@ -87,13 +87,13 @@
                 to build robust, full-stack web applications that meet modern business needs.
             </p>
             <a href="./media/Bilal - Resume.pdf" download
-                class=" text-white px-3 py-2 mt-5 rounded-lg bg-emerald-500 hover:scale-105 hover:shadow-2xl">
+                class="bg-charcoal-blue text-white px-3 py-2 mt-5 rounded-lg hover:bg-[#102c4a]">
                 <i class="fa-solid fa-download"></i>
                 Download Resume
             </a>
 
             <div class="container-fluid grid grid-cols-2 md:grid-cols-3 my-10 gap-10">
-                <div class=" rounded-md py-3 border-b-4 border-t-1 border-x-1 text-center shadow-md">
+                <div class="bg-white rounded-md py-3 border-b-4 border-t-1 border-x-1 text-center shadow-md">
                     <h3 class="text-md md:text-3xl font-bold">
                         <i class="fas fa-user-tie text-xl md:text-3xl"></i>
                         1+
@@ -101,7 +101,7 @@
                     <p class="text-sm font-light">Years Experience</p>
                 </div>
 
-                <div class=" rounded-md py-3 border-b-4 border-t-1 border-x-1 text-center shadow-md">
+                <div class="bg-white rounded-md py-3 border-b-4 border-t-1 border-x-1 text-center shadow-md">
                     <h3 class="text-md md:text-3xl font-bold">
                         <i class="fas fa-briefcase text-xl md:text-3xl"></i>
                         10+
@@ -109,7 +109,7 @@
                     <p class="text-sm font-light">Completed Projects</p>
                 </div>
 
-                <div class=" rounded-md py-3 border-b-4 border-t-1 border-x-1 text-center shadow-md">
+                <div class="bg-white rounded-md py-3 border-b-4 border-t-1 border-x-1 text-center shadow-md">
                     <h3 class="text-md md:text-3xl font-bold">
                         <i class="fas fa-industry text-xl md:text-3xl"></i>
                         5+
@@ -124,9 +124,9 @@
         </div>
     </div>
 
-    <div class="w-full pt-5  mt-5 py-10" id="projects">
+    <div class="w-full pt-5 bg-[#FFFFFF] mt-5 py-10" id="projects">
         <div class="md:w-1/2 text-center mx-auto">
-            <h2 class="text-2xl md:text-4xl">Featured Projects</h2>
+            <h2 class="text-2xl md:text-4xl text-charcoal-blue">Featured Projects</h2>
             <p class="text-base md:text-xl text-[#6B7280] mb-5">A section of my recent work</p>
             <form id="project-category"
                 class="container mx-auto grid grid-cols-3 md:grid-cols-5 gap-5 mb-5 w-85 md:w-auto">
@@ -138,19 +138,19 @@
         </div>
     </div>
 
-    <div class="w-full mt-5 border-[#FFFFFF]  py-10" id="experience">
+    <div class="w-full mt-5 border-[#FFFFFF] bg-[#F3F4F6] py-10" id="experience">
         <h2 class="text-2xl md:text-4xl text-center mb-10">Professional Journey</h2>
         <div class="flex flex-col md:flex-row justify-between items-start">
             <div class="w-80 mx-auto md:w-2/5 m-2 md:m-5">
                 <h3 class="text-2xl md:text-3xl mb-5 md:mb-3">Educational Background</h3>
-                <div class="mb-5 p-5 rounded-md shadow-md bg-gray-800">
-                    <h5 class="text-xl text-emerald-500">NED University of Engineering & Technology</h5>
+                <div class="mb-5 p-5 rounded-md bg-white shadow-md">
+                    <h5 class="text-xl">NED University of Engineering & Technology</h5>
                     <p class="text-md">Bachelor of Science, Software Engineering</p>
                     <small class="text-xs">Oct 2019 - Aug 2023</small>
                 </div>
 
-                <div class="mb-5 p-5 rounded-md shadow-md bg-gray-800">
-                    <h5 class="text-xl text-emerald-500">Islamia Government Science College</h5>
+                <div class="mb-5 p-5 rounded-md bg-white shadow-md">
+                    <h5 class="text-xl">Islamia Government Science College</h5>
                     <p class="text-md">Engineering, Pre Engineering</p>
                     <small class="text-xs">Sept 2017 - May 2019</small>
                 </div>
@@ -169,7 +169,7 @@
         </div>
     </div>
 
-    <div class="container-fluid mt-5  py-10" id="pricing">
+    <div class="container-fluid mt-5 bg-[#F3F4F6] py-10" id="pricing">
         <h2 class="text-center text-2xl md:text-4xl pt-5">Pricing Plans</h2>
         <p class="text-base md:text-xl text-[#6B7280] mb-5 text-center">Choose the perfect plan for your needs</p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="pricingPackages">
@@ -182,7 +182,7 @@
         </div>
     </div>
 
-    <div class="w-full py-10 " id="blogs">
+    <div class="w-full py-10 bg-[#F3F4F6]" id="blogs">
         <h2 class="text-center text-2xl md:text-4xl pt-5">Blogs</h2>
         <p class="text-center text-base md:text-xl text-[#6B7280] mb-5">Insights about web development</p>
         <div class="grid grid-cols-1 md:grid-cols-3 m-2 md:m-5" id="blog-section">
@@ -197,22 +197,22 @@
             <form class="form" id="contact-form" autocomplete="off" method="post"
                 action="https://formsubmit.co/bilalmuhammadyousuf543@gmail.com">
                 <input required type="text" name="username" placeholder="Your Name"
-                    class="block border border-gray-300 px-3 py-2 focus:outline-none w-80 md:w-3/4 rounded-md mx-auto my-5 text-sm focus:ring-2 focus:ring-emerald-500">
+                    class="block border border-gray-300 px-3 py-2 focus:outline-none w-80 md:w-3/4 rounded-md mx-auto my-5 text-sm">
                 <input required type="email" name="useremail" placeholder="Your Email"
-                    class="block border border-gray-300 px-3 py-2 focus:outline-none w-80 md:w-3/4 rounded-md mx-auto my-5 text-sm focus:ring-2 focus:ring-emerald-500">
+                    class="block border border-gray-300 px-3 py-2 focus:outline-none w-80 md:w-3/4 rounded-md mx-auto my-5 text-sm">
                 <textarea required name="message" placeholder="Type your message here..."
-                    class="block border border-gray-300 px-3 py-2 focus:outline-none w-80 md:w-3/4 rounded-md mx-auto my-5 text-sm focus:ring-2 focus:ring-emerald-500 resize-none"
+                    class="block border border-gray-300 px-3 py-2 focus:outline-none w-80 md:w-3/4 rounded-md mx-auto my-5 text-sm resize-none"
                     rows="5"></textarea>
 
                 <button type="submit" aria-label="submit-button"
-                    class="text-white  px-3 py-2 rounded-lg block w-80 md:w-3/4 mx-auto hover:cursor-pointer hover:bg-[#102c4a]">
+                    class="text-white bg-charcoal-blue px-3 py-2 rounded-lg block w-80 md:w-3/4 mx-auto hover:cursor-pointer hover:bg-[#102c4a]">
                     <i class="fas fa-paper-plane"></i>
                     Submit
                 </button>
             </form>
         </div>
 
-        <div class="w-80 mx-auto md:w-1/2 md:m-10 my-5  p-5 md:p-10 rounded-lg shadow-md">
+        <div class="w-80 mx-auto md:w-1/2 md:m-10 my-5 bg-[#F3F4F6] p-5 md:p-10 rounded-lg shadow-md">
             <h4 class="md:text-lg font-semibold">Contact Information</h4>
             <div class="flex flex-row my-5">
                 <div class="mr-2">
@@ -259,13 +259,13 @@
         </div>
     </div>
 
-    <div class="w-full mx-auto py-20 ">
+    <div class="w-full mx-auto py-20 bg-[#F3F4F6]">
         <h2 class="text-center text-2xl md:text-4xl pt-5">Client's Feedback</h2>
         <p class="text-base md:text-xl text-[#6B7280] mb-5 text-center mb-5">Stories behind successful projects</p>
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-16" id="customerFeedback"></div>
     </div>
 
-    <div class="w-full  text-white">
+    <div class="w-full bg-charcoal-blue text-white">
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row justify-between">
                 <div class="p-5 md:p-15">
