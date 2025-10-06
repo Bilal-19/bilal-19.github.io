@@ -16,7 +16,7 @@ function renderProject(projects) {
   return projects.forEach((val, index) => {
     const modalId = `modal-${index}`;
     projectCardEl.innerHTML += `
-      <div class="rounded-xl border-b-4 border-r-4 border-l-1 border-t-1 border-[#051527] shadow-md mb-5 px-5 py-5 w-80 md:w-auto mx-auto bg-gray-800 hover:translate-y-[-4px] hover:shadow-lg">
+      <div class="rounded-xl border-b-4 border-r-2 border-t-1 border-l-1 border-emerald-500 shadow-md mb-5 px-5 py-5 w-80 md:w-auto mx-auto bg-gray-800 hover:translate-y-[-4px] hover:shadow-lg">
           <img src="${val.projectmageSrc}" alt="${val.projectName}" class="rounded-md" />
             <div class="flex flex-row items-center justify-between pt-3 mb-3">
                 <h5 class="text-md md:text-xl font-semibold">${val.projectName}</h5>
@@ -53,7 +53,7 @@ const projectCategoryForm = document.getElementById("project-category")
 categoryBtns.map((val, key) => {
   projectCategoryForm.innerHTML +=
     `
-  <button name="category" value="${val.btnValue}" class="category-btn hover:cursor-pointer text-[#051527] border-1 border-[#051527] px-3 py-1 rounded-xl text-xs">${val.btnContent}</button>
+  <button name="category" value="${val.btnValue}" class="category-btn hover:cursor-pointer text-white border-1 border-emerald-500 px-3 py-1 rounded-xl text-xs">${val.btnContent}</button>
   `
 })
 
@@ -72,7 +72,7 @@ const skillsEl = document.getElementById("technicalSkills");
 technicalSkills.map((val, key) => {
   skillsEl.innerHTML +=
     `
-   <div class="w-80 md:w-1/4 mx-auto flex items-center justify-start my-5 bg-gray-800 px-3 py-2 rounded-md border-b-3 border-t-[0.5px] border-x-[0.5px] border-[#051527]">
+   <div class="w-80 md:w-1/4 mx-auto flex items-center justify-start my-5 bg-gray-800 px-3 py-2 rounded-md border-b-3 border-t-[0.5px] border-x-[0.5px] border-emerald-500">
       <div class="mx-2">
         <h5 class="font-medium text-lg text-emerald-500">${val.category}</h5>
         <p class="text-xs">${val.coreSkills}</p>
@@ -114,11 +114,11 @@ const blogEl = document.getElementById("blog-section")
 blogs.map((val, key) => {
   blogEl.innerHTML +=
     `
-   <div class="border border-gray-300 p-5 rounded-md shadow-md bg-white" key=${key}>
+   <div class="border-b-3 border-r-3 border-l-1 border-t-1 border-emerald-300 p-5 rounded-md shadow-md bg-gray-800" key=${key}>
     <img src="./media/images/${val.thumbnailImg}" alt="${val.blogTitle}" class="rounded-lg mb-3" />
     <h6 class="mb-1 font-semibold md:text-xl">${val.blogTitle}</h6>
-    <p class="text-md text-[#6B7280] mb-3">${val.blogDesc}</p>
-    <a href="https://medium.com/@bilalmuhammadyousuf543/${val.mediumURL}" target="_blank" class="text-white bg-charcoal-blue px-3 py-2 rounded-md hover:bg-[#102c4a]">
+    <p class="text-base font-light mb-3">${val.blogDesc}</p>
+    <a href="https://medium.com/@bilalmuhammadyousuf543/${val.mediumURL}" target="_blank" class="text-white bg-emerald-500 px-3 py-2 rounded-md hover:bg-emerald-800">
     <i class="fa-brands fa-medium"></i> View on Medium
     </a>
   </div>
@@ -137,7 +137,7 @@ const experienceEl = document.getElementById("experience-section")
 professionalExperience.map((item, key) => (
   experienceEl.innerHTML +=
   `
-  <div class="mb-5 mb-5 p-5 rounded-md bg-gray-800 shadow-md text-white" key=${key}>
+  <div class="mb-5 mb-5 p-5 rounded-md bg-gray-800 shadow-md text-white bg-gray-800 border-b-4 border-r-2 border-emerald-500" key=${key}>
     <h5 class="text-xl text-emerald-500 font-medium">${item.designation}</h5>
     <p class="font-bold">${item.companyName}</p>
     <p class="font-light">${item.duration}</p>
@@ -184,7 +184,7 @@ const feedbackEl = document.getElementById("customerFeedback")
 customerFeedback.map((val, key) => {
   feedbackEl.innerHTML +=
     `
-  <div class="bg-white border-b-4 border-#051527 border-x-1 border-t-1 p-5 rounded-md mx-5 md:mx-0 hover:shadow-lg transition duration-300">
+  <div class="bg-gray-800 p-5 rounded-md mx-5 md:mx-0 hover:shadow-lg transition duration-300 bg-gray-800 border-b-4 border-r-2 border-emerald-500">
     <div class="flex flex-row mb-5 items-center">
       <div>
         <img src="./media/images/user.png" class="h-15" alt=${val.clientName}/>
@@ -194,7 +194,7 @@ customerFeedback.map((val, key) => {
         <p>${printStars(val.rating)}</p>
       </div>
     </div>
-    <p class="text-[#4B5563]">${val.feedbackMessage}</p>
+    <p>${val.feedbackMessage}</p>
   </div>
   `
 })

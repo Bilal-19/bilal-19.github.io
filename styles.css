@@ -34,26 +34,6 @@ html {
   color: var(--charcoal-blue);
 }
 
-/* Remove default swipper arrows */
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  display: none;
-}
-
-.swiper-pagination-bullet {
-  background-color: #cacaca;
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #051527;
-}
-
-.swiper-pagination {
-  margin-bottom: 0px;
-  bottom: 10px;
-}
-
 /* Create Custom Scrollbar */
 /* width */
 ::-webkit-scrollbar {
@@ -71,7 +51,7 @@ html {
 }
 
 .active-project {
-  background-color: #051527;
+  background-color: #00bc7d;
   color: white;
 }
 
