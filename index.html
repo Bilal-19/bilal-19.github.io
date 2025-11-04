@@ -38,6 +38,10 @@
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-gray-900 text-gray-200">
@@ -72,7 +76,8 @@
     <div class="w-full  flex flex-col-reverse md:flex-row justify-around items-center">
         <div class="md:w-1/2 mx-5 py-0 md:py-10 text-justify">
             <h1 class="text-3xl md:text-5xl mb-1">Hello, <span class="text-emerald-500">I'm Bilal</span></h1>
-            <h2 class="text-xl md:text-3xl mb-2 font-light">Full Stack <span class="font-medium text-emerald-500">Web Developer</span>
+            <h2 class="text-xl md:text-3xl mb-2 font-light">Full Stack <span class="font-medium text-emerald-500">Web
+                    Developer</span>
             </h2>
             <p class="text-base md:text-md mb-5 font-light">
                 I specialize in developing custom, SEO-optimized, and high-performance websites tailored to various
@@ -139,7 +144,8 @@
     </div>
 
     <div class="w-full mt-5 py-10" id="experience">
-        <h2 class="text-2xl md:text-4xl text-center mb-10">Professional <span class="text-emerald-500">Journey</span></h2>
+        <h2 class="text-2xl md:text-4xl text-center mb-10">Professional <span class="text-emerald-500">Journey</span>
+        </h2>
         <div class="flex flex-col md:flex-row justify-between items-start">
             <div class="w-80 mx-auto md:w-2/5 m-2 md:m-5">
                 <h3 class="text-2xl md:text-3xl mb-5 md:mb-3">Educational Background</h3>
@@ -163,7 +169,8 @@
     </div>
 
     <div class="w-full mx-auto mt-5 py-10" id="skills">
-        <h2 class="text-center text-2xl md:text-4xl"><span class="text-emerald-500">Skills</span> & <span class="text-emerald-500">Technologies</span></h2>
+        <h2 class="text-center text-2xl md:text-4xl"><span class="text-emerald-500">Skills</span> & <span
+                class="text-emerald-500">Technologies</span></h2>
         <p class="text-base mb-5 text-center">Technologies I work with</p>
         <div class="w-full flex flex-col md:flex-row justify-around" id="technicalSkills">
         </div>
@@ -177,7 +184,8 @@
     </div>
 
     <div class="w-full py-10" id="faqs">
-        <h2 class="text-center text-2xl md:text-4xl pt-5">Frequently Asked <span class="text-emerald-500">Questions</span></h2>
+        <h2 class="text-center text-2xl md:text-4xl pt-5">Frequently Asked <span
+                class="text-emerald-500">Questions</span></h2>
         <div class="md:w-1/2 mx-auto" id="ques-ans">
         </div>
     </div>
@@ -194,13 +202,13 @@
         <div class="w-80 mx-auto md:w-1/2 md:m-10">
             <h2 class="text-center text-2xl md:text-4xl pt-5">Get in Touch</h2>
             <p class="text-base mb-5 text-center">Let's discuss your project</p>
-            <form class="form" id="contact-form" autocomplete="off" method="post"
-                action="https://formsubmit.co/bilalmuhammadyousuf543@gmail.com">
-                <input required type="text" name="username" placeholder="Your Name"
+            <form class="form" id="contact-form">
+                <input type="hidden" name="_next" value="https://bilal-19.github.io/">
+                <input required type="text" id="username" name="username" placeholder="Your Name"
                     class="block border border-gray-300 px-3 py-2 focus:outline-none w-80 md:w-3/4 rounded-md mx-auto my-5 text-sm focus:ring-2 focus:ring-emerald-500">
-                <input required type="email" name="useremail" placeholder="Your Email"
+                <input required type="email" id="useremail" name="useremail" placeholder="Your Email"
                     class="block border border-gray-300 px-3 py-2 focus:outline-none w-80 md:w-3/4 rounded-md mx-auto my-5 text-sm focus:ring-2 focus:ring-emerald-500">
-                <textarea required name="message" placeholder="Type your message here..."
+                <textarea required name="message" id="usermessage" placeholder="Type your message here..."
                     class="block border border-gray-300 px-3 py-2 focus:outline-none w-80 md:w-3/4 rounded-md mx-auto my-5 text-sm focus:ring-2 focus:ring-emerald-500 resize-none"
                     rows="5"></textarea>
 
@@ -209,6 +217,7 @@
                     <i class="fas fa-paper-plane"></i>
                     Submit
                 </button>
+                <p id="result" class="w-80 md:w-3/4 mx-auto rounded-lg px-3 py-2 my-5"></p>
             </form>
         </div>
 
