@@ -87,7 +87,7 @@ pricingPackages.map((val, key) => {
   priceEl.innerHTML +=
     `
   <div class="m-3 border shadow-md rounded-lg hover:scale-102 duration-100 p-5 ${val.id == 2 ? 'border-emerald-700' : 'border-emerald-500'} border-b-4 border-b-emerald-500 bg-gray-800">
-    <img src="${val.imgPath}" class="h-10 mx-auto mb-3" alt=${val.packageName}/>
+    <img src="${val.imgPath}" class="h-10 mx-auto mb-3 brightness-0 invert-100" alt=${val.packageName}/>
     <h5 class="text-center text-lg md:text-2xl font-medium mb-3 text-emerald-500">${val.packageName}</h5>
     <div class="flex items-center justify-center mb-5">
       <button class="bg-emerald-500 text-white text-sm px-3 py-2 rounded-full mx-auto block">Starting at $${val.newPrice} / project</button>
@@ -187,7 +187,7 @@ customerFeedback.map((val, key) => {
   <div class="bg-gray-800 p-5 rounded-md mx-5 md:mx-0 hover:shadow-lg transition duration-300 bg-gray-800 border-b-4 border-r-2 border-emerald-500">
     <div class="flex flex-row mb-5 items-center">
       <div>
-        <img src="./media/images/user.png" class="h-15" alt=${val.clientName}/>
+        <img src="./media/images/user.png" class="h-15 brightness-0 invert-100" alt=${val.clientName}/>
       </div>
       <div>
         <p class="mb-0">${val.clientName}</p>
