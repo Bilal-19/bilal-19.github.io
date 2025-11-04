@@ -198,3 +198,35 @@ customerFeedback.map((val, key) => {
   </div>
   `
 })
+
+
+// Send form data through email
+$(document).ready(function () {
+  $("#contact-form").on("submit", function (e) {
+    e.preventDefault()
+
+    $.ajax({
+      method: "POST",
+      url: "https://formsubmit.co/ajax/bilalmuhammadyousuf543@gmail.com",
+      dataType: "json",
+      accepts: "application/json",
+      data: $(this).serialize(),
+      success: function (data) {
+        $("#result").
+          html("<i class='fa-solid fa-circle-check'></i> Your enquiry has been submitted.").
+          css({ "background-color": "white", "color": "green" }).
+          fadeIn(500).
+          delay(1500).
+          fadeOut(3000)
+      },
+      error: function (data) {
+        $("#result").
+          html("<i class='fa-solid fa-circle-check'></i> Something went wrong. Please try again later.").
+          css({ "background-color": "white", "color": "red" }).
+          fadeIn(500).
+          delay(1500).
+          fadeOut(3000)
+      }
+    })
+  })
+})

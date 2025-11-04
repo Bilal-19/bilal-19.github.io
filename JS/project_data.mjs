@@ -165,7 +165,7 @@ const pricingPackages = [
       "Social Media Icons",
       "Speed Optimization"
     ],
-    revisions: 2,
+    revisions: 3,
     timeFrame: 10,
     imgPath: "./media/Icons/basic.png"
   },
@@ -183,7 +183,7 @@ const pricingPackages = [
       "Basic E-commerce (Up to 10 Products)",
       "Domain & Hosting Setup",
     ],
-    revisions: 3,
+    revisions: 5,
     timeFrame: 15,
     imgPath: "./media/Icons/elite.png"
   },
@@ -203,7 +203,7 @@ const pricingPackages = [
       "Advanced E-commerce Features",
       "Domain & Hosting Setup",
     ],
-    revisions: 4,
+    revisions: 7,
     timeFrame: 30,
     imgPath: "./media/Icons/premium.png"
   }
