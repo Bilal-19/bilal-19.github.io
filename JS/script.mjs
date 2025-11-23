@@ -207,7 +207,7 @@ allCertificates.map((val, key) => {
   certificateEl.innerHTML +=
     `
   <div>
-    <img src="${val.imagePath}" class="rounded-md border-2 border-white-500 h-75"/>
+    <img src="${val.imagePath}" class="rounded-md border-2 border-white-500 md:h-75"/>
     <p class="font-semibold">${val.title}</p>
     <p class="text-sm text-gray-400">${val.issuingOrganization} • ${val.year}</p>
     <a href=${val.imagePath} target="_blank" class="bg-emerald-500 text-white py-1 px-2 text-sm rounded-sm"><i class="fa fa-image"></i> View Certificate</a>
