@@ -6,7 +6,8 @@ import {
   FAQs,
   technicalSkills,
   customerFeedback,
-  categoryBtns
+  categoryBtns,
+  allCertificates
 } from "./project_data.mjs";
 
 const projectCardEl = document.getElementById("project-card")
@@ -184,7 +185,7 @@ const feedbackEl = document.getElementById("customerFeedback")
 customerFeedback.map((val, key) => {
   feedbackEl.innerHTML +=
     `
-  <div class="bg-gray-800 p-5 rounded-md mx-5 md:mx-0 hover:shadow-lg transition duration-300 bg-gray-800 border-b-4 border-r-2 border-emerald-500">
+  <div key=${key} class="bg-gray-800 p-5 rounded-md mx-5 md:mx-0 hover:shadow-lg transition duration-300 bg-gray-800 border-b-4 border-r-2 border-emerald-500">
     <div class="flex flex-row mb-5 items-center">
       <div>
         <img src="./media/images/user.png" class="h-15 brightness-0 invert-100" alt=${val.clientName}/>
@@ -199,6 +200,20 @@ customerFeedback.map((val, key) => {
   `
 })
 
+
+// Certificate Section
+const certificateEl = document.getElementById("certificate-section")
+allCertificates.map((val, key) => {
+  certificateEl.innerHTML +=
+    `
+  <div>
+    <img src="${val.imagePath}" class="rounded-md border-2 border-white-500 h-75"/>
+    <p class="font-semibold">${val.title}</p>
+    <p class="text-sm text-gray-400">${val.issuingOrganization} • ${val.year}</p>
+    <a href=${val.imagePath} target="_blank" class="bg-emerald-500 text-white py-1 px-2 text-sm rounded-sm"><i class="fa fa-image"></i> View Certificate</a>
+  </div>
+  `
+})
 
 // Send form data through email
 $(document).ready(function () {

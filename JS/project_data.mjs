@@ -377,6 +377,44 @@ const categoryBtns = [
   },
 ]
 
+const allCertificates = [
+  {
+    id: 1,
+    title: "Soft Skills Training",
+    issuingOrganization: "OEC & ICMPD",
+    year: "2025",
+    imagePath: "../media/certificates/oec.jpg"
+  },
+  {
+    id: 2,
+    title: "Introduction to Artificial Intelligence",
+    issuingOrganization: "Coursera",
+    year: "2025",
+    imagePath: "../media/certificates/introduction_to_ai.jpg"
+  },
+  {
+    id: 3,
+    title: "Digital Marketing",
+    issuingOrganization: "Innovista Learn Easy",
+    year: "2025",
+    imagePath: "../media/certificates/digital_marketing_innovista.jpg"
+  },
+  {
+    id: 4,
+    title: "Search Engine Optimization",
+    issuingOrganization: "Innovista Learn Easy",
+    year: "2024",
+    imagePath: "../media/certificates/seo_innovista.webp"
+  },
+  {
+    id: 5,
+    title: "Freelancing",
+    issuingOrganization: "DigiSkills Training Program",
+    year: "2024",
+    imagePath: "../media/certificates/digiskills_freelancing.webp"
+  }
+]
+
 
 export {
   projectData,
@@ -386,5 +424,6 @@ export {
   professionalExperience,
   technicalSkills,
   customerFeedback,
-  categoryBtns
+  categoryBtns,
+  allCertificates
 };
