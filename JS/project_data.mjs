@@ -381,7 +381,7 @@ const allCertificates = [
   {
     id: 1,
     title: "Soft Skills Training",
-    issuingOrganization: "OEC & ICMPD",
+    issuingOrganization: "Overseas Employment Corporation, Pakistan",
     year: "2025",
     imagePath: "../media/certificates/oec.jpg"
   },
@@ -412,6 +412,76 @@ const allCertificates = [
     issuingOrganization: "DigiSkills Training Program",
     year: "2024",
     imagePath: "../media/certificates/digiskills_freelancing.webp"
+  },
+  {
+    id: 6,
+    title: "Agile Software Development",
+    issuingOrganization: "Linkedin Learning",
+    year: "2023",
+    imagePath: "../media/certificates/agile_software_development.webp"
+  },
+  {
+    id: 7,
+    title: "Become a Full Stack Web Developer",
+    issuingOrganization: "Linkedin Learning",
+    year: "2023",
+    imagePath: "../media/certificates/linkedin_fullstackwebdev.webp"
+  },
+  {
+    id: 8,
+    title: "Introduction to Software Engineering Job SImulation",
+    issuingOrganization: "Forage - Commonwealth Bank",
+    year: "2023",
+    imagePath: "../media/certificates/software_engineering_simulation.jpg"
+  },
+  {
+    id: 9,
+    title: "Developing a Learning Mindset",
+    issuingOrganization: "Linkedin Learning",
+    year: "2023",
+    imagePath: "../media/certificates/LearningMindset.webp"
+  },
+  {
+    id: 10,
+    title: "Nano Tips for Peak Performance with Shadé Zahrai",
+    issuingOrganization: "Linkedin Learning",
+    year: "2023",
+    imagePath: "../media/certificates/linkedin_peak_performance.webp"
+  },
+  {
+    id: 11,
+    title: "Accelarating Your Career with personal Branding",
+    issuingOrganization: "Linkedin Learning",
+    year: "2023",
+    imagePath: "../media/certificates/personal_branding.webp"
+  },
+  {
+    id: 12,
+    title: "User Experience in Web 3.0 Design",
+    issuingOrganization: "Google Developer Students Club",
+    year: "2022",
+    imagePath: "../media/certificates/GDSC_Web3.webp"
+  },
+  {
+    id: 13,
+    title: "Microsoft Azure Fundamental Workshop",
+    issuingOrganization: "Microsoft Learn Student Ambassador",
+    year: "2022",
+    imagePath: "../media/certificates/MLSA_Azure_Session.webp"
+  },
+  {
+    id: 14,
+    title: "Web Design and Development Intern",
+    issuingOrganization: "The Sparks Foundation",
+    year: "2022",
+    imagePath: "../media/certificates/web_dev_internship_tsf.png"
+  },
+  {
+    id: 15,
+    title: "Introduction to Cybersecurity",
+    issuingOrganization: "Cicso Networking Academy",
+    year: "2022",
+    imagePath: "../media/certificates/cybersecurity_certificate.jpg"
   }
 ]
 
