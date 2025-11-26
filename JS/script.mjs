@@ -219,6 +219,11 @@ $(document).ready(function () {
   $("#contact-form").on("submit", function (e) {
     e.preventDefault()
 
+    // Disable button on click
+    const submitBtn = $("#enquiry-btn");
+
+    // Disable button & Change text
+    submitBtn.prop("disabled", true).text("Sending....")
     $.ajax({
       method: "POST",
       url: "https://formsubmit.co/ajax/bilalmuhammadyousuf543@gmail.com",
@@ -226,12 +231,17 @@ $(document).ready(function () {
       accepts: "application/json",
       data: $(this).serialize(),
       success: function (data) {
+        submitBtn.html("<svg class='mr-3 size-5 animate-spin' viewBox='0 0 24 24'></svg>")
         $("#result").
           html("<i class='fa-solid fa-circle-check'></i> Your enquiry has been submitted.").
           css({ "background-color": "white", "color": "green" }).
           fadeIn(500).
           delay(1500).
           fadeOut(3000)
+
+          // Reset form
+          $("#contact-form")[0].reset()
+
       },
       error: function (data) {
         $("#result").
@@ -240,6 +250,9 @@ $(document).ready(function () {
           fadeIn(500).
           delay(1500).
           fadeOut(3000)
+      },
+      complete: function () {
+        submitBtn.prop("disabled", false).html("<i class='fas fa-paper-plane'></i> Submit Enquiry")
       }
     })
   })
