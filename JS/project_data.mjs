@@ -482,6 +482,20 @@ const allCertificates = [
     issuingOrganization: "Cicso Networking Academy",
     year: "2022",
     imagePath: "../media/certificates/cybersecurity_certificate.jpg"
+  },
+  {
+    id: 16,
+    title: "Self Defence Workshop",
+    issuingOrganization: "UIT Ethics Society",
+    year: "2021",
+    imagePath: "../media/certificates/self_defence_workshop.jpg"
+  },
+  {
+    id: 17,
+    title: "National Financial Literacy Training Program",
+    issuingOrganization: "National Financial Literacy Program For Youth",
+    year: "2020",
+    imagePath: "../media/certificates/financial_literacy_training_program.jpg"
   }
 ]
 

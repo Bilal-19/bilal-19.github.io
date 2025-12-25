@@ -206,10 +206,10 @@ const certificateEl = document.getElementById("certificate-section")
 allCertificates.map((val, key) => {
   certificateEl.innerHTML +=
     `
-  <div>
+  <div class="mb-5">
     <img src="${val.imagePath}" class="rounded-md border-2 border-white-500 md:h-75 fit-content md:w-100 object-fit-content"/>
-    <p class="font-semibold">${val.title}</p>
-    <p class="text-sm text-gray-400 mb-1">${val.issuingOrganization} • ${val.year}</p>
+    <p class="font-semibold mt-1"><i class="fa-solid fa-certificate"></i> ${val.title}</p>
+    <p class="text-sm text-gray-400">${val.issuingOrganization} • ${val.year}</p>
   </div>
   `
 })
