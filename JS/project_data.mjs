@@ -429,70 +429,77 @@ const allCertificates = [
   },
   {
     id: 8,
+    title: "Intro to Software Engineering Job SImulation",
+    issuingOrganization: "Forage - Cisco",
+    year: "2023",
+    imagePath: "../media/certificates/software_engineering_simulation_cisco.jpg"
+  },
+  {
+    id: 9,
     title: "Introduction to Software Engineering Job SImulation",
     issuingOrganization: "Forage - Commonwealth Bank",
     year: "2023",
     imagePath: "../media/certificates/software_engineering_simulation.jpg"
   },
   {
-    id: 9,
+    id: 10,
     title: "Developing a Learning Mindset",
     issuingOrganization: "Linkedin Learning",
     year: "2023",
     imagePath: "../media/certificates/LearningMindset.webp"
   },
   {
-    id: 10,
+    id: 11,
     title: "Nano Tips for Peak Performance with Shadé Zahrai",
     issuingOrganization: "Linkedin Learning",
     year: "2023",
     imagePath: "../media/certificates/linkedin_peak_performance.webp"
   },
   {
-    id: 11,
+    id: 12,
     title: "Accelarating Your Career with personal Branding",
     issuingOrganization: "Linkedin Learning",
     year: "2023",
     imagePath: "../media/certificates/personal_branding.webp"
   },
   {
-    id: 12,
+    id: 13,
     title: "User Experience in Web 3.0 Design",
     issuingOrganization: "Google Developer Students Club",
     year: "2022",
     imagePath: "../media/certificates/GDSC_Web3.webp"
   },
   {
-    id: 13,
+    id: 14,
     title: "Microsoft Azure Fundamental Workshop",
     issuingOrganization: "Microsoft Learn Student Ambassador",
     year: "2022",
     imagePath: "../media/certificates/MLSA_Azure_Session.webp"
   },
   {
-    id: 14,
+    id: 15,
     title: "Web Design and Development Intern",
     issuingOrganization: "The Sparks Foundation",
     year: "2022",
     imagePath: "../media/certificates/web_dev_internship_tsf.png"
   },
   {
-    id: 15,
+    id: 16,
     title: "Introduction to Cybersecurity",
     issuingOrganization: "Cicso Networking Academy",
     year: "2022",
     imagePath: "../media/certificates/cybersecurity_certificate.jpg"
   },
   {
-    id: 16,
+    id: 17,
     title: "Self Defence Workshop",
     issuingOrganization: "UIT Ethics Society",
     year: "2021",
     imagePath: "../media/certificates/self_defence_workshop.jpg"
   },
   {
-    id: 17,
-    title: "National Financial Literacy Training Program",
+    id: 18,
+    title: "Financial Literacy Training Program",
     issuingOrganization: "National Financial Literacy Program For Youth",
     year: "2020",
     imagePath: "../media/certificates/financial_literacy_training_program.jpg"
