@@ -24,13 +24,13 @@ function renderProject(projects) {
             </div>
             <div>
             <p class="mb-4 font-light">${val.desc}</p>
-          <p class="mb-3">${val.technology.map(item => `<button class="bg-emerald-900 text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
+          <p class="mb-3">${val.technology.map(item => `<button class="bg-emerald-500 text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
           ${val.websiteURL ?
-        `<a href="${val.websiteURL}" target="_blank" class="bg-emerald-500 text-white px-3 py-2 text-sm rounded-md hover:text-emerald-900 hover:bg-white"><i class="fa-solid fa-globe"></i> Website</a>`
+        `<a href="${val.websiteURL}" target="_blank" class="bg-emerald-900 text-white px-3 py-2 text-sm rounded-md hover:text-emerald-900 hover:bg-white"><i class="fa-solid fa-globe"></i> Website</a>`
         :
         ``
       }
-          <a href="${val.githubURL}" target="_blank" class="bg-emerald-500 text-white px-3 py-2 text-sm rounded-md hover:text-emerald-900 hover:bg-white"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="${val.githubURL}" target="_blank" class="bg-emerald-900 text-white px-3 py-2 text-sm rounded-md hover:text-emerald-900 hover:bg-white"><i class="fa-brands fa-github"></i> GitHub</a>
         
             </div>
           </div>

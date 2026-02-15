@@ -5,7 +5,7 @@ const projectData = [
     projectName: "Sterling Executive Residential",
     desc: "A real estate booking platform where users can explore property listings, check availability, and book their desired property online. Admins manage properties listing, view inquiries (booking, general etc), using a centralized dashboard.",
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
-    websiteURL: "https://sterling-executive.com/",
+    websiteURL: "",
     githubURL: "https://github.com/Bilal-19/SER_RealEstate",
     category: "realestate"
   },
