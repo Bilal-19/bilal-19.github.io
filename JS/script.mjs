@@ -138,15 +138,16 @@ const experienceEl = document.getElementById("experience-section")
 professionalExperience.map((item, key) => (
   experienceEl.innerHTML +=
   `
-  <div class="mb-5 mb-5 p-5 rounded-md bg-gray-800 shadow-md text-white bg-gray-800 border-b-4 border-r-2 border-emerald-500" key=${key}>
-    <h5 class="text-xl text-emerald-500 font-medium">${item.designation}</h5>
-    <p class="font-bold">${item.companyName}</p>
-    <p class="font-light">${item.duration}</p>
-    <h6 class="font-medium">Roles & Responsibilites:</h6>
-    <ul>
-    ${item.jobDescription.map(val => `<li class="font-light text-sm mt-1">* ${val}</li>`).join("")}
-    </ul>
-  </div>
+  <li class="mb-10 ms-8">
+    <span class="absolute flex items-center justify-center size-6  rounded-full -start-3 ring-8 ring-buffer bg-emerald-900">
+      <svg class="w-3 h-3 text-fg-brand-strong" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z" />
+      </svg>
+    </span>
+    <time class="bg-neutral-secondary-medium border border-default-medium text-heading text-xs font-medium px-1.5 py-0.5 rounded">${item.duration}</time>
+    <h3 class="text-lg font-semibold text-heading text-emerald-500">${item.companyName}</h3>
+    <p class="text-body">${item.designation}</p>
+  </li>
   `
 ))
 
