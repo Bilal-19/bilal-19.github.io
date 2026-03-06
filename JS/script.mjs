@@ -71,9 +71,13 @@ technicalSkills.map((val, key) => {
     `
    <div class="w-80 md:w-1/4 mx-auto flex items-center justify-start my-5 bg-gray-800 px-3 py-2 rounded-md border-b-3 border-t-[0.5px] border-x-[0.5px] border-emerald-500">
       <div class="mx-2">
-        <h5 class="font-medium text-lg text-emerald-500">${val.category}</h5>
-        <p class="text-xs">${val.coreSkills}</p>
+        <h5 class="font-medium text-lg text-emerald-500 mb-2">${val.category}</h5>
+        <div class="flex flex-wrap gap-2">
+          ${val.coreSkills.split(",").map(skill => 
+            `<span class="bg-emerald-500/20 text-light px-2 py-1 rounded text-xs">${skill.trim()}</span>`
+          ).join("")}
       </div>
+        </div>
     </div>
   `
 })
