@@ -17,21 +17,17 @@ function renderProject(projects) {
   return projects.forEach((val, index) => {
     const modalId = `modal-${index}`;
     projectCardEl.innerHTML += `
-      <div class="rounded-xl border-b-4 border-r-2 border-t-1 border-l-1 border-emerald-500 shadow-md mb-5 px-5 py-5 w-80 md:w-auto mx-auto bg-gray-800 hover:translate-y-[-4px] hover:shadow-lg">
-          <img src="${val.projectmageSrc}" alt="${val.projectName}" class="rounded-md" />
+      <div class="rounded-xl border-b-4 border-r-2 border-t-1 border-l-1 border-emerald-500 shadow-md mb-5 px-5 py-5 w-80 md:w-auto mx-auto bg-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <img src="${val.projectmageSrc}" alt="${val.projectName}" class="rounded-md w-full object-cover transition-transform duration-300 hover:scale-105" />
             <div class="flex flex-row items-center justify-between pt-3 mb-3">
                 <h5 class="text-md md:text-xl font-semibold">${val.projectName}</h5>
             </div>
             <div>
-            <p class="mb-4 font-light">${val.desc}</p>
-          <p class="mb-3">${val.technology.map(item => `<button class="bg-emerald-500 text-white px-2 py-1 rounded-xl text-xs">${item}</button>`).join(" ")}</p>
-          ${val.websiteURL ?
-        `<a href="${val.websiteURL}" target="_blank" class="bg-emerald-900 text-white px-3 py-2 text-sm rounded-md hover:text-emerald-900 hover:bg-white"><i class="fa-solid fa-globe"></i> Website</a>`
-        :
-        ``
-      }
-          <a href="${val.githubURL}" target="_blank" class="bg-emerald-900 text-white px-3 py-2 text-sm rounded-md hover:text-emerald-900 hover:bg-white"><i class="fa-brands fa-github"></i> GitHub</a>
-        
+              <p class="mb-4 text-gray-300 leading-relaxed text-sm">${val.desc}</p>
+              <p class="mb-3">${val.technology.map(item => `<button class="bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded-md text-xs font-medium">${item}</button>`).join(" ")}</p>
+              ${val.websiteURL ? `<a href="${val.websiteURL}" target="_blank" class="bg-blue-600 text-white px-3 py-2 text-sm rounded-md hover:bg-blue-700 transition"><i class="fa-solid fa-globe"></i> Website</a>` : `` }
+              <a href="${val.githubURL}" target="_blank" class="bg-gray-700 text-white px-3 py-2 text-sm rounded-md hover:bg-gray-800 transition"><i class="fa-brands fa-github"></i> GitHub</a> 
+              ${val.videoURL ? `<a href="${val.videoURL}" target="_blank" class="bg-red-600 text-white px-3 py-2 text-sm rounded-md hover:bg-red-700 transition"><i class="fa-brands fa-youtube"></i> Demo</a>` : `` }
             </div>
           </div>
       </div>

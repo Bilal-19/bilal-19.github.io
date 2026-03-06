@@ -17,7 +17,8 @@ const projectData = [
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "https://greenkeylettings.com/",
     githubURL: "https://github.com/Bilal-19/NewLeafLettingHousing",
-    category: "realestate"
+    category: "realestate",
+    videoURL: "https://youtu.be/vPK-ZIJ4KKw?si=gYPZwzrZpYnIHdpi"
   },
   {
     id: 3,
@@ -27,7 +28,8 @@ const projectData = [
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://curemed-pharmas.netlify.app/",
     githubURL: "https://github.com/Bilal-19/curemed-pharmacy",
-    category: "healthcare"
+    category: "healthcare",
+    videoURL: "https://youtu.be/4Q3YePpYzNs?si=0OowXq2uPrF8W7MC"
   },
   {
     id: 4,
@@ -37,7 +39,8 @@ const projectData = [
     technology: ["JavaScript", "Bootstrap 5", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
     githubURL: "https://github.com/Bilal-19/visa-web-application",
-    category: "travelling"
+    category: "travelling",
+    videoURL: "https://youtu.be/rMPtp_5BsqQ?si=Ev4zrXLvnPyueWyK"
   },
   {
     id: 5,
@@ -57,7 +60,8 @@ const projectData = [
     technology: ["React JS", "Bootstrap 5"],
     websiteURL: "https://royaljewellers.netlify.app/",
     githubURL: "https://github.com/Bilal-19/RoyalJewellersPortfolio",
-    category: "jewellers"
+    category: "jewellers",
+    videoURL: "https://youtu.be/JpAm8CLg0Wg?si=cGPF4cPWn-L3loQV"
   },
   {
     id: 7,
@@ -107,7 +111,8 @@ const projectData = [
     technology: ["React JS", "Tailwind CSS"],
     websiteURL: "https://furnicraft-studio.netlify.app/",
     githubURL: "https://github.com/Bilal-19/FurniCraft-Studio",
-    category: "furniture"
+    category: "furniture",
+    videoURL: "https://youtu.be/KCpd87GYa1k?si=jxWqQuYJOqwiUxYl"
   },
   {
     id: 12,
@@ -117,7 +122,8 @@ const projectData = [
     technology: ["Tailwind CSS", "JavaScript", "PHP", "Laravel", "MySQL"],
     websiteURL: "",
     githubURL: "https://github.com/Bilal-19/Hospital-Management-Software",
-    category: "healthcare"
+    category: "healthcare",
+    videoURL: "https://youtu.be/OZAijMPigK0?si=5OqIhq01KG0EkK8B"
   },
   {
     id: 13,
@@ -137,7 +143,8 @@ const projectData = [
     technology: ["HTML", "CSS", "Tailwind CSS", "React JS", "JavaScript"],
     websiteURL: "https://culture-guide.netlify.app/",
     githubURL: "https://github.com/Bilal-19/Cultural-Ettiqutes-Guide",
-    category: "travelling"
+    category: "travelling",
+    videoURL: "https://youtu.be/eH_eiAeiGmc?si=_4IDI8-4T8M-w6Bt"
   },
   {
     id: 15,
@@ -147,7 +154,8 @@ const projectData = [
     technology: ["JavaScript", "Tailwind", "Laravel", "MySQL"],
     websiteURL: "https://naudi-estates.com/",
     githubURL: "https://github.com/Bilal-19/Naudi-Estates",
-    category: "realestate"
+    category: "realestate",
+    videoURL: "https://youtu.be/krHUmdtZSxA?si=T1S6SUjsVuhCGNcP"
   },
 ];
 
