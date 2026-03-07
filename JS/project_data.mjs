@@ -305,13 +305,13 @@ const technicalSkills = [
   {
     id: 2,
     category: "Backend Development",
-    coreSkills: "PHP, Laravel & MySQL",
+    coreSkills: "PHP, Laravel, MySQL",
     imageAdd: "backend.png"
   },
   {
     id: 3,
     category: "Database & Cloud",
-    coreSkills: "MySQL & Hostinger",
+    coreSkills: "MySQL, Hostinger",
     imageAdd: "database.png"
   }
 ]
