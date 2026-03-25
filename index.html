@@ -32,7 +32,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 
@@ -44,10 +45,10 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-gray-900 text-gray-200">
+<body class="">
 
     <div
-        class="w-full  text-white flex flex-col md:flex-row justify-between md:items-center h-fit py-4 shadow-md bg-gray-800 border-b border-emerald-500">
+        class="w-full  text-white flex flex-col md:flex-row justify-between md:items-center h-fit py-4 shadow-md bg-[#0F1729] border-b border-emerald-500 text-[#F9FAFB]">
         <div class="flex items-center justify-between ml-2">
             <a href="https://bilal-19.github.io/" class="ff-amsterdam-one text-sm">Bilal Muhammad Yousuf</a>
             <button aria-label="toggle-button"
@@ -57,7 +58,7 @@
             </button>
         </div>
 
-        <div class="flex flex-col md:flex-row mx-5 md:m-0 space-x-10 hidden md:block" id="navbar-default">
+        <div class="flex flex-col md:flex-row mx-5 md:m-0 space-x-10 hidden md:block opacity-70" id="navbar-default">
             <a href="#projects" class="hover:underline underline-offset-4 text-md my-1 md:my-0">Projects</a>
             <a href="#experience" class="hover:underline underline-offset-4 text-md my-1 md:my-0">Experience</a>
             <a href="#faqs" class="hover:underline underline-offset-4 text-md my-1 md:my-0">FAQs</a>
@@ -69,59 +70,50 @@
         </div>
 
         <div class="mx-5 space-x-4 hidden md:block">
-            <a class="bg-emerald-500 px-3 py-1 rounded-md hover:cursor-pointer" aria-label="contact-us"
-                href="#contact">Contact Me</a>
+            <a class="bg-[#3C83F6] px-3 py-1 rounded-md hover:cursor-pointer inline-flex items-center"
+                aria-label="contact-us" href="./media/Bilal - Resume.pdf" download><img
+                    src="./media//Icons/down_arrow.png" alt=""> Resume</a>
         </div>
-
     </div>
 
-    <div class="w-full  flex flex-col-reverse md:flex-row justify-around items-center">
-        <div class="md:w-1/2 mx-5 py-0 md:py-10 text-justify">
-            <h1 class="text-3xl md:text-5xl mb-1">Hello, <span class="text-emerald-500">I'm Bilal</span></h1>
-            <h2 class="text-xl md:text-3xl mb-2 font-light">Full Stack <span class="font-medium text-emerald-500">Web
-                    Developer</span>
-            </h2>
-            <p class="text-base md:text-md mb-5 font-light">
-                I specialize in developing custom, SEO-optimized, and high-performance websites tailored to various
-                industries, including Real estate, Healthcare, Travelling, Interior, Jewellery, and E-Commerce.
-                With
-                a strong focus on scalability, user experience, and visual appeal, I create web solutions that
-                enhance
-                engagement and drive business growth.
-                <br><br>
-                My core technical skills include HTML, CSS, Bootstrap 5, Tailwind CSS, JavaScript, React JS, PHP,
-                Laravel, and MySQL, enabling me
-                to build robust, full-stack web applications that meet modern business needs.
-            </p>
-            <a href="./media/Bilal - Resume.pdf" download
-                class=" text-white px-3 py-2 mt-5 rounded-lg bg-emerald-500 hover:scale-105 hover:shadow-2xl">
-                <i class="fa-solid fa-download"></i>
-                Download Resume
-            </a>
 
-            <div class="container-fluid grid grid-cols-2 md:grid-cols-3 my-10 gap-10">
-                <div class=" rounded-md py-3 border-b-4 border-t-1 border-x-1 text-center shadow-md">
-                    <h3 class="text-md md:text-3xl font-bold">
-                        <i class="fas fa-user-tie text-xl md:text-3xl"></i>
+    <div class="w-full flex flex-col-reverse md:flex-row justify-around items-center md:p-10"
+        style="background: linear-gradient(135deg, #8CB6F9 0%, #F5F8FE 50%, #8DB6FA 100%);">
+        <div class="md:w-1/2 mx-5 py-0 md:py-10">
+            <button
+                class="mb-3 text-[#3C83F6] bg-[#DAE8FE] text-[14px] rounded-4xl px-3 py-2 ff-inter inline-flex items-center font-semibold">
+                <img src="./media/Icons/dot.png" alt="" class="mr-1.5">
+                Full Stack Web Developer
+            </button>
+            <h2 class="mb-3 text-3xl md:text-6xl font-extrabold ff-inter">Bilal Muhammad Yousuf</h2>
+            <p class="mb-3 text-[#65758B] italic font-medium ff-inter text-md md:text-xl">"Building scalable and modern web
+                applications."</p>
+            <p class="mb-3 text-[#65758B] text-sm md:text-base">
+                I specialize in crafting robust, full-stack web solutions using Laravel, JavaScript, and modern web
+                technologies. From elegant frontends to powerful backends — I deliver clean, maintainable code that
+                scales.
+            </p>
+
+            <div class="container-fluid grid grid-cols-3 mb-10 gap-5">
+                <div>
+                    <h3 class="text-xl md:text-4xl text-[#14213F] font-bold">
                         2+
                     </h3>
-                    <p class="text-sm font-light">Years Experience</p>
+                    <p class="text-sm text-[#14213F]">Years Exp.</p>
                 </div>
 
-                <div class=" rounded-md py-3 border-b-4 border-t-1 border-x-1 text-center shadow-md">
-                    <h3 class="text-md md:text-3xl font-bold">
-                        <i class="fas fa-briefcase text-xl md:text-3xl"></i>
+                <div>
+                    <h3 class="text-xl md:text-4xl text-[#14213F] font-bold">
                         10+
                     </h3>
-                    <p class="text-sm font-light">Completed Projects</p>
+                    <p class="text-sm text-[#14213F]">Projects</p>
                 </div>
 
-                <div class=" rounded-md py-3 border-b-4 border-t-1 border-x-1 text-center shadow-md">
-                    <h3 class="text-md md:text-3xl font-bold">
-                        <i class="fas fa-industry text-xl md:text-3xl"></i>
+                <div>
+                    <h3 class="text-xl md:text-4xl text-[#14213F] font-bold">
                         5+
                     </h3>
-                    <p class="text-sm font-light">Industry Domains</p>
+                    <p class="text-sm text-[#14213F]">Industry Domains</p>
                 </div>
             </div>
         </div>
@@ -165,8 +157,10 @@
                             </svg>
                         </span>
                         <time
-                            class="bg-neutral-secondary-medium border border-default-medium text-heading text-xs font-medium px-1.5 py-0.5 rounded">Oct 2019 - Aug 2023</time>
-                        <h3 class="text-lg font-semibold text-heading text-emerald-500">NED University of Engineering & Technology</h3>
+                            class="bg-neutral-secondary-medium border border-default-medium text-heading text-xs font-medium px-1.5 py-0.5 rounded">Oct
+                            2019 - Aug 2023</time>
+                        <h3 class="text-lg font-semibold text-heading text-emerald-500">NED University of Engineering &
+                            Technology</h3>
                         <p class="text-body">Bachelor of Science, Software Engineering.</p>
                     </li>
 
@@ -181,8 +175,11 @@
                                     d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z" />
                             </svg>
                         </span>
-                        <time class="bg-neutral-secondary-medium border border-default-medium text-heading text-xs font-medium px-1.5 py-0.5 rounded">Sept 2017 - May 2019</time>
-                        <h3 class="text-lg font-semibold text-heading text-emerald-500">Islamia Government Science College</h3>
+                        <time
+                            class="bg-neutral-secondary-medium border border-default-medium text-heading text-xs font-medium px-1.5 py-0.5 rounded">Sept
+                            2017 - May 2019</time>
+                        <h3 class="text-lg font-semibold text-heading text-emerald-500">Islamia Government Science
+                            College</h3>
                         <p class="text-body">Engineering, Pre Engineering.</p>
                     </li>
                 </ol>

@@ -25,6 +25,10 @@ html {
   font-display: swap;
 }
 
+.ff-inter {
+  font-family: "Inter", sans-serif;
+}
+
 /* Footer & Header */
 .bg-charcoal-blue {
   background-color: var(--charcoal-blue);
