@@ -7,7 +7,8 @@ import {
   technicalSkills,
   customerFeedback,
   categoryBtns,
-  allCertificates
+  allCertificates,
+  educationalBackground
 } from "./project_data.mjs";
 
 const projectCardEl = document.getElementById("project-card")
@@ -141,8 +142,22 @@ professionalExperience.map((item, key) => (
   <li class="mb-10 ms-8 bg-[#F9FAFB] p-5 rounded-xl shadow-sm hover:shadow-md ff-inter transition-all duration-300">
     <div class="absolute w-3 h-3 bg-[#3C83F6] rounded-full mt-1.5 -start-1.5 border border-[#3C83F6]"></div>
     <time class="text-xs font-semibold text-[#3C83F6]">${item.duration}</time>
-    <h3 class="text-lg font-bold text-[#020817]">${item.companyName}</h3>
-    <p class="text-md font-medium text-[#3C83F6]/80">${item.designation}</p>
+    <h3 class="text-md md:text-lg font-bold text-[#020817]">${item.companyName}</h3>
+    <p class="text-sm md:text-md font-medium text-[#3C83F6]/80">${item.designation}</p>
+  </li>
+  `
+))
+
+const educationEl = document.getElementById("education-section")
+
+educationalBackground.map((item, key) => (
+  educationEl.innerHTML +=
+  `
+  <li class="mb-10 ms-8 bg-[#F9FAFB] p-5 rounded-xl shadow-sm hover:shadow-md ff-inter transition-all duration-300">
+    <div class="absolute w-3 h-3 bg-[#3C83F6] rounded-full mt-1.5 -start-1.5 border border-[#3C83F6]"></div>
+    <time class="text-xs font-semibold text-[#3C83F6]">${item.duration}</time>
+    <h3 class="text-md md:text-lg font-bold text-[#020817]">${item.instituteName}</h3>
+    <p class="text-sm md:text-md font-medium text-[#3C83F6]/80">${item.level}</p>
   </li>
   `
 ))

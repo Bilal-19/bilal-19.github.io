@@ -295,6 +295,22 @@ const professionalExperience = [
   }
 ]
 
+
+const educationalBackground = [
+  {
+    id: 1,
+    instituteName: "NED University of Engineering & Technology",
+    level: "Bachelor of Science, Software Engineering.",
+    duration: "Oct 2019 - Aug 2023"
+  },
+  {
+    id: 2,
+    instituteName: "Islamia Government Science College",
+    level: "Engineering, Pre Engineering.",
+    duration: "Sept 2017 - May 2019"
+  }
+]
+
 const technicalSkills = [
   {
     id: 1,
@@ -524,5 +540,6 @@ export {
   technicalSkills,
   customerFeedback,
   categoryBtns,
-  allCertificates
+  allCertificates,
+  educationalBackground
 };
