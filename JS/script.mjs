@@ -17,16 +17,16 @@ function renderProject(projects) {
   return projects.forEach((val, index) => {
     const modalId = `modal-${index}`;
     projectCardEl.innerHTML += `
-      <div class="rounded-xl border-b-4 border-r-2 border-t-1 border-l-1 border-emerald-500 shadow-md mb-5 px-5 py-5 w-80 md:w-auto mx-auto bg-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div class="rounded-xl shadow-xl mb-5 px-5 py-5 w-80 md:w-auto mx-auto bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
           <img src="${val.projectmageSrc}" alt="${val.projectName}" class="rounded-md w-full object-cover transition-transform duration-300 hover:scale-105" />
             <div class="flex flex-row items-center justify-between pt-3 mb-3">
-                <h5 class="text-md md:text-xl font-semibold">${val.projectName}</h5>
+                <h5 class="text-md md:text-xl font-semibold text-[#020817]">${val.projectName}</h5>
             </div>
             <div>
-              <p class="mb-4 text-gray-300 leading-relaxed text-sm">${val.desc}</p>
-              <p class="mb-3">${val.technology.map(item => `<button class="bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded-md text-xs font-medium">${item}</button>`).join(" ")}</p>
+              <p class="mb-4 text-[#65758B] leading-relaxed text-sm">${val.desc}</p>
+              <p class="mb-3">${val.technology.map(item => `<button class="bg-[#3C83F6]/10 text-[#3C83F6] px-2 py-1 rounded-md text-xs font-medium">${item}</button>`).join(" ")}</p>
               ${val.websiteURL ? `<a href="${val.websiteURL}" target="_blank" class="bg-blue-600 text-white px-3 py-2 text-sm rounded-md hover:bg-blue-700 transition"><i class="fa-solid fa-globe"></i> Website</a>` : `` }
-              <a href="${val.githubURL}" target="_blank" class="bg-gray-700 text-white px-3 py-2 text-sm rounded-md hover:bg-gray-800 transition"><i class="fa-brands fa-github"></i> GitHub</a> 
+              <a href="${val.githubURL}" target="_blank" class="bg-gray-700 text-white px-3 py-2 text-sm rounded-md hover:bg-gray-600 transition"><i class="fa-brands fa-github"></i> GitHub</a> 
               ${val.videoURL ? `<a href="${val.videoURL}" target="_blank" class="bg-red-600 text-white px-3 py-2 text-sm rounded-md hover:bg-red-700 transition"><i class="fa-brands fa-youtube"></i> Demo</a>` : `` }
             </div>
           </div>
@@ -50,7 +50,7 @@ const projectCategoryForm = document.getElementById("project-category")
 categoryBtns.map((val, key) => {
   projectCategoryForm.innerHTML +=
     `
-  <button name="category" value="${val.btnValue}" class="category-btn hover:cursor-pointer text-white border-1 border-emerald-500 px-3 py-1 rounded-xl text-xs">${val.btnContent}</button>
+  <button name="category" value="${val.btnValue}" class="category-btn hover:cursor-pointer text-[#3C83F6] border-1 border-[#3C83F6] px-3 py-1 rounded-xl text-xs">${val.btnContent}</button>
   `
 })
 
