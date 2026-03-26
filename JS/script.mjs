@@ -26,9 +26,9 @@ function renderProject(projects) {
             <div>
               <p class="mb-4 text-[#65758B] leading-relaxed text-sm">${val.desc}</p>
               <p class="mb-3">${val.technology.map(item => `<button class="bg-[#3C83F6]/10 text-[#3C83F6] px-2 py-1 rounded-md text-xs font-medium">${item}</button>`).join(" ")}</p>
-              ${val.websiteURL ? `<a href="${val.websiteURL}" target="_blank" class="bg-blue-600 text-white px-3 py-2 text-sm rounded-md hover:bg-blue-700 transition"><i class="fa-solid fa-globe"></i> Website</a>` : `` }
+              ${val.websiteURL ? `<a href="${val.websiteURL}" target="_blank" class="bg-blue-600 text-white px-3 py-2 text-sm rounded-md hover:bg-blue-700 transition"><i class="fa-solid fa-globe"></i> Website</a>` : ``}
               <a href="${val.githubURL}" target="_blank" class="bg-gray-700 text-white px-3 py-2 text-sm rounded-md hover:bg-gray-600 transition"><i class="fa-brands fa-github"></i> GitHub</a> 
-              ${val.videoURL ? `<a href="${val.videoURL}" target="_blank" class="bg-red-600 text-white px-3 py-2 text-sm rounded-md hover:bg-red-700 transition"><i class="fa-brands fa-youtube"></i> Demo</a>` : `` }
+              ${val.videoURL ? `<a href="${val.videoURL}" target="_blank" class="bg-red-600 text-white px-3 py-2 text-sm rounded-md hover:bg-red-700 transition"><i class="fa-brands fa-youtube"></i> Demo</a>` : ``}
             </div>
           </div>
       </div>
@@ -66,22 +66,7 @@ projectCategoryForm.addEventListener("submit", (e) => {
   renderProject(filterProjects)
 })
 
-const skillsEl = document.getElementById("technicalSkills");
-technicalSkills.map((val, key) => {
-  skillsEl.innerHTML +=
-    `
-   <div class="w-80 md:w-1/4 mx-auto flex items-center justify-start my-5 bg-gray-800 px-3 py-2 rounded-md border-b-3 border-t-[0.5px] border-x-[0.5px] border-emerald-500">
-      <div class="mx-2">
-        <h5 class="font-medium text-lg text-emerald-500 mb-2">${val.category}</h5>
-        <div class="flex flex-wrap gap-2">
-          ${val.coreSkills.split(",").map(skill => 
-            `<span class="bg-emerald-500/20 text-light px-2 py-1 rounded text-xs">${skill.trim()}</span>`
-          ).join("")}
-      </div>
-        </div>
-    </div>
-  `
-})
+
 
 const priceEl = document.getElementById("pricingPackages")
 
@@ -251,8 +236,8 @@ $(document).ready(function () {
           delay(1500).
           fadeOut(3000)
 
-          // Reset form
-          $("#contact-form")[0].reset()
+        // Reset form
+        $("#contact-form")[0].reset()
 
       },
       error: function (data) {
@@ -268,4 +253,34 @@ $(document).ready(function () {
       }
     })
   })
+})
+
+const skillsEl = document.getElementById("technicalSkills");
+technicalSkills.map((val, key) => {
+  skillsEl.innerHTML +=
+    `
+   <div class="w-80 mx-auto md:w-2/5 flex items-center justify-center my-5 bg-[#F9FAFB] p-10 rounded-md border-1 border-[#E1E7EF] ff-inter">
+      <div>
+        <div class="flex flex-row items-center">
+          <div>
+            <img src='${val.imageAdd}' />
+          </div>
+          <div class='ml-2'>
+            <h5 class="font-bold text-md text-[#020817]">${val.category}</h5>
+            <p class="text-xs">${val.desc}</p>
+          </div>
+        </div>
+        <hr class='text-gray-200 my-5'>
+        <div class='grid grid-cols-3 gap-10'>
+          ${val.skilsList.map
+          (prop => `
+                      <div class='text-center'>
+                        <img src=${prop.imageRef} class='h-10 md:h-15 mx-auto' />
+                        <span class='text-xs md:text-xs'>${prop.label}</span>
+                      </div>
+            `).join("")}
+          </div>
+        </div>
+    </div>
+  `
 })

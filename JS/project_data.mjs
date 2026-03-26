@@ -315,20 +315,30 @@ const technicalSkills = [
   {
     id: 1,
     category: "Frontend Development",
-    coreSkills: "HTML, CSS, Bootstrap 5, Tailwind, JavaScript, jQuery",
-    imageAdd: "frontend.png"
+    desc: "Crafting beautiful user interfaces",
+    skilsList: [
+      { key: 1, label: "HTML", imageRef: "https://img.icons8.com/color/96/html-5--v1.png" },
+      { key: 2, label: "CSS", imageRef: "https://img.icons8.com/color/96/css3.png" },
+      { key: 3, label: "Bootstrap", imageRef: "https://img.icons8.com/color/96/bootstrap.png" },
+      { key: 4, label: "Tailwind CSS", imageRef: "https://img.icons8.com/color/96/tailwindcss.png" },
+      { key: 5, label: "JavaScript", imageRef: "https://img.icons8.com/color/96/javascript--v1.png" },
+      { key: 6, label: "React JS", imageRef: "https://img.icons8.com/color/96/react-native.png" },
+    ],
+    imageAdd: "/media/Icons/frontend.png"
   },
   {
     id: 2,
     category: "Backend Development",
-    coreSkills: "PHP, Laravel, MySQL",
-    imageAdd: "backend.png"
-  },
-  {
-    id: 3,
-    category: "Database & Cloud",
-    coreSkills: "MySQL, Hostinger",
-    imageAdd: "database.png"
+    desc: "Building robust server-side solutions",
+    skilsList: [
+      { key: 1, label: "PHP", imageRef: "https://img.icons8.com/officel/96/php-logo.png" },
+      { key: 2, label: "Laravel", imageRef: "https://img.icons8.com/fluency/96/laravel.png" },
+      { key: 3, label: "MySQL", imageRef: "https://img.icons8.com/color/96/mysql-logo.png" },
+      { key: 4, label: "REST API", imageRef: "https://img.icons8.com/color/96/api-settings.png" },
+      { key: 5, label: "Git", imageRef: "https://img.icons8.com/color/96/git.png" },
+      { key: 6, label: "Hostinger", imageRef: "https://img.icons8.com/color/96/domain.png" },
+    ],
+    imageAdd: "/media/Icons/backend.png"
   }
 ]
 
