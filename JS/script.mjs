@@ -178,7 +178,7 @@ function printStars(num) {
   return fillStars
 }
 
-
+/*
 const feedbackEl = document.getElementById("customerFeedback")
 customerFeedback.map((val, key) => {
   feedbackEl.innerHTML +=
@@ -197,7 +197,7 @@ customerFeedback.map((val, key) => {
   </div>
   `
 })
-
+*/
 
 // Certificate Section
 const certificateEl = document.getElementById("certificate-section")
