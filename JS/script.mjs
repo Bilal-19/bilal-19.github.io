@@ -271,10 +271,10 @@ technicalSkills.map((val, key) => {
           </div>
         </div>
         <hr class='text-gray-200 my-5'>
-        <div class='grid grid-cols-3 gap-3 md:gap-10'>
+        <div class='grid grid-cols-3 gap-3 md:gap-8'>
           ${val.skilsList.map
           (prop => `
-                      <div class='text-center bg-[#3C83F6]/10 rounded-sm p-3 shadow-md hover:bg-[#3C83F6]/20 hover:cursor-pointer'>
+                      <div class='text-center bg-[#F9FAFB] rounded-sm shadow-md hover:cursor-pointer border-1 border-[#E1E7EF] p-2'>
                         <img src=${prop.imageRef} class='h-10 md:h-15 mx-auto' />
                         <span class='text-[10px] none md:text-xs'>${prop.label}</span>
                       </div>
