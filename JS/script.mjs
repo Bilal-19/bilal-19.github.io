@@ -16,7 +16,6 @@ const projectCardEl = document.getElementById("project-card")
 function renderProject(projects) {
   projectCardEl.innerHTML = ''
   return projects.forEach((val, index) => {
-    const modalId = `modal-${index}`;
     projectCardEl.innerHTML += `
       <div class="rounded-xl shadow-xl mb-5 px-5 py-5 w-80 md:w-auto mx-auto bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
           <img src="${val.projectmageSrc}" alt="${val.projectName}" class="rounded-md w-full object-cover transition-transform duration-300 hover:scale-105" />
@@ -35,7 +34,7 @@ function renderProject(projects) {
   `;
   });
 }
-renderProject(projectData)
+renderProject(projectData.slice(0,3))
 
 window.openModal = function (id) {
   document.getElementById(id).classList.remove("hidden")
@@ -153,7 +152,7 @@ const FaqEl = document.getElementById("ques-ans")
 FAQs.map((val, key) => (
   FaqEl.innerHTML +=
   `
-  <div class="w-80 mx-auto md:w-auto py-5 px-8 my-5 rounded-2xl bg-[#F9FAFB] border border-[#E1E7EF]">
+  <div class="w-80 mx-auto md:w-auto py-5 px-4 md:px-8 my-5 rounded-2xl bg-[#F9FAFB] border border-[#E1E7EF]">
       <div class="flex justify-between toggle-faq hover:cursor-pointer">
           <h4 class="font-medium">${val.id}. ${val.ques}</h4>
           <i class="fa-solid fa-caret-down hover:cursor-pointer"></i>
@@ -201,7 +200,7 @@ customerFeedback.map((val, key) => {
 
 // Certificate Section
 const certificateEl = document.getElementById("certificate-section")
-allCertificates.map((val, key) => {
+allCertificates.slice(0,3).map((val, key) => {
   certificateEl.innerHTML +=
     `
   <div class="mb-5 rounded-2xl bg-[#F9FAFB] border border-[#E1E7EF]">
