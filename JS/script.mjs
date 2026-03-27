@@ -73,24 +73,25 @@ const priceEl = document.getElementById("pricingPackages")
 pricingPackages.map((val, key) => {
   priceEl.innerHTML +=
     `
-  <div class="m-3 border shadow-md rounded-lg hover:scale-102 duration-100 p-5 ${val.id == 2 ? 'border-emerald-700' : 'border-[#E1E7EF]'} bg-[#FFFFFF]">
-    <img src="${val.imgPath}" class="h-10 mx-auto mb-3 brightness-0 invert-100" alt=${val.packageName}/>
-    <h5 class="text-[#020817] font-bold text-xl">${val.packageName}</h5>
-    <p class="mb-3 text-[#65758B] text-sm">${val.description}</p>
-    <p class='my-3'><span class="font-extrabold text-2xl">$${val.newPrice} </span> <span class='text-[#65758B] text-sm'>/ project</span></p>
-    <div class='flex flex-row md:flex-col space-y-1'>
-    <p class='text-[#65758B] text-sm inline-flex items-center'><img src='/media/Icons/time.png' class='mr-3' /> ${val.timeFrame} business days</p>
-    <p class='text-[#65758B] text-sm inline-flex items-center'><img src='/media/Icons/revision.png' class='mr-3' /> ${val.revisions} free revisions</p>
+  <div class="m-3 border shadow-md rounded-2xl hover:scale-105 relative overflow-hidden duration-100 p-5 ${val.id == 2 ? 'pt-15 border-[#3C83F6]' : 'border-[#E1E7EF]'} bg-[#FFFFFF]">
+    ${val.id == 2 ? '<p class="bg-[#3C83F6] text-white top-0 right-0 rounded-t-lg text-center py-2 mb-3 absolute w-full uppercase text-sm font-bold">Most Popular</p>' : ''}
+    <h5 class="text-[#020817] font-bold text-lg md:text-xl">${val.packageName}</h5>
+    <p class="mb-3 text-[#65758B] text-xs md:text-sm">${val.description}</p>
+    <p class='my-5'><span class="font-extrabold text-2xl">$${val.newPrice} </span> <span class='text-[#65758B] text-xs md:text-sm'>/ project</span></p>
+    <div class='flex flex-col space-y-2'>
+      <p class='text-[#65758B] text-xs md:text-sm inline-flex items-center'><img src='/media/Icons/time.png' class='mr-1 md:mr-3' /> ${val.timeFrame} business days</p>
+      <p class='text-[#65758B] text-xs md:text-sm inline-flex items-center'><img src='/media/Icons/revision.png' class='mr-1 md:mr-3' /> ${val.revisions} free revisions</p>
+    </div>
     <hr class='text-[#E1E7EF] my-5'>
-    <h6 class="font-semibold text-[#020817]">Key Features:</h6>
-    <ul class='flex flex-col space-y-1'>
+    <h6 class="font-semibold text-[#020817] mb-2">Key Features:</h6>
+    <ul class='flex flex-col'>
     ${val.keyFeatures.map(value =>
       `
-      <li class="mb-1 text-[#65758B] text-sm inline-flex items-center"><img src='/media/Icons/tick.png'/ class='mr-3'> ${value}</li>
+      <li class="mb-2 text-[#65758B] text-xs md:text-sm inline-flex items-center"><img src='/media/Icons/tick.png' class='mr-1 md:mr-3'/> ${value}</li>
       `
     ).join("")}
     </ul>
-    <button class='bg-[#F9FAFB] text-[#3C83F6] border-[#3C83F6] border-1 py-2 rounded-lg mt-5'>Get Started</button>
+    <button class='w-full text-sm border py-2 rounded-lg hover:cursor-pointer mt-5 ${val.id == 2 ? 'text-[#F9FAFB] bg-[#3C83F6] border-[#3C83F6]' : 'bg-[#F9FAFB] text-[#3C83F6] border-[#3C83F6]'}'>Get Started</button>
   </div>
   `
 })
