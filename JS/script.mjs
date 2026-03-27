@@ -73,25 +73,24 @@ const priceEl = document.getElementById("pricingPackages")
 pricingPackages.map((val, key) => {
   priceEl.innerHTML +=
     `
-  <div class="m-3 border shadow-md rounded-lg hover:scale-102 duration-100 p-5 ${val.id == 2 ? 'border-emerald-700' : 'border-emerald-500'} border-b-4 border-b-emerald-500 bg-gray-800">
+  <div class="m-3 border shadow-md rounded-lg hover:scale-102 duration-100 p-5 ${val.id == 2 ? 'border-emerald-700' : 'border-[#E1E7EF]'} bg-[#FFFFFF]">
     <img src="${val.imgPath}" class="h-10 mx-auto mb-3 brightness-0 invert-100" alt=${val.packageName}/>
-    <h5 class="text-center text-lg md:text-2xl font-medium mb-3 text-emerald-500">${val.packageName}</h5>
-    <div class="flex items-center justify-center mb-5">
-      <button class="bg-emerald-500 text-white text-sm px-3 py-2 rounded-full mx-auto block">Starting at $${val.newPrice} / project</button>
-    </div>
-    <p class="mb-3">${val.description}</p>
-    <div class="mb-3 flex flex-col md:flex-row justify-between">
-      <p><i class="fa-solid fa-calendar-days"></i> ${val.timeFrame} business days</p>
-      <p><i class="fa-solid fa-repeat"></i> ${val.revisions} free revisions</p>
-    </div>
-    <h6 class="font-medium">Key Features:</h6>
-    <ul>
+    <h5 class="text-[#020817] font-bold text-xl">${val.packageName}</h5>
+    <p class="mb-3 text-[#65758B] text-sm">${val.description}</p>
+    <p class='my-3'><span class="font-extrabold text-2xl">$${val.newPrice} </span> <span class='text-[#65758B] text-sm'>/ project</span></p>
+    <div class='flex flex-row md:flex-col space-y-1'>
+    <p class='text-[#65758B] text-sm inline-flex items-center'><img src='/media/Icons/time.png' class='mr-3' /> ${val.timeFrame} business days</p>
+    <p class='text-[#65758B] text-sm inline-flex items-center'><img src='/media/Icons/revision.png' class='mr-3' /> ${val.revisions} free revisions</p>
+    <hr class='text-[#E1E7EF] my-5'>
+    <h6 class="font-semibold text-[#020817]">Key Features:</h6>
+    <ul class='flex flex-col space-y-1'>
     ${val.keyFeatures.map(value =>
       `
-      <li class="mb-1"><i class="fa-solid fa-check"></i> ${value}</li>
+      <li class="mb-1 text-[#65758B] text-sm inline-flex items-center"><img src='/media/Icons/tick.png'/ class='mr-3'> ${value}</li>
       `
     ).join("")}
     </ul>
+    <button class='bg-[#F9FAFB] text-[#3C83F6] border-[#3C83F6] border-1 py-2 rounded-lg mt-5'>Get Started</button>
   </div>
   `
 })
