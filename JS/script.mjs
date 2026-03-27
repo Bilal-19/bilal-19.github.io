@@ -152,12 +152,12 @@ const FaqEl = document.getElementById("ques-ans")
 FAQs.map((val, key) => (
   FaqEl.innerHTML +=
   `
-  <div class="w-80 mx-auto md:w-auto p-5 my-5 rounded-md border-b-3 border-t-[0.5px] border-x-[0.5px] border-emerald-500">
+  <div class="w-80 mx-auto md:w-auto py-5 px-8 my-5 rounded-2xl bg-[#F9FAFB] border border-[#E1E7EF]">
       <div class="flex justify-between toggle-faq hover:cursor-pointer">
           <h4 class="font-medium">${val.id}. ${val.ques}</h4>
           <i class="fa-solid fa-caret-down hover:cursor-pointer"></i>
       </div>
-      <p class="mt-3 toggle-answer text-sm hidden">${val.answer}</p>
+      <p class="mt-3 toggle-answer text-[#65758B] text-xs md:text-sm hidden">${val.answer}</p>
   </div>
   `
 ))
