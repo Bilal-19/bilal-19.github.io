@@ -320,7 +320,7 @@ const technicalSkills = [
       { key: 1, label: "HTML", imageRef: "https://img.icons8.com/color/96/html-5--v1.png" },
       { key: 2, label: "CSS", imageRef: "https://img.icons8.com/color/96/css3.png" },
       { key: 3, label: "Bootstrap", imageRef: "https://img.icons8.com/color/96/bootstrap.png" },
-      { key: 4, label: "Tailwind CSS", imageRef: "https://img.icons8.com/color/96/tailwindcss.png" },
+      { key: 4, label: "Tailwind", imageRef: "https://img.icons8.com/color/96/tailwindcss.png" },
       { key: 5, label: "JavaScript", imageRef: "https://img.icons8.com/color/96/javascript--v1.png" },
       { key: 6, label: "React JS", imageRef: "https://img.icons8.com/color/96/react-native.png" },
     ],

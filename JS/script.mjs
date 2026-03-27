@@ -259,7 +259,7 @@ const skillsEl = document.getElementById("technicalSkills");
 technicalSkills.map((val, key) => {
   skillsEl.innerHTML +=
     `
-   <div class="w-80 mx-auto md:w-2/5 flex items-center justify-center my-5 bg-[#F9FAFB] p-10 rounded-md border-1 border-[#E1E7EF] ff-inter">
+   <div class="w-80 mx-auto md:w-2/5 my-5 bg-[#F9FAFB] p-10 rounded-md border-1 border-[#E1E7EF] ff-inter">
       <div>
         <div class="flex flex-row items-center">
           <div>
@@ -271,12 +271,12 @@ technicalSkills.map((val, key) => {
           </div>
         </div>
         <hr class='text-gray-200 my-5'>
-        <div class='grid grid-cols-3 gap-10'>
+        <div class='grid grid-cols-3 gap-3 md:gap-10'>
           ${val.skilsList.map
           (prop => `
-                      <div class='text-center'>
+                      <div class='text-center bg-[#3C83F6]/10 rounded-sm p-3 shadow-md hover:bg-[#3C83F6]/20 hover:cursor-pointer'>
                         <img src=${prop.imageRef} class='h-10 md:h-15 mx-auto' />
-                        <span class='text-xs md:text-xs'>${prop.label}</span>
+                        <span class='text-[10px] none md:text-xs'>${prop.label}</span>
                       </div>
             `).join("")}
           </div>
