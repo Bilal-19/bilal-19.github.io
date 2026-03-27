@@ -96,7 +96,7 @@ pricingPackages.map((val, key) => {
   `
 })
 
-
+/*
 const blogEl = document.getElementById("blog-section")
 blogs.map((val, key) => {
   blogEl.innerHTML +=
@@ -111,6 +111,7 @@ blogs.map((val, key) => {
   </div>
   `
 })
+*/
 
 // Adding navbar toggle functionality
 
@@ -203,10 +204,13 @@ const certificateEl = document.getElementById("certificate-section")
 allCertificates.map((val, key) => {
   certificateEl.innerHTML +=
     `
-  <div class="mb-5">
-    <img src="${val.imagePath}" class="rounded-md border-2 border-white-500 md:h-75 fit-content md:w-100 object-fit-content"/>
-    <p class="font-semibold mt-1"><i class="fa-solid fa-certificate"></i> ${val.title}</p>
-    <p class="text-sm text-gray-400">${val.issuingOrganization} • ${val.year}</p>
+  <div class="mb-5 rounded-2xl bg-[#F9FAFB] border border-[#E1E7EF]">
+    <img src="${val.imagePath}" class="md:h-75 fit-content md:w-100 object-fit-content"/>
+    <p class="text-[#020817] text-sm font-bold pt-2 px-3 inline-flex items-center"><img src="/media/Icons/badge.png" class="mr-1" /> ${val.title}</p>
+    <div class='flex justify-between items-center pt-1 pb-2 px-3'>
+      <p class="text-xs text-[#65758B]">${val.issuingOrganization}</p>
+      <p class="text-xs text-[#3C83F6] bg-[#3C83F6]/10 font-medium px-2 py-1 rounded-xl">${val.year}</p>
+    </div>
   </div>
   `
 })
