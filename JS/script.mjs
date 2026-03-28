@@ -78,15 +78,15 @@ pricingPackages.map((val, key) => {
     <p class="mb-3 text-[#65758B] text-xs md:text-sm">${val.description}</p>
     <p class='my-5'><span class="font-extrabold text-2xl">$${val.newPrice} </span> <span class='text-[#65758B] text-xs md:text-sm'>/ project</span></p>
     <div class='flex flex-col space-y-2'>
-      <p class='text-[#65758B] text-xs md:text-sm inline-flex items-center'><img src='/media/Icons/time.png' class='mr-1 md:mr-3' /> ${val.timeFrame} business days</p>
-      <p class='text-[#65758B] text-xs md:text-sm inline-flex items-center'><img src='/media/Icons/revision.png' class='mr-1 md:mr-3' /> ${val.revisions} free revisions</p>
+      <p class='text-[#65758B] text-xs md:text-sm inline-flex items-center'><i class='fa-regular fa-clock mr-1 md:mr-3 text-[#3C83F6]'></i> ${val.timeFrame} business days</p>
+      <p class='text-[#65758B] text-xs md:text-sm inline-flex items-center'><i class='fa-solid fa-rotate-left mr-1 md:mr-3 text-[#3C83F6]'></i> ${val.revisions} free revisions</p>
     </div>
     <hr class='text-[#E1E7EF] my-5'>
     <h6 class="font-semibold text-[#020817] mb-2">Key Features:</h6>
     <ul class='flex flex-col'>
     ${val.keyFeatures.map(value =>
       `
-      <li class="mb-2 text-[#65758B] text-xs md:text-sm inline-flex items-center"><img src='/media/Icons/tick.png' class='mr-1 md:mr-3'/> ${value}</li>
+      <li class="mb-2 text-[#65758B] text-xs md:text-sm inline-flex items-center"><i class='fa-solid fa-check mr-1 md:mr-3 text-[#3C83F6]'></i> ${value}</li>
       `
     ).join("")}
     </ul>
@@ -205,7 +205,7 @@ allCertificates.slice(0,3).map((val, key) => {
     `
   <div class="mb-5 rounded-2xl bg-[#F9FAFB] border border-[#E1E7EF]">
     <img src="${val.imagePath}" class="md:h-75 fit-content md:w-100 object-fit-content"/>
-    <p class="text-[#020817] text-sm font-bold pt-2 px-3 inline-flex items-center"><img src="/media/Icons/badge.png" class="mr-1" /> ${val.title}</p>
+    <p class="text-[#020817] text-sm font-bold pt-2 px-3 inline-flex items-center"><i class='fa-solid fa-award mr-1 text-[#3C83F6]'></i> ${val.title}</p>
     <div class='flex justify-between items-center pt-1 pb-2 px-3'>
       <p class="text-xs text-[#65758B]">${val.issuingOrganization}</p>
       <p class="text-xs text-[#3C83F6] bg-[#3C83F6]/10 font-medium px-2 py-1 rounded-xl">${val.year}</p>
@@ -266,7 +266,7 @@ technicalSkills.map((val, key) => {
       <div>
         <div class="flex flex-row items-center">
           <div>
-            <img src='${val.imageAdd}' />
+            ${val.imageAdd}
           </div>
           <div class='ml-2'>
             <h5 class="font-bold text-md text-[#020817]">${val.category}</h5>

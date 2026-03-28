@@ -324,7 +324,7 @@ const technicalSkills = [
       { key: 5, label: "JavaScript", imageRef: "https://img.icons8.com/color/96/javascript--v1.png" },
       { key: 6, label: "React JS", imageRef: "https://img.icons8.com/color/96/react-native.png" },
     ],
-    imageAdd: "/media/Icons/frontend.png"
+    imageAdd: "<i class='fa-solid fa-globe mr-2 text-[#3C83F6] bg-[#3C83F6]/10 p-3 rounded-md'></i>"
   },
   {
     id: 2,
@@ -338,7 +338,7 @@ const technicalSkills = [
       { key: 5, label: "Git", imageRef: "https://img.icons8.com/color/96/git.png" },
       { key: 6, label: "Hostinger", imageRef: "https://img.icons8.com/color/96/domain.png" },
     ],
-    imageAdd: "/media/Icons/backend.png"
+    imageAdd: "<i class='fa-solid fa-server mr-2 text-[#3C83F6] bg-[#3C83F6]/10 p-3 rounded-md'></i>"
   }
 ]
 
