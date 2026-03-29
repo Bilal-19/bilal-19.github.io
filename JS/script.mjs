@@ -203,7 +203,7 @@ allCertificates.slice(0,3).map((val, key) => {
     `
   <div class="mb-5 rounded-2xl bg-[#F9FAFB] border border-[#E1E7EF]">
     <img src="${val.imagePath}" class="md:h-75 fit-content md:w-100 object-fit-content"/>
-    <p class="text-[#020817] text-sm font-bold pt-2 px-3 inline-flex items-center"><i class='fa-solid fa-award mr-1 text-[#3C83F6]'></i> ${val.title}</p>
+    <p class="text-[#020817] text-sm font-bold pt-2 px-3 items-center"><i class='fa-solid fa-award mr-1 text-[#3C83F6]'></i> ${val.title}</p>
     <div class='flex justify-between items-center pt-1 pb-2 px-3'>
       <p class="text-xs text-[#65758B]">${val.issuingOrganization}</p>
       <p class="text-xs text-[#3C83F6] bg-[#3C83F6]/10 font-medium px-2 py-1 rounded-xl">${val.year}</p>

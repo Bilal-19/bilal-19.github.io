@@ -443,129 +443,143 @@ const categoryBtns = [
 const allCertificates = [
   {
     id: 1,
-    title: "Soft Skills Training",
-    issuingOrganization: "Overseas Employment Corporation, Pakistan",
-    year: "2025",
-    imagePath: "../media/certificates/oec.jpg"
+    title: "MIT Informatics Tournament",
+    issuingOrganization: "Easy Learning Online Institute",
+    year: "2026",
+    imagePath: "media/certificates/mit_2026_participation.jpg"
   },
   {
     id: 2,
-    title: "Introduction to Artificial Intelligence",
-    issuingOrganization: "Coursera",
-    year: "2025",
-    imagePath: "../media/certificates/introduction_to_ai.jpg"
+    title: "Startup Strategies & Entrepreneurship",
+    issuingOrganization: "DigiSkills Training Program",
+    year: "2026",
+    imagePath: "media/certificates/startup_strategies.jpg"
   },
   {
     id: 3,
-    title: "Digital Marketing",
-    issuingOrganization: "Innovista Learn Easy",
+    title: "Soft Skills Training",
+    issuingOrganization: "Overseas Employment Corporation, Pakistan",
     year: "2025",
-    imagePath: "../media/certificates/digital_marketing_innovista.jpg"
+    imagePath: "media/certificates/oec.jpg"
   },
   {
     id: 4,
-    title: "Search Engine Optimization",
-    issuingOrganization: "Innovista Learn Easy",
-    year: "2024",
-    imagePath: "../media/certificates/seo_innovista.webp"
+    title: "Introduction to Artificial Intelligence",
+    issuingOrganization: "Coursera",
+    year: "2025",
+    imagePath: "media/certificates/introduction_to_ai.jpg"
   },
   {
     id: 5,
-    title: "Freelancing",
-    issuingOrganization: "DigiSkills Training Program",
-    year: "2024",
-    imagePath: "../media/certificates/digiskills_freelancing.webp"
+    title: "Digital Marketing",
+    issuingOrganization: "Innovista Learn Easy",
+    year: "2025",
+    imagePath: "media/certificates/digital_marketing_innovista.jpg"
   },
   {
     id: 6,
-    title: "Agile Software Development",
-    issuingOrganization: "Linkedin Learning",
-    year: "2023",
-    imagePath: "../media/certificates/agile_software_development.webp"
+    title: "Search Engine Optimization",
+    issuingOrganization: "Innovista Learn Easy",
+    year: "2024",
+    imagePath: "media/certificates/seo_innovista.webp"
   },
   {
     id: 7,
-    title: "Become a Full Stack Web Developer",
-    issuingOrganization: "Linkedin Learning",
-    year: "2023",
-    imagePath: "../media/certificates/linkedin_fullstackwebdev.webp"
+    title: "Freelancing",
+    issuingOrganization: "DigiSkills Training Program",
+    year: "2024",
+    imagePath: "media/certificates/digiskills_freelancing.webp"
   },
   {
     id: 8,
-    title: "Intro to Software Engineering Job SImulation",
-    issuingOrganization: "Forage - Cisco",
+    title: "Agile Software Development",
+    issuingOrganization: "Linkedin Learning",
     year: "2023",
-    imagePath: "../media/certificates/software_engineering_simulation_cisco.jpg"
+    imagePath: "media/certificates/agile_software_development.webp"
   },
   {
     id: 9,
-    title: "Introduction to Software Engineering Job SImulation",
-    issuingOrganization: "Forage - Commonwealth Bank",
+    title: "Become a Full Stack Web Developer",
+    issuingOrganization: "Linkedin Learning",
     year: "2023",
-    imagePath: "../media/certificates/software_engineering_simulation.jpg"
+    imagePath: "media/certificates/linkedin_fullstackwebdev.webp"
   },
   {
     id: 10,
-    title: "Developing a Learning Mindset",
-    issuingOrganization: "Linkedin Learning",
+    title: "Intro to Software Engineering Job SImulation",
+    issuingOrganization: "Forage - Cisco",
     year: "2023",
-    imagePath: "../media/certificates/LearningMindset.webp"
+    imagePath: "media/certificates/software_engineering_simulation_cisco.jpg"
   },
   {
     id: 11,
-    title: "Nano Tips for Peak Performance with Shadé Zahrai",
-    issuingOrganization: "Linkedin Learning",
+    title: "Introduction to Software Engineering Job SImulation",
+    issuingOrganization: "Forage - Commonwealth Bank",
     year: "2023",
-    imagePath: "../media/certificates/linkedin_peak_performance.webp"
+    imagePath: "media/certificates/software_engineering_simulation.jpg"
   },
   {
     id: 12,
-    title: "Accelarating Your Career with personal Branding",
+    title: "Developing a Learning Mindset",
     issuingOrganization: "Linkedin Learning",
     year: "2023",
-    imagePath: "../media/certificates/personal_branding.webp"
+    imagePath: "media/certificates/LearningMindset.webp"
   },
   {
     id: 13,
-    title: "User Experience in Web 3.0 Design",
-    issuingOrganization: "Google Developer Students Club",
-    year: "2022",
-    imagePath: "../media/certificates/GDSC_Web3.webp"
+    title: "Nano Tips for Peak Performance with Shadé Zahrai",
+    issuingOrganization: "Linkedin Learning",
+    year: "2023",
+    imagePath: "media/certificates/linkedin_peak_performance.webp"
   },
   {
     id: 14,
-    title: "Microsoft Azure Fundamental Workshop",
-    issuingOrganization: "Microsoft Learn Student Ambassador",
-    year: "2022",
-    imagePath: "../media/certificates/MLSA_Azure_Session.webp"
+    title: "Accelarating Your Career with personal Branding",
+    issuingOrganization: "Linkedin Learning",
+    year: "2023",
+    imagePath: "media/certificates/personal_branding.webp"
   },
   {
     id: 15,
-    title: "Web Design and Development Intern",
-    issuingOrganization: "The Sparks Foundation",
+    title: "User Experience in Web 3.0 Design",
+    issuingOrganization: "Google Developer Students Club",
     year: "2022",
-    imagePath: "../media/certificates/web_dev_internship_tsf.png"
+    imagePath: "media/certificates/GDSC_Web3.webp"
   },
   {
     id: 16,
-    title: "Introduction to Cybersecurity",
-    issuingOrganization: "Cicso Networking Academy",
+    title: "Microsoft Azure Fundamental Workshop",
+    issuingOrganization: "Microsoft Learn Student Ambassador",
     year: "2022",
-    imagePath: "../media/certificates/cybersecurity_certificate.jpg"
+    imagePath: "media/certificates/MLSA_Azure_Session.webp"
   },
   {
     id: 17,
-    title: "Self Defence Workshop",
-    issuingOrganization: "UIT Ethics Society",
-    year: "2021",
-    imagePath: "../media/certificates/self_defence_workshop.jpg"
+    title: "Web Design and Development Intern",
+    issuingOrganization: "The Sparks Foundation",
+    year: "2022",
+    imagePath: "media/certificates/web_dev_internship_tsf.png"
   },
   {
     id: 18,
+    title: "Introduction to Cybersecurity",
+    issuingOrganization: "Cicso Networking Academy",
+    year: "2022",
+    imagePath: "media/certificates/cybersecurity_certificate.jpg"
+  },
+  {
+    id: 19,
+    title: "Self Defence Workshop",
+    issuingOrganization: "UIT Ethics Society",
+    year: "2021",
+    imagePath: "media/certificates/self_defence_workshop.jpg"
+  },
+  {
+    id: 20,
     title: "Financial Literacy Training Program",
     issuingOrganization: "National Financial Literacy Program For Youth",
     year: "2020",
-    imagePath: "../media/certificates/financial_literacy_training_program.jpg"
+    imagePath: "media/certificates/financial_literacy_training_program.jpg"
   }
 ]
 
