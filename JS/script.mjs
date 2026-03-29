@@ -88,7 +88,7 @@ pricingPackages.map((val, key) => {
       `
     ).join("")}
     </ul>
-    <button class='w-full text-sm border py-2 rounded-lg hover:cursor-pointer mt-5 ${val.id == 2 ? 'text-[#F9FAFB] bg-[#3C83F6] border-[#3C83F6]' : 'bg-[#F9FAFB] text-[#3C83F6] border-[#3C83F6]'}'>Get Started</button>
+    <a href='#contact' class='w-full block text-center text-sm border py-2 rounded-lg hover:cursor-pointer mt-5 ${val.id == 2 ? 'text-[#F9FAFB] bg-[#3C83F6] border-[#3C83F6]' : 'bg-[#F9FAFB] text-[#3C83F6] border-[#3C83F6]'}'>Get Started</a>
   </div>
   `
 })
