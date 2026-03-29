@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bilal Muhammad Yousuf | Full Stack Developer</title>
+
+    <meta name="description"
+        content="Full Stack Developer specializing in React JS & Laravel. Creating dynamic, responsive, and scalable web solutions.">
+
+    <meta name="keywords"
+        content="Full Stack Developer, Web Developer, React JS, Laravel, Software Developer, Portfolio, Hire Developer">
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </noscript>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./media/images/favicon.png">
+
+    <!-- Facebook Open Graph Tags -->
+    <meta property="og:title" content="Bilal Muhammad Yousuf - Full Stack Developer" />
+    <meta property="og:description"
+        content="I build dynamic, responsive websites and scalable web applications using React JS, Laravel & MySQL." />
+    <meta property="og:image" content="https://bilal-19.github.io/media/images/website_preview.png" />
+    <meta property="og:url" content="https://bilal-19.github.io" />
+    <meta property="og:type" content="website" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body style="background: linear-gradient(135deg, #8CB6F9 0%, #F5F8FE 50%, #8DB6FA 100%);">
+    <!-- Header -->
+     <div
+        class="w-full  text-white flex flex-col md:flex-row justify-between md:items-center h-fit py-4 shadow-md bg-[#0F1729] text-[#F9FAFB]">
+        <div class="flex items-center justify-between ml-2">
+            <a href="https://bilal-19.github.io/" class="ff-amsterdam-one text-sm">Bilal Muhammad Yousuf</a>
+            <button aria-label="toggle-button"
+                class="sm:block md:hidden mx-5 inline-flex size-10 items-center justify-center transition hover:cursor-pointer rounded-md text-[#F9FAFB] bg-[#0F1729]/10"
+                id="menu-toggle" aria-controls="navbar-default" aria-expanded="false">
+                <i class="fas fa-bars text-md"></i>
+            </button>
+        </div>
+
+        <div class="flex flex-col md:flex-row mx-5 md:m-0 space-x-10 hidden md:block opacity-70" id="navbar-default">
+            <a href="#projects"
+                class="hover:underline underline-offset-4 text-xs md:text-base my-1 md:my-0">Projects</a>
+            <a href="#experience"
+                class="hover:underline underline-offset-4 text-xs md:text-base my-1 md:my-0">Experience</a>
+            <a href="#faqs" class="hover:underline underline-offset-4 text-xs md:text-base my-1 md:my-0">FAQs</a>
+            <a href="#pricing" class="hover:underline underline-offset-4 text-xs md:text-base my-1 md:my-0">Pricing</a>
+            <a href="#certificate-section"
+                class="hover:underline underline-offset-4 text-xs md:text-base my-1 md:my-0">Certificates</a>
+            <a href="#contact"
+                class="hover:underline underline-offset-4 text-xs md:text-base my-1 md:my-0 block md:hidden">Contact</a>
+        </div>
+
+        <div class="mx-5 space-x-4 hidden md:block">
+            <a class="bg-[#3C83F6] px-3 py-1 rounded-md hover:cursor-pointer inline-flex items-center"
+                aria-label="contact-us" href="./media/Bilal - Resume.pdf" download><i
+                    class="fa-solid fa-download mr-1 fa-xs"></i> Resume</a>
+        </div>
+    </div>
+
+
+    <div class="w-[90%] mx-auto my-5 md:my-20" id="render-project"></div>
+    <script type="module" >
+        // Get ID from URL
+        const params = new URLSearchParams(window.location.search);
+        const project_id = params.get("id");
+        import { projectData } from "/JS/project_data.mjs";
+
+        const project = projectData.find(data => data.id == project_id)
+        console.log(project)
+
+        const renderProjectEl = document.getElementById("render-project");
+
+        renderProjectEl.innerHTML = 
+        `
+        <img src='${project.projectmageSrc}' class=' border-0.5 border-[#65758B] rounded-md'/>
+        <h2 class="text-md md:text-xl text-[#020817] my-3 ff-inter font-bold">${project.projectName}</h2>
+        <p class="text-[#65758B] ff-inter text-xs md:text-base my-3">${project.desc}</p>
+        <h2 class="text-md md:text-xl text-[#020817] ff-inter font-bold my-3">Technology</h2>
+        <p class="mb-3">${project.technology.map(item => `<button class="bg-[#3C83F6] text-white px-2 py-1 rounded-md text-xs font-medium my-3">${item}</button>`).join(" ")}</p>
+        ${project.websiteURL ? `<a href="${project.websiteURL}" target="_blank" class="bg-blue-600 text-white px-3 py-2 text-sm rounded-md hover:bg-blue-700 transition"><i class="fa-solid fa-globe"></i> Website</a>` : ``}
+        <a href="${project.githubURL}" target="_blank" class="bg-gray-700 text-white px-3 py-2 text-sm rounded-md hover:bg-gray-600 transition"><i class="fa-brands fa-github"></i> GitHub</a> 
+        ${project.videoURL ? `<a href="${project.videoURL}" target="_blank" class="bg-red-600 text-white px-3 py-2 text-sm rounded-md hover:bg-red-700 transition"><i class="fa-brands fa-youtube"></i> Demo</a>` : ``}
+        `
+    </script>
+
+    <div class="w-full text-white bg-gray-800 border-b border-[#3C83F6]">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="p-5 md:p-15">
+                    <a href="https://bilal-19.github.io/" class="ff-amsterdam-one">
+                        Bilal Muhammad Yousuf
+                    </a>
+                    <p class="mt-10">
+                        Building digital solutions with passion and precision.
+                    </p>
+                </div>
+
+                <div class="p-5 md:p-15 flex flex-col">
+                    <h5 class="text-md mb-5 font-medium">Quick Links</h5>
+                    <a href="#projects" class="text-sm mb-2">Projects</a>
+                    <a href="#pricing" class="text-sm mb-2">Price</a>
+                    <a href="#faqs" class="text-sm mb-2">FAQs</a>
+                    <a href="#contact" class="text-sm mb-2">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto">
+            <hr class="text-[#3C83F6]">
+        </div>
+
+        <div class="container mx-auto py-5">
+            <p class="text-center text-sm">&copy; 2023 - 2026 Developed by Bilal Muhammad Yousuf. All Right
+                Reserved.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

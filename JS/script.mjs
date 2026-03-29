@@ -24,10 +24,8 @@ function renderProject(projects) {
             </div>
             <div>
               <p class="mb-4 text-[#65758B] leading-relaxed text-sm">${val.desc}</p>
-              <p class="mb-3">${val.technology.map(item => `<button class="bg-[#3C83F6]/10 text-[#3C83F6] px-2 py-1 rounded-md text-xs font-medium">${item}</button>`).join(" ")}</p>
-              ${val.websiteURL ? `<a href="${val.websiteURL}" target="_blank" class="bg-blue-600 text-white px-3 py-2 text-sm rounded-md hover:bg-blue-700 transition"><i class="fa-solid fa-globe"></i> Website</a>` : ``}
-              <a href="${val.githubURL}" target="_blank" class="bg-gray-700 text-white px-3 py-2 text-sm rounded-md hover:bg-gray-600 transition"><i class="fa-brands fa-github"></i> GitHub</a> 
-              ${val.videoURL ? `<a href="${val.videoURL}" target="_blank" class="bg-red-600 text-white px-3 py-2 text-sm rounded-md hover:bg-red-700 transition"><i class="fa-brands fa-youtube"></i> Demo</a>` : ``}
+              <p class="mb-5">${val.technology.map(item => `<button class="bg-[#3C83F6]/10 text-[#3C83F6] px-2 py-1 rounded-md text-xs font-medium">${item}</button>`).join(" ")}</p>
+              <a href='/project_detail.html?id=${val.id}' target='_blank' class='bg-[#F9FAFB] border border-[#3C83F6] text-[#3C83F6] text-sm font-medium rounded-lg px-3 py-2 my-3 hover:bg-[#3C83F6] hover:text-[#F9FAFB]'>View Project <i class="fa-solid fa-arrow-up-right-from-square fa-xs ml-1"></i></a>
             </div>
           </div>
       </div>
