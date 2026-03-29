@@ -79,7 +79,7 @@
     </div>
 
 
-    <div class="w-[90%] mx-auto my-5 md:my-20" id="render-project"></div>
+    <div class="w-[90%] mx-auto my-10 md:my-20" id="render-project"></div>
 
 
 
@@ -102,7 +102,7 @@
 
         renderProjectEl.innerHTML = 
         `
-        <img src='${project.projectmageSrc}' class=' border-0.5 border-[#65758B] rounded-md'/>
+        <img src='${project.projectmageSrc}' class=' border-0.5 border-[#65758B] rounded-lg'/>
         <h2 class="text-md md:text-xl text-[#020817] my-3 ff-inter font-bold">${project.projectName}</h2>
         ${project.websiteURL ? `<a href="${project.websiteURL}" target="_blank" class="bg-blue-600 text-white px-3 py-2 text-sm rounded-md hover:bg-blue-700 transition"><i class="fa-solid fa-globe"></i> Website</a>` : ``}
         <a href="${project.githubURL}" target="_blank" class="bg-gray-700 text-white px-3 py-2 text-sm rounded-md hover:bg-gray-600 transition"><i class="fa-brands fa-github"></i> GitHub</a> 
@@ -114,15 +114,15 @@
         ${project.carouselImages?.length ? 
         `
         <h2 class="text-md md:text-xl text-[#020817] ff-inter font-bold mt-8 mb-3">Project Screenshot</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 space-y-3 md:space-y-1">
-            ${project.carouselImages.map(item => `<div class='bg-white p-1 rounded-md'><img src="${item}" class="object-cover" /></div>`).join(" ")}
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 space-y-3 md:space-y-1">
+            ${project.carouselImages.map(item => `<div><img src="${item}" class="object-cover shadow-md rounded-lg" /></div>`).join(" ")}
         </div>
         `
         : 
         ``}
 
         <h2 class="text-md md:text-xl text-[#020817] ff-inter font-bold mt-8 mb-3">Technologies Used</h2>
-        <div class="mb-3 md:w-[45%] flex flex-row items-center space-x-5">
+        <div class="mb-3 md:w-[45%] flex flex-row items-center space-x-5 mb-20 md:mb-5">
             ${project.technologyImages.map(item => `<div class='bg-white p-1 rounded-md'><img src="https://img.icons8.com/${item}" class='h-10' /></div>`).join(" ")}
         </div>
 

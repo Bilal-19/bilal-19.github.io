@@ -46,8 +46,7 @@ const projectData = [
     videoURL: "https://youtu.be/rMPtp_5BsqQ?si=Ev4zrXLvnPyueWyK",
     carouselImages: [
       "/media/images/visa_web/1.png",
-      "/media/images/visa_web/2.png",
-      "/media/images/visa_web/3.png"
+      "/media/images/visa_web/2.png"
     ]
   },
   {
@@ -80,7 +79,12 @@ const projectData = [
     technologyImages: ["color/96/javascript--v1.png", "color/96/bootstrap.png", "officel/96/php-logo.png", "fluency/96/laravel.png", "color/96/mysql-logo.png"],
     websiteURL: "",
     githubURL: "https://github.com/Bilal-19/LaravelEcommerceWebApplication",
-    category: "ecommerce"
+    category: "ecommerce",
+    carouselImages: [
+      "/media/images/ecommerce/1.png",
+      "/media/images/ecommerce/2.png",
+      "/media/images/ecommerce/3.png"
+    ]
   },
   {
     id: 6,
@@ -91,7 +95,13 @@ const projectData = [
     technologyImages: ["color/96/react-native.png", "color/96/tailwindcss.png"],
     websiteURL: "https://aquaswimventure.netlify.app/",
     githubURL: "https://github.com/Bilal-19/swimming-academy-website",
-    category: "fitness"
+    category: "fitness",
+    carouselImages: [
+      "/media/images/swimming_academy/1.png",
+      "/media/images/swimming_academy/2.png",
+      "/media/images/swimming_academy/3.png",
+      "/media/images/swimming_academy/4.png"
+    ]
   },
   {
     id: 7,
@@ -114,7 +124,13 @@ const projectData = [
     websiteURL: "https://furnicraft-studio.netlify.app/",
     githubURL: "https://github.com/Bilal-19/FurniCraft-Studio",
     category: "furniture",
-    videoURL: "https://youtu.be/KCpd87GYa1k?si=jxWqQuYJOqwiUxYl"
+    videoURL: "https://youtu.be/KCpd87GYa1k?si=jxWqQuYJOqwiUxYl",
+    carouselImages: [
+      "/media/images/furniture_web/1.png",
+      "/media/images/furniture_web/2.png",
+      "/media/images/furniture_web/3.png",
+      "/media/images/furniture_web/4.png"
+        ]
   },
   {
     id: 9,
@@ -162,6 +178,24 @@ const projectData = [
     category: "realestate",
     videoURL: "https://youtu.be/krHUmdtZSxA?si=T1S6SUjsVuhCGNcP"
   },
+   {
+    id: 12,
+    projectmageSrc: "./media/images/royal_jewellers.png",
+    projectName: "Royal Jewellers Portfolio",
+    desc: "A portfolio website to showcase jewelry materials, provide customers with real-time cost estimates, and offer features such as request-for-quote and contact inquiry forms to boost user interaction and lead generation efficiently.",
+    technology: ["React JS", "Bootstrap 5"],
+    technologyImages: ["color/96/react-native.png", "color/96/bootstrap.png"],
+    websiteURL: "https://royaljewellers.netlify.app/",
+    githubURL: "https://github.com/Bilal-19/RoyalJewellersPortfolio",
+    category: "jewellers",
+    videoURL: "https://youtu.be/JpAm8CLg0Wg?si=cGPF4cPWn-L3loQV",
+    carouselImages: [
+      "/media/images/royal_gems/1.png",
+      "/media/images/royal_gems/2.png",
+      "/media/images/royal_gems/3.png",
+      "/media/images/royal_gems/4.png"
+    ]
+  }
 ];
 
 
