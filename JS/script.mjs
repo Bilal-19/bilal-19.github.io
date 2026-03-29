@@ -48,7 +48,7 @@ const projectCategoryForm = document.getElementById("project-category")
 categoryBtns.map((val, key) => {
   projectCategoryForm.innerHTML +=
     `
-  <button name="category" value="${val.btnValue}" class="category-btn hover:cursor-pointer text-[#3C83F6] border-1 border-[#3C83F6] px-3 py-1 rounded-xl text-xs">${val.btnContent}</button>
+  <button name="category" value="${val.btnValue}" class="category-btn hover:cursor-pointer text-[#3C83F6] border-1 border-[#3C83F6] py-1 rounded-xl text-xs md:text-sm">${val.btnContent}</button>
   `
 })
 
