@@ -34,13 +34,6 @@ function renderProject(projects) {
 }
 renderProject(projectData.slice(0,3))
 
-window.openModal = function (id) {
-  document.getElementById(id).classList.remove("hidden")
-}
-
-window.closeModal = function (id) {
-  document.getElementById(id).classList.add("hidden")
-}
 
 const projectCategoryForm = document.getElementById("project-category")
 
