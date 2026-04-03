@@ -168,26 +168,21 @@ function printStars(num) {
   return fillStars
 }
 
-/*
 const feedbackEl = document.getElementById("customerFeedback")
 customerFeedback.map((val, key) => {
   feedbackEl.innerHTML +=
     `
-  <div key=${key} class="bg-gray-800 p-5 rounded-md mx-5 md:mx-0 hover:shadow-lg transition duration-300 bg-gray-800 border-b-4 border-r-2 border-emerald-500">
-    <div class="flex flex-row mb-5 items-center">
-      <div>
-        <img src="./media/images/user.png" class="h-15 brightness-0 invert-100" alt=${val.clientName}/>
-      </div>
-      <div>
-        <p class="mb-0">${val.clientName}</p>
-        <p>${printStars(val.rating)}</p>
-      </div>
+  <div key=${key} class="rounded-xl border border-[#E1E7EF] p-5">
+    <p class='mb-5 text-[#65758B]'><i class="fa-solid fa-quote-right fa-xl"></i></p>
+    <p class='text-sm text-[#65758B] mb-5 text-justify md:text-left'>"${val.feedbackMessage}"</p>
+    <div class='flex flex-row items-center'>
+      <img src="./media/images/user.png" class='h-10 mr-2' alt=${val.clientName}/>
+      <p class='font-bold text-xs md:text-sm'>${val.clientName}</p>
     </div>
-    <p>${val.feedbackMessage}</p>
   </div>
   `
 })
-*/
+
 
 // Certificate Section
 const certificateEl = document.getElementById("certificate-section")
