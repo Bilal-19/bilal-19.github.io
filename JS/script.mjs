@@ -140,27 +140,39 @@ educationalBackground.map((item, key) => (
 
 
 const FaqEl = document.getElementById("ques-ans")
+
 FAQs.map((val, key) => (
   FaqEl.innerHTML +=
   `
   <div class="w-80 mx-auto md:w-auto py-5 px-3 md:px-5 my-5 rounded-2xl bg-[#F9FAFB] border border-[#E1E7EF]">
       <div class="flex justify-between toggle-faq hover:cursor-pointer">
           <h4 class="font-medium text-xs md:text-base text-[#020817]">${val.id}. ${val.ques}</h4>
-          <i class="fa-solid fa-caret-down hover:cursor-pointer"></i>
+          <i class="fa-solid fa-caret-down duration-300 transition-transform"></i>
       </div>
-      <p class="mt-3 toggle-answer text-[#65758B] text-xs md:text-sm hidden">${val.answer}</p>
+      
+      <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out overflow-hidden mt-0 toggle-answer">
+          <div class="min-h-0">
+              <p class="pt-3 text-[#65758B] text-xs md:text-sm">${val.answer}</p>
+          </div>
+      </div>
   </div>
   `
 ))
 
-document.querySelectorAll(".toggle-faq").forEach((faq, index) => {
-  // 'faq' is the question
-
-  // Attach event listener to each question
+document.querySelectorAll(".toggle-faq").forEach((faq) => {
   faq.addEventListener("click", () => {
-    faq.nextElementSibling.classList.toggle("hidden")
+    const answerPanel = faq.nextElementSibling
+    const icon = faq.querySelector("i")
+
+    // Toggle the smooth grid states
+    answerPanel.classList.toggle("grid-rows-[1fr]")
+    answerPanel.classList.toggle("grid-rows-[0fr]")
+
+    // Optional: Flips the caret icon upside down when active
+    icon.classList.toggle("rotate-180")
   })
 })
+
 
 
 function printStars(num) {

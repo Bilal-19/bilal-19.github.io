@@ -443,6 +443,13 @@ const categoryBtns = [
 const allCertificates = [
   {
     id: 1,
+    title: "Pledge and Commitment National Initiative",
+    issuingOrganization: "UAE Pledge & Commitment",
+    year: "2026",
+    imagePath: "media/certificates/pledge_commitment_appreciation.png"
+  },
+  {
+    id: 1,
     title: "MIT Informatics Tournament",
     issuingOrganization: "Easy Learning Online Institute",
     year: "2026",
