@@ -45,9 +45,9 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
-<body style="background: linear-gradient(135deg, #8CB6F9 0%, #F5F8FE 50%, #8DB6FA 100%);">
-    <!-- Header -->
-       <div
+<body>
+
+    <div
         class="w-full  text-white flex flex-col md:flex-row justify-between md:items-center h-fit py-4 shadow-md bg-[#0F1729] text-[#F9FAFB]">
         <div class="flex items-center justify-between ml-2">
             <!-- <a href="/index.html" class="ff-amsterdam-one text-sm">Bilal Muhammad Yousuf</a> -->
@@ -79,63 +79,21 @@
         </div>
     </div>
 
-
-    <div class="w-[90%] mx-auto my-10 md:my-20" id="render-project"></div>
-
-
-
-
-
-
-
-
-
-    <script type="module">
-        // Get ID from URL
-        const params = new URLSearchParams(window.location.search);
-        const project_id = params.get("id");
-        import { projectData } from "/JS/project_data.mjs";
-
-        const project = projectData.find(data => data.id == project_id)
-        console.log(project)
-
-        const renderProjectEl = document.getElementById("render-project");
-
-        renderProjectEl.innerHTML =
-            `
-        <img src='${project.projectmageSrc}' class=' border-0.5 border-[#65758B] rounded-lg'/>
-        <h2 class="text-md md:text-xl text-[#020817] my-3 ff-inter font-bold">${project.projectName}</h2>
-        ${project.websiteURL ? `<a href="${project.websiteURL}" target="_blank" class="bg-blue-600 text-white px-3 py-2 text-sm rounded-md hover:bg-blue-700 transition"><i class="fa-solid fa-globe"></i> Website</a>` : ``}
-        <a href="${project.githubURL}" target="_blank" class="bg-gray-700 text-white px-3 py-2 text-sm rounded-md hover:bg-gray-600 transition"><i class="fa-brands fa-github"></i> GitHub</a> 
-        ${project.videoURL ? `<a href="${project.videoURL}" target="_blank" class="bg-red-600 text-white px-3 py-2 text-sm rounded-md hover:bg-red-700 transition"><i class="fa-brands fa-youtube"></i> Demo</a>` : ``}
-        
-        <h2 class="text-base md:text-lg text-[#020817] mt-8 ff-inter font-bold">Overview</h2>
-        <p class="text-[#65758B] ff-inter text-xs md:text-base">${project.desc}</p>
-
-        ${project.carouselImages?.length ?
-                `
-        <h2 class="text-md md:text-xl text-[#020817] ff-inter font-bold mt-8 mb-3">Project Screenshot</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 space-y-3 md:space-y-1">
-            ${project.carouselImages.map(item => `<div><img src="${item}" class="object-cover shadow-md rounded-lg" /></div>`).join(" ")}
-        </div>
-        `
-                :
-                ``}
-
-        <h2 class="text-md md:text-xl text-[#020817] ff-inter font-bold mt-8 mb-3">Technologies Used</h2>
-        <div class="mb-3 md:w-[45%] flex flex-row items-center space-x-5 mb-20 md:mb-5">
-            ${project.technologyImages.map(item => `<div class='bg-white p-1 rounded-md'><img src="https://img.icons8.com/${item}" class='h-10' /></div>`).join(" ")}
+    <div class="w-full pt-5 bg-[#F9FAFB]" id="projects" style="background: linear-gradient(135deg, #8CB6F9 0%, #F5F8FE 50%, #8DB6FA 100%);">
+        <div class="md:w-1/2 text-center mx-auto my-20">
+            <h2 class="text-2xl md:text-4xl text-[#020817] ff-inter font-bold text-center">Featured Projects</h2>
+            <p class="text-[#65758B] text-center ff-inter text-xs md:text-base mb-10">A section of my recent work</p>
+            <form id="project-category"
+                class="container mx-auto grid grid-cols-3 md:grid-cols-4 gap-5 mb-5 w-85 md:w-auto">
+            </form>
         </div>
 
-        `
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 pb-20" id="all-projects-card">
+        </div>
+    </div>
 
-        document.getElementById("menu-toggle").addEventListener("click", () => {
-            document.getElementById("navbar-default").classList.toggle("hidden")
-        })
-
-
-    </script>
-
+    
+    <!-- Footer -->
     <div class="w-full text-white bg-gray-800 border-b border-[#3C83F6]">
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row justify-between">
@@ -169,6 +127,24 @@
 
     </div>
 
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" defer>
+        {
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          "name": "Bilal Muhammad Yousuf",
+          "jobTitle": "Full Stack Software Developer",
+          "url": "https://bilal-19.github.io/",
+          "sameAs": [
+            "https://www.linkedin.com/in/bilalmuhammadyousuf/",
+            "https://github.com/Bilal-19"
+          ],
+          "skills": "React JS, Laravel, PHP, JavaScript, MySQL, Bootstrap, Tailwind CSS"
+        }
+        </script>
+
+    <script src="./JS/projects_script.mjs" type="module" defer></script>
 </body>
 
 </html>
