@@ -198,7 +198,7 @@ customerFeedback.map((val, key) => {
 
 // Certificate Section
 const certificateEl = document.getElementById("certificate-section")
-allCertificates.slice(0,3).map((val, key) => {
+allCertificates.slice(0,6).map((val, key) => {
   certificateEl.innerHTML +=
     `
   <div class="mb-5 rounded-md p-1 bg-[#F9FAFB] border border-[#E1E7EF]">

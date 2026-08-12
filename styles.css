@@ -6,6 +6,9 @@ body {
 }
 :root {
   --charcoal-blue: #051527;
+  --white-smoke: #F9FAFB;
+  --bunting-blue: #3f1439;
+  --dark-midnight-blue: #170207;
 }
 
 html {
@@ -34,6 +37,21 @@ html {
 
 .text-charcoal-blue {
   color: var(--charcoal-blue);
+}
+
+.text-white-smoke{
+  color: var(--white-smoke);
+}
+
+.text-bunting-blue{
+  color: var(--bunting-blue);
+}
+
+.text-dark-midnight-blue{
+  color: var(--dark-midnight-blue);
+}
+.bg-white-smoke{
+  background-color: var(--white-smoke);
 }
 
 /* Create Custom Scrollbar */
