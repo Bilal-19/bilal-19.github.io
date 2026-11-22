@@ -379,12 +379,12 @@ const technicalSkills = [
     category: "Frontend Development",
     desc: "Crafting beautiful user interfaces",
     skilsList: [
-      { key: 1, label: "HTML", imageRef: "https://img.icons8.com/color/96/html-5--v1.png" },
-      { key: 2, label: "CSS", imageRef: "https://img.icons8.com/color/96/css3.png" },
-      { key: 3, label: "Bootstrap", imageRef: "https://img.icons8.com/color/96/bootstrap.png" },
-      { key: 4, label: "Tailwind", imageRef: "https://img.icons8.com/color/96/tailwindcss.png" },
-      { key: 5, label: "JavaScript", imageRef: "https://img.icons8.com/color/96/javascript--v1.png" },
-      { key: 6, label: "React JS", imageRef: "https://img.icons8.com/color/96/react-native.png" },
+      { key: 1, label: "HTML 5", imageRef: "/media/tech_icons/html5.png" },
+      { key: 2, label: "CSS", imageRef: "/media/tech_icons/css.png" },
+      { key: 3, label: "Bootstrap 5", imageRef: "/media/tech_icons/bootstrap.png" },
+      { key: 4, label: "Tailwind", imageRef: "/media/tech_icons/tailwind.png" },
+      { key: 5, label: "JavaScript", imageRef: "/media/tech_icons/javascript.png" },
+      { key: 6, label: "React JS", imageRef: "/media/tech_icons/reactjs.png" },
     ],
     imageAdd: "<i class='fa-solid fa-globe mr-2 text-[#3C83F6] bg-[#3C83F6]/10 p-3 rounded-md'></i>"
   },
@@ -393,12 +393,12 @@ const technicalSkills = [
     category: "Backend Development",
     desc: "Building robust server-side solutions",
     skilsList: [
-      { key: 1, label: "PHP", imageRef: "https://img.icons8.com/officel/96/php-logo.png" },
-      { key: 2, label: "Laravel", imageRef: "https://img.icons8.com/fluency/96/laravel.png" },
-      { key: 3, label: "MySQL", imageRef: "https://img.icons8.com/color/96/mysql-logo.png" },
+      { key: 1, label: "PHP", imageRef: "/media/tech_icons/php.png" },
+      { key: 2, label: "Laravel", imageRef: "/media/tech_icons/laravel.png" },
+      { key: 3, label: "MySQL", imageRef: "/media/tech_icons/mysql.png" },
       { key: 4, label: "REST API", imageRef: "https://img.icons8.com/color/96/api-settings.png" },
-      { key: 5, label: "Git", imageRef: "https://img.icons8.com/color/96/git.png" },
-      { key: 6, label: "Hostinger", imageRef: "https://img.icons8.com/color/96/domain.png" },
+      { key: 5, label: "Git", imageRef: "/media/tech_icons/github.png" },
+      { key: 6, label: "Postman", imageRef: "/media/tech_icons/postman.png" },
     ],
     imageAdd: "<i class='fa-solid fa-server mr-2 text-[#3C83F6] bg-[#3C83F6]/10 p-3 rounded-md'></i>"
   }

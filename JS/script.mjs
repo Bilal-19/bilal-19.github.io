@@ -272,11 +272,11 @@ technicalSkills.map((val, key) => {
           </div>
         </div>
         <hr class='text-gray-200 my-5'>
-        <div class='grid grid-cols-3 gap-3 md:gap-8'>
+        <div class='grid grid-cols-3 gap-4 md:gap-8'>
           ${val.skilsList.map
           (prop => `
-                      <div class='text-center bg-[#F9FAFB] rounded-sm shadow-md hover:cursor-pointer border-1 border-[#E1E7EF] p-2'>
-                        <img src=${prop.imageRef} class='h-10 md:h-15 mx-auto' />
+                      <div class='text-center bg-[#F9FAFB] rounded-sm shadow-md hover:cursor-pointer border-1 border-[#E1E7EF] p-2 flex flex-col justify-center md:items-center'>
+                        <img src=${prop.imageRef} class='h-10 md:max-h-100 md:max-w-[52px] object-contain mb-1 mx-auto' />
                         <span class='text-[10px] none md:text-xs'>${prop.label}</span>
                       </div>
             `).join("")}
@@ -285,3 +285,5 @@ technicalSkills.map((val, key) => {
     </div>
   `
 })
+
+// border-1 border-[#E1E7EF] rounded-sm shadow-md
