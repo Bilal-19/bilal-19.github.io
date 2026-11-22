@@ -381,7 +381,7 @@ const technicalSkills = [
     skilsList: [
       { key: 1, label: "HTML 5", imageRef: "/media/tech_icons/html5.png" },
       { key: 2, label: "CSS", imageRef: "/media/tech_icons/css.png" },
-      { key: 3, label: "Bootstrap 5", imageRef: "/media/tech_icons/bootstrap.png" },
+      { key: 3, label: "Bootstrap", imageRef: "/media/tech_icons/bootstrap.png" },
       { key: 4, label: "Tailwind", imageRef: "/media/tech_icons/tailwind.png" },
       { key: 5, label: "JavaScript", imageRef: "/media/tech_icons/javascript.png" },
       { key: 6, label: "React JS", imageRef: "/media/tech_icons/reactjs.png" },
